@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Itinerary - Wanderly</title>
+  <script>tailwind.config = { darkMode: "class" };</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body data-page="trip" class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
+  <div id="site-header"></div>
+  <main class="mx-auto max-w-7xl px-4 py-8">
+    <div data-progress class="mb-8 flex items-center gap-3"></div>
+    <section id="trip-empty" class="hidden rounded-2xl bg-white p-10 text-center shadow-sm dark:bg-slate-900">
+      <h1 class="text-3xl font-black">Create a trip first</h1>
+      <p class="mt-2 text-slate-500">Pick a destination, select your real hotel and favorite landmarks.</p>
+      <a class="btn-primary mt-6 inline-flex" href="planner.html">Start setup</a>
+    </section>
+
+    <section id="trip-content">
+      <div class="image-band mb-6 grid overflow-hidden rounded-2xl shadow-xl lg:grid-cols-[.85fr_1.15fr]">
+        <div class="image-band-copy">
+          <p class="font-black text-teal-600">Interactive Itinerary</p>
+          <h1 id="trip-title" class="mt-2 text-4xl font-black"></h1>
+          <p id="trip-subtitle" class="mt-2 text-slate-500"></p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a class="btn-primary" href="summary.html"><i class="fa-solid fa-file-lines"></i> View summary & PDF</a>
+            <a id="browse-more-places" class="btn-soft" href="destination.html"><i class="fa-solid fa-plus"></i> Add more places / hotels</a>
+          </div>
+        </div>
+        <img src="../images/photo-1469854523086-cc02fe5d8800.jpg" alt="Open road through mountains">
+      </div>
+
+      <!-- Hotel Accommodation Banner Card -->
+      <div id="trip-hotel-card" class="mb-6"></div>
+
+      <!-- Days Grid and Budget Widget -->
+      <div class="grid gap-6 lg:grid-cols-[1fr_340px]">
+        <div>
+          <div class="mb-4 flex items-center justify-between">
+            <h2 class="text-2xl font-black">Daily Schedule</h2>
+            <p class="text-sm font-semibold text-slate-500">Drag & drop activities between days</p>
+          </div>
+          <div id="day-columns" class="grid gap-5 md:grid-cols-2 xl:grid-cols-3"></div>
+        </div>
+        <aside class="space-y-5 lg:sticky lg:top-28 lg:self-start">
+          <div id="budget-widget"></div>
+          <div id="trip-quick-stats"></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="../js/data.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+
+</html>

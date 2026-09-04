@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wanderly Travel Planner</title>
+  <script>tailwind.config = { darkMode: "class" };</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body data-page="home" class="bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100">
+  <div id="site-header"></div>
+  <main>
+    <section id="hero-slider" class="hero-section min-h-[82vh] bg-cover bg-center transition-all duration-700">
+      <div class="mx-auto flex min-h-[82vh] max-w-7xl flex-col justify-center px-4 py-20">
+        <div class="hero-copy max-w-3xl text-white">
+          <p id="hero-kicker" class="hero-kicker-pill mb-4 font-black uppercase tracking-[.18em] text-teal-200"></p>
+          <h1 class="text-5xl font-black leading-tight md:text-7xl">Design your next escape with confidence.</h1>
+          <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-100">Wanderly brings destination discovery, live
+            budgeting, day-by-day planning, favorites, reviews, maps, and PDF trip summaries into one elegant planner.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a class="btn-primary" href="planner.html"><i class="fa-solid fa-route"></i> Start planning</a>
+            <a class="rounded-full bg-white/15 px-5 py-3 font-black text-white ring-1 ring-white/30 backdrop-blur transition hover:bg-white/25"
+              href="destination.html">Explore destinations</a>
+          </div>
+          <div class="hero-metrics">
+            <div class="hero-metric"><b id="hero-stat-destinations">18</b><span>featured cities</span></div>
+            <div class="hero-metric"><b id="hero-stat-places">108</b><span>curated places</span></div>
+            <div class="hero-metric"><b id="hero-stat-hotels">85+</b><span>real hotels</span></div>
+            <div class="hero-metric"><b>PDF</b><span>trip summary</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mx-auto max-w-7xl px-4 py-8">
+      <div data-progress class="flex items-center gap-3"></div>
+    </section>
+    <section class="mx-auto max-w-7xl px-4 pb-14">
+      <div class="image-band grid overflow-hidden rounded-2xl shadow-xl lg:grid-cols-[1.05fr_.95fr]">
+        <div class="grid grid-cols-2 sm:grid-cols-3">
+          <img src="../images/photo-1586500036706-41963de24d8b.jpg" alt="Sharm El Sheikh beach">
+          <img src="../images/photo-1539650116574-75c0c6d73f6e.jpg" alt="Cairo historic landmarks">
+          <img src="../images/alexandria-cover.jpg" alt="Alexandria Corniche and Stanley Bridge">
+          <img src="../images/photo-1587975844610-40f1ad10d07a.jpg" alt="Luxor temples">
+          <img src="../images/photo-1524231757912-21f4fe3a7200.jpg" alt="Istanbul skyline">
+          <img src="../images/photo-1502602898657-3e91760cbb34.jpg" alt="Paris city view">
+        </div>
+        <div class="image-band-copy">
+          <p class="font-black text-teal-600">Visual Planning</p>
+          <h2 class="mt-2 text-3xl font-black md:text-4xl">See the mood before you choose the route.</h2>
+          <p class="mt-4 leading-7 text-slate-500">Compare beach days, museum mornings, old streets, dinner views, and
+            adventure stops in one connected trip flow.</p>
+          <a class="btn-primary mt-6 w-fit" href="destination.html"><i class="fa-solid fa-images"></i> Browse places</a>
+        </div>
+      </div>
+    </section>
+    <section class="mx-auto max-w-7xl px-4 py-14">
+      <div class="mb-8 flex flex-col justify-between gap-4 md:flex-row md:items-end">
+        <div>
+          <p class="font-black text-teal-600">Popular Destinations</p>
+          <h2 class="text-4xl font-black">Choose your atmosphere</h2>
+          <p class="mt-2 text-sm font-bold text-slate-500">Discover top Egyptian governorates and iconic international
+            travel hubs.</p>
+        </div>
+        <a class="font-black text-sky-600 transition hover:text-sky-700" href="planner.html">Build custom trip <i
+            class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <!-- Filter Tabs & Quick Search -->
+      <div
+        class="mb-8 flex flex-col gap-4 rounded-2xl bg-white p-4 shadow-xl dark:bg-slate-900 md:flex-row md:items-center md:justify-between">
+        <div class="flex flex-wrap gap-2" id="destination-filter-tabs">
+          <button type="button" data-scope="all"
+            class="dest-filter-tab active rounded-full px-5 py-2.5 text-sm font-black transition">
+            <i class="fa-solid fa-globe mr-1.5"></i> All Destinations
+          </button>
+          <button type="button" data-scope="domestic"
+            class="dest-filter-tab rounded-full px-5 py-2.5 text-sm font-black transition">
+            <i class="fa-solid fa-landmark mr-1.5"></i> Inside Egypt (Governorates)
+          </button>
+          <button type="button" data-scope="international"
+            class="dest-filter-tab rounded-full px-5 py-2.5 text-sm font-black transition">
+            <i class="fa-solid fa-plane mr-1.5"></i> Outside Egypt (Around the world)
+          </button>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="relative w-full md:w-64">
+            <i
+              class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-xs text-slate-400"></i>
+            <input id="home-dest-search" type="text" placeholder="Search city or country..."
+              class="w-full rounded-full border border-slate-200 bg-slate-50 py-2 pl-9 pr-4 text-sm font-bold outline-none focus:border-teal-500 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100">
+          </div>
+          <span id="destination-count-badge"
+            class="shrink-0 rounded-full bg-slate-100 px-3 py-1.5 text-xs font-black text-slate-600 dark:bg-slate-800 dark:text-slate-300"></span>
+        </div>
+      </div>
+
+      <!-- Destinations Grid -->
+      <div id="destination-grid" class="grid gap-6 md:grid-cols-2 lg:grid-cols-3"></div>
+
+      <div id="destination-empty" class="hidden rounded-2xl bg-white p-12 text-center dark:bg-slate-900">
+        <i class="fa-solid fa-compass text-4xl text-teal-500"></i>
+        <p class="mt-4 text-lg font-bold text-slate-700 dark:text-slate-200">No destinations match your search</p>
+        <p class="mt-1 text-sm text-slate-500">Try changing keywords or selecting another filter tab above.</p>
+      </div>
+    </section>
+    <section class="bg-white py-16 dark:bg-slate-900">
+      <div class="mx-auto grid max-w-7xl gap-5 px-4 md:grid-cols-3">
+        <div class="feature-tile flex h-full flex-col justify-between rounded-2xl p-7">
+          <i data-lucide="map" class="text-teal-500"></i>
+          <div>
+            <h3 class="mt-5 text-xl font-black">Live Maps</h3>
+            <p class="mt-2 text-slate-500">Leaflet pins keep every place grounded in the real route.</p>
+          </div>
+        </div>
+        <div class="feature-tile flex h-full flex-col justify-between rounded-2xl p-7">
+          <i data-lucide="wallet" class="text-sky-500"></i>
+          <div>
+            <h3 class="mt-5 text-xl font-black">Budget Clarity</h3>
+            <p class="mt-2 text-slate-500">Switch currencies and watch your estimated spend update instantly.</p>
+          </div>
+        </div>
+        <div class="feature-tile flex h-full flex-col justify-between rounded-2xl p-7">
+          <i data-lucide="file-down" class="text-teal-500"></i>
+          <div>
+            <h3 class="mt-5 text-xl font-black">PDF Summary</h3>
+            <p class="mt-2 text-slate-500">Export a polished final plan when your itinerary is ready.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="../js/data.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trip Planner - Wanderly</title>
+  <script>tailwind.config = { darkMode: "class" };</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body data-page="planner" class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
+  <div id="site-header"></div>
+  <main class="mx-auto max-w-7xl px-4 py-8">
+    <div data-progress class="mb-10 flex items-center gap-3"></div>
+    <section class="grid gap-8 lg:grid-cols-[1fr_.8fr]">
+      <form id="planner-form" class="rounded-2xl bg-white p-6 shadow-xl dark:bg-slate-900 md:p-8">
+        <p class="font-black text-teal-600">Trip Setup</p>
+        <h1 class="mt-2 text-4xl font-black">Shape the journey</h1>
+        <div class="mt-6 overflow-hidden rounded-2xl">
+          <img src="../images/photo-1527631746610-bca00a040d60.jpg" alt="Travel planning table"
+            class="h-44 w-full object-cover">
+        </div>
+        <div class="mt-8 grid gap-5 md:grid-cols-2">
+          <label class="block text-sm font-black md:col-span-2">Trip Location
+            <select id="trip-scope" name="tripScope" required class="field mt-2">
+              <option value="domestic">Inside Egypt (Governorates)</option>
+              <option value="international">Outside Egypt (International)</option>
+            </select>
+          </label>
+          <label id="country-field" class="hidden text-sm font-black">Country
+            <select id="country-options" name="country" class="field mt-2"></select>
+          </label>
+          <label id="destination-field" class="block text-sm font-black">Governorate / City
+            <select id="destination-options" name="destinationId" required class="field mt-2"></select>
+          </label>
+          <label id="place-field" class="block text-sm font-black">Primary Landmark / Place
+            <select id="featured-place-options" name="featuredPlaceId" required class="field mt-2"></select>
+          </label>
+          <label id="hotel-field" class="block text-sm font-black md:col-span-2">Hotel & Accommodation (Closest prioritized)
+            <select id="hotel-options" name="hotelId" class="field mt-2"></select>
+          </label>
+          <label class="block text-sm font-black">Trip Type
+            <select name="tripType" required class="field mt-2">
+              <option>Leisure</option>
+              <option>Culture</option>
+              <option>Adventure</option>
+              <option>Romantic</option>
+              <option>Family</option>
+            </select>
+          </label>
+          <label class="block text-sm font-black">Days
+            <input name="days" type="number" min="1" max="14" value="4" required class="field mt-2">
+          </label>
+          <label class="block text-sm font-black">Travelers
+            <input name="travelers" type="number" min="1" max="12" value="2" required class="field mt-2">
+          </label>
+          <label class="block text-sm font-black md:col-span-2">Estimated Budget in USD
+            <input name="budget" type="number" min="100" step="50" value="1200" required class="field mt-2">
+          </label>
+        </div>
+        <button class="btn-primary mt-8 flex w-full" type="submit">
+          <i class="fa-solid fa-compass"></i> Continue to explore & plan
+        </button>
+      </form>
+      <aside class="rounded-2xl bg-white p-5 shadow-xl dark:bg-slate-900">
+        <div id="planner-preview"></div>
+      </aside>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="../js/data.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+
+</html>
