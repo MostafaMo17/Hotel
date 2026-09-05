@@ -4,58 +4,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Itinerary - Wanderly</title>
+  <title>My Trip Itinerary - Wanderly</title>
   <script>tailwind.config = { darkMode: "class" };</script>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 
-<body data-page="trip" class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
+<body data-page="trip" class="bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100">
   <div id="site-header"></div>
+
   <main class="mx-auto max-w-7xl px-4 py-8">
-    <div data-progress class="mb-8 flex items-center gap-3"></div>
-    <section id="trip-empty" class="hidden rounded-2xl bg-white p-10 text-center shadow-sm dark:bg-slate-900">
-      <h1 class="text-3xl font-black">Create a trip first</h1>
-      <p class="mt-2 text-slate-500">Pick a destination, select your real hotel and favorite landmarks.</p>
-      <a class="btn-primary mt-6 inline-flex" href="planner.html">Start setup</a>
+    <!-- Empty State -->
+    <section id="trip-empty" class="hidden rounded-3xl bg-white p-12 text-center shadow-sm border border-slate-200 dark:border-slate-800 dark:bg-slate-900 max-w-xl mx-auto my-12">
+      <i class="fa-solid fa-map-location-dot text-5xl text-teal-500 mb-4 block"></i>
+      <h1 class="text-3xl font-black text-slate-950 dark:text-white">No active trip itinerary yet</h1>
+      <p class="mt-2 text-xs leading-5 text-slate-500">Pick a destination, book a hotel stay, or configure your travel dates to auto-generate a custom day-by-day plan.</p>
+      <div class="mt-6 flex justify-center gap-3">
+        <a class="btn-primary" href="destination.html"><i class="fa-solid fa-hotel"></i> Explore & Book Hotels</a>
+        <a class="btn-soft" href="planner.html"><i class="fa-solid fa-sliders"></i> Quick Planner</a>
+      </div>
     </section>
 
+    <!-- Trip Active Content -->
     <section id="trip-content">
-      <div class="image-band mb-6 grid overflow-hidden rounded-2xl shadow-xl lg:grid-cols-[.85fr_1.15fr]">
-        <div class="image-band-copy">
-          <p class="font-black text-teal-600">Interactive Itinerary</p>
-          <h1 id="trip-title" class="mt-2 text-4xl font-black"></h1>
-          <p id="trip-subtitle" class="mt-2 text-slate-500"></p>
-          <div class="mt-6 flex flex-wrap gap-3">
-            <a class="btn-primary" href="summary.html"><i class="fa-solid fa-file-lines"></i> View summary & PDF</a>
-            <a id="browse-more-places" class="btn-soft" href="destination.html"><i class="fa-solid fa-plus"></i> Add more places / hotels</a>
-          </div>
+      <!-- Top Banner -->
+      <div class="mb-6 flex flex-col md:flex-row md:items-center justify-between gap-4 rounded-3xl bg-white p-6 shadow-sm border border-slate-200 dark:border-slate-800 dark:bg-slate-900">
+        <div>
+          <span class="text-xs font-black uppercase tracking-wider text-teal-600 flex items-center gap-1.5">
+            <i class="fa-solid fa-wand-magic-sparkles"></i> Automated Custom Itinerary
+          </span>
+          <h1 id="trip-title" class="text-3xl sm:text-4xl font-black text-slate-950 dark:text-white mt-1"></h1>
+          <p id="trip-subtitle" class="text-xs font-bold text-slate-400 mt-1"></p>
         </div>
-        <img src="../images/photo-1469854523086-cc02fe5d8800.jpg" alt="Open road through mountains">
+        <div class="flex flex-wrap gap-2.5">
+          <a class="btn-primary text-xs font-black" href="summary.html">
+            <i class="fa-solid fa-file-pdf"></i> View Summary & PDF Voucher
+          </a>
+          <a class="btn-soft text-xs font-black" href="destination.html">
+            <i class="fa-solid fa-plus"></i> Browse More Places
+          </a>
+        </div>
       </div>
 
-      <!-- Hotel Accommodation Banner Card -->
-      <div id="trip-hotel-card" class="mb-6"></div>
+      <!-- Hotel Accommodation Card -->
+      <div id="trip-hotel-card" class="mb-8"></div>
 
-      <!-- Days Grid and Budget Widget -->
-      <div class="grid gap-6 lg:grid-cols-[1fr_340px]">
+      <!-- Daily Schedule Grid & Budget Tracker Aside -->
+      <div class="grid gap-8 lg:grid-cols-[1fr_320px] items-start">
         <div>
           <div class="mb-4 flex items-center justify-between">
-            <h2 class="text-2xl font-black">Daily Schedule</h2>
-            <p class="text-sm font-semibold text-slate-500">Drag & drop activities between days</p>
+            <div>
+              <h2 class="text-2xl font-black text-slate-950 dark:text-white">Day-by-Day Travel Schedule</h2>
+              <p class="text-xs text-slate-400">Drag & drop activities to reorder between days or remove items.</p>
+            </div>
           </div>
           <div id="day-columns" class="grid gap-5 md:grid-cols-2 xl:grid-cols-3"></div>
         </div>
-        <aside class="space-y-5 lg:sticky lg:top-28 lg:self-start">
+
+        <!-- Sticky Budget Widget Aside -->
+        <aside class="space-y-5 lg:sticky lg:top-24">
           <div id="budget-widget"></div>
-          <div id="trip-quick-stats"></div>
+          
+          <div class="rounded-2xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900 shadow-sm text-xs space-y-3">
+            <p class="font-black text-slate-950 dark:text-white flex items-center gap-1.5">
+              <i class="fa-solid fa-lightbulb text-amber-500"></i> Smart Traveler Tip
+            </p>
+            <p class="text-slate-500 leading-5">
+              Your itinerary schedule auto-calculates travel distances from your confirmed hotel to ensure minimal commuting time.
+            </p>
+          </div>
         </aside>
       </div>
+
+      <!-- Local Recommendations Drawer (Landmarks, Restaurants, Activities) -->
+      <div id="local-recommendations-drawer"></div>
     </section>
   </main>
+
   <div id="site-footer"></div>
+
   <script src="../js/data.js"></script>
   <script src="../js/app.js"></script>
 </body>
