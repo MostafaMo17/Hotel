@@ -5,6 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wanderly - Hotel Booking & Travel Itinerary Platform</title>
+  <script>
+    try {
+      if (localStorage.getItem("wanderly:darkMode") === "true") {
+        document.documentElement.classList.add("dark");
+      }
+    } catch (e) {}
+  </script>
   <script>tailwind.config = { darkMode: "class" };</script>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -16,7 +23,7 @@
   
   <main>
     <!-- Hero Section with Booking Search Bar -->
-    <section class="hero-section min-h-[85vh] flex items-center justify-center bg-cover bg-center py-20 px-4" style="background-image: url('../images/photo-1586500036706-41963de24d8b.jpg');">
+    <section class="hero-section min-h-[85vh] flex items-center justify-center bg-cover bg-center py-20 px-4" style="background-image: linear-gradient(rgba(15,23,42,0.65), rgba(15,23,42,0.85)), url('https://images.unsplash.com/photo-1586500036706-41963de24d8b?auto=format&fit=crop&w=1920&q=80'), url('../images/photo-1586500036706-41963de24d8b.jpg');">
       <div class="mx-auto max-w-6xl w-full">
         <div class="max-w-3xl text-white">
           <div class="hero-kicker-pill mb-4">
@@ -32,18 +39,28 @@
         </div>
 
         <!-- Hero Quick Search Widget -->
-        <form id="hero-booking-widget" class="search-hero-widget mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_auto] items-center">
+        <form id="hero-booking-widget" class="search-hero-widget mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-[1.3fr_1.1fr_1fr_auto] items-center">
           <div class="search-field-group">
             <label for="hero-dest-select"><i class="fa-solid fa-location-dot text-teal-600 mr-1"></i> Destination</label>
-            <select id="hero-dest-select" name="destination" class="cursor-pointer font-black"></select>
+            <select id="hero-dest-select" name="destination" class="cursor-pointer font-black text-xs"></select>
           </div>
           <div class="search-field-group">
-            <label><i class="fa-solid fa-calendar-days text-teal-600 mr-1"></i> Check In - Out</label>
-            <input type="text" value="Flexible (4 Nights)" readonly class="cursor-pointer">
+            <label for="hero-checkin"><i class="fa-solid fa-calendar-days text-teal-600 mr-1"></i> Check In / Out</label>
+            <div class="flex items-center gap-1.5 pt-0.5">
+              <input type="date" id="hero-checkin" name="checkIn" class="w-1/2 cursor-pointer font-bold text-[11px] p-0 border-0 bg-transparent text-slate-800 dark:text-slate-100 outline-none">
+              <span class="text-slate-400 text-xs">→</span>
+              <input type="date" id="hero-checkout" name="checkOut" class="w-1/2 cursor-pointer font-bold text-[11px] p-0 border-0 bg-transparent text-slate-800 dark:text-slate-100 outline-none">
+            </div>
           </div>
           <div class="search-field-group">
-            <label><i class="fa-solid fa-user-group text-teal-600 mr-1"></i> Guests & Rooms</label>
-            <input type="text" value="2 Guests • 1 Room" readonly class="cursor-pointer">
+            <label for="hero-guests-select"><i class="fa-solid fa-user-group text-teal-600 mr-1"></i> Guests & Rooms</label>
+            <select id="hero-guests-select" name="guests" class="cursor-pointer font-black text-xs">
+              <option value="1">1 Guest • 1 Room</option>
+              <option value="2" selected>2 Guests • 1 Room</option>
+              <option value="3">3 Guests • 1 Room</option>
+              <option value="4">4 Guests • 2 Rooms</option>
+              <option value="6">6+ Guests • Group</option>
+            </select>
           </div>
           <button type="submit" class="btn-primary h-full py-3.5 px-6 font-black text-sm whitespace-nowrap shadow-xl">
             <i class="fa-solid fa-magnifying-glass"></i>
@@ -65,12 +82,12 @@
     <section class="mx-auto max-w-7xl px-4 py-12">
       <div class="image-band grid overflow-hidden rounded-3xl shadow-xl lg:grid-cols-[1.1fr_.9fr] border border-slate-200 dark:border-slate-800">
         <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5 p-3.5 bg-slate-100 dark:bg-slate-900/60">
-          <div class="overflow-hidden rounded-xl h-36 sm:h-44"><img src="https://images.unsplash.com/photo-1586500036706-41963de24d8b?auto=format&fit=crop&w=600&q=80" alt="Sharm El Sheikh Beach" class="size-full object-cover transition hover:scale-105 duration-300" loading="lazy"></div>
-          <div class="overflow-hidden rounded-xl h-36 sm:h-44"><img src="https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&w=600&q=80" alt="Giza Pyramids Cairo" class="size-full object-cover transition hover:scale-105 duration-300" loading="lazy"></div>
-          <div class="overflow-hidden rounded-xl h-36 sm:h-44"><img src="https://images.unsplash.com/photo-1604251405909-b8c4e83cdf7c?auto=format&fit=crop&w=600&q=80" alt="Alexandria Corniche" class="size-full object-cover transition hover:scale-105 duration-300" loading="lazy"></div>
-          <div class="overflow-hidden rounded-xl h-36 sm:h-44"><img src="https://images.unsplash.com/photo-1587975844610-40f1ad10d07a?auto=format&fit=crop&w=600&q=80" alt="Luxor Temples" class="size-full object-cover transition hover:scale-105 duration-300" loading="lazy"></div>
-          <div class="overflow-hidden rounded-xl h-36 sm:h-44"><img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=600&q=80" alt="Istanbul Bosphorus" class="size-full object-cover transition hover:scale-105 duration-300" loading="lazy"></div>
-          <div class="overflow-hidden rounded-xl h-36 sm:h-44"><img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=600&q=80" alt="Paris Eiffel Tower" class="size-full object-cover transition hover:scale-105 duration-300" loading="lazy"></div>
+          <div class="overflow-hidden rounded-xl h-36 sm:h-44"><img src="../images/photo-1586500036706-41963de24d8b.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1586500036706-41963de24d8b?auto=format&fit=crop&w=600&q=80';" alt="Sharm El Sheikh Beach" class="size-full object-cover transition hover:scale-105 duration-300" loading="lazy"></div>
+          <div class="overflow-hidden rounded-xl h-36 sm:h-44"><img src="../images/photo-1572252009286-268acec5ca0a.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&w=600&q=80';" alt="Giza Pyramids Cairo" class="size-full object-cover transition hover:scale-105 duration-300" loading="lazy"></div>
+          <div class="overflow-hidden rounded-xl h-36 sm:h-44"><img src="../images/alexandria-cover.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1604251405909-b8c4e83cdf7c?auto=format&fit=crop&w=600&q=80';" alt="Alexandria Corniche" class="size-full object-cover transition hover:scale-105 duration-300" loading="lazy"></div>
+          <div class="overflow-hidden rounded-xl h-36 sm:h-44"><img src="../images/photo-1587975844610-40f1ad10d07a.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1587975844610-40f1ad10d07a?auto=format&fit=crop&w=600&q=80';" alt="Luxor Temples" class="size-full object-cover transition hover:scale-105 duration-300" loading="lazy"></div>
+          <div class="overflow-hidden rounded-xl h-36 sm:h-44"><img src="../images/photo-1524231757912-21f4fe3a7200.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=600&q=80';" alt="Istanbul Bosphorus" class="size-full object-cover transition hover:scale-105 duration-300" loading="lazy"></div>
+          <div class="overflow-hidden rounded-xl h-36 sm:h-44"><img src="../images/photo-1502602898657-3e91760cbb34.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=600&q=80';" alt="Paris Eiffel Tower" class="size-full object-cover transition hover:scale-105 duration-300" loading="lazy"></div>
         </div>
         <div class="image-band-copy p-8 sm:p-12 flex flex-col justify-center">
           <span class="text-xs font-black uppercase tracking-wider text-teal-600">Visual Destination Discovery</span>
@@ -186,6 +203,9 @@
   <div id="site-footer"></div>
 
   <script src="../js/data.js"></script>
+  <script src="../js/real-images.js"></script>
+  <script src="../js/firebase-config.js"></script>
+  <script type="module" src="../js/firebase-auth.js"></script>
   <script src="../js/app.js"></script>
 </body>
 

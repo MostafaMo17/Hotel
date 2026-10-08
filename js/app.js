@@ -27,35 +27,60 @@ const Store = {
   },
 };
 
+function getUserStoragePrefix() {
+  const current = Store.get("currentUser", null);
+  if (current && (current.id || current.email)) {
+    const key = String(current.id || current.email).toLowerCase().replace(/[^a-z0-9]/g, "_");
+    return `u_${key}_`;
+  }
+  return `guest_`;
+}
+
 const App = {
   data: window.WANDERLY_DATA || { currencies: {}, destinations: [] },
   
   get trip() {
-    return Store.get("trip", null);
+    const prefix = getUserStoragePrefix();
+    return Store.get(`${prefix}trip`, null);
   },
   set trip(value) {
-    Store.set("trip", value);
+    const prefix = getUserStoragePrefix();
+    if (value === null) {
+      Store.remove(`${prefix}trip`);
+    } else {
+      Store.set(`${prefix}trip`, value);
+    }
   },
   
   get itinerary() {
-    return Store.get("itinerary", {});
+    const prefix = getUserStoragePrefix();
+    return Store.get(`${prefix}itinerary`, {});
   },
   set itinerary(value) {
-    Store.set("itinerary", value);
+    const prefix = getUserStoragePrefix();
+    if (value === null || Object.keys(value || {}).length === 0) {
+      Store.remove(`${prefix}itinerary`);
+    } else {
+      Store.set(`${prefix}itinerary`, value);
+    }
   },
   
   get favorites() {
-    return Store.get("favorites", []);
+    const prefix = getUserStoragePrefix();
+    return Store.get(`${prefix}favorites`, []);
   },
   set favorites(value) {
-    Store.set("favorites", value);
+    const prefix = getUserStoragePrefix();
+    Store.set(`${prefix}favorites`, value);
   },
   
   get favoriteHotels() {
-    return Store.get("favoriteHotels", []);
+    const prefix = getUserStoragePrefix();
+    return Store.get(`${prefix}favoriteHotels`, []);
   },
   set favoriteHotels(value) {
-    Store.set("favoriteHotels", value);
+    const prefix = getUserStoragePrefix();
+    Store.set(`${prefix}favoriteHotels`, value);
   },
   
   get reviews() {
@@ -66,10 +91,12 @@ const App = {
   },
   
   get helpfulVotes() {
-    return Store.get("helpfulVotes", {});
+    const prefix = getUserStoragePrefix();
+    return Store.get(`${prefix}helpfulVotes`, {});
   },
   set helpfulVotes(value) {
-    Store.set("helpfulVotes", value);
+    const prefix = getUserStoragePrefix();
+    Store.set(`${prefix}helpfulVotes`, value);
   },
   
   get currency() {
@@ -80,36 +107,57 @@ const App = {
   },
   
   get users() {
-    return Store.get("users", [
-      {
-        id: "user-demo-1",
-        name: "Ahmed El-Sayed",
-        email: "ahmed@example.com",
-        password: "password123",
-        avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80",
-        role: "Frequent Explorer"
-      },
-      {
-        id: "user-demo-2",
-        name: "Sarah Jenkins",
-        email: "sarah@example.com",
-        password: "password123",
-        avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80",
-        role: "Luxury Traveler"
-      }
-    ]);
+    const rawUsers = Store.get("users", []);
+    // Clean out legacy demo seed users if present in localStorage
+    return Array.isArray(rawUsers)
+      ? rawUsers.filter((u) => u && u.id !== "user-demo-1" && u.id !== "user-demo-2" && !String(u.name || "").includes("Ahmed El-Sayed") && !String(u.email || "").includes("ahmed@example.com"))
+      : [];
   },
   set users(value) {
     Store.set("users", value);
   },
   
   get currentUser() {
-    return Store.get("currentUser", null);
+    const current = Store.get("currentUser", null);
+    if (current && (current.id === "user-demo-1" || String(current.name || "").includes("Ahmed El-Sayed") || current.email === "ahmed@example.com")) {
+      Store.remove("currentUser");
+      return null;
+    }
+    return current;
   },
   set currentUser(value) {
-    Store.set("currentUser", value);
+    if (value) {
+      Store.set("currentUser", value);
+    } else {
+      Store.remove("currentUser");
+    }
   },
 };
+
+// Firebase sessions replace Firebase users, while local fallback accounts remain
+// signed in when Firebase has no user for this browser.
+window.addEventListener("wanderly:firebase-auth-state", (event) => {
+  const previousUser = App.currentUser;
+  const firebaseUser = event.detail;
+  const isLocalSession = (user) => user?.authProvider === "local" || String(user?.id || "").startsWith("user-");
+  if (firebaseUser) {
+    if (!isLocalSession(previousUser)) App.currentUser = firebaseUser;
+  } else if (previousUser?.authProvider === "firebase" || (previousUser?.id && !isLocalSession(previousUser))) {
+    App.currentUser = null;
+  }
+
+  const currentUser = App.currentUser;
+  if (document.readyState !== "loading") {
+    updateHeaderUserStatus();
+    if (previousUser?.id !== currentUser?.id) refreshActivePageView();
+  }
+});
+window.addEventListener("wanderly:firebase-email-link-complete", () => {
+  if (document.readyState !== "loading") {
+    updateHeaderUserStatus();
+    toast("You are signed in successfully.");
+  }
+});
 
 // =============================================================================
 // 2. DOM & QUERY HELPERS
@@ -151,8 +199,18 @@ function updateAllCurrencyDisplays() {
 
 function setAppCurrency(newCurrency) {
   if (App.data.currencies[newCurrency]) {
+    const budgetInput = qs('#planner-form [name="budget"]');
+    const budgetUsd = budgetInput && Number.isFinite(Number(budgetInput.value))
+      ? Number(budgetInput.value) / getCurrencyInfo(App.currency).rate
+      : null;
     App.currency = newCurrency;
     toast(`Currency switched to ${newCurrency} (${getCurrencyInfo(newCurrency).symbol})`);
+
+    if (budgetInput && budgetUsd !== null) {
+      budgetInput.value = String(Math.round(budgetUsd * getCurrencyInfo(newCurrency).rate * 100) / 100);
+      const label = qs('[data-budget-currency-label]');
+      if (label) label.textContent = `Trip Budget (${newCurrency})`;
+    }
     
     // Update select inputs without reload
     qsa("[data-currency]").forEach((sel) => (sel.value = newCurrency));
@@ -331,7 +389,7 @@ function toast(message, icon = "fa-circle-check") {
 }
 
 // =============================================================================
-// 6. AUTHENTICATION GUARD & SOCIAL LOGIN
+// 6. AUTHENTICATION
 // =============================================================================
 function requireAccount(nextAction, actionLabel = "book this hotel or save items") {
   if (App.currentUser) {
@@ -339,6 +397,21 @@ function requireAccount(nextAction, actionLabel = "book this hotel or save items
     return;
   }
   openAuthModal(nextAction, actionLabel);
+}
+
+function getUserAvatarHtml(user, sizeClass = "size-7 text-xs") {
+  if (user?.avatar && typeof user.avatar === "string" && user.avatar.trim().length > 0) {
+    return `<img src="${user.avatar}" class="${sizeClass} rounded-full object-cover shadow-sm border border-teal-500/30" alt="${user.name || 'User'}">`;
+  }
+  const name = String(user?.name || "").trim();
+  const nameParts = name.split(" ").filter(Boolean);
+  let initials = "W";
+  if (nameParts.length > 1) {
+    initials = (nameParts[0][0] + nameParts[nameParts.length - 1][0]).toUpperCase();
+  } else if (name.length > 0) {
+    initials = name.slice(0, 2).toUpperCase();
+  }
+  return `<span class="grid ${sizeClass} place-items-center rounded-full bg-gradient-to-tr from-teal-600 to-emerald-500 font-black text-white shadow-sm ring-2 ring-teal-500/20 uppercase select-none">${initials}</span>`;
 }
 
 function openAuthModal(onSuccess, actionLabel = "book hotels, save places, or build custom itineraries", defaultMode = "login") {
@@ -349,198 +422,346 @@ function openAuthModal(onSuccess, actionLabel = "book hotels, save places, or bu
     document.body.appendChild(modal);
   }
 
+  const closeAuth = () => {
+    modal.innerHTML = "";
+    document.body.classList.remove("modal-open");
+  };
+
   const render = (mode = defaultMode) => {
     const isRegister = mode === "register";
+    document.body.classList.add("modal-open");
+
     modal.innerHTML = `
-      <div class="fixed inset-0 z-[1000] grid place-items-center bg-slate-950/70 p-4 backdrop-blur-md animate-fade-in">
-        <div class="w-full max-w-md rounded-2xl bg-white p-6 shadow-2xl dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+      <div class="modal-backdrop-custom animate-fade-in" data-auth-backdrop>
+        <div class="modal-dialog-custom max-w-md p-6 sm:p-8">
           
           <!-- Header -->
-          <div class="flex items-start justify-between gap-4">
+          <div class="flex items-start justify-between gap-4 mb-4">
             <div>
-              <span class="rounded-full bg-teal-50 px-3 py-1 text-xs font-black text-teal-700 dark:bg-teal-950 dark:text-teal-300">
-                <i class="fa-solid fa-shield-halved mr-1"></i> Authentication Guard
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-500/10 text-teal-600 dark:text-teal-400 text-xs font-black mb-2 border border-teal-500/20">
+                <i class="fa-solid fa-compass"></i> Wanderly Account
               </span>
-              <h2 class="mt-2 text-2xl font-black text-slate-950 dark:text-white">
-                ${isRegister ? "Create Free Account" : "Sign In to Continue"}
+              <h2 class="text-2xl font-black text-slate-950 dark:text-white">
+                ${isRegister ? "Create an account" : "Welcome back"}
               </h2>
-              <p class="mt-1 text-xs leading-5 text-slate-500">
-                You need an active session to <strong>${actionLabel}</strong>.
+              <p class="mt-1 text-xs leading-5 text-slate-500 dark:text-slate-400">
+                ${isRegister ? "Sign up to save your favorite destinations and plan trips." : "Sign in to access your bookings, favorites, and itineraries."}
               </p>
             </div>
-            <button type="button" data-auth-close class="icon-btn text-slate-400 hover:text-slate-600" aria-label="Close">
-              <i class="fa-solid fa-xmark"></i>
+            <button type="button" data-auth-close class="icon-btn text-slate-400 hover:text-slate-600 dark:hover:text-white" aria-label="Close">
+              <i class="fa-solid fa-xmark text-sm"></i>
             </button>
           </div>
 
-          <!-- Quick 1-Click Demo Logins for evaluators -->
-          <div class="mt-4 rounded-xl bg-teal-50/70 p-3.5 border border-teal-500/30 dark:bg-teal-950/30">
-            <p class="text-xs font-black uppercase text-teal-800 dark:text-teal-200 flex items-center gap-1.5">
-              <i class="fa-solid fa-bolt text-amber-500"></i> Instant 1-Click Demo Login
-            </p>
-            <div class="mt-2 grid grid-cols-2 gap-2">
-              <button type="button" data-demo-user="user-demo-1" class="btn-soft text-xs font-black py-1.5 justify-start">
-                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=80&q=80" class="size-5 rounded-full object-cover mr-1">
-                Ahmed (Guest)
-              </button>
-              <button type="button" data-demo-user="user-demo-2" class="btn-soft text-xs font-black py-1.5 justify-start">
-                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=80&q=80" class="size-5 rounded-full object-cover mr-1">
-                Sarah (VIP)
-              </button>
-            </div>
-          </div>
-
-          <!-- Social Login Buttons -->
-          <div class="mt-4 space-y-2">
-            <button type="button" data-social="google" class="btn-social btn-google">
-              <i class="fa-brands fa-google text-rose-500"></i>
-              <span>Continue with Google</span>
+          <!-- Mode Switcher Tabs -->
+          <div class="grid grid-cols-2 p-1 rounded-2xl bg-slate-100 dark:bg-slate-800/80 mb-5 border border-slate-200 dark:border-slate-700/60">
+            <button type="button" data-auth-tab="login" class="py-2.5 px-3 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1.5 ${!isRegister ? 'bg-white dark:bg-slate-900 text-teal-600 dark:text-teal-400 shadow-sm' : 'text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-200'}">
+              <i class="fa-solid fa-arrow-right-to-bracket"></i>
+              <span>Sign In</span>
             </button>
-            <button type="button" data-social="apple" class="btn-social btn-apple">
-              <i class="fa-brands fa-apple"></i>
-              <span>Continue with Apple</span>
-            </button>
-            <button type="button" data-social="facebook" class="btn-social btn-facebook">
-              <i class="fa-brands fa-facebook text-sky-600"></i>
-              <span>Continue with Facebook</span>
+            <button type="button" data-auth-tab="register" class="py-2.5 px-3 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-1.5 ${isRegister ? 'bg-white dark:bg-slate-900 text-teal-600 dark:text-teal-400 shadow-sm' : 'text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-200'}">
+              <i class="fa-solid fa-user-plus"></i>
+              <span>Create Account</span>
             </button>
           </div>
 
-          <!-- Divider -->
-          <div class="my-4 flex items-center gap-3">
-            <span class="h-px flex-1 bg-slate-200 dark:bg-slate-800"></span>
-            <span class="text-xs font-bold text-slate-400">or use email</span>
-            <span class="h-px flex-1 bg-slate-200 dark:bg-slate-800"></span>
-          </div>
-
-          <!-- Email & Password Form -->
-          <form data-auth-form class="space-y-3">
+          <!-- Auth Form -->
+          <form data-auth-form class="space-y-4">
             ${isRegister ? `
               <div>
-                <label class="block text-xs font-black text-slate-700 dark:text-slate-300 mb-1">Full Name</label>
-                <input name="name" required minlength="2" placeholder="e.g. Heba Ayman" class="field text-sm">
+                <label class="block text-xs font-black text-slate-700 dark:text-slate-300 mb-1.5">
+                  <i class="fa-solid fa-user text-teal-600 mr-1.5"></i> Full Name
+                </label>
+                <input name="name" type="text" required minlength="2" placeholder="e.g. Heba Ayman" autocomplete="name" class="field text-sm w-full py-2.5 px-3.5">
               </div>
             ` : ""}
+
             <div>
-              <label class="block text-xs font-black text-slate-700 dark:text-slate-300 mb-1">Email Address</label>
-              <input name="email" type="email" required placeholder="name@example.com" class="field text-sm">
-            </div>
-            <div>
-              <label class="block text-xs font-black text-slate-700 dark:text-slate-300 mb-1">Password</label>
-              <input name="password" type="password" required minlength="4" placeholder="••••••••" class="field text-sm">
+              <label class="block text-xs font-black text-slate-700 dark:text-slate-300 mb-1.5">
+                <i class="fa-solid fa-envelope text-teal-600 mr-1.5"></i> Email Address
+              </label>
+              <input name="email" type="email" required placeholder="name@example.com" autocomplete="email" class="field text-sm w-full py-2.5 px-3.5">
             </div>
 
-            <p data-auth-error class="hidden rounded-xl bg-rose-50 p-2.5 text-xs font-bold text-rose-600 dark:bg-rose-950/60 dark:text-rose-300"></p>
+            <div>
+              <label class="block text-xs font-black text-slate-700 dark:text-slate-300 mb-1.5">
+                <i class="fa-solid fa-lock text-teal-600 mr-1.5"></i> ${isRegister ? "Password (min 6 characters)" : "Password"}
+              </label>
+              <div class="relative">
+                <input name="password" id="auth-input-password" type="password" required minlength="${isRegister ? '6' : '1'}" placeholder="••••••••" autocomplete="${isRegister ? 'new-password' : 'current-password'}" class="field text-sm w-full py-2.5 pl-3.5 pr-10">
+                <button type="button" data-toggle-pw="auth-input-password" class="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 p-1" title="Show/Hide Password">
+                  <i class="fa-solid fa-eye text-xs"></i>
+                </button>
+              </div>
+            </div>
 
-            <button class="btn-primary mt-2 w-full justify-center" type="submit">
-              <i class="fa-solid ${isRegister ? "fa-user-plus" : "fa-arrow-right-to-bracket"}"></i>
-              <span>${isRegister ? "Create Account & Proceed" : "Sign In & Proceed"}</span>
+            ${isRegister ? `
+              <div>
+                <label class="block text-xs font-black text-slate-700 dark:text-slate-300 mb-1.5">
+                  <i class="fa-solid fa-shield-check text-teal-600 mr-1.5"></i> Confirm Password
+                </label>
+                <div class="relative">
+                  <input name="confirmPassword" id="auth-input-confirm-password" type="password" required minlength="6" placeholder="Repeat your password" autocomplete="new-password" class="field text-sm w-full py-2.5 pl-3.5 pr-10">
+                  <button type="button" data-toggle-pw="auth-input-confirm-password" class="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 p-1" title="Show/Hide Password">
+                    <i class="fa-solid fa-eye text-xs"></i>
+                  </button>
+                </div>
+              </div>
+            ` : `
+              <div class="flex items-center justify-between text-xs">
+                <label class="flex items-center gap-2 text-slate-600 dark:text-slate-300 cursor-pointer">
+                  <input type="checkbox" name="remember" checked class="accent-teal-600 rounded">
+                  Remember me
+                </label>
+                <button type="button" data-forgot-password class="font-bold text-teal-600 hover:underline">Forgot password?</button>
+              </div>
+            `}
+
+            <!-- Error Banner -->
+            <div data-auth-error class="hidden rounded-xl border border-rose-200 bg-rose-50 p-3 text-xs font-bold text-rose-600 dark:border-rose-900/50 dark:bg-rose-950/60 dark:text-rose-300 flex items-center gap-2">
+              <i class="fa-solid fa-circle-exclamation text-rose-500 shrink-0"></i>
+              <span data-auth-error-text></span>
+            </div>
+
+            <!-- Submit Button -->
+            <button class="btn-primary mt-2 w-full justify-center py-3 text-sm font-black shadow-lg" type="submit">
+              <i class="fa-solid ${isRegister ? 'fa-user-plus' : 'fa-arrow-right-to-bracket'} mr-1"></i>
+              <span>${isRegister ? 'Create My Account' : 'Sign In'}</span>
             </button>
           </form>
 
-          <!-- Toggle between Login & Register -->
-          <button type="button" data-auth-switch class="mt-4 w-full text-center text-xs font-black text-teal-600 dark:text-teal-300 hover:underline">
-            ${isRegister ? "Already registered? Sign in here" : "Don't have an account? Create one in seconds"}
-          </button>
+          <!-- Footer Switcher -->
+          <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800 text-center">
+            <button type="button" data-auth-switch class="text-xs font-bold text-slate-500 dark:text-slate-400 hover:text-teal-600 dark:hover:text-teal-400 transition">
+              ${isRegister ? 'Already have an account? <span class="text-teal-600 dark:text-teal-400 underline font-black">Sign in</span>' : 'Don’t have an account? <span class="text-teal-600 dark:text-teal-400 underline font-black">Create one now</span>'}
+            </button>
+          </div>
+
         </div>
       </div>`;
 
     // Bind Close
-    qs("[data-auth-close]", modal)?.addEventListener("click", () => (modal.innerHTML = ""));
+    qs("[data-auth-close]", modal)?.addEventListener("click", closeAuth);
+    qs("[data-auth-backdrop]", modal)?.addEventListener("click", (e) => {
+      if (e.target === e.currentTarget) closeAuth();
+    });
 
-    // Switch mode
+    // Tab buttons
+    qsa("[data-auth-tab]", modal).forEach((btn) => {
+      btn.addEventListener("click", () => render(btn.dataset.authTab));
+    });
+
+    // Bottom switch button
     qs("[data-auth-switch]", modal)?.addEventListener("click", () => render(isRegister ? "login" : "register"));
 
-    // Demo Logins
-    qsa("[data-demo-user]", modal).forEach((btn) => {
+    // Toggle password visibility
+    qsa("[data-toggle-pw]", modal).forEach((btn) => {
       btn.addEventListener("click", () => {
-        const demoId = btn.dataset.demoUser;
-        const user = App.users.find((u) => u.id === demoId) || App.users[0];
-        App.currentUser = { id: user.id, name: user.name, email: user.email, avatar: user.avatar, role: user.role };
-        modal.innerHTML = "";
-        toast(`Welcome back, ${user.name}!`);
-        updateHeaderUserStatus();
-        if (typeof onSuccess === "function") onSuccess();
+        const inputId = btn.dataset.togglePw;
+        const input = qs(`#${inputId}`, modal);
+        if (!input) return;
+        const isPass = input.type === "password";
+        input.type = isPass ? "text" : "password";
+        const icon = btn.querySelector("i");
+        if (icon) {
+          icon.className = isPass ? "fa-solid fa-eye-slash text-xs text-teal-600" : "fa-solid fa-eye text-xs";
+        }
       });
     });
 
-    // Social Logins
-    qsa("[data-social]", modal).forEach((btn) => {
-      btn.addEventListener("click", () => {
-        const provider = btn.dataset.social;
-        const providerName = provider.charAt(0).toUpperCase() + provider.slice(1);
-        const demoUser = {
-          id: `social-${Date.now()}`,
-          name: `Explorer (${providerName})`,
-          email: `explorer@${provider}.com`,
-          avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80",
-          role: "Verified Guest"
-        };
-        App.currentUser = demoUser;
-        modal.innerHTML = "";
-        toast(`Signed in via ${providerName}!`);
-        updateHeaderUserStatus();
-        if (typeof onSuccess === "function") onSuccess();
-      });
+    // Forgot password helper
+    qs("[data-forgot-password]", modal)?.addEventListener("click", () => {
+      const email = String(qs('input[name="email"]', modal)?.value || "").trim();
+      const errorBox = qs("[data-auth-error]", modal);
+      const errorText = qs("[data-auth-error-text]", modal);
+      if (!email) {
+        if (errorBox && errorText) {
+          errorText.textContent = "Please enter your email address above to reset your password.";
+          errorBox.classList.remove("hidden");
+        }
+        return;
+      }
+      toast(`Password reset instructions sent to ${email}`);
+      if (errorBox) errorBox.classList.add("hidden");
     });
 
-    // Form Submit
-    qs("[data-auth-form]", modal)?.addEventListener("submit", (e) => {
+    // Form Submit Handler
+    qs("[data-auth-form]", modal)?.addEventListener("submit", async (e) => {
       e.preventDefault();
       const form = new FormData(e.currentTarget);
-      const email = String(form.get("email")).trim().toLowerCase();
-      const password = String(form.get("password"));
-      const users = App.users;
-      const error = qs("[data-auth-error]", modal);
+      const email = String(form.get("email") || "").trim().toLowerCase();
+      const password = String(form.get("password") || "");
+      const errorBox = qs("[data-auth-error]", modal);
+      const errorText = qs("[data-auth-error-text]", modal);
+
+      const showError = (msg) => {
+        if (errorBox && errorText) {
+          errorText.textContent = msg;
+          errorBox.classList.remove("hidden");
+        }
+      };
 
       if (isRegister) {
-        if (users.some((u) => u.email === email)) {
-          error.textContent = "This email is already registered. Please sign in instead.";
-          error.classList.remove("hidden");
+        const name = String(form.get("name") || "").trim();
+        const confirmPassword = String(form.get("confirmPassword") || "");
+
+        if (!name || name.length < 2) {
+          showError("Please enter your full name (minimum 2 characters).");
           return;
         }
+        if (!email || !email.includes("@") || !email.includes(".")) {
+          showError("Please enter a valid email address.");
+          return;
+        }
+        if (!password || password.length < 6) {
+          showError("Password must be at least 6 characters long.");
+          return;
+        }
+        if (password !== confirmPassword) {
+          showError("Passwords do not match. Please re-enter.");
+          return;
+        }
+
+        const currentUsers = App.users;
+        if (currentUsers.some((u) => u.email.toLowerCase() === email)) {
+          showError("An account with this email already exists. Please sign in instead.");
+          return;
+        }
+
+        // Try Firebase register if available
+        if (window.WANDERLY_FIREBASE_CONFIG) {
+          const firebaseAuth = await window.WANDERLY_FIREBASE_READY;
+          if (firebaseAuth) {
+            try {
+              const fbUser = await firebaseAuth.registerEmail(name, email, password);
+              App.currentUser = fbUser;
+              closeAuth();
+              toast(`Account created! Welcome, ${fbUser.name}.`);
+              updateHeaderUserStatus();
+              if (typeof onSuccess === "function") onSuccess();
+              return;
+            } catch (err) {
+              console.warn("Firebase registration skipped, using local account:", err);
+            }
+          }
+        }
+
+        // Generate clean initials
+        const nameParts = name.split(" ").filter(Boolean);
+        const initials = nameParts.length > 1
+          ? (nameParts[0][0] + nameParts[nameParts.length - 1][0]).toUpperCase()
+          : name.slice(0, 2).toUpperCase();
+
         const newUser = {
           id: `user-${Date.now()}`,
-          name: String(form.get("name")).trim() || "Wanderly Traveler",
+          name,
           email,
           password,
-          avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80",
-          role: "Explorer"
+          avatar: "",
+          initials,
+          role: "Explorer",
+          authProvider: "local",
+          createdAt: new Date().toISOString()
         };
-        App.users = [...users, newUser];
-        App.currentUser = { id: newUser.id, name: newUser.name, email: newUser.email, avatar: newUser.avatar, role: newUser.role };
-        modal.innerHTML = "";
-        toast(`Account created! Welcome, ${newUser.name}.`);
+
+        App.users = [...currentUsers, newUser];
+        App.currentUser = {
+          id: newUser.id,
+          name: newUser.name,
+          email: newUser.email,
+          avatar: newUser.avatar,
+          initials: newUser.initials,
+          role: newUser.role,
+          authProvider: "local"
+        };
+
+        closeAuth();
+        toast(`Account created successfully! Welcome, ${newUser.name}.`);
         updateHeaderUserStatus();
-        if (typeof onSuccess === "function") onSuccess();
+        if (typeof onSuccess === "function") {
+          onSuccess();
+        } else {
+          refreshActivePageView();
+        }
+
       } else {
-        const found = users.find((u) => u.email === email && u.password === password);
-        if (!found) {
-          // Allow login for testing even if password doesn't match predefined
-          const fallbackUser = {
-            id: `user-${Date.now()}`,
-            name: email.split("@")[0].toUpperCase(),
-            email,
-            avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80",
-            role: "Explorer"
-          };
-          App.currentUser = fallbackUser;
-          modal.innerHTML = "";
-          toast(`Welcome back, ${fallbackUser.name}!`);
-          updateHeaderUserStatus();
-          if (typeof onSuccess === "function") onSuccess();
+        // Sign In Flow
+        if (!email || !password) {
+          showError("Please enter both your email address and password.");
           return;
         }
-        App.currentUser = { id: found.id, name: found.name, email: found.email, avatar: found.avatar, role: found.role };
-        modal.innerHTML = "";
+
+        // Try Firebase sign in if available
+        if (window.WANDERLY_FIREBASE_CONFIG) {
+          const firebaseAuth = await window.WANDERLY_FIREBASE_READY;
+          if (firebaseAuth) {
+            try {
+              const fbUser = await firebaseAuth.signInEmail(email, password);
+              App.currentUser = fbUser;
+              closeAuth();
+              toast(`Welcome back, ${fbUser.name}!`);
+              updateHeaderUserStatus();
+              if (typeof onSuccess === "function") {
+                onSuccess();
+              } else {
+                refreshActivePageView();
+              }
+              return;
+            } catch (err) {
+              console.warn("Firebase sign-in skipped, checking local store:", err);
+            }
+          }
+        }
+
+        const currentUsers = App.users;
+        const found = currentUsers.find((u) => u.email.toLowerCase() === email);
+
+        if (!found) {
+          showError(`No account found with email "${email}". Please check spelling or click "Create Account" above.`);
+          return;
+        }
+
+        if (found.password !== password) {
+          showError("Incorrect password. Please verify your password and try again.");
+          return;
+        }
+
+        const nameParts = (found.name || "").split(" ").filter(Boolean);
+        const initials = found.initials || (nameParts.length > 1 ? (nameParts[0][0] + nameParts[nameParts.length - 1][0]).toUpperCase() : (found.name || "U").slice(0, 2).toUpperCase());
+
+        App.currentUser = {
+          id: found.id,
+          name: found.name,
+          email: found.email,
+          avatar: found.avatar || "",
+          initials,
+          role: found.role || "Explorer",
+          authProvider: "local"
+        };
+
+        closeAuth();
         toast(`Welcome back, ${found.name}!`);
         updateHeaderUserStatus();
-        if (typeof onSuccess === "function") onSuccess();
+        if (typeof onSuccess === "function") {
+          onSuccess();
+        } else {
+          refreshActivePageView();
+        }
       }
     });
   };
 
   render(defaultMode);
+}
+
+function refreshActivePageView() {
+  const page = document.body?.dataset?.page || "home";
+  if (page === "home" && typeof initHome === "function") initHome();
+  else if (page === "destination" && typeof initDestination === "function") initDestination();
+  else if (page === "planner" && typeof initPlanner === "function") initPlanner();
+  else if (page === "trip" && typeof initTrip === "function") initTrip();
+  else if (page === "favorites" && typeof initFavorites === "function") initFavorites();
+  else if (page === "summary" && typeof initSummary === "function") initSummary();
 }
 
 function updateHeaderUserStatus() {
@@ -551,23 +772,36 @@ function updateHeaderUserStatus() {
   if (user) {
     container.innerHTML = `
       <div class="relative flex items-center gap-2">
-        <button id="user-profile-menu-btn" class="flex items-center gap-2 rounded-full border border-teal-500/40 bg-teal-50/80 px-3 py-1.5 text-xs font-black text-teal-800 dark:bg-teal-950 dark:text-teal-200 transition hover:bg-teal-100">
-          <img src="${user.avatar || 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=80&q=80'}" class="size-6 rounded-full object-cover">
-          <span class="max-w-[100px] truncate hidden sm:inline">${user.name}</span>
-          <i class="fa-solid fa-chevron-down text-[10px]"></i>
+        <button id="user-profile-menu-btn" class="flex items-center gap-2 rounded-full border border-teal-500/30 bg-teal-50/90 dark:bg-teal-950/70 px-3 py-1 text-xs font-black text-slate-800 dark:text-slate-100 transition hover:border-teal-500 hover:bg-teal-100/80 dark:hover:bg-teal-900/60 shadow-sm">
+          ${getUserAvatarHtml(user, "size-6 text-[10px]")}
+          <span class="max-w-[110px] truncate hidden sm:inline">${user.name}</span>
+          <i class="fa-solid fa-chevron-down text-[10px] text-teal-600 dark:text-teal-400"></i>
         </button>
-        <div id="user-profile-dropdown" class="hidden absolute right-0 top-12 z-50 w-52 rounded-2xl border border-slate-200 bg-white p-2 shadow-2xl dark:border-slate-800 dark:bg-slate-900">
-          <div class="p-2 border-b border-slate-100 dark:border-slate-800">
-            <p class="text-xs font-black text-slate-900 dark:text-white truncate">${user.name}</p>
-            <p class="text-[11px] font-semibold text-slate-400 truncate">${user.email}</p>
+        <div id="user-profile-dropdown" class="hidden absolute right-0 top-11 z-50 w-56 rounded-2xl border border-slate-200 bg-white p-2.5 shadow-2xl dark:border-slate-800 dark:bg-slate-900 animate-fade-in">
+          <div class="p-2.5 mb-1.5 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-100 dark:border-slate-800 flex items-center gap-2.5">
+            ${getUserAvatarHtml(user, "size-9 text-xs")}
+            <div class="overflow-hidden">
+              <p class="text-xs font-black text-slate-900 dark:text-white truncate">${user.name}</p>
+              <p class="text-[11px] font-semibold text-slate-400 truncate">${user.email}</p>
+            </div>
           </div>
-          <a href="my-trip.html" class="flex items-center gap-2 rounded-xl p-2 text-xs font-bold text-slate-700 hover:bg-slate-50 dark:text-slate-300 dark:hover:bg-slate-800">
+          <a href="my-trip.html" class="flex items-center gap-2.5 rounded-xl p-2 text-xs font-bold text-slate-700 hover:bg-teal-50 hover:text-teal-700 dark:text-slate-300 dark:hover:bg-teal-950/50 dark:hover:text-teal-300 transition">
             <i class="fa-solid fa-route text-teal-600"></i> My Active Itinerary
           </a>
-          <a href="favorites.html" class="flex items-center gap-2 rounded-xl p-2 text-xs font-bold text-slate-700 hover:bg-slate-50 dark:text-slate-300 dark:hover:bg-slate-800">
+          <a href="favorites.html" class="flex items-center gap-2.5 rounded-xl p-2 text-xs font-bold text-slate-700 hover:bg-teal-50 hover:text-teal-700 dark:text-slate-300 dark:hover:bg-teal-950/50 dark:hover:text-teal-300 transition">
             <i class="fa-solid fa-heart text-rose-500"></i> Saved Favorites
           </a>
-          <button data-logout-action class="flex w-full items-center gap-2 rounded-xl p-2 text-xs font-bold text-rose-600 hover:bg-rose-50 dark:hover:bg-rose-950/50">
+          <button type="button" data-avatar-upload class="flex w-full items-center gap-2.5 rounded-xl p-2 text-left text-xs font-bold text-slate-700 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800 transition">
+            <i class="fa-solid fa-camera text-teal-600"></i> Change profile photo
+          </button>
+          ${user.avatar ? `
+            <button type="button" data-avatar-remove class="flex w-full items-center gap-2.5 rounded-xl p-2 text-left text-xs font-bold text-rose-500 hover:bg-rose-50 dark:hover:bg-rose-950/50 transition">
+              <i class="fa-solid fa-user-xmark"></i> Remove profile photo
+            </button>
+          ` : ""}
+          <input type="file" data-avatar-file accept="image/png,image/jpeg,image/webp" class="hidden">
+          <div class="my-1.5 border-t border-slate-100 dark:border-slate-800"></div>
+          <button data-logout-action class="flex w-full items-center gap-2.5 rounded-xl p-2 text-xs font-black text-rose-600 hover:bg-rose-50 dark:hover:bg-rose-950/50 transition">
             <i class="fa-solid fa-arrow-right-from-bracket"></i> Sign Out
           </button>
         </div>
@@ -577,19 +811,54 @@ function updateHeaderUserStatus() {
       qs("#user-profile-dropdown")?.classList.toggle("hidden");
     });
 
-    qs("[data-logout-action]")?.addEventListener("click", () => {
+    const avatarInput = qs("[data-avatar-file]", container);
+    qs("[data-avatar-upload]", container)?.addEventListener("click", () => avatarInput?.click());
+    avatarInput?.addEventListener("change", () => {
+      const file = avatarInput.files?.[0];
+      if (!file) return;
+      if (file.size > 2 * 1024 * 1024) {
+        toast("Please choose an image smaller than 2 MB.");
+        avatarInput.value = "";
+        return;
+      }
+      const reader = new FileReader();
+      reader.addEventListener("load", () => {
+        App.currentUser = { ...user, avatar: reader.result };
+        updateHeaderUserStatus();
+        toast("Profile photo updated.");
+      });
+      reader.readAsDataURL(file);
+    });
+
+    qs("[data-avatar-remove]", container)?.addEventListener("click", () => {
+      App.currentUser = { ...user, avatar: "" };
+      updateHeaderUserStatus();
+      toast("Profile photo removed.");
+    });
+
+    qs("[data-logout-action]")?.addEventListener("click", async () => {
+      const firebaseAuth = await window.WANDERLY_FIREBASE_READY;
+      if (firebaseAuth) await firebaseAuth.signOut();
       Store.remove("currentUser");
       toast("Signed out successfully");
       updateHeaderUserStatus();
-      setTimeout(() => location.reload(), 400);
+      setTimeout(() => location.reload(), 300);
     });
   } else {
     container.innerHTML = `
-      <button data-auth-open-btn class="rounded-full bg-slate-950 px-4 py-2 text-xs font-black text-white transition hover:bg-teal-600 dark:bg-white dark:text-slate-950">
-        <i class="fa-solid fa-user-lock mr-1.5"></i> Sign In
-      </button>`;
+      <div class="flex items-center gap-2">
+        <button data-auth-signin-btn class="auth-signin-btn">
+          <i class="fa-solid fa-arrow-right-to-bracket"></i>
+          <span>Sign In</span>
+        </button>
+        <button data-auth-register-btn class="auth-register-btn">
+          <i class="fa-solid fa-user-plus"></i>
+          <span>Register</span>
+        </button>
+      </div>`;
 
-    qs("[data-auth-open-btn]")?.addEventListener("click", () => openAuthModal());
+    qs("[data-auth-signin-btn]")?.addEventListener("click", () => openAuthModal(null, "access your account", "login"));
+    qs("[data-auth-register-btn]")?.addEventListener("click", () => openAuthModal(null, "create your account", "register"));
   }
 }
 
@@ -617,6 +886,13 @@ function openBookingModal(hotelId) {
       document.body.appendChild(modal);
     }
 
+    const closeBooking = () => {
+      modal.innerHTML = "";
+      document.body.classList.remove("modal-open");
+    };
+
+    document.body.classList.add("modal-open");
+
     const today = new Date();
     const tomorrow = new Date(today);
     tomorrow.setDate(tomorrow.getDate() + 1);
@@ -625,9 +901,31 @@ function openBookingModal(hotelId) {
 
     const formatDate = (d) => d.toISOString().split("T")[0];
 
+    const allAmenities = hotel.amenities && hotel.amenities.length > 0
+      ? hotel.amenities
+      : ["Free High-Speed WiFi", "Outdoor Pool", "Spa & Wellness", "Fine Dining", "Air Conditioning", "Room Service"];
+
+    const amenityIcons = {
+      "Pyramids View": "fa-mountain-sun",
+      "Outdoor Pool": "fa-person-swimming",
+      "Pool": "fa-person-swimming",
+      "Spa & Wellness": "fa-spa",
+      "Spa": "fa-spa",
+      "Fine Dining": "fa-utensils",
+      "Free High-Speed WiFi": "fa-wifi",
+      "Free WiFi": "fa-wifi",
+      "WiFi": "fa-wifi",
+      "Beachfront": "fa-umbrella-beach",
+      "Sea View": "fa-water",
+      "Air Conditioning": "fa-snowflake",
+      "Fitness Center": "fa-dumbbell",
+      "Breakfast Included": "fa-mug-saucer",
+      "Room Service": "fa-bell-concierge"
+    };
+
     modal.innerHTML = `
-      <div class="fixed inset-0 z-[1000] grid place-items-center bg-slate-950/75 p-4 backdrop-blur-md animate-fade-in overflow-y-auto">
-        <div class="w-full max-w-xl rounded-2xl bg-white p-6 shadow-2xl dark:bg-slate-900 border border-slate-200 dark:border-slate-800 my-8">
+      <div class="modal-backdrop-custom animate-fade-in" data-booking-backdrop>
+        <div class="modal-dialog-custom max-w-2xl p-6 md:p-8">
           
           <!-- Modal Header -->
           <div class="flex items-start justify-between gap-4 border-b border-slate-100 pb-4 dark:border-slate-800">
@@ -637,25 +935,37 @@ function openBookingModal(hotelId) {
                   <i class="fa-solid fa-calendar-check mr-1"></i> Reserve Your Stay
                 </span>
                 ${renderStarIcons(hotel.stars)}
+                <span class="verified-badge"><i class="fa-solid fa-shield-check"></i> 100% Verified</span>
               </div>
-              <h2 class="mt-2 text-2xl font-black text-slate-950 dark:text-white">${hotel.name}</h2>
-              <p class="text-xs text-slate-400 mt-0.5">
+              <h2 class="mt-2 text-2xl md:text-3xl font-black text-slate-950 dark:text-white">${hotel.name}</h2>
+              <p class="text-xs text-slate-400 mt-0.5 flex items-center gap-1">
                 <i class="fa-solid fa-location-dot text-teal-600"></i> ${hotel.address || hotel.destinationName}
               </p>
             </div>
-            <button type="button" data-booking-close class="icon-btn" aria-label="Close">
+            <button type="button" data-booking-close class="icon-btn shrink-0" aria-label="Close">
               <i class="fa-solid fa-xmark"></i>
             </button>
           </div>
 
-          <!-- Hotel Highlights & Authenticity Badge -->
-          <div class="mt-4 grid gap-3 sm:grid-cols-[140px_1fr] rounded-xl bg-slate-50 p-3 dark:bg-slate-950">
-            <img src="${hotel.image}" class="h-24 w-full rounded-lg object-cover" alt="${hotel.name}">
+          <!-- Hotel Highlights Preview -->
+          <div class="mt-4 grid gap-3 sm:grid-cols-[140px_1fr] rounded-xl bg-slate-50 p-3.5 dark:bg-slate-950 border border-slate-100 dark:border-slate-800">
+            <img src="${hotel.image}" class="h-28 w-full rounded-lg object-cover cursor-pointer" alt="${hotel.name}" data-view-gallery-direct="${hotel.id}">
             <div class="flex flex-col justify-between">
-              <p class="text-xs text-slate-600 dark:text-slate-300 line-clamp-2">${hotel.description}</p>
-              <div class="mt-2 flex flex-wrap items-center gap-2">
-                <span class="verified-badge"><i class="fa-solid fa-shield-check"></i> Verified Real Property</span>
-                <span class="text-xs font-black text-amber-500"><i class="fa-solid fa-star"></i> ${hotel.rating} / 5 (${(hotel.reviewsCount || 1400).toLocaleString()})</span>
+              <p class="text-xs text-slate-600 dark:text-slate-300 line-clamp-2 leading-5">${hotel.description}</p>
+              
+              <!-- Key Amenities Pills -->
+              <div class="mt-2.5 flex flex-wrap gap-1.5">
+                ${allAmenities.map((a) => {
+                  const icon = amenityIcons[a] || "fa-circle-check";
+                  return `<span class="amenity-tag text-[11px]"><i class="fa-solid ${icon} text-teal-600 text-[10px]"></i> ${a}</span>`;
+                }).join("")}
+              </div>
+
+              <div class="mt-2 flex items-center justify-between">
+                <span class="text-xs font-black text-amber-500"><i class="fa-solid fa-star"></i> ${hotel.rating} / 5 (${(hotel.reviewsCount || 1400).toLocaleString()} reviews)</span>
+                <button type="button" class="text-xs font-black text-teal-600 hover:underline" data-view-gallery-direct="${hotel.id}">
+                  <i class="fa-solid fa-images"></i> View All Photos (${(hotel.gallery || []).length})
+                </button>
               </div>
             </div>
           </div>
@@ -676,55 +986,55 @@ function openBookingModal(hotelId) {
             <!-- Stay Duration Display -->
             <div class="flex items-center justify-between rounded-xl bg-teal-50/70 p-3 text-xs font-black text-teal-800 dark:bg-teal-950/40 dark:text-teal-200">
               <span class="flex items-center gap-2">
-                <i class="fa-solid fa-moon text-teal-600"></i>
+                <i class="fa-solid fa-moon text-teal-600 text-sm"></i>
                 <span>Calculated Duration:</span>
               </span>
               <span id="booking-nights-count" class="text-sm font-black text-teal-700 dark:text-teal-300">4 Nights</span>
             </div>
 
-            <div class="grid grid-cols-2 gap-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label class="block text-xs font-black uppercase tracking-wider text-slate-500 mb-1">Travelers</label>
+                <label class="block text-xs font-black uppercase tracking-wider text-slate-500 mb-1">Guests & Rooms</label>
                 <select name="travelers" class="field text-sm">
-                  <option value="1">1 Adult (Solo)</option>
-                  <option value="2" selected>2 Adults (Couple)</option>
-                  <option value="3">3 Adults</option>
-                  <option value="4">4 Adults (Family / Group)</option>
-                  <option value="6">6+ Travelers</option>
+                  <option value="1">1 Adult • 1 Room</option>
+                  <option value="2" selected>2 Adults • 1 Room</option>
+                  <option value="3">3 Adults • 1 Room</option>
+                  <option value="4">4 Adults • 2 Rooms (Family)</option>
+                  <option value="6">6+ Travelers (Group)</option>
                 </select>
               </div>
               <div>
                 <label class="block text-xs font-black uppercase tracking-wider text-slate-500 mb-1">Room Type</label>
-                <select name="roomType" class="field text-sm">
-                  <option value="deluxe">Deluxe King Room</option>
-                  <option value="suite">Panoramic Executive Suite (+20%)</option>
-                  <option value="standard">Standard Double Room</option>
+                <select name="roomType" id="modal-room-type" class="field text-sm">
+                  <option value="standard" data-mult="1.0">Standard Double Room (${money(hotel.pricePerNight)} / night)</option>
+                  <option value="deluxe" data-mult="1.1" selected>Deluxe King Room with View (${money(Math.round(hotel.pricePerNight * 1.1))} / night)</option>
+                  <option value="suite" data-mult="1.25">Executive Panoramic Suite (${money(Math.round(hotel.pricePerNight * 1.25))} / night)</option>
                 </select>
               </div>
             </div>
 
             <!-- Price Breakdown Calculation -->
             <div class="rounded-xl border border-slate-200 bg-slate-50 p-4 dark:border-slate-800 dark:bg-slate-950 space-y-2 text-xs font-bold">
-              <div class="flex justify-between text-slate-500">
-                <span id="price-rate-label">${money(hotel.pricePerNight)} × 4 nights</span>
-                <span id="price-subtotal-val">${money(hotel.pricePerNight * 4)}</span>
+              <div class="flex justify-between text-slate-500 dark:text-slate-400">
+                <span id="price-rate-label">${money(Math.round(hotel.pricePerNight * 1.1))} × 4 nights</span>
+                <span id="price-subtotal-val" class="font-black text-slate-800 dark:text-slate-100">${money(Math.round(hotel.pricePerNight * 1.1 * 4))}</span>
               </div>
-              <div class="flex justify-between text-slate-500">
+              <div class="flex justify-between text-slate-500 dark:text-slate-400">
                 <span>Taxes, city fees & service (12%)</span>
-                <span id="price-taxes-val">${money(Math.round(hotel.pricePerNight * 4 * 0.12))}</span>
+                <span id="price-taxes-val" class="font-black text-slate-800 dark:text-slate-100">${money(Math.round(hotel.pricePerNight * 1.1 * 4 * 0.12))}</span>
               </div>
               <div class="border-t border-slate-200 dark:border-slate-800 pt-2 flex justify-between items-center text-sm font-black text-slate-950 dark:text-white">
                 <span>Total Stay Cost:</span>
-                <span id="price-grandtotal-val" class="text-lg text-teal-600 dark:text-teal-300">${money(Math.round(hotel.pricePerNight * 4 * 1.12))}</span>
+                <span id="price-grandtotal-val" class="text-xl text-teal-600 dark:text-teal-300 font-black">${money(Math.round(hotel.pricePerNight * 1.1 * 4 * 1.12))}</span>
               </div>
             </div>
 
             <div class="pt-2 flex flex-col sm:flex-row gap-3">
-              <button type="submit" class="btn-primary flex-1 justify-center py-3 text-sm">
+              <button type="submit" class="btn-primary flex-1 justify-center py-3 text-sm font-black shadow-lg">
                 <i class="fa-solid fa-wand-magic-sparkles"></i>
-                <span>Confirm & Generate Automated Itinerary</span>
+                <span>Confirm Booking & Generate Itinerary</span>
               </button>
-              <button type="button" data-booking-close class="btn-soft py-3">Cancel</button>
+              <button type="button" data-booking-close class="btn-soft py-3 font-bold">Cancel</button>
             </div>
           </form>
         </div>
@@ -732,6 +1042,7 @@ function openBookingModal(hotelId) {
 
     const checkInInput = qs("#modal-check-in", modal);
     const checkOutInput = qs("#modal-check-out", modal);
+    const roomTypeSelect = qs("#modal-room-type", modal);
     const nightsCountEl = qs("#booking-nights-count", modal);
     const rateLabel = qs("#price-rate-label", modal);
     const subtotalVal = qs("#price-subtotal-val", modal);
@@ -744,12 +1055,16 @@ function openBookingModal(hotelId) {
       let diffDays = Math.max(1, Math.round((d2 - d1) / (1000 * 60 * 60 * 24)));
       if (isNaN(diffDays) || diffDays < 1) diffDays = 1;
 
+      const selectedOpt = roomTypeSelect.options[roomTypeSelect.selectedIndex];
+      const mult = Number(selectedOpt?.dataset.mult || 1.0);
+      const nightlyPrice = Math.round(hotel.pricePerNight * mult);
+
       nightsCountEl.textContent = `${diffDays} Night${diffDays > 1 ? "s" : ""}`;
-      const subtotal = hotel.pricePerNight * diffDays;
+      const subtotal = nightlyPrice * diffDays;
       const taxes = Math.round(subtotal * 0.12);
       const grandTotal = subtotal + taxes;
 
-      rateLabel.textContent = `${money(hotel.pricePerNight)} × ${diffDays} nights`;
+      rateLabel.textContent = `${money(nightlyPrice)} × ${diffDays} nights`;
       subtotalVal.textContent = money(subtotal);
       taxesVal.textContent = money(taxes);
       grandtotalVal.textContent = money(grandTotal);
@@ -768,9 +1083,21 @@ function openBookingModal(hotelId) {
     });
 
     checkOutInput.addEventListener("change", recalculate);
+    roomTypeSelect.addEventListener("change", recalculate);
 
-    // Close buttons
-    qsa("[data-booking-close]", modal).forEach((b) => b.addEventListener("click", () => (modal.innerHTML = "")));
+    // Direct gallery opener
+    qsa("[data-view-gallery-direct]", modal).forEach((b) => {
+      b.addEventListener("click", () => {
+        closeBooking();
+        openHotelGallery(hotel.id);
+      });
+    });
+
+    // Close buttons & backdrop click
+    qsa("[data-booking-close]", modal).forEach((b) => b.addEventListener("click", closeBooking));
+    qs("[data-booking-backdrop]", modal)?.addEventListener("click", (e) => {
+      if (e.target === e.currentTarget) closeBooking();
+    });
 
     // Submit Booking
     qs("[data-booking-form]", modal).addEventListener("submit", (e) => {
@@ -780,8 +1107,13 @@ function openBookingModal(hotelId) {
       const d2 = new Date(form.get("checkOut"));
       const days = Math.max(1, Math.round((d2 - d1) / (1000 * 60 * 60 * 24)));
       const travelers = Number(form.get("travelers") || 2);
+      const roomType = form.get("roomType") || "deluxe";
 
-      // Save Active Trip
+      const selectedOpt = roomTypeSelect.options[roomTypeSelect.selectedIndex];
+      const mult = Number(selectedOpt?.dataset.mult || 1.0);
+      const finalNightlyPrice = Math.round(hotel.pricePerNight * mult);
+
+      // Save Active Trip to Store (localStorage)
       App.trip = {
         destinationId: hotel.destinationId,
         hotelId: hotel.id,
@@ -789,70 +1121,259 @@ function openBookingModal(hotelId) {
         checkOut: form.get("checkOut"),
         days: days,
         travelers: travelers,
+        roomType: roomType,
+        nightlyPrice: finalNightlyPrice,
+        totalCost: Math.round(finalNightlyPrice * days * 1.12),
         tripType: "Leisure",
-        budget: Math.round(hotel.pricePerNight * days * 1.5),
+        budget: Math.round(finalNightlyPrice * days * 1.5),
         confirmedBooking: true
       };
 
-      // Automatically generate day-by-day custom itinerary!
-      generateAutomatedItinerary(hotel.destinationId, days);
+      // Start with clean, user-controlled itinerary slots (empty days for custom planning)
+      initializeTripItinerary(days);
 
-      modal.innerHTML = "";
-      toast(`Booking confirmed at ${hotel.name}! Itinerary generated.`);
+      closeBooking();
+      toast(`Booking confirmed at ${hotel.name}! Now customize your daily activities.`, "fa-circle-check");
       setTimeout(() => {
         location.href = "my-trip.html";
       }, 600);
     });
-  }, "reserve this hotel and generate your travel schedule");
+  }, "reserve this hotel and customize your travel schedule");
 }
 
 // =============================================================================
-// 8. AUTOMATED CUSTOM ITINERARY GENERATOR
+// 8. TRIP ITINERARY INITIALIZER & DAY PICKER MODAL
 // =============================================================================
-function generateAutomatedItinerary(destinationId, days = 4) {
-  const dest = destinationById(destinationId);
-  if (!dest) return;
-
-  const places = dest.places || [];
-  const landmarks = places.filter((p) => p.category !== "Dining" && p.category !== "Adventure");
-  const dining = places.filter((p) => p.category === "Dining");
-  const adventure = places.filter((p) => p.category === "Adventure" || p.category === "Shopping" || p.category === "Nature");
-
+function initializeTripItinerary(days = 4) {
   const itinerary = {};
-
   for (let day = 1; day <= days; day++) {
     itinerary[day] = [];
-    
-    // Assign morning/afternoon landmark
-    const landmarkIndex = (day - 1) % Math.max(1, landmarks.length);
-    if (landmarks[landmarkIndex]) {
-      itinerary[day].push(landmarks[landmarkIndex].id);
-    }
+  }
+  App.itinerary = itinerary;
+  return itinerary;
+}
 
-    // Assign activity or second landmark on multi-day trips
-    if (adventure.length > 0) {
-      const advIndex = (day - 1) % adventure.length;
-      if (adventure[advIndex] && !itinerary[day].includes(adventure[advIndex].id)) {
-        itinerary[day].push(adventure[advIndex].id);
-      }
-    } else if (landmarks.length > 1) {
-      const nextLandmark = landmarks[(day) % landmarks.length];
-      if (nextLandmark && !itinerary[day].includes(nextLandmark.id)) {
-        itinerary[day].push(nextLandmark.id);
-      }
-    }
+function openAddToTripModal(placeId) {
+  const place = placeById(placeId);
+  if (!place) return;
 
-    // Assign dining/evening stop
-    if (dining.length > 0) {
-      const diningIndex = (day - 1) % dining.length;
-      if (dining[diningIndex] && !itinerary[day].includes(dining[diningIndex].id)) {
-        itinerary[day].push(dining[diningIndex].id);
-      }
+  if (!App.trip) {
+    let modal = qs("#add-to-trip-modal");
+    if (!modal) {
+      modal = document.createElement("div");
+      modal.id = "add-to-trip-modal";
+      document.body.appendChild(modal);
+    }
+    const closeModal = () => {
+      modal.innerHTML = "";
+      document.body.classList.remove("modal-open");
+    };
+    document.body.classList.add("modal-open");
+    modal.innerHTML = `
+      <div class="modal-backdrop-custom animate-fade-in" data-add-trip-backdrop>
+        <div class="modal-dialog-custom max-w-md p-6 sm:p-8 text-center">
+          <div class="mx-auto mb-4 grid size-14 place-items-center rounded-2xl bg-teal-50 text-teal-600 dark:bg-teal-950 dark:text-teal-400">
+            <i class="fa-solid fa-hotel text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-black text-slate-950 dark:text-white">Start Your Trip First</h3>
+          <p class="mt-2 text-xs leading-5 text-slate-500 dark:text-slate-400">
+            To assign activities to specific days, book a hotel or initialize your trip duration first!
+          </p>
+          <div class="mt-6 flex flex-col gap-2.5">
+            <button type="button" data-go-hotels class="btn-primary justify-center py-3 text-xs font-black">
+              <i class="fa-solid fa-hotel mr-1.5"></i> Explore & Book Hotels
+            </button>
+            <button type="button" data-quick-trip class="btn-soft justify-center py-2.5 text-xs font-bold">
+              <i class="fa-solid fa-calendar-days mr-1.5"></i> Quick 4-Day Trip Setup
+            </button>
+          </div>
+        </div>
+      </div>`;
+
+    qs("[data-go-hotels]", modal)?.addEventListener("click", () => {
+      closeModal();
+      location.href = `destination.html?destination=${place.destinationId}&view=hotels`;
+    });
+    qs("[data-quick-trip]", modal)?.addEventListener("click", () => {
+      closeModal();
+      const dest = destinationById(place.destinationId);
+      const firstHotel = dest?.hotels?.[0];
+      App.trip = {
+        destinationId: place.destinationId,
+        hotelId: firstHotel?.id || "custom-hotel",
+        days: 4,
+        travelers: 2,
+        tripType: "Leisure",
+        confirmedBooking: false
+      };
+      initializeTripItinerary(4);
+      openAddToTripModal(placeId);
+    });
+    qs("[data-add-trip-backdrop]", modal)?.addEventListener("click", (e) => {
+      if (e.target === e.currentTarget) closeModal();
+    });
+    return;
+  }
+
+  const daysCount = Math.max(1, App.trip.days || 4);
+  const itinerary = App.itinerary || {};
+  for (let d = 1; d <= daysCount; d++) {
+    if (!itinerary[d]) itinerary[d] = [];
+  }
+
+  let currentDay = null;
+  for (let d = 1; d <= daysCount; d++) {
+    if ((itinerary[d] || []).includes(place.id)) {
+      currentDay = String(d);
+      break;
     }
   }
 
-  App.itinerary = itinerary;
-  return itinerary;
+  let modal = qs("#add-to-trip-modal");
+  if (!modal) {
+    modal = document.createElement("div");
+    modal.id = "add-to-trip-modal";
+    document.body.appendChild(modal);
+  }
+
+  const closeModal = () => {
+    modal.innerHTML = "";
+    document.body.classList.remove("modal-open");
+  };
+
+  document.body.classList.add("modal-open");
+
+  modal.innerHTML = `
+    <div class="modal-backdrop-custom animate-fade-in" data-add-trip-backdrop>
+      <div class="modal-dialog-custom max-w-lg p-6 sm:p-8">
+        
+        <!-- Header -->
+        <div class="flex items-start justify-between gap-4 border-b border-slate-100 pb-4 dark:border-slate-800">
+          <div>
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-teal-50 text-teal-700 dark:bg-teal-950 dark:text-teal-300 text-xs font-black mb-1.5 border border-teal-500/20">
+              <i class="fa-solid fa-calendar-plus"></i> Schedule Activity
+            </span>
+            <h3 class="text-xl sm:text-2xl font-black text-slate-950 dark:text-white">Choose Itinerary Day</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Which day of your trip would you like to schedule this stop?</p>
+          </div>
+          <button type="button" data-add-trip-close class="icon-btn shrink-0" aria-label="Close">
+            <i class="fa-solid fa-xmark text-sm"></i>
+          </button>
+        </div>
+
+        <!-- Place Preview Card -->
+        <div class="mt-4 flex items-center gap-3.5 rounded-2xl bg-slate-50 p-3 dark:bg-slate-950 border border-slate-200/80 dark:border-slate-800">
+          <img src="${place.image}" alt="${place.name}" class="size-16 rounded-xl object-cover shrink-0 shadow-sm">
+          <div class="min-w-0 flex-1">
+            <div class="flex items-center gap-1.5">
+              <span class="text-[10px] font-black uppercase tracking-wider text-teal-600 dark:text-teal-400">${place.category}</span>
+              <span class="text-slate-300 dark:text-slate-600">•</span>
+              <span class="text-[11px] font-bold text-amber-500"><i class="fa-solid fa-star text-[10px]"></i> ${place.rating}</span>
+            </div>
+            <h4 class="truncate text-sm font-black text-slate-950 dark:text-white mt-0.5">${place.name}</h4>
+            <p class="text-xs font-bold text-slate-500 dark:text-slate-400 mt-0.5">${money(place.price)} • ${place.durationHours || 2} hours</p>
+          </div>
+        </div>
+
+        <!-- Day Selection Grid -->
+        <div class="mt-5">
+          <label class="block text-xs font-black uppercase tracking-wider text-slate-400 mb-2.5">
+            Select Destination Day (${daysCount} Days Total):
+          </label>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 max-h-64 overflow-y-auto pr-1">
+            ${Array.from({ length: daysCount }, (_, i) => i + 1).map((dayNum) => {
+              const dStr = String(dayNum);
+              const isThisDay = currentDay === dStr;
+              const count = (itinerary[dStr] || []).length;
+              return `
+                <button type="button" data-select-day="${dStr}" class="group text-left p-3.5 rounded-2xl border transition-all flex items-center justify-between cursor-pointer ${isThisDay ? 'border-teal-500 bg-teal-50/80 dark:bg-teal-950/50 shadow-sm' : 'border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-teal-400 hover:bg-slate-50 dark:hover:bg-slate-800/60'}">
+                  <div class="flex items-center gap-3">
+                    <span class="grid size-9 place-items-center rounded-xl text-xs font-black ${isThisDay ? 'bg-teal-600 text-white shadow-sm' : 'bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-200 group-hover:bg-teal-600 group-hover:text-white transition'}">
+                      ${dayNum}
+                    </span>
+                    <div>
+                      <p class="text-xs font-black text-slate-900 dark:text-white">Day ${dayNum}</p>
+                      <p class="text-[11px] font-semibold text-slate-400">${count} stop${count === 1 ? '' : 's'} scheduled</p>
+                    </div>
+                  </div>
+                  <span class="text-xs font-black ${isThisDay ? 'text-teal-600 dark:text-teal-400' : 'text-slate-400 group-hover:text-teal-600'}">
+                    ${isThisDay ? '<i class="fa-solid fa-circle-check text-base"></i>' : '<i class="fa-solid fa-plus"></i>'}
+                  </span>
+                </button>`;
+            }).join("")}
+          </div>
+        </div>
+
+        ${currentDay ? `
+          <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs">
+            <span class="text-slate-500 dark:text-slate-400">Currently scheduled in <strong class="text-teal-600 dark:text-teal-400">Day ${currentDay}</strong></span>
+            <button type="button" data-remove-from-trip class="text-rose-500 hover:underline font-bold flex items-center gap-1 cursor-pointer">
+              <i class="fa-solid fa-trash text-xs"></i> Remove from trip
+            </button>
+          </div>
+        ` : ""}
+      </div>
+    </div>`;
+
+  // Bind Close
+  qs("[data-add-trip-close]", modal)?.addEventListener("click", closeModal);
+  qs("[data-add-trip-backdrop]", modal)?.addEventListener("click", (e) => {
+    if (e.target === e.currentTarget) closeModal();
+  });
+
+  // Bind Day Selection
+  qsa("[data-select-day]", modal).forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const selectedDay = btn.dataset.selectDay;
+
+      // Remove from any previous day
+      for (let d = 1; d <= daysCount; d++) {
+        itinerary[d] = (itinerary[d] || []).filter((id) => id !== place.id);
+      }
+
+      // Add to chosen day
+      itinerary[selectedDay] = [...(itinerary[selectedDay] || []), place.id];
+      App.itinerary = itinerary;
+
+      closeModal();
+      toast(`Added "${place.name}" to Day ${selectedDay}!`, "fa-calendar-check");
+
+      // Live UI sync
+      if (document.body.dataset.page === "trip") {
+        renderItineraryDays();
+        const dest = destinationById(App.trip.destinationId);
+        renderLocalRecommendationsDrawer(dest);
+        updateBudgetWidget();
+      } else if (document.body.dataset.page === "destination") {
+        qsa(`[data-add-place="${place.id}"]`).forEach((b) => {
+          b.innerHTML = `<i class="fa-solid fa-calendar-check text-teal-600 mr-1"></i><span>In Day ${selectedDay}</span>`;
+          b.className = "btn-soft py-2 text-xs font-black justify-center text-teal-700 dark:text-teal-300 border-teal-500/40 bg-teal-50/70 dark:bg-teal-950/40";
+        });
+      }
+    });
+  });
+
+  // Bind Remove from Trip
+  qs("[data-remove-from-trip]", modal)?.addEventListener("click", () => {
+    for (let d = 1; d <= daysCount; d++) {
+      itinerary[d] = (itinerary[d] || []).filter((id) => id !== place.id);
+    }
+    App.itinerary = itinerary;
+    closeModal();
+    toast(`Removed "${place.name}" from trip`);
+
+    if (document.body.dataset.page === "trip") {
+      renderItineraryDays();
+      const dest = destinationById(App.trip.destinationId);
+      renderLocalRecommendationsDrawer(dest);
+      updateBudgetWidget();
+    } else if (document.body.dataset.page === "destination") {
+      qsa(`[data-add-place="${place.id}"]`).forEach((b) => {
+        b.innerHTML = `<i class="fa-solid fa-plus mr-1"></i><span>Add to Trip</span>`;
+        b.className = "btn-primary py-2 text-xs font-black justify-center";
+      });
+    }
+  });
 }
 
 // =============================================================================
@@ -862,7 +1383,9 @@ function openHotelGallery(hotelId, initialIndex = 0, initialCategory = "all") {
   const hotel = hotelById(hotelId);
   if (!hotel) return;
 
-  const gallery = hotel.gallery || [{ url: hotel.image, caption: hotel.name }];
+  const gallery = hotel.gallery && hotel.gallery.length > 0
+    ? hotel.gallery
+    : [{ url: hotel.image, caption: hotel.name }];
 
   let modal = qs("#gallery-modal");
   if (!modal) {
@@ -871,6 +1394,13 @@ function openHotelGallery(hotelId, initialIndex = 0, initialCategory = "all") {
     document.body.appendChild(modal);
   }
 
+  const closeGallery = () => {
+    modal.innerHTML = "";
+    document.body.classList.remove("modal-open");
+    document.removeEventListener("keydown", keyHandler);
+  };
+
+  document.body.classList.add("modal-open");
   let currentIndex = initialIndex;
 
   const render = (idx) => {
@@ -878,52 +1408,67 @@ function openHotelGallery(hotelId, initialIndex = 0, initialCategory = "all") {
     const currentPhoto = gallery[currentIndex];
 
     modal.innerHTML = `
-      <div class="fixed inset-0 z-[1000] flex flex-col justify-between bg-slate-950/95 p-4 md:p-8 backdrop-blur-xl animate-fade-in">
+      <div class="modal-backdrop-custom flex-col justify-between p-4 md:p-8 animate-fade-in" data-gallery-backdrop>
         
         <!-- Top Bar -->
-        <div class="flex items-center justify-between text-white">
+        <div class="w-full max-w-5xl flex items-center justify-between text-white pb-2">
           <div>
             <div class="flex items-center gap-2">
               <span class="verified-badge"><i class="fa-solid fa-shield-check"></i> Verified Real Photos</span>
-              <span class="text-xs text-slate-400 font-bold">${currentIndex + 1} of ${gallery.length}</span>
+              <span class="text-xs text-slate-300 font-bold bg-white/10 px-2.5 py-0.5 rounded-full backdrop-blur-md">
+                ${currentIndex + 1} of ${gallery.length}
+              </span>
             </div>
-            <h3 class="text-lg md:text-xl font-black mt-1">${hotel.name}</h3>
+            <h3 class="text-lg md:text-xl font-black mt-1 text-white">${hotel.name}</h3>
           </div>
-          <button type="button" data-gallery-close class="icon-btn bg-white/10 text-white border-white/20 hover:bg-white/20" aria-label="Close">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
+          <div class="flex items-center gap-2.5">
+            <button type="button" data-gallery-book class="btn-primary py-2 px-4 text-xs font-black">
+              <i class="fa-solid fa-calendar-check"></i> Book This Stay
+            </button>
+            <button type="button" data-gallery-close class="icon-btn bg-white/10 text-white border-white/20 hover:bg-white/20" aria-label="Close">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
         </div>
 
         <!-- Main Photo & Controls -->
-        <div class="relative flex-1 flex items-center justify-center my-4 overflow-hidden">
-          <button type="button" data-prev class="absolute left-2 md:left-6 z-10 size-12 rounded-full bg-slate-900/80 text-white border border-white/20 flex items-center justify-center hover:bg-teal-600 transition">
+        <div class="relative w-full max-w-5xl flex-1 flex items-center justify-center my-3 overflow-hidden select-none">
+          <button type="button" data-prev class="absolute left-2 md:left-4 z-10 size-12 rounded-full bg-slate-900/80 text-white border border-white/20 flex items-center justify-center hover:bg-teal-600 hover:border-teal-500 transition shadow-xl" aria-label="Previous photo">
             <i class="fa-solid fa-chevron-left text-lg"></i>
           </button>
 
-          <img src="${currentPhoto.url}" alt="${currentPhoto.caption}" class="max-h-[70vh] max-w-full rounded-2xl object-contain shadow-2xl transition duration-300">
+          <img src="${currentPhoto.url}" alt="${currentPhoto.caption || hotel.name}" class="max-h-[68vh] max-w-full rounded-2xl object-contain shadow-2xl transition duration-300">
 
-          <button type="button" data-next class="absolute right-2 md:right-6 z-10 size-12 rounded-full bg-slate-900/80 text-white border border-white/20 flex items-center justify-center hover:bg-teal-600 transition">
+          <button type="button" data-next class="absolute right-2 md:right-4 z-10 size-12 rounded-full bg-slate-900/80 text-white border border-white/20 flex items-center justify-center hover:bg-teal-600 hover:border-teal-500 transition shadow-xl" aria-label="Next photo">
             <i class="fa-solid fa-chevron-right text-lg"></i>
           </button>
         </div>
 
         <!-- Caption & Thumbnails -->
-        <div class="flex flex-col items-center gap-3">
-          <p class="text-sm font-bold text-slate-200 text-center">${currentPhoto.caption || hotel.name}</p>
+        <div class="w-full max-w-3xl flex flex-col items-center gap-2.5">
+          <p class="text-xs sm:text-sm font-bold text-slate-200 text-center">${currentPhoto.caption || hotel.name}</p>
           
           <div class="gallery-thumbnail-strip max-w-2xl px-2">
             ${gallery.map((img, i) => `
               <button type="button" data-thumb="${i}" class="gallery-thumb-btn ${i === currentIndex ? 'active-thumb' : 'opacity-60 hover:opacity-100'}">
-                <img src="${img.url}" alt="${img.caption}">
+                <img src="${img.url}" alt="${img.caption || hotel.name}">
               </button>
             `).join("")}
           </div>
         </div>
       </div>`;
 
-    qs("[data-gallery-close]", modal)?.addEventListener("click", () => (modal.innerHTML = ""));
+    qs("[data-gallery-close]", modal)?.addEventListener("click", closeGallery);
     qs("[data-prev]", modal)?.addEventListener("click", () => render(currentIndex - 1));
     qs("[data-next]", modal)?.addEventListener("click", () => render(currentIndex + 1));
+    qs("[data-gallery-book]", modal)?.addEventListener("click", () => {
+      closeGallery();
+      openBookingModal(hotel.id);
+    });
+
+    qs("[data-gallery-backdrop]", modal)?.addEventListener("click", (e) => {
+      if (e.target === e.currentTarget) closeGallery();
+    });
 
     qsa("[data-thumb]", modal).forEach((btn) => {
       btn.addEventListener("click", () => render(Number(btn.dataset.thumb)));
@@ -940,7 +1485,7 @@ function openHotelGallery(hotelId, initialIndex = 0, initialCategory = "all") {
     }
     if (e.key === "ArrowLeft") render(currentIndex - 1);
     if (e.key === "ArrowRight") render(currentIndex + 1);
-    if (e.key === "Escape") modal.innerHTML = "";
+    if (e.key === "Escape") closeGallery();
   };
   document.addEventListener("keydown", keyHandler);
 }
@@ -956,8 +1501,8 @@ function openHotelReviews(hotelId) {
   const customReviews = (App.reviews[hotelId] ? [App.reviews[hotelId]] : []);
   const allReviewsList = [...customReviews, ...defaultReviews];
 
-  // Collect all traveler photos from reviews
-  const visitorPhotos = allReviewsList.flatMap((r) => (r.photos || []).map((p) => ({ url: p, reviewer: r.name, caption: `${r.name}'s verified stay photo` })));
+  // Collect separately sourced community photographs attached to reviews.
+  const visitorPhotos = allReviewsList.flatMap((r) => (r.photos || []).map((p) => ({ url: p, reviewer: r.name, caption: `Community photo of ${hotel.name}` })));
 
   let modal = qs("#reviews-modal");
   if (!modal) {
@@ -966,9 +1511,16 @@ function openHotelReviews(hotelId) {
     document.body.appendChild(modal);
   }
 
+  const closeReviews = () => {
+    modal.innerHTML = "";
+    document.body.classList.remove("modal-open");
+  };
+
+  document.body.classList.add("modal-open");
+
   modal.innerHTML = `
-    <div class="fixed inset-0 z-[1000] grid place-items-center bg-slate-950/75 p-4 backdrop-blur-md animate-fade-in overflow-y-auto">
-      <div class="w-full max-w-3xl rounded-2xl bg-white p-6 md:p-8 shadow-2xl dark:bg-slate-900 border border-slate-200 dark:border-slate-800 my-8 max-h-[90vh] overflow-y-auto">
+    <div class="modal-backdrop-custom animate-fade-in" data-reviews-backdrop>
+      <div class="modal-dialog-custom max-w-3xl p-6 md:p-8 my-8">
         
         <!-- Header -->
         <div class="flex items-start justify-between gap-4 border-b border-slate-100 pb-5 dark:border-slate-800">
@@ -982,7 +1534,7 @@ function openHotelReviews(hotelId) {
               ⭐ <strong>${hotel.rating} / 5</strong> score based on ${(hotel.reviewsCount || 1420).toLocaleString()} verified reviews
             </p>
           </div>
-          <button type="button" data-reviews-close class="icon-btn" aria-label="Close">
+          <button type="button" data-reviews-close class="icon-btn shrink-0" aria-label="Close">
             <i class="fa-solid fa-xmark"></i>
           </button>
         </div>
@@ -1010,16 +1562,16 @@ function openHotelReviews(hotelId) {
           </div>
         </div>
 
-        <!-- Real Visitor Uploaded Photos -->
+        <!-- Community-contributed property photos -->
         ${visitorPhotos.length > 0 ? `
           <div class="mt-6">
             <div class="flex items-center justify-between mb-3">
               <h4 class="text-sm font-black text-slate-900 dark:text-white flex items-center gap-2">
-                <i class="fa-solid fa-camera text-teal-600"></i> Real Photos Uploaded by Visitors (${visitorPhotos.length})
+                <i class="fa-solid fa-camera text-teal-600"></i> Real Community Photos of This Property (${visitorPhotos.length})
               </h4>
             </div>
             <div class="visitor-photo-grid">
-              ${visitorPhotos.map((photo, i) => `
+              ${visitorPhotos.map((photo) => `
                 <div class="visitor-photo-item" data-visitor-photo="${photo.url}">
                   <img src="${photo.url}" alt="${photo.caption}" loading="lazy">
                 </div>
@@ -1087,17 +1639,20 @@ function openHotelReviews(hotelId) {
       </div>
     </div>`;
 
-  qs("[data-reviews-close]", modal)?.addEventListener("click", () => (modal.innerHTML = ""));
+  qs("[data-reviews-close]", modal)?.addEventListener("click", closeReviews);
+  qs("[data-reviews-backdrop]", modal)?.addEventListener("click", (e) => {
+    if (e.target === e.currentTarget) closeReviews();
+  });
 
   // Book now trigger
   qs(`[data-book-hotel-now="${hotel.id}"]`, modal)?.addEventListener("click", () => {
-    modal.innerHTML = "";
+    closeReviews();
     openBookingModal(hotel.id);
   });
 
   // Write review trigger
   qs("[data-write-review]", modal)?.addEventListener("click", () => {
-    modal.innerHTML = "";
+    closeReviews();
     openWriteReviewModal(hotel.id);
   });
 
@@ -1129,15 +1684,23 @@ function openPhotoModalDirect(url, caption = "") {
     modal.id = "direct-photo-modal";
     document.body.appendChild(modal);
   }
+  const closePhoto = () => {
+    modal.innerHTML = "";
+    document.body.classList.remove("modal-open");
+  };
+  document.body.classList.add("modal-open");
   modal.innerHTML = `
-    <div class="fixed inset-0 z-[1100] flex flex-col items-center justify-center bg-slate-950/95 p-4 backdrop-blur-xl animate-fade-in">
+    <div class="modal-backdrop-custom flex-col items-center justify-center p-4 animate-fade-in" data-direct-backdrop>
       <button type="button" data-direct-photo-close class="absolute top-6 right-6 icon-btn bg-white/10 text-white border-white/20 hover:bg-white/20">
         <i class="fa-solid fa-xmark"></i>
       </button>
       <img src="${url}" class="max-h-[82vh] max-w-full rounded-2xl object-contain shadow-2xl">
       <p class="mt-4 text-sm font-bold text-white">${caption}</p>
     </div>`;
-  qs("[data-direct-photo-close]", modal)?.addEventListener("click", () => (modal.innerHTML = ""));
+  qs("[data-direct-photo-close]", modal)?.addEventListener("click", closePhoto);
+  qs("[data-direct-backdrop]", modal)?.addEventListener("click", (e) => {
+    if (e.target === e.currentTarget) closePhoto();
+  });
 }
 
 function openWriteReviewModal(hotelId) {
@@ -1152,15 +1715,22 @@ function openWriteReviewModal(hotelId) {
       document.body.appendChild(modal);
     }
 
+    const closeWrite = () => {
+      modal.innerHTML = "";
+      document.body.classList.remove("modal-open");
+    };
+
+    document.body.classList.add("modal-open");
+
     modal.innerHTML = `
-      <div class="fixed inset-0 z-[1000] grid place-items-center bg-slate-950/75 p-4 backdrop-blur-md animate-fade-in overflow-y-auto">
-        <div class="w-full max-w-lg rounded-2xl bg-white p-6 shadow-2xl dark:bg-slate-900 border border-slate-200 dark:border-slate-800 my-8">
+      <div class="modal-backdrop-custom animate-fade-in" data-write-backdrop>
+        <div class="modal-dialog-custom max-w-lg p-6 my-8">
           <div class="flex items-start justify-between gap-4 border-b border-slate-100 pb-4 dark:border-slate-800">
             <div>
               <p class="text-xs font-black uppercase text-teal-600">Verified Experience</p>
               <h3 class="text-2xl font-black text-slate-950 dark:text-white mt-1">Review ${hotel.name}</h3>
             </div>
-            <button type="button" data-write-review-close class="icon-btn" aria-label="Close">
+            <button type="button" data-write-review-close class="icon-btn shrink-0" aria-label="Close">
               <i class="fa-solid fa-xmark"></i>
             </button>
           </div>
@@ -1215,7 +1785,10 @@ function openWriteReviewModal(hotelId) {
       starVal.textContent = `${slider.value}.0 ⭐`;
     });
 
-    qs("[data-write-review-close]", modal)?.addEventListener("click", () => (modal.innerHTML = ""));
+    qs("[data-write-review-close]", modal)?.addEventListener("click", closeWrite);
+    qs("[data-write-backdrop]", modal)?.addEventListener("click", (e) => {
+      if (e.target === e.currentTarget) closeWrite();
+    });
 
     qs("[data-review-submit-form]", modal)?.addEventListener("submit", (e) => {
       e.preventDefault();
@@ -1237,8 +1810,8 @@ function openWriteReviewModal(hotelId) {
       };
 
       App.reviews = { ...App.reviews, [hotelId]: newReview };
-      modal.innerHTML = "";
-      toast("Thank you! Your verified review has been published.");
+      closeWrite();
+      toast("Thank you! Your verified review has been published.", "fa-circle-check");
       openHotelReviews(hotelId);
     });
   }, "submit a verified guest review with photos");
@@ -1260,7 +1833,7 @@ function hotelCard(hotel, actions = true, referencePlace = null, allDestinationH
       
       <!-- Top Image & Badges -->
       <div class="relative h-56 w-full shrink-0 overflow-hidden cursor-pointer" data-view-gallery="${hotel.id}">
-        <img class="h-full w-full object-cover transition duration-500 group-hover:scale-105" src="${hotel.image}" alt="${hotel.name}" loading="lazy">
+        <img class="h-full w-full object-cover transition duration-500 group-hover:scale-105" src="${hotel.image}" alt="${hotel.name}" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80';">
         <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-slate-950/85 via-slate-950/30 to-transparent"></div>
         
         <!-- Star rating badge -->
@@ -1276,8 +1849,9 @@ function hotelCard(hotel, actions = true, referencePlace = null, allDestinationH
         </div>
 
         <!-- Price Tag -->
-        <span class="absolute bottom-3 right-3 rounded-full bg-white/95 px-3 py-1 text-sm font-black text-slate-900 shadow-md">
-          <span data-usd="${hotel.pricePerNight}">${money(hotel.pricePerNight)}</span> <span class="text-[11px] font-bold text-slate-500">/ night</span>
+        <span class="hotel-price-tag absolute bottom-3 right-3">
+          <span class="price-num" data-usd="${hotel.pricePerNight}">${money(hotel.pricePerNight)}</span>
+          <span class="price-unit">/ night</span>
         </span>
 
         <!-- Gallery Count Pill -->
@@ -1343,6 +1917,16 @@ function hotelCard(hotel, actions = true, referencePlace = null, allDestinationH
 
 function placeCard(place, actions = true) {
   const isSaved = (App.favorites || []).includes(place.id);
+  const itinerary = App.itinerary || {};
+  let currentDay = null;
+  for (const d of Object.keys(itinerary)) {
+    if ((itinerary[d] || []).includes(place.id)) {
+      currentDay = d;
+      break;
+    }
+  }
+  const isScheduled = !!currentDay;
+
   const typeIcons = {
     landmark: "fa-landmark text-teal-600",
     restaurant: "fa-utensils text-amber-500",
@@ -1353,7 +1937,7 @@ function placeCard(place, actions = true) {
   return `
     <article class="place-card group flex flex-col h-full overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900">
       <div class="relative h-48 w-full shrink-0 overflow-hidden">
-        <img class="h-full w-full object-cover transition duration-500 group-hover:scale-105" src="${place.image}" alt="${place.name}" loading="lazy">
+        <img class="h-full w-full object-cover transition duration-500 group-hover:scale-105" src="${place.image}" alt="${place.name}" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&w=800&q=80';">
         <div class="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent"></div>
         <span class="absolute top-3 left-3 rounded-full bg-white/95 px-3 py-1 text-xs font-black text-slate-900 shadow-md backdrop-blur-md">
           <i class="fa-solid ${iconClass} mr-1"></i> ${place.category}
@@ -1378,8 +1962,9 @@ function placeCard(place, actions = true) {
 
         ${actions ? `
           <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 grid grid-cols-2 gap-2">
-            <button class="btn-primary py-2 text-xs font-black justify-center" data-add-place="${place.id}">
-              <i class="fa-solid fa-plus"></i> Add to Trip
+            <button class="${isScheduled ? 'btn-soft text-teal-700 dark:text-teal-300 border-teal-500/40 bg-teal-50/70 dark:bg-teal-950/40' : 'btn-primary'} py-2 text-xs font-black justify-center" data-add-place="${place.id}">
+              <i class="fa-solid ${isScheduled ? 'fa-calendar-check text-teal-600' : 'fa-plus'}"></i>
+              <span>${isScheduled ? `In Day ${currentDay}` : 'Add to Trip'}</span>
             </button>
             <button class="btn-soft py-2 text-xs font-black justify-center" data-fav-place="${place.id}">
               <i class="fa-solid ${isSaved ? "fa-heart text-rose-500" : "fa-heart"}"></i>
@@ -1413,7 +1998,8 @@ function bindActionHandlers(root = document) {
       requireAccount(() => {
         const id = btn.dataset.favHotel;
         let favs = App.favoriteHotels || [];
-        if (favs.includes(id)) {
+        const isSaved = favs.includes(id);
+        if (isSaved) {
           favs = favs.filter((x) => x !== id);
           toast("Hotel removed from favorites", "fa-heart-crack");
         } else {
@@ -1421,32 +2007,28 @@ function bindActionHandlers(root = document) {
           toast("Hotel saved to your favorites!", "fa-heart");
         }
         App.favoriteHotels = favs;
+
+        // Instant In-Place UI Update across all matching buttons
+        qsa(`[data-fav-hotel="${id}"]`).forEach((b) => {
+          const icon = b.querySelector("i");
+          const label = b.querySelector("span");
+          const nowSaved = favs.includes(id);
+          if (icon) icon.className = `fa-solid ${nowSaved ? "fa-heart text-rose-500" : "fa-heart"}`;
+          if (label) label.textContent = nowSaved ? "Saved" : "Save";
+        });
+
         if (document.body.dataset.page === "favorites") initFavorites();
-        else if (document.body.dataset.page === "destination") initDestination();
       }, "save hotels to your favorites list");
     });
   });
 
-  // Add Place to Trip
+  // Add Place to Trip with Day Selector Modal
   qsa("[data-add-place]", root).forEach((btn) => {
     btn.addEventListener("click", () => {
       requireAccount(() => {
         const id = btn.dataset.addPlace;
-        if (!App.trip) {
-          toast("Create a trip or select a hotel first!", "fa-circle-info");
-          setTimeout(() => (location.href = "planner.html"), 600);
-          return;
-        }
-        const itinerary = App.itinerary || { 1: [] };
-        const day1 = itinerary[1] || [];
-        if (Object.values(itinerary).flat().includes(id)) {
-          toast("Item is already in your itinerary!");
-          return;
-        }
-        itinerary[1] = [...day1, id];
-        App.itinerary = itinerary;
-        toast("Added to Day 1 schedule!");
-      }, "add activities to your custom trip");
+        openAddToTripModal(id);
+      }, "add activities to your custom trip schedule");
     });
   });
 
@@ -1456,16 +2038,26 @@ function bindActionHandlers(root = document) {
       requireAccount(() => {
         const id = btn.dataset.favPlace;
         let favs = App.favorites || [];
-        if (favs.includes(id)) {
+        const isSaved = favs.includes(id);
+        if (isSaved) {
           favs = favs.filter((x) => x !== id);
-          toast("Place removed from favorites");
+          toast("Place removed from favorites", "fa-heart-crack");
         } else {
           favs = [...favs, id];
-          toast("Place saved to your favorites!");
+          toast("Place saved to your favorites!", "fa-heart");
         }
         App.favorites = favs;
+
+        // Instant In-Place UI Update
+        qsa(`[data-fav-place="${id}"]`).forEach((b) => {
+          const icon = b.querySelector("i");
+          const label = b.querySelector("span");
+          const nowSaved = favs.includes(id);
+          if (icon) icon.className = `fa-solid ${nowSaved ? "fa-heart text-rose-500" : "fa-heart"}`;
+          if (label) label.textContent = nowSaved ? "Saved" : "Save";
+        });
+
         if (document.body.dataset.page === "favorites") initFavorites();
-        else if (document.body.dataset.page === "destination") initDestination();
       }, "save places to your favorites");
     });
   });
@@ -1476,7 +2068,9 @@ function bindActionHandlers(root = document) {
 // =============================================================================
 // 12. SHELL, NAVBAR & MOBILE BOTTOM NAVIGATION
 // =============================================================================
-function renderNavbar() {
+function renderNavbar(activePage = (document.body?.dataset?.page || "home")) {
+  const currentCurr = App.currency || "USD";
+  const showCurrency = (activePage === "destination" || activePage === "planner");
   return `
     <header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/95 backdrop-blur-xl dark:border-slate-800/80 dark:bg-slate-900/95 shadow-sm transition-colors duration-200">
       <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3.5">
@@ -1497,8 +2091,25 @@ function renderNavbar() {
           <a class="nav-link" href="summary.html">Summary</a>
         </div>
 
-        <!-- Controls: Auth, Theme -->
+        <!-- Controls: Currency (on Destination and Planner), Auth, Theme -->
         <div class="flex items-center gap-2.5">
+          ${showCurrency ? `
+          <!-- Currency Selector Dropdown (Shown on Destination & Booking pages) -->
+          <div class="relative flex items-center">
+            <label for="nav-currency-select" class="sr-only">Currency</label>
+            <div class="relative flex items-center">
+              <i class="fa-solid fa-coins absolute left-2.5 text-teal-600 text-xs pointer-events-none"></i>
+              <select id="nav-currency-select" data-currency class="h-9 rounded-xl border border-slate-200 bg-slate-50 pl-7 pr-3 text-xs font-black text-slate-800 outline-none focus:border-teal-500 dark:border-slate-800 dark:bg-slate-800 dark:text-slate-200 cursor-pointer transition shadow-sm">
+                <option value="USD" ${currentCurr === "USD" ? "selected" : ""}>USD ($)</option>
+                <option value="EGP" ${currentCurr === "EGP" ? "selected" : ""}>EGP (E£)</option>
+                <option value="EUR" ${currentCurr === "EUR" ? "selected" : ""}>EUR (€)</option>
+                <option value="SAR" ${currentCurr === "SAR" ? "selected" : ""}>SAR (ر.س)</option>
+                <option value="AED" ${currentCurr === "AED" ? "selected" : ""}>AED (د.إ)</option>
+                <option value="GBP" ${currentCurr === "GBP" ? "selected" : ""}>GBP (£)</option>
+              </select>
+            </div>
+          </div>` : ""}
+
           <!-- Auth Status Container -->
           <div id="header-auth-container"></div>
 
@@ -1571,7 +2182,7 @@ function injectShell() {
   const header = qs("#site-header");
   const foot = qs("#site-footer");
   
-  if (header) header.innerHTML = renderNavbar();
+  if (header) header.innerHTML = renderNavbar(page);
   if (foot) foot.innerHTML = renderFooter();
 
   // Inject mobile bottom nav
@@ -1590,8 +2201,9 @@ function injectShell() {
     }
   });
 
-  // Bind Currency Selector
+  // Bind Currency Selector and initialize with current value
   qsa("[data-currency]").forEach((sel) => {
+    sel.value = App.currency || "USD";
     sel.addEventListener("change", () => setAppCurrency(sel.value));
   });
 
@@ -1617,6 +2229,7 @@ function bindThemeControls() {
 
   qsa("[data-theme-toggle]").forEach((btn) => {
     btn.addEventListener("click", () => {
+      document.documentElement.classList.add("theme-transitioning");
       const current = document.documentElement.classList.contains("dark");
       const next = !current;
       Store.set("darkMode", next);
@@ -1627,6 +2240,9 @@ function bindThemeControls() {
         document.documentElement.classList.remove("dark");
         toast("Light theme enabled", "fa-sun");
       }
+      setTimeout(() => {
+        document.documentElement.classList.remove("theme-transitioning");
+      }, 250);
     });
   });
 }
@@ -1635,19 +2251,51 @@ function bindThemeControls() {
 // 13. MAP RENDERING (LEAFLET)
 // =============================================================================
 function renderMap(destination, places = [], hotels = [], id = "destination-map") {
-  if (!window.L || !qs(`#${id}`)) return;
+  const container = qs(`#${id}`);
+  if (!container) return;
+
+  if (!window.L) {
+    console.warn("Leaflet library not found on window");
+    return;
+  }
+
+  // 1. Clean up previous map instance & leaflet container ID to prevent "Map container is already initialized" crash
   if (window.__wanderlyMap) {
-    window.__wanderlyMap.remove();
+    try {
+      window.__wanderlyMap.off();
+      window.__wanderlyMap.remove();
+    } catch (e) {
+      console.warn("Error removing previous map:", e);
+    }
     window.__wanderlyMap = null;
   }
 
-  const map = L.map(id, { scrollWheelZoom: false }).setView([destination.lat, destination.lng], 11);
+  if (container._leaflet_id) {
+    container._leaflet_id = null;
+  }
+
+  // 2. Resolve destination coordinates with safe fallbacks
+  const lat = Number(destination?.lat) || 30.0444;
+  const lng = Number(destination?.lng) || 31.2357;
+
+  // 3. Initialize Leaflet Map
+  const map = L.map(id, {
+    scrollWheelZoom: false,
+    zoomControl: true,
+    attributionControl: true
+  }).setView([lat, lng], 12);
+
   window.__wanderlyMap = map;
 
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    attribution: "&copy; OpenStreetMap contributors",
-  }).addTo(map);
+  // 4. Ultra-reliable High-Definition Street Map (Esri World Street Map) - 100% Free, No API Key, No Watermark
+  const tileLayer = L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}", {
+    attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, METI, TomTom',
+    maxZoom: 19
+  });
 
+  tileLayer.addTo(map);
+
+  // 5. Custom Map Pins
   const placeIcon = L.divIcon({
     className: "custom-place-pin",
     html: `<div class="grid place-items-center size-8 rounded-full bg-teal-600 text-white shadow-lg border-2 border-white"><i class="fa-solid fa-landmark text-xs"></i></div>`,
@@ -1669,7 +2317,7 @@ function renderMap(destination, places = [], hotels = [], id = "destination-map"
     iconAnchor: [16, 16],
   });
 
-  const bounds = [];
+  const bounds = [[lat, lng]];
 
   // Places markers
   (places || []).forEach((p) => {
@@ -1697,7 +2345,7 @@ function renderMap(destination, places = [], hotels = [], id = "destination-map"
             <div class="flex items-center gap-1">${renderStarIcons(h.stars)}</div>
             <b class="text-sm text-slate-900 font-black mt-1 block">${h.name}</b>
             <p class="text-xs text-teal-700 font-bold mt-0.5">${money(h.pricePerNight)} / night</p>
-            <button class="mt-2 text-xs font-black text-teal-600 underline" onclick="window.__openBookingDirect('${h.id}')">Book Stay</button>
+            <button class="mt-2 text-xs font-black text-teal-600 underline cursor-pointer" onclick="window.__openBookingDirect('${h.id}')">Book Stay</button>
           </div>`);
     }
   });
@@ -1706,11 +2354,14 @@ function renderMap(destination, places = [], hotels = [], id = "destination-map"
 
   if (bounds.length > 1) {
     try {
-      map.fitBounds(bounds, { padding: [40, 40] });
+      map.fitBounds(bounds, { padding: [35, 35], maxZoom: 14 });
     } catch (e) {}
   }
 
-  setTimeout(() => map.invalidateSize(), 150);
+  // 6. Force Leaflet to invalidate size and redraw tiles after layout settles
+  setTimeout(() => { if (window.__wanderlyMap) window.__wanderlyMap.invalidateSize(); }, 100);
+  setTimeout(() => { if (window.__wanderlyMap) window.__wanderlyMap.invalidateSize(); }, 350);
+  setTimeout(() => { if (window.__wanderlyMap) window.__wanderlyMap.invalidateSize(); }, 700);
 }
 
 // =============================================================================
@@ -1795,6 +2446,9 @@ function initHome() {
   const heroSearchForm = qs("#hero-booking-widget");
   if (heroSearchForm) {
     const destSelect = qs("#hero-dest-select", heroSearchForm);
+    const checkinInput = qs("#hero-checkin", heroSearchForm);
+    const checkoutInput = qs("#hero-checkout", heroSearchForm);
+
     if (destSelect) {
       destSelect.innerHTML = `
         <optgroup label="Inside Egypt (سياحة داخلية)">
@@ -1805,11 +2459,42 @@ function initHome() {
         </optgroup>`;
     }
 
+    const today = new Date();
+    const tomorrow = new Date(today);
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    const checkoutDate = new Date(tomorrow);
+    checkoutDate.setDate(checkoutDate.getDate() + 4);
+
+    const formatDateStr = (d) => d.toISOString().split("T")[0];
+
+    if (checkinInput) {
+      checkinInput.min = formatDateStr(today);
+      if (!checkinInput.value) checkinInput.value = formatDateStr(tomorrow);
+      checkinInput.addEventListener("change", () => {
+        const d1 = new Date(checkinInput.value);
+        const d2 = new Date(checkoutInput?.value || "");
+        if (d2 <= d1) {
+          const next = new Date(d1);
+          next.setDate(next.getDate() + 1);
+          if (checkoutInput) checkoutInput.value = formatDateStr(next);
+        }
+        if (checkoutInput) checkoutInput.min = checkinInput.value;
+      });
+    }
+
+    if (checkoutInput) {
+      checkoutInput.min = formatDateStr(tomorrow);
+      if (!checkoutInput.value) checkoutInput.value = formatDateStr(checkoutDate);
+    }
+
     heroSearchForm.addEventListener("submit", (e) => {
       e.preventDefault();
       const form = new FormData(heroSearchForm);
       const destId = form.get("destination") || "cairo";
-      location.href = `destination.html?destination=${destId}`;
+      const cin = form.get("checkIn") || "";
+      const cout = form.get("checkOut") || "";
+      const guests = form.get("guests") || "2";
+      location.href = `destination.html?destination=${destId}&checkIn=${encodeURIComponent(cin)}&checkOut=${encodeURIComponent(cout)}&guests=${encodeURIComponent(guests)}`;
     });
   }
 }
@@ -1817,9 +2502,16 @@ function initHome() {
 // --- B. DESTINATION LISTING & EXPLORER PAGE ---
 function initDestination() {
   const params = new URLSearchParams(location.search);
-  const destId = params.get("destination") || App.trip?.destinationId || "cairo";
   let activeScope = params.get("scope") || "all";
-  let activeView = params.get("view") === "hotels" ? "hotels" : "hotels"; // default to hotels for booking focus
+  let destId = params.get("destination");
+
+  if (!destId) {
+    if (activeScope === "international") destId = "paris";
+    else if (activeScope === "domestic") destId = "cairo";
+    else destId = App.trip?.destinationId || "cairo";
+  }
+
+  let activeView = params.get("view") === "places" ? "places" : "hotels"; // default to hotels for booking focus
 
   const destination = destinationById(destId);
   const places = destination.places || [];
@@ -1830,7 +2522,14 @@ function initDestination() {
   if (hero) hero.style.backgroundImage = `var(--hero-overlay), url('${destination.image}')`;
   if (qs("#destination-title")) qs("#destination-title").textContent = destination.name;
   if (qs("#destination-copy")) qs("#destination-copy").textContent = destination.tagline;
-  if (qs("#weather-card")) {
+  const weatherPill = qs("#destination-weather-pill");
+  if (weatherPill && destination?.weather) {
+    weatherPill.innerHTML = `
+      <i class="fa-solid fa-cloud-sun text-amber-400"></i>
+      <span>${destination.weather.tempC}°C ${destination.weather.season}</span>
+      <span class="opacity-70 text-[11px] hidden sm:inline">• ${destination.weather.humidity}% Humidity</span>`;
+  }
+  if (qs("#weather-card") && destination?.weather) {
     qs("#weather-card").innerHTML = `
       <i class="fa-solid fa-cloud-sun text-amber-500 text-xl"></i>
       <div class="text-xs">
@@ -2033,6 +2732,13 @@ function initPlanner() {
   const scopeSelect = qs("#trip-scope");
   const destSelect = qs("#destination-options");
   const hotelSelect = qs("#hotel-options");
+  const budgetInput = form.elements.namedItem("budget");
+  const budgetCurrencyLabel = qs("[data-budget-currency-label]");
+  if (budgetCurrencyLabel) budgetCurrencyLabel.textContent = `Trip Budget (${App.currency})`;
+  if (budgetInput && !budgetInput.dataset.currencyInitialized) {
+    budgetInput.value = String(Math.round(1500 * getCurrencyInfo(App.currency).rate * 100) / 100);
+    budgetInput.dataset.currencyInitialized = "true";
+  }
 
   const populateDestinations = () => {
     const isEgypt = scopeSelect.value === "domestic";
@@ -2056,6 +2762,7 @@ function initPlanner() {
     const dest = destinationById(destSelect.value);
     const hotel = hotelById(hotelSelect.value) || dest.hotels?.[0];
     const days = Number(form.days.value || 4);
+    const budget = Number(budgetInput?.value || 0);
     const totalStay = (hotel?.pricePerNight || 0) * days;
     const preview = qs("#planner-preview");
 
@@ -2074,6 +2781,13 @@ function initPlanner() {
             <p class="text-sm font-black text-slate-900 dark:text-white">${hotel?.name || 'Top Recommended Hotel'}</p>
             <p class="text-teal-600 font-bold mt-0.5">${money(hotel?.pricePerNight || 0)} / night × ${days} nights = <strong>${money(totalStay)}</strong></p>
           </div>
+          <div class="rounded-xl bg-slate-50 p-3 dark:bg-slate-950">
+            <div class="flex items-center justify-between gap-3">
+              <span class="text-slate-400 text-[11px] font-black uppercase">Your Trip Budget (${App.currency})</span>
+              <strong class="text-sm font-black text-slate-900 dark:text-white">${money(budget / getCurrencyInfo(App.currency).rate, App.currency)}</strong>
+            </div>
+            <p class="mt-1 text-[11px] font-semibold text-slate-500 dark:text-slate-400">Saved in ${App.currency}; equivalent to ${money(budget / getCurrencyInfo(App.currency).rate, "USD")}.</p>
+          </div>
           <div class="rounded-xl bg-teal-50 p-3 text-teal-800 dark:bg-teal-950 dark:text-teal-200">
             <p class="font-black"><i class="fa-solid fa-wand-magic-sparkles mr-1"></i> Automated Itinerary Ready</p>
             <p class="text-[11px] font-semibold mt-1">A custom ${days}-day itinerary with landmarks and top restaurants will be automatically generated.</p>
@@ -2086,6 +2800,7 @@ function initPlanner() {
   destSelect?.addEventListener("change", populateHotels);
   hotelSelect?.addEventListener("change", updatePreview);
   form.days?.addEventListener("input", updatePreview);
+  budgetInput?.addEventListener("input", updatePreview);
 
   populateDestinations();
 
@@ -2098,7 +2813,8 @@ function initPlanner() {
       const days = Number(data.get("days") || 4);
       const travelers = Number(data.get("travelers") || 2);
       const tripType = data.get("tripType") || "Leisure";
-      const budget = Number(data.get("budget") || 1500);
+      const enteredBudget = Number(data.get("budget") || 0);
+      const budget = enteredBudget / getCurrencyInfo(App.currency).rate;
 
       App.trip = {
         destinationId: destId,
@@ -2110,8 +2826,9 @@ function initPlanner() {
         confirmedBooking: true
       };
 
-      generateAutomatedItinerary(destId, days);
-      toast("Trip setup complete! Your automated itinerary is ready.");
+      // Start with clean, user-controlled itinerary slots (empty days for custom planning)
+      initializeTripItinerary(days);
+      toast("Trip setup complete! Now choose which activities to add to your days.");
       setTimeout(() => (location.href = "my-trip.html"), 500);
     }, "create your custom travel plan and itinerary");
   });
@@ -2210,7 +2927,7 @@ function renderItineraryDays() {
         </div>
         
         <div class="min-h-52 space-y-2.5 rounded-xl bg-slate-50 p-2.5 dark:bg-slate-950" data-day="${day}">
-          ${placeIds.map((id) => renderItineraryItem(id, hotel)).join("") || `
+          ${placeIds.map((id) => renderItineraryItem(id, hotel, day, days)).join("") || `
             <div class="p-6 text-center text-xs text-slate-400">
               <i class="fa-solid fa-plus-circle text-lg mb-1 block opacity-60"></i>
               No activities scheduled. Add from recommendations below!
@@ -2233,6 +2950,13 @@ function renderItineraryDays() {
     });
   });
 
+  // Move Day dropdown for mobile & touch devices
+  qsa("[data-move-day]").forEach((sel) => {
+    sel.addEventListener("change", () => {
+      movePlaceInItinerary(sel.dataset.moveDay, sel.value);
+    });
+  });
+
   // Remove buttons
   qsa("[data-remove-place]").forEach((btn) => {
     btn.addEventListener("click", () => removePlaceFromItinerary(btn.dataset.removePlace));
@@ -2241,7 +2965,7 @@ function renderItineraryDays() {
   updateBudgetWidget();
 }
 
-function renderItineraryItem(placeId, hotel) {
+function renderItineraryItem(placeId, hotel, currentDay = "1", allDays = ["1", "2", "3", "4"]) {
   const place = placeById(placeId);
   if (!place) return "";
 
@@ -2250,17 +2974,30 @@ function renderItineraryItem(placeId, hotel) {
 
   return `
     <article draggable="true" data-place="${place.id}" class="cursor-grab rounded-xl border border-slate-200 bg-white p-2.5 shadow-sm dark:border-slate-800 dark:bg-slate-900 transition hover:shadow-md">
-      <div class="flex gap-2.5 items-center">
-        <img src="${place.image}" alt="${place.name}" class="size-14 rounded-lg object-cover">
+      <div class="flex gap-2.5 items-start">
+        <img src="${place.image}" alt="${place.name}" class="size-14 shrink-0 rounded-lg object-cover">
         <div class="min-w-0 flex-1">
-          <div class="flex items-center gap-1.5">
+          <div class="flex items-center gap-1.5 flex-wrap">
             <span class="timeslot-pill ${timeSlotClass}">${place.timeOfDay || 'Day'}</span>
             <h4 class="truncate font-black text-xs text-slate-950 dark:text-white">${place.name}</h4>
           </div>
           <p class="text-[11px] text-slate-400 mt-0.5 font-bold">${place.category} • ${money(place.price)}</p>
           ${dist !== null ? `<p class="text-[10px] font-bold text-teal-600 mt-0.5"><i class="fa-solid fa-route"></i> ${dist} km from hotel</p>` : ""}
+          
+          <!-- Mobile / Quick Day Switcher -->
+          <div class="mt-2 flex items-center justify-between gap-2 border-t border-slate-100 dark:border-slate-800/80 pt-1.5">
+            <div class="flex items-center gap-1 text-[10px] font-bold text-slate-500 dark:text-slate-400">
+              <span>Day:</span>
+              <select data-move-day="${place.id}" class="h-6 rounded border border-slate-200 bg-slate-50 px-1 text-[10px] font-bold text-teal-700 outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-teal-300 cursor-pointer">
+                ${allDays.map((d) => `<option value="${d}" ${d === String(currentDay) ? "selected" : ""}>Day ${d}</option>`).join("")}
+              </select>
+            </div>
+            <button class="text-slate-400 hover:text-rose-500 text-[11px] font-bold transition flex items-center gap-1" data-remove-place="${place.id}" title="Remove stop">
+              <i class="fa-solid fa-trash text-[10px]"></i>
+              <span class="text-[10px]">Delete</span>
+            </button>
+          </div>
         </div>
-        <button class="icon-btn size-7 text-slate-400 hover:text-rose-500" data-remove-place="${place.id}" title="Remove"><i class="fa-solid fa-trash text-xs"></i></button>
       </div>
     </article>`;
 }
@@ -2345,16 +3082,7 @@ function renderLocalRecommendationsDrawer(destination) {
     qsa("[data-quick-add-schedule]", grid).forEach((btn) => {
       btn.addEventListener("click", () => {
         const id = btn.dataset.quickAddSchedule;
-        const itinerary = App.itinerary || { 1: [] };
-        if (scheduledIds.includes(id)) {
-          removePlaceFromItinerary(id);
-        } else {
-          itinerary[1] = [...(itinerary[1] || []), id];
-          App.itinerary = itinerary;
-          toast("Added to Day 1!");
-          renderItineraryDays();
-          renderLocalRecommendationsDrawer(destination);
-        }
+        openAddToTripModal(id);
       });
     });
   };
@@ -2389,8 +3117,16 @@ function updateBudgetWidget() {
 
   widget.innerHTML = `
     <div class="rounded-2xl p-5 ${isOver ? 'bg-rose-50 text-rose-800 dark:bg-rose-950/40 dark:text-rose-200' : 'bg-teal-50 text-teal-900 dark:bg-teal-950/40 dark:text-teal-200'}">
-      <p class="text-xs font-black uppercase tracking-wider opacity-70">Estimated Trip Spend</p>
-      <p class="mt-1 text-3xl font-black">${money(grandTotal)} <span class="text-sm font-bold opacity-70">/ ${money(budget)}</span></p>
+      <div class="flex items-end justify-between gap-3">
+        <div>
+          <p class="text-xs font-black uppercase tracking-wider opacity-70">Estimated Trip Spend</p>
+          <p class="mt-1 text-2xl font-black">${money(grandTotal)}</p>
+        </div>
+        <div class="text-right">
+          <p class="text-[11px] font-black uppercase tracking-wider opacity-70">Budget You Set (${App.currency})</p>
+          <p class="mt-1 text-lg font-black">${money(budget, App.currency)}</p>
+        </div>
+      </div>
       
       <div class="mt-3 h-2.5 overflow-hidden rounded-full bg-white/60 dark:bg-slate-900">
         <div class="h-full rounded-full ${isOver ? 'bg-rose-500' : 'bg-teal-500'}" style="width: ${percent}%"></div>
@@ -2483,7 +3219,7 @@ function initSummary() {
         <div class="stat"><span>Hotel Stay</span><b>${hotel ? money(hotelCost) : "$0"}</b></div>
         <div class="stat"><span>Activities (${plannedPlaces.length})</span><b>${money(activitiesCost)}</b></div>
         <div class="stat"><span>Total Estimated</span><b class="text-teal-600 dark:text-teal-300">${money(total)}</b></div>
-        <div class="stat"><span>Trip Budget</span><b>${money(App.trip.budget || total)}</b></div>
+        <div class="stat"><span>Trip Budget (${App.currency})</span><b>${money(App.trip.budget || total)}</b></div>
       </div>
 
       <!-- Hotel Details -->
@@ -2536,12 +3272,18 @@ function initSummary() {
     </div>`;
 
   qs("#export-pdf")?.addEventListener("click", () => {
-    toast("Generating PDF summary...");
+    toast("Generating PDF trip voucher...", "fa-file-pdf");
     if (window.html2pdf) {
-      window.html2pdf()
-        .set({ margin: 0.4, filename: `${destination.name.toLowerCase()}-trip-summary.pdf` })
-        .from(report)
-        .save();
+      const opt = {
+        margin: [0.3, 0.3, 0.3, 0.3],
+        filename: `${destination.name.toLowerCase()}-wanderly-voucher.pdf`,
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2, useCORS: true, logging: false },
+        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+      };
+      window.html2pdf().set(opt).from(report).save().then(() => {
+        toast("Voucher PDF downloaded successfully!", "fa-circle-check");
+      });
     } else {
       window.print();
     }
@@ -2559,7 +3301,6 @@ function initSummary() {
 // =============================================================================
 document.addEventListener("DOMContentLoaded", () => {
   injectShell();
-
   const page = document.body.dataset.page || "home";
   if (page === "home") initHome();
   else if (page === "destination") initDestination();

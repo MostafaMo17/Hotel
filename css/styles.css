@@ -52,9 +52,24 @@
   --hero-overlay: linear-gradient(135deg, rgba(2, 6, 23, 0.94) 0%, rgba(2, 6, 23, 0.7) 60%, rgba(20, 184, 166, 0.25) 100%);
 }
 
+html {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+html.dark {
+  background-color: #090e17 !important;
+  color: #e2e8f0 !important;
+}
+
 * {
   box-sizing: border-box;
-  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease, box-shadow 160ms ease;
+}
+
+html.theme-transitioning *,
+html.theme-transitioning *::before,
+html.theme-transitioning *::after {
+  transition: background-color 200ms ease, border-color 200ms ease, color 200ms ease, box-shadow 200ms ease !important;
 }
 
 body {
@@ -64,6 +79,11 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+}
+
+.dark body {
+  background-color: #090e17 !important;
+  color: #e2e8f0 !important;
 }
 
 img {
@@ -213,6 +233,93 @@ img {
   border-color: var(--brand);
   color: var(--brand);
   background: var(--surface-soft);
+}
+
+/* Auth Header Buttons with Guaranteed Contrast in Light and Dark Modes */
+.auth-signin-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  border-radius: 9999px;
+  border: 1.5px solid #cbd5e1 !important;
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  padding: 0.45rem 1rem;
+  font-size: 0.78rem;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+  transition: all 180ms ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.auth-signin-btn i {
+  color: #0d9488 !important;
+  transition: transform 180ms ease;
+}
+
+.auth-signin-btn:hover {
+  border-color: #0d9488 !important;
+  color: #0d9488 !important;
+  background-color: #f0fdfa !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(13, 148, 136, 0.15);
+}
+
+.auth-signin-btn:hover i {
+  transform: translateX(2px);
+}
+
+.dark .auth-signin-btn,
+html.dark .auth-signin-btn {
+  background-color: #1e293b !important;
+  border-color: #334155 !important;
+  color: #f8fafc !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.dark .auth-signin-btn i,
+html.dark .auth-signin-btn i {
+  color: #2dd4bf !important;
+}
+
+.dark .auth-signin-btn:hover,
+html.dark .auth-signin-btn:hover {
+  background-color: #0f172a !important;
+  border-color: #2dd4bf !important;
+  color: #2dd4bf !important;
+}
+
+.auth-register-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #0d9488, #0f766e) !important;
+  border: 1.5px solid transparent !important;
+  color: #ffffff !important;
+  padding: 0.45rem 1.05rem;
+  font-size: 0.78rem;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(13, 148, 136, 0.35);
+  transition: all 180ms ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.auth-register-btn:hover {
+  background: linear-gradient(135deg, #14b8a6, #0d9488) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(13, 148, 136, 0.45);
+}
+
+.dark .auth-register-btn,
+html.dark .auth-register-btn {
+  background: linear-gradient(135deg, #0d9488, #14b8a6) !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(45, 212, 191, 0.3);
 }
 
 .icon-btn {
@@ -417,6 +524,14 @@ img {
   width: 100%;
 }
 
+/* Native select menus use a light popup on many desktop browsers. Keep option
+   text readable there even when the closed control is styled for dark mode. */
+select option,
+select optgroup {
+  color: #0f172a !important;
+  background-color: #ffffff !important;
+}
+
 /* ==========================================================================
    DESTINATION CATEGORIES & TABS
    ========================================================================== */
@@ -515,6 +630,51 @@ img {
 .hotel-card.is-selected {
   border: 2px solid var(--brand);
   box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.25), var(--shadow);
+}
+
+/* Hotel Price Badge on Card Image */
+.hotel-price-tag {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.3rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.96);
+  padding: 0.35rem 0.85rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  z-index: 10;
+  transition: all 180ms ease;
+}
+
+.hotel-price-tag .price-num {
+  font-size: 0.95rem;
+  font-weight: 900;
+  color: #0f172a !important;
+  letter-spacing: -0.01em;
+}
+
+.hotel-price-tag .price-unit {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #475569 !important;
+}
+
+/* Dark Mode Hotel Price Badge */
+.dark .hotel-price-tag {
+  background: rgba(15, 23, 42, 0.94) !important;
+  border: 1px solid rgba(45, 212, 191, 0.45) !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.65) !important;
+}
+
+.dark .hotel-price-tag .price-num {
+  color: #2dd4bf !important; /* Vivid radiant teal in dark mode */
+  text-shadow: 0 0 10px rgba(45, 212, 191, 0.3);
+}
+
+.dark .hotel-price-tag .price-unit {
+  color: #cbd5e1 !important; /* Crisp light slate in dark mode */
 }
 
 .recommendation-badge {
@@ -922,4 +1082,208 @@ img {
   transform: translateY(0);
   opacity: 1;
   pointer-events: auto;
+}
+
+/* ==========================================================================
+   NAVBAR CURRENCY & HERO ENHANCEMENTS
+   ========================================================================== */
+#nav-currency-select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2364748b'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  background-size: 0.85rem;
+  padding-right: 1.5rem;
+}
+
+.search-field-group input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  margin-left: 4px;
+  opacity: 0.8;
+  filter: brightness(0);
+  transition: opacity 150ms, filter 150ms;
+}
+
+.dark .search-field-group input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0.95;
+  filter: brightness(0) invert(1);
+}
+
+.search-field-group input[type="date"]::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+}
+
+/* ==========================================================================
+   MODAL & DIALOG SYSTEM (Fixed Positioning & Layout Shift Prevention)
+   ========================================================================== */
+body.modal-open {
+  overflow: hidden !important;
+}
+
+#auth-modal,
+#booking-modal,
+#gallery-modal,
+#reviews-modal,
+#hotel-details-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+#auth-modal:not(:empty),
+#booking-modal:not(:empty),
+#gallery-modal:not(:empty),
+#reviews-modal:not(:empty),
+#hotel-details-modal:not(:empty) {
+  pointer-events: auto;
+}
+
+.modal-backdrop-custom {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(2, 6, 23, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 1rem;
+  overflow-y: auto;
+  animation: modalFadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal-dialog-custom {
+  position: relative;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  margin: auto;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  animation: modalScaleUp 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modalFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes modalScaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Gallery Lightbox Custom Styles */
+.gallery-thumbnail-strip {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding: 0.5rem 0.25rem;
+  scrollbar-width: thin;
+}
+
+.gallery-thumb-btn {
+  position: relative;
+  width: 4.5rem;
+  height: 3rem;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 180ms ease;
+  background: #000;
+}
+
+.gallery-thumb-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-thumb-btn.active-thumb {
+  border-color: var(--brand);
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(20, 184, 166, 0.5);
+  opacity: 1 !important;
+}
+
+/* ==========================================================================
+   LEAFLET MAP CONTAINER & PINS
+   ========================================================================== */
+#destination-map {
+  min-height: 360px !important;
+  height: 360px !important;
+  width: 100% !important;
+  z-index: 10 !important;
+  position: relative !important;
+  background-color: #e2e8f0;
+  border-radius: 1rem;
+}
+
+.dark #destination-map {
+  background-color: #1e293b;
+}
+
+.leaflet-container {
+  font-family: inherit !important;
+  z-index: 10 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.custom-place-pin,
+.custom-rest-pin,
+.custom-hotel-pin {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* ==========================================================================
+   PRINT / PDF MEDIA STYLES
+   ========================================================================== */
+@media print {
+  #site-header,
+  #site-footer,
+  #mobile-bottom-nav,
+  .btn-primary,
+  .btn-soft,
+  #wanderly-toast,
+  button,
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  #summary-report {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  .rounded-2xl,
+  .rounded-xl {
+    border-radius: 8px !important;
+  }
 }

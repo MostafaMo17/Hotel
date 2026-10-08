@@ -53,7 +53,7 @@ window.WANDERLY_DATA = {
           "category": "History",
           "price": 40,
           "rating": 4.9,
-          "image": "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/cairo-pyramids.jpg",
           "lat": 29.9792,
           "lng": 31.1342,
           "description": "The iconic wonder of the ancient world with the Great Sphinx.",
@@ -66,7 +66,7 @@ window.WANDERLY_DATA = {
           "category": "Culture",
           "price": 25,
           "rating": 4.8,
-          "image": "https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/cairo-museum.jpg",
           "lat": 29.9953,
           "lng": 31.1197,
           "description": "The world's largest archaeological museum dedicated to ancient Egypt.",
@@ -79,7 +79,7 @@ window.WANDERLY_DATA = {
           "category": "Shopping",
           "price": 15,
           "rating": 4.7,
-          "image": "https://images.unsplash.com/photo-1590070120659-c7829b11e4c3?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/cairo-khan.jpg",
           "lat": 30.0477,
           "lng": 31.2625,
           "description": "Historic 14th-century marketplace filled with spices, lamps, and brassware.",
@@ -92,7 +92,7 @@ window.WANDERLY_DATA = {
           "category": "History",
           "price": 18,
           "rating": 4.6,
-          "image": "https://images.unsplash.com/photo-1553913861-c0fddf2619ee?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/cairo-citadel.jpg",
           "lat": 30.0299,
           "lng": 31.2613,
           "description": "Medieval Islamic fortress with stunning panoramic views of Cairo.",
@@ -105,7 +105,7 @@ window.WANDERLY_DATA = {
           "category": "Dining",
           "price": 45,
           "rating": 4.6,
-          "image": "https://images.unsplash.com/photo-1578922746465-3a80a228f223?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/cairo-nile.jpg",
           "lat": 30.036,
           "lng": 31.224,
           "description": "Sunset sailing along the Nile with traditional dinner and music.",
@@ -118,7 +118,7 @@ window.WANDERLY_DATA = {
           "category": "Culture",
           "price": 12,
           "rating": 4.5,
-          "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/cairo-zamalek.jpg",
           "lat": 30.0626,
           "lng": 31.2197,
           "description": "Leafy island neighborhood with art galleries, cozy cafes, and boutiques.",
@@ -136,7 +136,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 3420,
           "lat": 29.9856,
           "lng": 31.1328,
-          "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/mena-house-1.jpg",
           "description": "Iconic historic palace hotel with unrivaled direct views of the Great Pyramids, 40 acres of lush gardens, and luxury dining.",
           "amenities": [
             "Pyramids View",
@@ -148,24 +148,24 @@ window.WANDERLY_DATA = {
           "address": "6 Pyramids Road, Giza Plateau",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
-              "caption": "Marriott Mena House, Cairo - Exterior Overview"
+              "url": "../images/mena-house-1.jpg",
+              "caption": "Marriott Mena House, Cairo - Illuminated Palace Facade & Fountains"
             },
             {
-              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Presidential Suite with Panoramic Terrace"
+              "url": "../images/mena-house-2.jpg",
+              "caption": "Executive Panorama Lounge Facing the Great Pyramid"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Heated Infinity Swimming Pool"
+              "url": "../images/mena-house-3.jpg",
+              "caption": "Grand Marble Reception & Royal Chandelier Lobby"
             },
             {
-              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Fine Dining Restaurant & Lounge"
+              "url": "../images/mena-house-4.jpg",
+              "caption": "Sunlit Palm Garden Terrace with Direct Pyramids Vista"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Luxury Spa & Wellness Sanctuary"
+              "url": "../images/mena-house-5.jpg",
+              "caption": "139 Pavilion Evening Fine Dining Overlooking the Pyramids"
             }
           ],
           "verifiedReviews": [
@@ -177,8 +177,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "../images/mena-house-2.jpg"
               ],
               "id": "rev-cairo-mena-house-1",
               "verified": true
@@ -191,7 +190,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "../images/mena-house-4.jpg"
               ],
               "id": "rev-cairo-mena-house-2",
               "verified": true
@@ -204,7 +203,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "../images/mena-house-5.jpg"
               ],
               "id": "rev-cairo-mena-house-3",
               "verified": true
@@ -221,7 +220,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 2890,
           "lat": 30.0354,
           "lng": 31.2312,
-          "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/four-seasons-nile-1.jpg",
           "description": "World-class luxury along the Nile River in upscale Garden City with panoramic river vistas, indoor & outdoor pools, and 8 restaurants.",
           "amenities": [
             "Nile View",
@@ -233,24 +232,24 @@ window.WANDERLY_DATA = {
           "address": "1089 Corniche El Nile, Garden City, Cairo",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",
-              "caption": "Four Seasons Hotel Cairo at Nile Plaza - Exterior Overview"
+              "url": "../images/four-seasons-nile-1.jpg",
+              "caption": "Four Seasons Hotel Cairo at Nile Plaza - Riverfront Tower at Sunset"
             },
             {
-              "url": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Deluxe King Bed & Living Quarters"
+              "url": "../images/four-seasons-nile-2.jpg",
+              "caption": "Grand Marble Reception & Royal Chandelier Lobby"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Sunbed Deck & Cocktail Lounge"
+              "url": "../images/four-seasons-nile-3.jpg",
+              "caption": "Panoramic Cairo Skyline & River Nile Night View"
             },
             {
-              "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Breakfast Buffet & Artisan Bakery"
+              "url": "../images/four-seasons-nile-4.jpg",
+              "caption": "Upper Deck Open-Air Nile Lounge & Luxury Yacht Dining"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Evening Illumination & Courtyard"
+              "url": "../images/four-seasons-nile-5.jpg",
+              "caption": "Four Seasons Deluxe Panoramic Suite with Private Balcony"
             }
           ],
           "verifiedReviews": [
@@ -262,7 +261,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "../images/four-seasons-nile-5.jpg"
               ],
               "id": "rev-cairo-four-seasons-nile-1",
               "verified": true
@@ -275,23 +274,9 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "../images/four-seasons-nile-4.jpg"
               ],
               "id": "rev-cairo-four-seasons-nile-2",
-              "verified": true
-            },
-            {
-              "name": "Elena Rostova",
-              "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
-              "date": "May 2026",
-              "rating": 4.9,
-              "title": "A Dream Stay! Will Definitely Return",
-              "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
-              "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
-              ],
-              "id": "rev-cairo-four-seasons-nile-3",
               "verified": true
             }
           ],
@@ -306,7 +291,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 2150,
           "lat": 30.0388,
           "lng": 31.2268,
-          "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/sofitel-gezirah-1.jpg",
           "description": "French luxury blended with Egyptian heritage on the peaceful southern tip of Zamalek Island with an infinity Nile pool.",
           "amenities": [
             "Infinity Nile Pool",
@@ -318,20 +303,24 @@ window.WANDERLY_DATA = {
           "address": "3 El Thawra Council St, Zamalek, Cairo",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
-              "caption": "Sofitel Cairo Nile El Gezirah - Exterior Overview"
+              "url": "../images/sofitel-gezirah-1.jpg",
+              "caption": "Sofitel Cairo Nile El Gezirah - Illuminated Neon Tower at Night"
             },
             {
-              "url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Executive Studio with City View"
+              "url": "../images/sofitel-gezirah-2.jpg",
+              "caption": "Panoramic Riverfront Glass Dining & Cairo Tower Vista"
             },
             {
-              "url": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Rooftop Plunge Pool & Sunset Bar"
+              "url": "../images/sofitel-gezirah-3.jpg",
+              "caption": "Luxury Twin Bedroom Suite with Contemporary French Design"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Private Marble Bathroom & Jacuzzi"
+              "url": "../images/sofitel-gezirah-4.jpg",
+              "caption": "Zamalek Island Waterfront Facade & Palm Promenade"
+            },
+            {
+              "url": "../images/sofitel-gezirah-5.jpg",
+              "caption": "Oriental Arabesque Archway Terrace & Nile Lounge"
             }
           ],
           "verifiedReviews": [
@@ -343,37 +332,9 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "../images/sofitel-gezirah-5.jpg"
               ],
               "id": "rev-cairo-sofitel-gezirah-1",
-              "verified": true
-            },
-            {
-              "name": "Elena Rostova",
-              "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
-              "date": "May 2026",
-              "rating": 4.9,
-              "title": "A Dream Stay! Will Definitely Return",
-              "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
-              "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
-              ],
-              "id": "rev-cairo-sofitel-gezirah-2",
-              "verified": true
-            },
-            {
-              "name": "Dr. Ahmed El-Sayed",
-              "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80",
-              "date": "July 2026",
-              "rating": 5,
-              "title": "Exceptional Hospitality & Impeccable Views",
-              "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
-              "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
-              ],
-              "id": "rev-cairo-sofitel-gezirah-3",
               "verified": true
             }
           ],
@@ -388,7 +349,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 1420,
           "lat": 30.0366,
           "lng": 31.2307,
-          "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/kempinski-nile-1.jpg",
           "description": "Intimate boutique luxury hotel with rooftop pool and exceptional personalized butler service in Garden City.",
           "amenities": [
             "Rooftop Pool",
@@ -400,20 +361,24 @@ window.WANDERLY_DATA = {
           "address": "12 Ahmed Ragheb St, Garden City, Cairo",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80",
-              "caption": "Kempinski Nile Hotel Cairo - Exterior Overview"
+              "url": "../images/kempinski-nile-1.jpg",
+              "caption": "Kempinski Nile Hotel Cairo - Grand Palace Courtyard & Illuminated Pool"
             },
             {
-              "url": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Comfort Queen Room with Work Desk"
+              "url": "../images/kempinski-nile-2.jpg",
+              "caption": "Kempinski Palace Architecture & Classic Blue Domes"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Terrace Café & Lounge Area"
+              "url": "../images/kempinski-nile-3.jpg",
+              "caption": "Deluxe Nile View King Bedroom Suite with Cairo Tower Panorama"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Wellness & Fitness Suite"
+              "url": "../images/kempinski-nile-4.jpg",
+              "caption": "Rooftop Glass Floor Lounge & Skyline Night Bar"
+            },
+            {
+              "url": "../images/kempinski-nile-5.jpg",
+              "caption": "Rooftop Panoramic Pool & Sunset Nile Terrace"
             }
           ],
           "verifiedReviews": [
@@ -425,37 +390,9 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "../images/kempinski-nile-5.jpg"
               ],
               "id": "rev-cairo-kempinski-nile-1",
-              "verified": true
-            },
-            {
-              "name": "Dr. Ahmed El-Sayed",
-              "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80",
-              "date": "July 2026",
-              "rating": 5,
-              "title": "Exceptional Hospitality & Impeccable Views",
-              "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
-              "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
-              ],
-              "id": "rev-cairo-kempinski-nile-2",
-              "verified": true
-            },
-            {
-              "name": "Sarah Jenkins",
-              "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80",
-              "date": "August 2026",
-              "rating": 5,
-              "title": "100% Authentic & Worth Every Penny",
-              "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
-              "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
-              ],
-              "id": "rev-cairo-kempinski-nile-3",
               "verified": true
             }
           ],
@@ -470,7 +407,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 1840,
           "lat": 30.0469,
           "lng": 31.2372,
-          "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/steigenberger-tahrir-1.jpg",
           "description": "Sleek contemporary hotel in the vibrant heart of Downtown Cairo, steps away from the Egyptian Museum and Tahrir Square.",
           "amenities": [
             "City Center",
@@ -482,24 +419,24 @@ window.WANDERLY_DATA = {
           "address": "Kasr El Nil St, Downtown Cairo",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80",
-              "caption": "Steigenberger Hotel El Tahrir - Exterior Overview"
+              "url": "../images/steigenberger-tahrir-1.jpg",
+              "caption": "Steigenberger Hotel El Tahrir - Illuminated Downtown Cairo Entrance & Night Cityscape"
             },
             {
-              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Presidential Suite with Panoramic Terrace"
+              "url": "../images/steigenberger-tahrir-2.jpg",
+              "caption": "Contemporary Superior King Suite with City View"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Heated Infinity Swimming Pool"
+              "url": "../images/steigenberger-tahrir-3.jpg",
+              "caption": "Sunlit Colonnade Terrace & Outdoor Poolside Lounge"
             },
             {
-              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Fine Dining Restaurant & Lounge"
+              "url": "../images/steigenberger-tahrir-4.jpg",
+              "caption": "Classic Heritage Bedroom Suite & Ornate Decor"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Luxury Spa & Wellness Sanctuary"
+              "url": "../images/steigenberger-tahrir-5.jpg",
+              "caption": "Steigenberger Historic Wing & Waterfront Vista"
             }
           ],
           "verifiedReviews": [
@@ -511,36 +448,9 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "../images/steigenberger-tahrir-3.jpg"
               ],
               "id": "rev-cairo-steigenberger-tahrir-1",
-              "verified": true
-            },
-            {
-              "name": "Sarah Jenkins",
-              "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80",
-              "date": "August 2026",
-              "rating": 5,
-              "title": "100% Authentic & Worth Every Penny",
-              "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
-              "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
-              ],
-              "id": "rev-cairo-steigenberger-tahrir-2",
-              "verified": true
-            },
-            {
-              "name": "Mohamed Tariq",
-              "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80",
-              "date": "June 2026",
-              "rating": 4.8,
-              "title": "Great Strategic Location & Friendly Concierge",
-              "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
-              "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
-              ],
-              "id": "rev-cairo-steigenberger-tahrir-3",
               "verified": true
             }
           ],
@@ -555,7 +465,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 980,
           "lat": 29.9752,
           "lng": 31.1388,
-          "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/pyramids-valley-1.jpg",
           "description": "Cozy boutique stay offering unmatched rooftop terrace views directly facing the Sphinx and Pyramids sound & light show.",
           "amenities": [
             "Rooftop Pyramids View",
@@ -567,24 +477,24 @@ window.WANDERLY_DATA = {
           "address": "Sphinx Street, Nazlet El-Semman, Giza",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80",
-              "caption": "Pyramids Valley Boutique Hotel - Exterior Overview"
+              "url": "../images/pyramids-valley-1.jpg",
+              "caption": "Pyramids Valley - Rooftop Terrace Cafe Directly Overlooking Sphinx & Great Pyramids"
             },
             {
-              "url": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Deluxe King Bed & Living Quarters"
+              "url": "../images/pyramids-valley-2.jpg",
+              "caption": "Romantic Suite with Rose Petal Soak Tub & Pyramids Window Vista"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Sunbed Deck & Cocktail Lounge"
+              "url": "../images/pyramids-valley-3.jpg",
+              "caption": "Oriental Archway Rooftop Sun Deck Facing the Pyramids"
             },
             {
-              "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Breakfast Buffet & Artisan Bakery"
+              "url": "../images/pyramids-valley-4.jpg",
+              "caption": "Sunset Balcony Table & Panoramic Giza Plateau Vista"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Evening Illumination & Courtyard"
+              "url": "../images/pyramids-valley-5.jpg",
+              "caption": "Contemporary King Suite with Ensuite Glass Bath & Pyramids Panorama"
             }
           ],
           "verifiedReviews": [
@@ -596,36 +506,9 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "../images/pyramids-valley-2.jpg"
               ],
               "id": "rev-cairo-pyramids-valley-1",
-              "verified": true
-            },
-            {
-              "name": "Mohamed Tariq",
-              "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80",
-              "date": "June 2026",
-              "rating": 4.8,
-              "title": "Great Strategic Location & Friendly Concierge",
-              "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
-              "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
-              ],
-              "id": "rev-cairo-pyramids-valley-2",
-              "verified": true
-            },
-            {
-              "name": "Elena Rostova",
-              "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
-              "date": "May 2026",
-              "rating": 4.9,
-              "title": "A Dream Stay! Will Definitely Return",
-              "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
-              "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
-              ],
-              "id": "rev-cairo-pyramids-valley-3",
               "verified": true
             }
           ],
@@ -638,7 +521,7 @@ window.WANDERLY_DATA = {
       "name": "Alexandria",
       "country": "Egypt",
       "tagline": "Mediterranean sea breeze, coastal citadel, libraries, and fresh seafood.",
-      "image": "https://images.unsplash.com/photo-1604251405909-b8c4e83cdf7c?auto=format&fit=crop&w=1200&q=80",
+      "image": "../images/alexandria-cover.jpg",
       "lat": 31.2001,
       "lng": 29.9187,
       "weather": {
@@ -667,7 +550,7 @@ window.WANDERLY_DATA = {
           "category": "History",
           "price": 14,
           "rating": 4.7,
-          "image": "https://images.unsplash.com/photo-1598940603846-a1edd0ef2574?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/alexandria-qaitbay-user.jpg",
           "lat": 31.214,
           "lng": 29.8856,
           "description": "Iconic 15th-century maritime fortress built on the Mediterranean harbor.",
@@ -680,7 +563,7 @@ window.WANDERLY_DATA = {
           "category": "Nature",
           "price": 10,
           "rating": 4.6,
-          "image": "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/alexandria-montaza-user.jpg",
           "lat": 31.2885,
           "lng": 30.0158,
           "description": "Historic royal summer palace surrounded by pine groves and sea views.",
@@ -693,7 +576,7 @@ window.WANDERLY_DATA = {
           "category": "Dining",
           "price": 38,
           "rating": 4.6,
-          "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/alexandria-greek-seafood-user.jpg",
           "lat": 31.2091,
           "lng": 29.8859,
           "description": "Fresh Mediterranean seafood terrace overlooking the historic port.",
@@ -706,7 +589,7 @@ window.WANDERLY_DATA = {
           "category": "Nature",
           "price": 0,
           "rating": 4.5,
-          "image": "https://images.unsplash.com/photo-1527838832700-5059252407fa?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/alexandria-stanley-bridge-user.jpg",
           "lat": 31.2385,
           "lng": 29.959,
           "description": "Picturesque bridge over the sea, perfect for evening strolls and sunset.",
@@ -719,7 +602,7 @@ window.WANDERLY_DATA = {
           "category": "History",
           "price": 13,
           "rating": 4.5,
-          "image": "https://images.unsplash.com/photo-1574359411659-15573a27fd0c?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/alexandria-catacombs-user.jpg",
           "lat": 31.1786,
           "lng": 29.8925,
           "description": "Fascinating multi-level Roman subterranean tombs blending Egyptian and Greek art.",
@@ -749,28 +632,29 @@ window.WANDERLY_DATA = {
           "address": "399 El Geish Road, San Stefano, Alexandria",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
-              "caption": "Four Seasons Hotel Alexandria at San Stefano - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Four Seasons Alexandria at San Stefano - Mediterranean Coastal Tower"
             },
             {
-              "url": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Deluxe King Bed & Living Quarters"
+              "url": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Panoramic Mediterranean Sea-View Luxury Suite"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Sunbed Deck & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Private Beach Club & Infinity Pool"
             },
             {
-              "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Breakfast Buffet & Artisan Bakery"
+              "url": "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Byblos Gourmet Mediterranean Seafood Dining"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Evening Illumination & Courtyard"
+              "url": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Two-Story European Spa Sanctuary"
             }
           ],
           "verifiedReviews": [
             {
+              "id": "rev-alex-four-seasons-1",
               "name": "Dr. Ahmed El-Sayed",
               "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80",
               "date": "July 2026",
@@ -778,36 +662,8 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=85"
               ],
-              "id": "rev-alex-four-seasons-1",
-              "verified": true
-            },
-            {
-              "name": "Sarah Jenkins",
-              "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80",
-              "date": "August 2026",
-              "rating": 5,
-              "title": "100% Authentic & Worth Every Penny",
-              "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
-              "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
-              ],
-              "id": "rev-alex-four-seasons-2",
-              "verified": true
-            },
-            {
-              "name": "Mohamed Tariq",
-              "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80",
-              "date": "June 2026",
-              "rating": 4.8,
-              "title": "Great Strategic Location & Friendly Concierge",
-              "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
-              "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
-              ],
-              "id": "rev-alex-four-seasons-3",
               "verified": true
             }
           ],
@@ -822,7 +678,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 1950,
           "lat": 31.2889,
           "lng": 30.0169,
-          "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1549294413-26f195200c16?auto=format&fit=crop&w=800&q=80",
           "description": "Legendary royal location nestled inside the lush botanical Montaza Palace Gardens overlooking the turquoise sea.",
           "amenities": [
             "Montaza Gardens",
@@ -834,24 +690,29 @@ window.WANDERLY_DATA = {
           "address": "Montaza Palace Grounds, Alexandria",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",
-              "caption": "Helnan Palestine Hotel - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1549294413-26f195200c16?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Helnan Palestine Hotel - Historic Montaza Bay & Beachfront"
             },
             {
-              "url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Executive Studio with City View"
+              "url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Royal Suite Overlooking Montaza Palace Grounds & Sea"
             },
             {
-              "url": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Rooftop Plunge Pool & Sunset Bar"
+              "url": "https://images.unsplash.com/photo-1563911302283-d2bc129e7570?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Private Bay Beach & Pine Trees Promenade"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Private Marble Bathroom & Jacuzzi"
+              "url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Al Zahraa Royal Dining Terrace"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Historical Montaza Royal Park View"
             }
           ],
           "verifiedReviews": [
             {
+              "id": "rev-alex-helnan-palestine-1",
               "name": "Sarah Jenkins",
               "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80",
               "date": "August 2026",
@@ -859,36 +720,8 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=600&q=85"
               ],
-              "id": "rev-alex-helnan-palestine-1",
-              "verified": true
-            },
-            {
-              "name": "Mohamed Tariq",
-              "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80",
-              "date": "June 2026",
-              "rating": 4.8,
-              "title": "Great Strategic Location & Friendly Concierge",
-              "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
-              "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
-              ],
-              "id": "rev-alex-helnan-palestine-2",
-              "verified": true
-            },
-            {
-              "name": "Elena Rostova",
-              "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
-              "date": "May 2026",
-              "rating": 4.9,
-              "title": "A Dream Stay! Will Definitely Return",
-              "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
-              "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
-              ],
-              "id": "rev-alex-helnan-palestine-3",
               "verified": true
             }
           ],
@@ -903,7 +736,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 1720,
           "lat": 31.2361,
           "lng": 29.9489,
-          "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80",
           "description": "Beachfront 5-star hotel with private sandy beach, multiple sea-facing pools, and close proximity to Stanley Bridge.",
           "amenities": [
             "Private Beach",
@@ -915,24 +748,29 @@ window.WANDERLY_DATA = {
           "address": "El Geish Road, Roushdy, Alexandria",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80",
-              "caption": "Sunrise Alex Avenue Hotel - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Sunrise Alex Avenue Hotel - Roushdy Seafront Facade"
             },
             {
-              "url": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Comfort Queen Room with Work Desk"
+              "url": "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Bright Modern Coastal King Bedroom"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Terrace Café & Lounge Area"
+              "url": "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Sea-Facing Heated Infinity Pool on Corniche"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Wellness & Fitness Suite"
+              "url": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Sunset Coast Grill & Seafood Terrace"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Scenic Stanley Bay & Bridge Views from the Hotel"
             }
           ],
           "verifiedReviews": [
             {
+              "id": "rev-alex-sunrise-avenue-1",
               "name": "Mohamed Tariq",
               "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80",
               "date": "June 2026",
@@ -940,37 +778,8 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=600&q=85"
               ],
-              "id": "rev-alex-sunrise-avenue-1",
-              "verified": true
-            },
-            {
-              "name": "Elena Rostova",
-              "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
-              "date": "May 2026",
-              "rating": 4.9,
-              "title": "A Dream Stay! Will Definitely Return",
-              "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
-              "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
-              ],
-              "id": "rev-alex-sunrise-avenue-2",
-              "verified": true
-            },
-            {
-              "name": "Dr. Ahmed El-Sayed",
-              "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80",
-              "date": "July 2026",
-              "rating": 5,
-              "title": "Exceptional Hospitality & Impeccable Views",
-              "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
-              "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
-              ],
-              "id": "rev-alex-sunrise-avenue-3",
               "verified": true
             }
           ],
@@ -985,7 +794,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 2100,
           "lat": 31.2008,
           "lng": 29.8978,
-          "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=800&q=80",
           "description": "Historic 1929 landmark hotel on Saad Zaghloul Square, famed for hosting Winston Churchill, Somerset Maugham, and Agatha Christie.",
           "amenities": [
             "Historic Landmark",
@@ -997,28 +806,29 @@ window.WANDERLY_DATA = {
           "address": "16 Saad Zaghloul Square, Alexandria",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
-              "caption": "Steigenberger Cecil Hotel Alexandria - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Steigenberger Cecil Hotel - 1929 Iconic Landmark Facade"
             },
             {
-              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Presidential Suite with Panoramic Terrace"
+              "url": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Classic European High-Ceiling Heritage Suite"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Heated Infinity Swimming Pool"
+              "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Panoramic Eastern Harbor View from Balcony"
             },
             {
-              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Fine Dining Restaurant & Lounge"
+              "url": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Le Jardin Historical French Restaurant"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Luxury Spa & Wellness Sanctuary"
+              "url": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Monty Bar & Antique Library Lounge"
             }
           ],
           "verifiedReviews": [
             {
+              "id": "rev-alex-steigenberger-cecil-1",
               "name": "Elena Rostova",
               "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
               "date": "May 2026",
@@ -1026,37 +836,8 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=600&q=85"
               ],
-              "id": "rev-alex-steigenberger-cecil-1",
-              "verified": true
-            },
-            {
-              "name": "Dr. Ahmed El-Sayed",
-              "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80",
-              "date": "July 2026",
-              "rating": 5,
-              "title": "Exceptional Hospitality & Impeccable Views",
-              "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
-              "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
-              ],
-              "id": "rev-alex-steigenberger-cecil-2",
-              "verified": true
-            },
-            {
-              "name": "Sarah Jenkins",
-              "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80",
-              "date": "August 2026",
-              "rating": 5,
-              "title": "100% Authentic & Worth Every Penny",
-              "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
-              "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
-              ],
-              "id": "rev-alex-steigenberger-cecil-3",
               "verified": true
             }
           ],
@@ -1071,7 +852,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 1320,
           "lat": 31.2003,
           "lng": 29.8992,
-          "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
           "description": "1906 classical heritage hotel featuring high antique ceilings and the famous Blue Harbor rooftop terrace overlooking Eastern Harbor.",
           "amenities": [
             "Rooftop Sea Terrace",
@@ -1082,28 +863,29 @@ window.WANDERLY_DATA = {
           "address": "17 El Shohada Street, Raml Station, Alexandria",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80",
-              "caption": "Windsor Palace Luxury Heritage Hotel - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Paradise Inn Windsor Palace - Belle Époque Heritage"
             },
             {
-              "url": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Deluxe King Bed & Living Quarters"
+              "url": "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Antique Handcrafted Queen Room"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Sunbed Deck & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Blue Harbor Famous Open-Air Rooftop Cafe"
             },
             {
-              "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Breakfast Buffet & Artisan Bakery"
+              "url": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Queen Elizabeth Hall Breakfast Buffet"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Evening Illumination & Courtyard"
+              "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Vintage 1906 Gilded Elevator & Marble Lobby"
             }
           ],
           "verifiedReviews": [
             {
+              "id": "rev-alex-windsor-palace-1",
               "name": "Dr. Ahmed El-Sayed",
               "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80",
               "date": "July 2026",
@@ -1111,36 +893,8 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?auto=format&fit=crop&w=600&q=85"
               ],
-              "id": "rev-alex-windsor-palace-1",
-              "verified": true
-            },
-            {
-              "name": "Sarah Jenkins",
-              "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80",
-              "date": "August 2026",
-              "rating": 5,
-              "title": "100% Authentic & Worth Every Penny",
-              "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
-              "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
-              ],
-              "id": "rev-alex-windsor-palace-2",
-              "verified": true
-            },
-            {
-              "name": "Mohamed Tariq",
-              "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80",
-              "date": "June 2026",
-              "rating": 4.8,
-              "title": "Great Strategic Location & Friendly Concierge",
-              "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
-              "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
-              ],
-              "id": "rev-alex-windsor-palace-3",
               "verified": true
             }
           ],
@@ -1155,7 +909,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 870,
           "lat": 31.1965,
           "lng": 29.8942,
-          "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80",
           "description": "Comfortable central stay in downtown Alexandria with rooftop swimming pool, restaurant, and easy access to shopping.",
           "amenities": [
             "Rooftop Pool",
@@ -1166,24 +920,29 @@ window.WANDERLY_DATA = {
           "address": "9 Borsa Kadima Street, Mansheya, Alexandria",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80",
-              "caption": "Cherry Maryski Hotel - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Cherry Maryski Hotel - Central Alexandria Downtown"
             },
             {
-              "url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Executive Studio with City View"
+              "url": "https://images.unsplash.com/photo-1568495248636-6432b97bd949?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Comfort Standard Twin Room"
             },
             {
-              "url": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Rooftop Plunge Pool & Sunset Bar"
+              "url": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Rooftop Swimming Pool with City Skyline"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Private Marble Bathroom & Jacuzzi"
+              "url": "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Mansheya International Restaurant"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Relaxation Sauna & Wellness Corner"
             }
           ],
           "verifiedReviews": [
             {
+              "id": "rev-alex-cherry-maryski-1",
               "name": "Sarah Jenkins",
               "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80",
               "date": "August 2026",
@@ -1191,36 +950,8 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1568495248636-6432b97bd949?auto=format&fit=crop&w=600&q=85"
               ],
-              "id": "rev-alex-cherry-maryski-1",
-              "verified": true
-            },
-            {
-              "name": "Mohamed Tariq",
-              "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80",
-              "date": "June 2026",
-              "rating": 4.8,
-              "title": "Great Strategic Location & Friendly Concierge",
-              "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
-              "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
-              ],
-              "id": "rev-alex-cherry-maryski-2",
-              "verified": true
-            },
-            {
-              "name": "Elena Rostova",
-              "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
-              "date": "May 2026",
-              "rating": 4.9,
-              "title": "A Dream Stay! Will Definitely Return",
-              "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
-              "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
-              ],
-              "id": "rev-alex-cherry-maryski-3",
               "verified": true
             }
           ],
@@ -1233,7 +964,7 @@ window.WANDERLY_DATA = {
       "name": "Sharm El Sheikh",
       "country": "Egypt",
       "tagline": "World-class coral reefs, desert mountain safaris, and turquoise bays.",
-      "image": "https://images.unsplash.com/photo-1586500036706-41963de24d8b?auto=format&fit=crop&w=1200&q=80",
+      "image": "../images/photo-1586500036706-41963de24d8b.jpg",
       "lat": 27.9158,
       "lng": 34.3299,
       "weather": {
@@ -1249,7 +980,7 @@ window.WANDERLY_DATA = {
           "category": "Nature",
           "price": 45,
           "rating": 4.9,
-          "image": "../images/photo-1544551763-46a013bb70d5.jpg",
+          "image": "../images/sharm-ras-mohammed-user.jpg",
           "lat": 27.7255,
           "lng": 34.252,
           "description": "Protected coral reefs, mangrove channels, and panoramic sea vistas.",
@@ -1262,7 +993,7 @@ window.WANDERLY_DATA = {
           "category": "Dining",
           "price": 35,
           "rating": 4.8,
-          "image": "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/sharm-farsha-user.jpg",
           "lat": 27.8569,
           "lng": 34.3068,
           "description": "Cliffside Arabian lounge with illuminated lanterns and sea sunset views.",
@@ -1275,7 +1006,7 @@ window.WANDERLY_DATA = {
           "category": "Adventure",
           "price": 90,
           "rating": 4.8,
-          "image": "../images/photo-1682687221038-404670f09ef1.jpg",
+          "image": "../images/sharm-blue-hole-user.jpg",
           "lat": 28.5722,
           "lng": 34.5372,
           "description": "Legendary submarine sinkhole with crystal water and colorful marine life.",
@@ -1288,7 +1019,7 @@ window.WANDERLY_DATA = {
           "category": "Adventure",
           "price": 50,
           "rating": 4.7,
-          "image": "../images/photo-1509316975850-ff9c5deb0cd9.jpg",
+          "image": "../images/sharm-sinai-quad-user.jpg",
           "lat": 28.021,
           "lng": 34.438,
           "description": "ATV quad biking through Sinai canyon mountains with Bedouin tea.",
@@ -1301,7 +1032,7 @@ window.WANDERLY_DATA = {
           "category": "Dining",
           "price": 28,
           "rating": 4.5,
-          "image": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/sharm-naama-bay-user.jpg",
           "lat": 27.914,
           "lng": 34.319,
           "description": "Lively beachfront promenade with restaurants, cafes, and sandy beaches.",
@@ -1314,7 +1045,7 @@ window.WANDERLY_DATA = {
           "category": "Shopping",
           "price": 20,
           "rating": 4.5,
-          "image": "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/sharm-soho-square-user.jpg",
           "lat": 27.9626,
           "lng": 34.3935,
           "description": "Vibrant entertainment square with dancing fountains, restaurants, and shops.",
@@ -1332,7 +1063,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 3100,
           "lat": 27.962,
           "lng": 34.4021,
-          "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80&sig=173",
           "description": "Palatial hillside luxury resort with 1 km private reef dive site, 5 swimming pools, Arabian chalets, and spa.",
           "amenities": [
             "House Reef Diving",
@@ -1344,20 +1075,24 @@ window.WANDERLY_DATA = {
           "address": "1 Four Seasons Boulevard, Sharks Bay, Sharm El Sheikh",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80",
-              "caption": "Four Seasons Resort Sharm El Sheikh - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=1200&q=85&sig=174",
+              "caption": "Four Seasons Resort Sharm El Sheikh - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Executive Studio with City View"
+              "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1200&q=85&sig=175",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Rooftop Plunge Pool & Sunset Bar"
+              "url": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=1200&q=85&sig=176",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Private Marble Bathroom & Jacuzzi"
+              "url": "https://images.unsplash.com/photo-1587985064135-0366536eab42?auto=format&fit=crop&w=1200&q=85&sig=177",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=85&sig=178",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -1369,8 +1104,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=600&q=85&sig=175"
               ],
               "id": "rev-sharm-four-seasons-1",
               "verified": true
@@ -1383,7 +1117,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=600&q=85&sig=176"
               ],
               "id": "rev-sharm-four-seasons-2",
               "verified": true
@@ -1396,7 +1130,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1587985064135-0366536eab42?auto=format&fit=crop&w=600&q=85&sig=177"
               ],
               "id": "rev-sharm-four-seasons-3",
               "verified": true
@@ -1413,7 +1147,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 2900,
           "lat": 28.0315,
           "lng": 34.4361,
-          "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80&sig=179",
           "description": "Ultra all-inclusive luxury resort featuring a massive aquapark, private jetty, Anjana Spa, and pristine coral reef.",
           "amenities": [
             "Ultra All-Inclusive",
@@ -1425,20 +1159,24 @@ window.WANDERLY_DATA = {
           "address": "Nabq Bay, Sharm El Sheikh",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
-              "caption": "Rixos Premium Seagate Sharm - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=85&sig=180",
+              "caption": "Rixos Premium Seagate Sharm - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Comfort Queen Room with Work Desk"
+              "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85&sig=181",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Terrace Café & Lounge Area"
+              "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85&sig=182",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Wellness & Fitness Suite"
+              "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85&sig=183",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=1200&q=85&sig=184",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -1450,7 +1188,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=85&sig=181"
               ],
               "id": "rev-sharm-rixos-seagate-1",
               "verified": true
@@ -1463,7 +1201,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=85&sig=182"
               ],
               "id": "rev-sharm-rixos-seagate-2",
               "verified": true
@@ -1476,8 +1214,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=85&sig=183"
               ],
               "id": "rev-sharm-rixos-seagate-3",
               "verified": true
@@ -1494,7 +1231,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 2450,
           "lat": 28.0581,
           "lng": 34.4445,
-          "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=800&q=80&sig=185",
           "description": "Magnificent 5-star resort in Nabq with 30,000 sqm private beach, 3 heated pools, endless water sports, and culinary excellence.",
           "amenities": [
             "Private Beach",
@@ -1506,24 +1243,24 @@ window.WANDERLY_DATA = {
           "address": "Nabq Bay, South Sinai",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",
-              "caption": "Steigenberger Alcazar - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1572331165267-854da2b10ccc?auto=format&fit=crop&w=1200&q=85&sig=186",
+              "caption": "Steigenberger Alcazar - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Presidential Suite with Panoramic Terrace"
+              "url": "https://images.unsplash.com/photo-1525610553991-2bede1a236e2?auto=format&fit=crop&w=1200&q=85&sig=187",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Heated Infinity Swimming Pool"
+              "url": "https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=1200&q=85&sig=188",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Fine Dining Restaurant & Lounge"
+              "url": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=85&sig=189",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Luxury Spa & Wellness Sanctuary"
+              "url": "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=85&sig=190",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -1535,7 +1272,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1525610553991-2bede1a236e2?auto=format&fit=crop&w=600&q=85&sig=187"
               ],
               "id": "rev-sharm-steigenberger-alcazar-1",
               "verified": true
@@ -1548,8 +1285,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=600&q=85&sig=188"
               ],
               "id": "rev-sharm-steigenberger-alcazar-2",
               "verified": true
@@ -1562,8 +1298,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=600&q=85&sig=189"
               ],
               "id": "rev-sharm-steigenberger-alcazar-3",
               "verified": true
@@ -1580,7 +1315,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 2150,
           "lat": 27.9011,
           "lng": 34.3218,
-          "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=800&q=80",
           "description": "Directly located at the entrance to scenic Naama Bay with private sandy beach, coral reefs, outdoor jacuzzi, and sea views.",
           "amenities": [
             "Naama Bay",
@@ -1592,24 +1327,24 @@ window.WANDERLY_DATA = {
           "address": "Naama Bay, Sharm El Sheikh",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
-              "caption": "Stella Di Mare Beach Hotel & Spa - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Stella Di Mare Beach Hotel - Naama Bay Cliff Edge"
             },
             {
-              "url": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Deluxe King Bed & Living Quarters"
+              "url": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Panoramic Sea Front Balcony Suite"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Sunbed Deck & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Private Sandy Cove & Glass Elevator Access"
             },
             {
-              "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Breakfast Buffet & Artisan Bakery"
+              "url": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Corallo Red Sea Seafood Restaurant"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Evening Illumination & Courtyard"
+              "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Hydrotherapy Pool & Thalasso Spa"
             }
           ],
           "verifiedReviews": [
@@ -1621,8 +1356,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=600&q=85"
               ],
               "id": "rev-sharm-stella-di-mare-1",
               "verified": true
@@ -1635,8 +1369,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=85"
               ],
               "id": "rev-sharm-stella-di-mare-2",
               "verified": true
@@ -1649,7 +1382,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600&q=85"
               ],
               "id": "rev-sharm-stella-di-mare-3",
               "verified": true
@@ -1666,7 +1399,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 1820,
           "lat": 27.8522,
           "lng": 34.3167,
-          "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=800&q=80&sig=197",
           "description": "Cliffside resort on Ras Um Sid offering panoramic views of the Red Sea and direct access to famous coral snorkeling spots.",
           "amenities": [
             "Cliffside Views",
@@ -1678,20 +1411,24 @@ window.WANDERLY_DATA = {
           "address": "Ras Um Sid Cliff, Sharm El Sheikh",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80",
-              "caption": "Jaz Fanara Resort - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1549294413-26f195200c16?auto=format&fit=crop&w=1200&q=85&sig=198",
+              "caption": "Jaz Fanara Resort - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Executive Studio with City View"
+              "url": "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1200&q=85&sig=199",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Rooftop Plunge Pool & Sunset Bar"
+              "url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=85&sig=200",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Private Marble Bathroom & Jacuzzi"
+              "url": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=85&sig=201",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=85&sig=202",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -1703,8 +1440,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=600&q=85&sig=199"
               ],
               "id": "rev-sharm-jaz-fanara-1",
               "verified": true
@@ -1717,7 +1453,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=85&sig=200"
               ],
               "id": "rev-sharm-jaz-fanara-2",
               "verified": true
@@ -1730,7 +1466,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=85&sig=201"
               ],
               "id": "rev-sharm-jaz-fanara-3",
               "verified": true
@@ -1747,7 +1483,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 920,
           "lat": 27.8681,
           "lng": 34.3094,
-          "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
           "description": "Quiet, budget-friendly hotel on Ras Um Sid plateau with 2 outdoor pools, sauna, and complimentary beach shuttle.",
           "amenities": [
             "2 Pools",
@@ -1758,20 +1494,24 @@ window.WANDERLY_DATA = {
           "address": "Motel Street, Ras Um Sid Plateau, Sharm El Sheikh",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80",
-              "caption": "Falcon Hills Hotel - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Falcon Hills Hotel - Ras Um Sid Peaceful Plateau"
             },
             {
-              "url": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Comfort Queen Room with Work Desk"
+              "url": "https://images.unsplash.com/photo-1568495248636-6432b97bd949?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Cozy Standard Sinai View Room"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Terrace Café & Lounge Area"
+              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Twin Relaxation Swimming Pools"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Wellness & Fitness Suite"
+              "url": "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Sinai Star Outdoor Terrace Cafe"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Sinai Mountain Backdrop Sunset Views"
             }
           ],
           "verifiedReviews": [
@@ -1783,7 +1523,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1568495248636-6432b97bd949?auto=format&fit=crop&w=600&q=85"
               ],
               "id": "rev-sharm-falcon-hills-1",
               "verified": true
@@ -1796,7 +1536,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=85"
               ],
               "id": "rev-sharm-falcon-hills-2",
               "verified": true
@@ -1809,8 +1549,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=600&q=85"
               ],
               "id": "rev-sharm-falcon-hills-3",
               "verified": true
@@ -1825,7 +1564,7 @@ window.WANDERLY_DATA = {
       "name": "Luxor",
       "country": "Egypt",
       "tagline": "The world's greatest open-air museum, towering temples, and hot air balloons.",
-      "image": "https://images.unsplash.com/photo-1587975844610-40f1ad10d07a?auto=format&fit=crop&w=1200&q=80",
+      "image": "../images/photo-1587975844610-40f1ad10d07a.jpg",
       "lat": 25.6872,
       "lng": 32.6396,
       "weather": {
@@ -1841,7 +1580,7 @@ window.WANDERLY_DATA = {
           "category": "History",
           "price": 28,
           "rating": 4.9,
-          "image": "https://images.unsplash.com/photo-1587975844610-40f1ad10d07a?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/luxor-karnak-user.jpg",
           "lat": 25.7188,
           "lng": 32.6573,
           "description": "Giant hypostyle hall of 134 stone columns and sacred sanctuary.",
@@ -1854,7 +1593,7 @@ window.WANDERLY_DATA = {
           "category": "History",
           "price": 35,
           "rating": 4.9,
-          "image": "../images/photo-1592488832109-1d473228f00a.jpg",
+          "image": "../images/luxor-valley-user.jpg",
           "lat": 25.7402,
           "lng": 32.6014,
           "description": "Magnificent rock-cut tombs of the Pharaohs with vivid ancient murals.",
@@ -1867,7 +1606,7 @@ window.WANDERLY_DATA = {
           "category": "Adventure",
           "price": 110,
           "rating": 4.8,
-          "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/luxor-balloon-user.jpg",
           "lat": 25.7131,
           "lng": 32.582,
           "description": "Glide peacefully above temples, the Nile, and desert cliffs at dawn.",
@@ -1880,7 +1619,7 @@ window.WANDERLY_DATA = {
           "category": "History",
           "price": 20,
           "rating": 4.7,
-          "image": "https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/luxor-temple-night-user.jpg",
           "lat": 25.6995,
           "lng": 32.6391,
           "description": "Monumental illuminated temple dedicated to the rejuvenation of kingship.",
@@ -1893,7 +1632,7 @@ window.WANDERLY_DATA = {
           "category": "Nature",
           "price": 30,
           "rating": 4.6,
-          "image": "https://images.unsplash.com/photo-1578922746465-3a80a228f223?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/luxor-felucca-user.jpg",
           "lat": 25.6969,
           "lng": 32.6281,
           "description": "Tranquil traditional wooden sailboat gliding past Banana Island.",
@@ -1906,7 +1645,7 @@ window.WANDERLY_DATA = {
           "category": "Dining",
           "price": 25,
           "rating": 4.6,
-          "image": "../images/photo-1555396273-367ea4eb4db5.jpg",
+          "image": "../images/luxor-winter-palace-tea-user.jpg",
           "lat": 25.6961,
           "lng": 32.6379,
           "description": "Historic 1886 Victorian palace hotel terrace overlooking botanical gardens.",
@@ -1924,7 +1663,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 2780,
           "lat": 25.6961,
           "lng": 32.6379,
-          "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1587975844610-40f1ad10d07a?auto=format&fit=crop&w=800&q=80",
           "description": "Victorian palace from 1886 surrounded by century-old tropical gardens on the banks of the Nile, walking distance to Luxor Temple.",
           "amenities": [
             "Historic Palace",
@@ -1936,20 +1675,24 @@ window.WANDERLY_DATA = {
           "address": "Corniche El Nile, Luxor",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
-              "caption": "Sofitel Winter Palace Luxor - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1587975844610-40f1ad10d07a?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Sofitel Winter Palace Luxor - 1886 Victorian Landmark"
             },
             {
-              "url": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Comfort Queen Room with Work Desk"
+              "url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Historic Royal Nile Suite with Antique Furniture"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Terrace Café & Lounge Area"
+              "url": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1200&q=85",
+              "caption": "10-Acre Century-Old Tropical Botanical Gardens"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Wellness & Fitness Suite"
+              "url": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=85",
+              "caption": "1886 French Haute Cuisine Dining Room"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Royal Victoria Lounge & High Tea Terrace"
             }
           ],
           "verifiedReviews": [
@@ -1961,8 +1704,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=600&q=85"
               ],
               "id": "rev-luxor-winter-palace-1",
               "verified": true
@@ -1975,7 +1717,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=600&q=85"
               ],
               "id": "rev-luxor-winter-palace-2",
               "verified": true
@@ -1988,7 +1730,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600&q=85"
               ],
               "id": "rev-luxor-winter-palace-3",
               "verified": true
@@ -2005,7 +1747,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 2310,
           "lat": 25.7289,
           "lng": 32.6592,
-          "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80",
           "description": "Peaceful Nile resort north of Karnak with 2 infinity pools overlooking the river, Nayara Spa, and sunset cabanas.",
           "amenities": [
             "Dual Infinity Pools",
@@ -2017,24 +1759,24 @@ window.WANDERLY_DATA = {
           "address": "Karnak, Luxor",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",
-              "caption": "Hilton Luxor Resort & Spa - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Hilton Luxor Resort & Spa - East Bank River Oasis"
             },
             {
-              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Presidential Suite with Panoramic Terrace"
+              "url": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Modern Riverfront King Suite with Private Jacuzzi"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Heated Infinity Swimming Pool"
+              "url": "https://images.unsplash.com/photo-1563911302283-d2bc129e7570?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Dual Infinity Pools Overlooking the Nile & Feluccas"
             },
             {
-              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Fine Dining Restaurant & Lounge"
+              "url": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Silk Road Oriental Fine Dining"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Luxury Spa & Wellness Sanctuary"
+              "url": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Nile-Facing Nayara Wellness Spa"
             }
           ],
           "verifiedReviews": [
@@ -2046,7 +1788,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=600&q=85"
               ],
               "id": "rev-luxor-hilton-resort-1",
               "verified": true
@@ -2059,7 +1801,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1563911302283-d2bc129e7570?auto=format&fit=crop&w=600&q=85"
               ],
               "id": "rev-luxor-hilton-resort-2",
               "verified": true
@@ -2072,8 +1814,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=85"
               ],
               "id": "rev-luxor-hilton-resort-3",
               "verified": true
@@ -2090,7 +1831,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 2650,
           "lat": 25.6833,
           "lng": 32.6288,
-          "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=800&q=80&sig=221",
           "description": "Comfortable riverfront resort featuring a private boat jetty, outdoor pool, fitness center, and Italian & Lebanese dining.",
           "amenities": [
             "Private Boat Dock",
@@ -2102,24 +1843,24 @@ window.WANDERLY_DATA = {
           "address": "Khaled Ben El Walid Street, Luxor",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
-              "caption": "Steigenberger Nile Palace - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1200&q=85&sig=222",
+              "caption": "Steigenberger Nile Palace - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Deluxe King Bed & Living Quarters"
+              "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85&sig=223",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Sunbed Deck & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1200&q=85&sig=224",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Breakfast Buffet & Artisan Bakery"
+              "url": "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1200&q=85&sig=225",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Evening Illumination & Courtyard"
+              "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=85&sig=226",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -2131,7 +1872,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=85&sig=223"
               ],
               "id": "rev-luxor-steigenberger-nile-1",
               "verified": true
@@ -2144,8 +1885,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=85&sig=224"
               ],
               "id": "rev-luxor-steigenberger-nile-2",
               "verified": true
@@ -2158,8 +1898,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=600&q=85&sig=225"
               ],
               "id": "rev-luxor-steigenberger-nile-3",
               "verified": true
@@ -2176,7 +1915,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 1740,
           "lat": 25.6667,
           "lng": 32.6214,
-          "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=800&q=80&sig=227",
           "description": "Set on its own private 165-acre island in the Nile, with infinity pool, jogging paths, peacocks, and peaceful river isolation.",
           "amenities": [
             "Private Nile Island",
@@ -2188,20 +1927,24 @@ window.WANDERLY_DATA = {
           "address": "Kings Island, Luxor",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80",
-              "caption": "Jolie Ville Hotel & Spa Kings Island - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1527838832700-5059252407fa?auto=format&fit=crop&w=1200&q=85&sig=228",
+              "caption": "Jolie Ville Hotel & Spa Kings Island - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Executive Studio with City View"
+              "url": "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&w=1200&q=85&sig=229",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Rooftop Plunge Pool & Sunset Bar"
+              "url": "https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&w=1200&q=85&sig=230",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Private Marble Bathroom & Jacuzzi"
+              "url": "https://images.unsplash.com/photo-1566127444979-b3d2b654e3d7?auto=format&fit=crop&w=1200&q=85&sig=231",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1553913861-c0fddf2619ee?auto=format&fit=crop&w=1200&q=85&sig=232",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -2213,8 +1956,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&w=600&q=85&sig=229"
               ],
               "id": "rev-luxor-jolie-ville-1",
               "verified": true
@@ -2227,8 +1969,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&w=600&q=85&sig=230"
               ],
               "id": "rev-luxor-jolie-ville-2",
               "verified": true
@@ -2241,7 +1982,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1566127444979-b3d2b654e3d7?auto=format&fit=crop&w=600&q=85&sig=231"
               ],
               "id": "rev-luxor-jolie-ville-3",
               "verified": true
@@ -2258,7 +1999,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 810,
           "lat": 25.6944,
           "lng": 32.6385,
-          "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1578922746465-3a80a228f223?auto=format&fit=crop&w=800&q=80&sig=233",
           "description": "Affordable friendly hotel near Luxor Temple with rooftop swimming pool, garden terrace, and warm Upper Egyptian hospitality.",
           "amenities": [
             "Rooftop Pool",
@@ -2269,20 +2010,24 @@ window.WANDERLY_DATA = {
           "address": "Television Street, Luxor",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80",
-              "caption": "Dolfin Luxor Hotel - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=85&sig=234",
+              "caption": "Dolfin Luxor Hotel - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Comfort Queen Room with Work Desk"
+              "url": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1200&q=85&sig=235",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Terrace Café & Lounge Area"
+              "url": "https://images.unsplash.com/photo-1598940603846-a1edd0ef2574?auto=format&fit=crop&w=1200&q=85&sig=236",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Wellness & Fitness Suite"
+              "url": "https://images.unsplash.com/photo-1574359411659-15573a27fd0c?auto=format&fit=crop&w=1200&q=85&sig=237",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=85&sig=238",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -2294,8 +2039,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=600&q=85&sig=235"
               ],
               "id": "rev-luxor-dolfin-1",
               "verified": true
@@ -2308,7 +2052,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1598940603846-a1edd0ef2574?auto=format&fit=crop&w=600&q=85&sig=236"
               ],
               "id": "rev-luxor-dolfin-2",
               "verified": true
@@ -2321,7 +2065,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1574359411659-15573a27fd0c?auto=format&fit=crop&w=600&q=85&sig=237"
               ],
               "id": "rev-luxor-dolfin-3",
               "verified": true
@@ -2336,7 +2080,7 @@ window.WANDERLY_DATA = {
       "name": "Aswan",
       "country": "Egypt",
       "tagline": "Serene Nile cataracts, colorful Nubian culture, and sun-drenched temples.",
-      "image": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=1200&q=80",
+      "image": "../images/photo-1578922746465-3a80a228f223.jpg",
       "lat": 24.0889,
       "lng": 32.8998,
       "weather": {
@@ -2352,7 +2096,7 @@ window.WANDERLY_DATA = {
           "category": "History",
           "price": 30,
           "rating": 4.9,
-          "image": "https://images.unsplash.com/photo-1592488832109-1d473228f00a?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/aswan-philae-user.jpg",
           "lat": 24.0253,
           "lng": 32.8842,
           "description": "Breathtaking island temple saved from Nile waters and dedicated to Isis.",
@@ -2365,7 +2109,7 @@ window.WANDERLY_DATA = {
           "category": "Culture",
           "price": 20,
           "rating": 4.8,
-          "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/aswan-nubian-village-user.jpg",
           "lat": 24.0531,
           "lng": 32.8711,
           "description": "Vibrantly painted homes, warm hospitality, spices, and Nile views.",
@@ -2378,7 +2122,7 @@ window.WANDERLY_DATA = {
           "category": "History",
           "price": 95,
           "rating": 4.9,
-          "image": "../images/photo-1539650116574-75c0c6d73f6e.jpg",
+          "image": "../images/aswan-abu-simbel-user.jpg",
           "lat": 22.3372,
           "lng": 31.6258,
           "description": "Colossal rock temples of Ramses II and Nefertari on Lake Nasser.",
@@ -2391,7 +2135,7 @@ window.WANDERLY_DATA = {
           "category": "Nature",
           "price": 15,
           "rating": 4.6,
-          "image": "https://images.unsplash.com/photo-1578922746465-3a80a228f223?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/aswan-elephantine-user.jpg",
           "lat": 24.0906,
           "lng": 32.8872,
           "description": "Peaceful island with palm orchards, ancient ruins, and botanical gardens.",
@@ -2404,7 +2148,7 @@ window.WANDERLY_DATA = {
           "category": "History",
           "price": 12,
           "rating": 4.4,
-          "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/aswan-high-dam-user.jpg",
           "lat": 23.9706,
           "lng": 32.8778,
           "description": "Engineering marvel holding back the massive waters of Lake Nasser.",
@@ -2435,7 +2179,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 3200,
           "lat": 24.0792,
           "lng": 32.8864,
-          "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
           "description": "Legendary 19th-century Victorian palace on pink granite cliffs overlooking Elephantine Island, famous for Agatha Christie.",
           "amenities": [
             "Legendary Nile Terrace",
@@ -2447,24 +2191,24 @@ window.WANDERLY_DATA = {
           "address": "Abtal El Tahrir Street, Aswan",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
-              "caption": "Sofitel Legend Old Cataract Aswan - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Sofitel Legend Old Cataract Aswan - Historic Pink Granite Palace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Presidential Suite with Panoramic Terrace"
+              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Agatha Christie Legendary Suite with Elephantine Island View"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Heated Infinity Swimming Pool"
+              "url": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1200&q=85",
+              "caption": "The World-Famous Historic Terrace at Sunset"
             },
             {
-              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Fine Dining Restaurant & Lounge"
+              "url": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=85",
+              "caption": "1902 Grand Dining Room with Moorish Dome"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Luxury Spa & Wellness Sanctuary"
+              "url": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Sofitel So SPA with Indoor Heated Pool & Granite Baths"
             }
           ],
           "verifiedReviews": [
@@ -2476,8 +2220,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=85"
               ],
               "id": "rev-aswan-old-cataract-1",
               "verified": true
@@ -2490,7 +2233,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=600&q=85"
               ],
               "id": "rev-aswan-old-cataract-2",
               "verified": true
@@ -2503,7 +2246,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600&q=85"
               ],
               "id": "rev-aswan-old-cataract-3",
               "verified": true
@@ -2520,7 +2263,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 1120,
           "lat": 24.0205,
           "lng": 32.8812,
-          "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80&sig=245",
           "description": "Eco-chic luxury boutique hotel on Heisa Island facing Philae Temple, with private hot tubs on the rocks and Nubian vibes.",
           "amenities": [
             "Private Jacuzzis",
@@ -2532,24 +2275,24 @@ window.WANDERLY_DATA = {
           "address": "Heisa Island, Philae, Aswan",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80",
-              "caption": "Benben by Sand - Adults Only - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=1200&q=85&sig=246",
+              "caption": "Benben by Sand - Adults Only - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Deluxe King Bed & Living Quarters"
+              "url": "https://images.unsplash.com/photo-1522093007474-d86e9bf7ba6f?auto=format&fit=crop&w=1200&q=85&sig=247",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Sunbed Deck & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?auto=format&fit=crop&w=1200&q=85&sig=248",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Breakfast Buffet & Artisan Bakery"
+              "url": "https://images.unsplash.com/photo-1543349689-9a4d426bee8e?auto=format&fit=crop&w=1200&q=85&sig=249",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Evening Illumination & Courtyard"
+              "url": "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?auto=format&fit=crop&w=1200&q=85&sig=250",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -2561,7 +2304,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1522093007474-d86e9bf7ba6f?auto=format&fit=crop&w=600&q=85&sig=247"
               ],
               "id": "rev-aswan-benben-1",
               "verified": true
@@ -2574,7 +2317,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?auto=format&fit=crop&w=600&q=85&sig=248"
               ],
               "id": "rev-aswan-benben-2",
               "verified": true
@@ -2587,8 +2330,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1543349689-9a4d426bee8e?auto=format&fit=crop&w=600&q=85&sig=249"
               ],
               "id": "rev-aswan-benben-3",
               "verified": true
@@ -2605,7 +2347,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 2190,
           "lat": 24.0921,
           "lng": 32.8894,
-          "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=800&q=80&sig=251",
           "description": "Located on Elephantine Island, offering 360-degree Nile views, panoramic tower restaurant, and complimentary boat shuttles.",
           "amenities": [
             "Elephantine Island",
@@ -2617,20 +2359,24 @@ window.WANDERLY_DATA = {
           "address": "Elephantine Island, Aswan",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",
-              "caption": "Mövenpick Resort Aswan - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1545987796-200677ee1011?auto=format&fit=crop&w=1200&q=85&sig=252",
+              "caption": "Mövenpick Resort Aswan - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Executive Studio with City View"
+              "url": "https://images.unsplash.com/photo-1565099824688-e93eb20fe622?auto=format&fit=crop&w=1200&q=85&sig=253",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Rooftop Plunge Pool & Sunset Bar"
+              "url": "https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=1200&q=85&sig=254",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Private Marble Bathroom & Jacuzzi"
+              "url": "https://images.unsplash.com/photo-1592488832109-1d473228f00a?auto=format&fit=crop&w=1200&q=85&sig=255",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1200&q=85&sig=256",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -2642,7 +2388,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1565099824688-e93eb20fe622?auto=format&fit=crop&w=600&q=85&sig=253"
               ],
               "id": "rev-aswan-movenpick-1",
               "verified": true
@@ -2655,8 +2401,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=600&q=85&sig=254"
               ],
               "id": "rev-aswan-movenpick-2",
               "verified": true
@@ -2669,8 +2414,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1592488832109-1d473228f00a?auto=format&fit=crop&w=600&q=85&sig=255"
               ],
               "id": "rev-aswan-movenpick-3",
               "verified": true
@@ -2687,7 +2431,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 1450,
           "lat": 24.0768,
           "lng": 32.8899,
-          "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80&sig=257",
           "description": "Hilltop hotel opposite the Nubian Museum offering high panoramic views over the Nile Valley and central Aswan.",
           "amenities": [
             "Hilltop Nile Panorama",
@@ -2698,20 +2442,24 @@ window.WANDERLY_DATA = {
           "address": "Basma Hill, Aswan",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
-              "caption": "Basma Hotel Aswan - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1200&q=85&sig=258",
+              "caption": "Basma Hotel Aswan - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Comfort Queen Room with Work Desk"
+              "url": "https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=1200&q=85&sig=259",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Terrace Café & Lounge Area"
+              "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=85&sig=260",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Wellness & Fitness Suite"
+              "url": "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1200&q=85&sig=261",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85&sig=262",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -2723,8 +2471,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=600&q=85&sig=259"
               ],
               "id": "rev-aswan-basma-1",
               "verified": true
@@ -2737,8 +2484,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=600&q=85&sig=260"
               ],
               "id": "rev-aswan-basma-2",
               "verified": true
@@ -2751,7 +2497,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=600&q=85&sig=261"
               ],
               "id": "rev-aswan-basma-3",
               "verified": true
@@ -2768,7 +2514,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 940,
           "lat": 24.0542,
           "lng": 32.8698,
-          "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=800&q=80",
           "description": "Authentic colorful Nubian architecture in West Bank Gharb Soheil village with home-cooked Egyptian dishes and rooftop tea.",
           "amenities": [
             "Nubian Architecture",
@@ -2779,24 +2525,24 @@ window.WANDERLY_DATA = {
           "address": "Gharb Soheil Nubian Village, Aswan",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80",
-              "caption": "Kato Dool Nubian Resort - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Kato Dool Nubian Resort - West Bank Vibrant Architecture"
             },
             {
-              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Presidential Suite with Panoramic Terrace"
+              "url": "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Hand-Painted Colorful Nubian Dome Suite"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Heated Infinity Swimming Pool"
+              "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Direct Natural Sandy Nile Beach & Wooden Pergolas"
             },
             {
-              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Fine Dining Restaurant & Lounge"
+              "url": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Traditional Nubian Breakfast & Mint Tea Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Luxury Spa & Wellness Sanctuary"
+              "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Night Illumination & Live Nubian Folk Music"
             }
           ],
           "verifiedReviews": [
@@ -2808,8 +2554,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?auto=format&fit=crop&w=600&q=85"
               ],
               "id": "rev-aswan-kato-dool-1",
               "verified": true
@@ -2822,7 +2567,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=85"
               ],
               "id": "rev-aswan-kato-dool-2",
               "verified": true
@@ -2835,7 +2580,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=85"
               ],
               "id": "rev-aswan-kato-dool-3",
               "verified": true
@@ -2850,7 +2595,7 @@ window.WANDERLY_DATA = {
       "name": "Hurghada",
       "country": "Egypt",
       "tagline": "Golden beaches, crystalline waters, lively marina, and desert dunes.",
-      "image": "https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&w=1200&q=80",
+      "image": "../images/photo-1507525428034-b723cf961d3e.jpg",
       "lat": 27.2579,
       "lng": 33.8116,
       "weather": {
@@ -2866,7 +2611,7 @@ window.WANDERLY_DATA = {
           "category": "Nature",
           "price": 40,
           "rating": 4.8,
-          "image": "../images/photo-1507525428034-b723cf961d3e.jpg",
+          "image": "../images/hurghada-giftun-user.jpg",
           "lat": 27.2405,
           "lng": 33.9452,
           "description": "White sand beach sandbar with turquoise shallow waters and vibrant fish.",
@@ -2879,7 +2624,7 @@ window.WANDERLY_DATA = {
           "category": "Dining",
           "price": 30,
           "rating": 4.6,
-          "image": "../images/photo-1559339352-11d035aa65de.jpg",
+          "image": "../images/hurghada-marina-user.jpg",
           "lat": 27.2281,
           "lng": 33.8427,
           "description": "Yacht harbor with palm-lined waterfront restaurants and boutiques.",
@@ -2892,7 +2637,7 @@ window.WANDERLY_DATA = {
           "category": "Adventure",
           "price": 48,
           "rating": 4.7,
-          "image": "../images/photo-1509316975850-ff9c5deb0cd9.jpg",
+          "image": "../images/hurghada-desert-safari-user.jpg",
           "lat": 27.1852,
           "lng": 33.7251,
           "description": "Jeep 4x4 dune tour with camel rides, BBQ dinner, and stargazing.",
@@ -2905,7 +2650,7 @@ window.WANDERLY_DATA = {
           "category": "Adventure",
           "price": 65,
           "rating": 4.7,
-          "image": "../images/photo-1682687221038-404670f09ef1.jpg",
+          "image": "../images/hurghada-sindbad-submarine-user.jpg",
           "lat": 27.1953,
           "lng": 33.8291,
           "description": "Dive 20 meters underwater inside a real submarine to view deep coral reefs.",
@@ -2918,7 +2663,7 @@ window.WANDERLY_DATA = {
           "category": "Shopping",
           "price": 15,
           "rating": 4.4,
-          "image": "../images/photo-1590070120659-c7829b11e4c3.jpg",
+          "image": "../images/hurghada-el-dahar-souk-user.jpg",
           "lat": 27.2558,
           "lng": 33.8159,
           "description": "Authentic Egyptian old town market for local handicrafts, tea, and spices.",
@@ -2931,7 +2676,7 @@ window.WANDERLY_DATA = {
           "category": "Adventure",
           "price": 42,
           "rating": 4.6,
-          "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/hurghada-makadi-waterworld-user.jpg",
           "lat": 26.9856,
           "lng": 33.8967,
           "description": "Huge water park with high-speed slides, wave pools, and lazy river.",
@@ -2949,7 +2694,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 2150,
           "lat": 27.0624,
           "lng": 33.8821,
-          "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80&sig=269",
           "description": "Ultra-luxury all-suite sanctuary inspired by traditional Arabic architecture with 850m private beach and house reef.",
           "amenities": [
             "All-Suite Villas",
@@ -2961,24 +2706,24 @@ window.WANDERLY_DATA = {
           "address": "Sahl Hasheesh, Red Sea",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
-              "caption": "The Oberoi Beach Resort Sahl Hasheesh - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=1200&q=85&sig=270",
+              "caption": "The Oberoi Beach Resort Sahl Hasheesh - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Deluxe King Bed & Living Quarters"
+              "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1200&q=85&sig=271",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Sunbed Deck & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=1200&q=85&sig=272",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Breakfast Buffet & Artisan Bakery"
+              "url": "https://images.unsplash.com/photo-1587985064135-0366536eab42?auto=format&fit=crop&w=1200&q=85&sig=273",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Evening Illumination & Courtyard"
+              "url": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=85&sig=274",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -2990,8 +2735,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=600&q=85&sig=271"
               ],
               "id": "rev-hur-oberoi-1",
               "verified": true
@@ -3004,7 +2748,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=600&q=85&sig=272"
               ],
               "id": "rev-hur-oberoi-2",
               "verified": true
@@ -3017,7 +2761,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1587985064135-0366536eab42?auto=format&fit=crop&w=600&q=85&sig=273"
               ],
               "id": "rev-hur-oberoi-3",
               "verified": true
@@ -3034,7 +2778,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 1840,
           "lat": 26.9942,
           "lng": 33.9012,
-          "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80&sig=275",
           "description": "Bohemian-luxury boutique resort in Makadi Bay with a la carte all-inclusive dining and private pool cabanas.",
           "amenities": [
             "A La Carte Dining",
@@ -3046,20 +2790,24 @@ window.WANDERLY_DATA = {
           "address": "Makadi Bay, Hurghada",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80",
-              "caption": "Sunrise Tucana Resort - Grand Select - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=85&sig=276",
+              "caption": "Sunrise Tucana Resort - Grand Select - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Executive Studio with City View"
+              "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85&sig=277",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Rooftop Plunge Pool & Sunset Bar"
+              "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85&sig=278",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Private Marble Bathroom & Jacuzzi"
+              "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85&sig=279",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=1200&q=85&sig=280",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -3071,7 +2819,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=85&sig=277"
               ],
               "id": "rev-hur-sunrise-tucana-1",
               "verified": true
@@ -3084,7 +2832,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=85&sig=278"
               ],
               "id": "rev-hur-sunrise-tucana-2",
               "verified": true
@@ -3097,8 +2845,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=85&sig=279"
               ],
               "id": "rev-hur-sunrise-tucana-3",
               "verified": true
@@ -3115,7 +2862,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 3100,
           "lat": 27.1645,
           "lng": 33.8239,
-          "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=800&q=80&sig=281",
           "description": "Sprawling luxury water paradise with 5,000 sqm pool landscape, lazy river, golf course, and private sandy beach.",
           "amenities": [
             "Lazy River Pool",
@@ -3127,20 +2874,24 @@ window.WANDERLY_DATA = {
           "address": "Yussif Afifi Road, Hurghada",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",
-              "caption": "Steigenberger ALDAU Beach Hotel - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1572331165267-854da2b10ccc?auto=format&fit=crop&w=1200&q=85&sig=282",
+              "caption": "Steigenberger ALDAU Beach Hotel - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Comfort Queen Room with Work Desk"
+              "url": "https://images.unsplash.com/photo-1525610553991-2bede1a236e2?auto=format&fit=crop&w=1200&q=85&sig=283",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Terrace Café & Lounge Area"
+              "url": "https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=1200&q=85&sig=284",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Wellness & Fitness Suite"
+              "url": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=85&sig=285",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=85&sig=286",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -3152,7 +2903,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1525610553991-2bede1a236e2?auto=format&fit=crop&w=600&q=85&sig=283"
               ],
               "id": "rev-hur-steigenberger-aldau-1",
               "verified": true
@@ -3165,8 +2916,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=600&q=85&sig=284"
               ],
               "id": "rev-hur-steigenberger-aldau-2",
               "verified": true
@@ -3179,8 +2929,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=600&q=85&sig=285"
               ],
               "id": "rev-hur-steigenberger-aldau-3",
               "verified": true
@@ -3197,7 +2946,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 2900,
           "lat": 27.0984,
           "lng": 33.8375,
-          "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80&sig=287",
           "description": "Family-favorite beachfront resort centered around a natural sea lagoon, Olympic-sized pool, and aquapark.",
           "amenities": [
             "Natural Sea Lagoon",
@@ -3209,24 +2958,24 @@ window.WANDERLY_DATA = {
           "address": "Safaga Road, Hurghada",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
-              "caption": "Desert Rose Resort - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1200&q=85&sig=288",
+              "caption": "Desert Rose Resort - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Presidential Suite with Panoramic Terrace"
+              "url": "https://images.unsplash.com/photo-1563911302283-d2bc129e7570?auto=format&fit=crop&w=1200&q=85&sig=289",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Heated Infinity Swimming Pool"
+              "url": "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1200&q=85&sig=290",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Fine Dining Restaurant & Lounge"
+              "url": "https://images.unsplash.com/photo-1586500036706-41963de24d8b?auto=format&fit=crop&w=1200&q=85&sig=291",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Luxury Spa & Wellness Sanctuary"
+              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=85&sig=292",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -3238,8 +2987,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1563911302283-d2bc129e7570?auto=format&fit=crop&w=600&q=85&sig=289"
               ],
               "id": "rev-hur-desert-rose-1",
               "verified": true
@@ -3252,8 +3000,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=600&q=85&sig=290"
               ],
               "id": "rev-hur-desert-rose-2",
               "verified": true
@@ -3266,7 +3013,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1586500036706-41963de24d8b?auto=format&fit=crop&w=600&q=85&sig=291"
               ],
               "id": "rev-hur-desert-rose-3",
               "verified": true
@@ -3283,7 +3030,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 1420,
           "lat": 27.2185,
           "lng": 33.8398,
-          "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80&sig=293",
           "description": "Charming beachfront hotel in Sakala center, steps from the Marina with private beach, diving, and nightlife.",
           "amenities": [
             "Private Beach",
@@ -3294,24 +3041,24 @@ window.WANDERLY_DATA = {
           "address": "Sheraton Road, Sakala, Hurghada",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80",
-              "caption": "Bella Vista Resort Hurghada - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85&sig=294",
+              "caption": "Bella Vista Resort Hurghada - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Deluxe King Bed & Living Quarters"
+              "url": "https://images.unsplash.com/photo-1549294413-26f195200c16?auto=format&fit=crop&w=1200&q=85&sig=295",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Sunbed Deck & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1200&q=85&sig=296",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Breakfast Buffet & Artisan Bakery"
+              "url": "https://images.unsplash.com/photo-1568495248636-6432b97bd949?auto=format&fit=crop&w=1200&q=85&sig=297",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Evening Illumination & Courtyard"
+              "url": "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1200&q=85&sig=298",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -3323,8 +3070,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1549294413-26f195200c16?auto=format&fit=crop&w=600&q=85&sig=295"
               ],
               "id": "rev-hur-bella-vista-1",
               "verified": true
@@ -3337,7 +3083,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=600&q=85&sig=296"
               ],
               "id": "rev-hur-bella-vista-2",
               "verified": true
@@ -3350,7 +3096,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1568495248636-6432b97bd949?auto=format&fit=crop&w=600&q=85&sig=297"
               ],
               "id": "rev-hur-bella-vista-3",
               "verified": true
@@ -3365,7 +3111,7 @@ window.WANDERLY_DATA = {
       "name": "Dahab",
       "country": "Egypt",
       "tagline": "Bohemian vibes, world-famous diving, mountain canyons, and tranquil breeze.",
-      "image": "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1200&q=80",
+      "image": "../images/photo-1544551763-46a013bb70d5.jpg",
       "lat": 28.5097,
       "lng": 34.5136,
       "weather": {
@@ -3381,7 +3127,7 @@ window.WANDERLY_DATA = {
           "category": "Adventure",
           "price": 40,
           "rating": 4.9,
-          "image": "../images/photo-1682687221038-404670f09ef1.jpg",
+          "image": "../images/dahab-blue-hole-user.jpg",
           "lat": 28.5722,
           "lng": 34.5372,
           "description": "Iconic natural marine wonder known as the diver's paradise of Sinai.",
@@ -3394,7 +3140,7 @@ window.WANDERLY_DATA = {
           "category": "Adventure",
           "price": 50,
           "rating": 4.8,
-          "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/dahab-canyon-dive-user.jpg",
           "lat": 28.5539,
           "lng": 34.5244,
           "description": "Spectacular underwater chasm bursting with coral gardens and fish.",
@@ -3407,7 +3153,7 @@ window.WANDERLY_DATA = {
           "category": "Dining",
           "price": 22,
           "rating": 4.7,
-          "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/dahab-lighthouse-user.jpg",
           "lat": 28.5022,
           "lng": 34.5208,
           "description": "Laid-back seafront cafes with carpets, shisha, fresh smoothies, and sea dips.",
@@ -3420,7 +3166,7 @@ window.WANDERLY_DATA = {
           "category": "Nature",
           "price": 10,
           "rating": 4.6,
-          "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/dahab-laguna-user.jpg",
           "lat": 28.4867,
           "lng": 34.5094,
           "description": "Curving sandy peninsula famous for kitesurfing, windsurfing, and clear water.",
@@ -3433,7 +3179,7 @@ window.WANDERLY_DATA = {
           "category": "Adventure",
           "price": 65,
           "rating": 4.9,
-          "image": "../images/photo-1469854523086-cc02fe5d8800.jpg",
+          "image": "../images/dahab-mount-sinai-user.jpg",
           "lat": 28.5397,
           "lng": 33.9753,
           "description": "Unforgettable midnight trek to watch the sunrise above desert peaks.",
@@ -3446,7 +3192,7 @@ window.WANDERLY_DATA = {
           "category": "Dining",
           "price": 30,
           "rating": 4.7,
-          "image": "../images/photo-1533105079780-92b9be482077.jpg",
+          "image": "../images/dahab-wadi-genai-dinner-user.jpg",
           "lat": 28.4611,
           "lng": 34.4628,
           "description": "Candlelit feast under starry desert skies inside a granite mountain valley.",
@@ -3464,7 +3210,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 2100,
           "lat": 28.4735,
           "lng": 34.5098,
-          "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=800&q=80&sig=299",
           "description": "Architectural masterpiece designed by Alain Jaouen with 5 seawater pools overlooking the Gulf of Aqaba and Sinai mountains.",
           "amenities": [
             "Seawater Pools",
@@ -3476,20 +3222,24 @@ window.WANDERLY_DATA = {
           "address": "South Dahab Coastline, South Sinai",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
-              "caption": "Le Méridien Dahab Resort - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=1200&q=85&sig=300",
+              "caption": "Le Méridien Dahab Resort - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Executive Studio with City View"
+              "url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=85&sig=301",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Rooftop Plunge Pool & Sunset Bar"
+              "url": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=85&sig=302",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Private Marble Bathroom & Jacuzzi"
+              "url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85&sig=303",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1200&q=85&sig=304",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -3501,8 +3251,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=600&q=85&sig=301"
               ],
               "id": "rev-dahab-le-meridien-1",
               "verified": true
@@ -3515,7 +3264,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=600&q=85&sig=302"
               ],
               "id": "rev-dahab-le-meridien-2",
               "verified": true
@@ -3528,7 +3277,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=85&sig=303"
               ],
               "id": "rev-dahab-le-meridien-3",
               "verified": true
@@ -3545,7 +3294,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 1750,
           "lat": 28.4842,
           "lng": 34.5115,
-          "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80&sig=305",
           "description": "Picturesque 4-star resort directly situated on the Dahab Lagoon sandbar with spectacular mountain and bay views.",
           "amenities": [
             "Lagoon Beach",
@@ -3556,20 +3305,24 @@ window.WANDERLY_DATA = {
           "address": "Dahab Lagoon, South Sinai",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",
-              "caption": "Jaz Dahabeya - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=85&sig=306",
+              "caption": "Jaz Dahabeya - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Comfort Queen Room with Work Desk"
+              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=85&sig=307",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Terrace Café & Lounge Area"
+              "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=85&sig=308",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Wellness & Fitness Suite"
+              "url": "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=1200&q=85&sig=309",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1200&q=85&sig=310",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -3581,7 +3334,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=85&sig=307"
               ],
               "id": "rev-dahab-jaz-dahabeya-1",
               "verified": true
@@ -3594,7 +3347,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=85&sig=308"
               ],
               "id": "rev-dahab-jaz-dahabeya-2",
               "verified": true
@@ -3607,8 +3360,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=600&q=85&sig=309"
               ],
               "id": "rev-dahab-jaz-dahabeya-3",
               "verified": true
@@ -3625,7 +3377,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 1620,
           "lat": 28.4881,
           "lng": 34.5138,
-          "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80&sig=311",
           "description": "Relaxed beachfront resort on golden sandy bay offering world-renowned windsurfing station, pool, and family activities.",
           "amenities": [
             "Sandy Beach",
@@ -3637,24 +3389,24 @@ window.WANDERLY_DATA = {
           "address": "Dahab Lagoon Beach",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
-              "caption": "Swiss Inn Resort Dahab - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=85&sig=312",
+              "caption": "Swiss Inn Resort Dahab - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Presidential Suite with Panoramic Terrace"
+              "url": "https://images.unsplash.com/photo-1587975844610-40f1ad10d07a?auto=format&fit=crop&w=1200&q=85&sig=313",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Heated Infinity Swimming Pool"
+              "url": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=85&sig=314",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Fine Dining Restaurant & Lounge"
+              "url": "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?auto=format&fit=crop&w=1200&q=85&sig=315",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Luxury Spa & Wellness Sanctuary"
+              "url": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=85&sig=316",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -3666,7 +3418,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1587975844610-40f1ad10d07a?auto=format&fit=crop&w=600&q=85&sig=313"
               ],
               "id": "rev-dahab-swiss-inn-1",
               "verified": true
@@ -3679,8 +3431,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=600&q=85&sig=314"
               ],
               "id": "rev-dahab-swiss-inn-2",
               "verified": true
@@ -3693,8 +3444,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?auto=format&fit=crop&w=600&q=85&sig=315"
               ],
               "id": "rev-dahab-swiss-inn-3",
               "verified": true
@@ -3711,7 +3461,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 880,
           "lat": 28.5284,
           "lng": 34.5241,
-          "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=800&q=80&sig=317",
           "description": "Relaxed bohemian hotel with outdoor yoga deck, mountain backdrop, and panoramic sea views north of Dahab.",
           "amenities": [
             "Yoga Shala",
@@ -3722,24 +3472,24 @@ window.WANDERLY_DATA = {
           "address": "Eel Garden / Blue Hole Road, Dahab",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80",
-              "caption": "The Bedouin Moon Hotel - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=85&sig=318",
+              "caption": "The Bedouin Moon Hotel - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Deluxe King Bed & Living Quarters"
+              "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85&sig=319",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Sunbed Deck & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1200&q=85&sig=320",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Breakfast Buffet & Artisan Bakery"
+              "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=85&sig=321",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Evening Illumination & Courtyard"
+              "url": "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1200&q=85&sig=322",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -3751,8 +3501,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=85&sig=319"
               ],
               "id": "rev-dahab-bedouin-moon-1",
               "verified": true
@@ -3765,8 +3514,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=600&q=85&sig=320"
               ],
               "id": "rev-dahab-bedouin-moon-2",
               "verified": true
@@ -3779,7 +3527,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=85&sig=321"
               ],
               "id": "rev-dahab-bedouin-moon-3",
               "verified": true
@@ -3796,7 +3544,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 630,
           "lat": 28.5492,
           "lng": 34.5289,
-          "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1527838832700-5059252407fa?auto=format&fit=crop&w=800&q=80&sig=323",
           "description": "Tranquil eco-lodge nestled near the Canyon and Blue Hole dive sites, offering peaceful desert stays and snorkeling.",
           "amenities": [
             "Close to Blue Hole",
@@ -3807,20 +3555,24 @@ window.WANDERLY_DATA = {
           "address": "Canyon Dive Area, North Dahab",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80",
-              "caption": "Canyon Estate Eco Resort - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&w=1200&q=85&sig=324",
+              "caption": "Canyon Estate Eco Resort - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Executive Studio with City View"
+              "url": "https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&w=1200&q=85&sig=325",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Rooftop Plunge Pool & Sunset Bar"
+              "url": "https://images.unsplash.com/photo-1566127444979-b3d2b654e3d7?auto=format&fit=crop&w=1200&q=85&sig=326",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Private Marble Bathroom & Jacuzzi"
+              "url": "https://images.unsplash.com/photo-1553913861-c0fddf2619ee?auto=format&fit=crop&w=1200&q=85&sig=327",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1578922746465-3a80a228f223?auto=format&fit=crop&w=1200&q=85&sig=328",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -3832,8 +3584,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&w=600&q=85&sig=325"
               ],
               "id": "rev-dahab-canyon-estate-1",
               "verified": true
@@ -3846,7 +3597,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1566127444979-b3d2b654e3d7?auto=format&fit=crop&w=600&q=85&sig=326"
               ],
               "id": "rev-dahab-canyon-estate-2",
               "verified": true
@@ -3859,7 +3610,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1553913861-c0fddf2619ee?auto=format&fit=crop&w=600&q=85&sig=327"
               ],
               "id": "rev-dahab-canyon-estate-3",
               "verified": true
@@ -3874,7 +3625,7 @@ window.WANDERLY_DATA = {
       "name": "Siwa Oasis",
       "country": "Egypt",
       "tagline": "Crystalline salt lakes, olive groves, hot springs, and ancient Berber fortresses.",
-      "image": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80",
+      "image": "../images/photo-1509316975850-ff9c5deb0cd9.jpg",
       "lat": 29.2032,
       "lng": 25.5195,
       "weather": {
@@ -3890,7 +3641,7 @@ window.WANDERLY_DATA = {
           "category": "Nature",
           "price": 25,
           "rating": 4.9,
-          "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/siwa-salt-lakes-user.jpg",
           "lat": 29.2215,
           "lng": 25.5684,
           "description": "Hyper-saline turquoise pools where you float effortlessly in pristine waters.",
@@ -3903,7 +3654,7 @@ window.WANDERLY_DATA = {
           "category": "Nature",
           "price": 10,
           "rating": 4.6,
-          "image": "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/siwa-cleopatra-spring-user.jpg",
           "lat": 29.1917,
           "lng": 25.5398,
           "description": "Natural stone pool of bubbling fresh mineral water surrounded by palm cafes.",
@@ -3916,7 +3667,7 @@ window.WANDERLY_DATA = {
           "category": "History",
           "price": 15,
           "rating": 4.7,
-          "image": "https://images.unsplash.com/photo-1574359411659-15573a27fd0c?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/siwa-shali-fortress-user.jpg",
           "lat": 29.2045,
           "lng": 25.5186,
           "description": "13th-century kersheef salt-and-clay labyrinth citadel towering over Siwa town.",
@@ -3929,7 +3680,7 @@ window.WANDERLY_DATA = {
           "category": "Dining",
           "price": 18,
           "rating": 4.8,
-          "image": "https://images.unsplash.com/photo-1604537466158-719b1972feb8?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/siwa-fatnas-sunset-tea-user.jpg",
           "lat": 29.1962,
           "lng": 25.4851,
           "description": "Sip date-infused tea beneath date palms beside the salt lake at sunset.",
@@ -3942,7 +3693,7 @@ window.WANDERLY_DATA = {
           "category": "Adventure",
           "price": 75,
           "rating": 4.9,
-          "image": "../images/photo-1509316975850-ff9c5deb0cd9.jpg",
+          "image": "../images/siwa-great-sand-sea-safari-user.jpg",
           "lat": 29.1234,
           "lng": 25.4312,
           "description": "High-octane 4x4 dune bashing and sandboarding on colossal desert dunes.",
@@ -3955,7 +3706,7 @@ window.WANDERLY_DATA = {
           "category": "History",
           "price": 12,
           "rating": 4.6,
-          "image": "../images/photo-1539650116574-75c0c6d73f6e.jpg",
+          "image": "../images/siwa-oracle-temple-user.jpg",
           "lat": 29.2047,
           "lng": 25.5539,
           "description": "Ancient temple visited by Alexander the Great to confirm his divine status.",
@@ -3973,7 +3724,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 890,
           "lat": 29.2412,
           "lng": 25.4051,
-          "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80&sig=329",
           "description": "World-famous hand-built kersheef mud and salt rock eco-palace illuminated entirely by beeswax candles with natural spring pool.",
           "amenities": [
             "Kersheef Architecture",
@@ -3985,20 +3736,24 @@ window.WANDERLY_DATA = {
           "address": "Foot of White Mountain, Siwa",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
-              "caption": "Adrère Amellal Desert Ecolodge - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1200&q=85&sig=330",
+              "caption": "Adrère Amellal Desert Ecolodge - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Comfort Queen Room with Work Desk"
+              "url": "https://images.unsplash.com/photo-1598940603846-a1edd0ef2574?auto=format&fit=crop&w=1200&q=85&sig=331",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Terrace Café & Lounge Area"
+              "url": "https://images.unsplash.com/photo-1574359411659-15573a27fd0c?auto=format&fit=crop&w=1200&q=85&sig=332",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Wellness & Fitness Suite"
+              "url": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=85&sig=333",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1200&q=85&sig=334",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -4010,8 +3765,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1598940603846-a1edd0ef2574?auto=format&fit=crop&w=600&q=85&sig=331"
               ],
               "id": "rev-siwa-adrere-amellal-1",
               "verified": true
@@ -4024,7 +3778,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1574359411659-15573a27fd0c?auto=format&fit=crop&w=600&q=85&sig=332"
               ],
               "id": "rev-siwa-adrere-amellal-2",
               "verified": true
@@ -4037,7 +3791,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=600&q=85&sig=333"
               ],
               "id": "rev-siwa-adrere-amellal-3",
               "verified": true
@@ -4054,7 +3808,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 760,
           "lat": 29.2155,
           "lng": 25.5342,
-          "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80&sig=335",
           "description": "Serene wellness retreat set amidst olive groves and date palms with natural salt water mineral pools and sauna.",
           "amenities": [
             "Salt Mineral Pools",
@@ -4065,24 +3819,24 @@ window.WANDERLY_DATA = {
           "address": "Dakrour Road, Siwa Oasis",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",
-              "caption": "Siwa Relax Retreat - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&w=1200&q=85&sig=336",
+              "caption": "Siwa Relax Retreat - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Presidential Suite with Panoramic Terrace"
+              "url": "https://images.unsplash.com/photo-1451337516015-6b6e9a44a8a3?auto=format&fit=crop&w=1200&q=85&sig=337",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Heated Infinity Swimming Pool"
+              "url": "https://images.unsplash.com/photo-1580674285054-bed31e145f59?auto=format&fit=crop&w=1200&q=85&sig=338",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Fine Dining Restaurant & Lounge"
+              "url": "https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1200&q=85&sig=339",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Luxury Spa & Wellness Sanctuary"
+              "url": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=85&sig=340",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -4094,7 +3848,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1451337516015-6b6e9a44a8a3?auto=format&fit=crop&w=600&q=85&sig=337"
               ],
               "id": "rev-siwa-relax-1",
               "verified": true
@@ -4107,7 +3861,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1580674285054-bed31e145f59?auto=format&fit=crop&w=600&q=85&sig=338"
               ],
               "id": "rev-siwa-relax-2",
               "verified": true
@@ -4120,8 +3874,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=600&q=85&sig=339"
               ],
               "id": "rev-siwa-relax-3",
               "verified": true
@@ -4138,7 +3891,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 620,
           "lat": 29.2062,
           "lng": 25.5498,
-          "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=800&q=80&sig=341",
           "description": "Artistic eco-lodge built around date palm trees right next to the historic Temple of the Oracle (Amun).",
           "amenities": [
             "Near Oracle Temple",
@@ -4149,24 +3902,24 @@ window.WANDERLY_DATA = {
           "address": "Temple of Amun Area, Aghurmi, Siwa",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
-              "caption": "Ghaliet Ecolodge & Spa - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1522093007474-d86e9bf7ba6f?auto=format&fit=crop&w=1200&q=85&sig=342",
+              "caption": "Ghaliet Ecolodge & Spa - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Deluxe King Bed & Living Quarters"
+              "url": "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?auto=format&fit=crop&w=1200&q=85&sig=343",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Sunbed Deck & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1543349689-9a4d426bee8e?auto=format&fit=crop&w=1200&q=85&sig=344",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Breakfast Buffet & Artisan Bakery"
+              "url": "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?auto=format&fit=crop&w=1200&q=85&sig=345",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Evening Illumination & Courtyard"
+              "url": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1200&q=85&sig=346",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -4178,7 +3931,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?auto=format&fit=crop&w=600&q=85&sig=343"
               ],
               "id": "rev-siwa-ghaliet-1",
               "verified": true
@@ -4191,8 +3944,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1543349689-9a4d426bee8e?auto=format&fit=crop&w=600&q=85&sig=344"
               ],
               "id": "rev-siwa-ghaliet-2",
               "verified": true
@@ -4205,8 +3957,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?auto=format&fit=crop&w=600&q=85&sig=345"
               ],
               "id": "rev-siwa-ghaliet-3",
               "verified": true
@@ -4223,7 +3974,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 540,
           "lat": 29.2189,
           "lng": 25.4215,
-          "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1545987796-200677ee1011?auto=format&fit=crop&w=800&q=80&sig=347",
           "description": "Traditional Berber village nestled beside the Great Sand Sea with Arabian horses, spring pool, and astronomy stargazing.",
           "amenities": [
             "Great Sand Sea View",
@@ -4234,20 +3985,24 @@ window.WANDERLY_DATA = {
           "address": "South of Lake Siwa",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80",
-              "caption": "Taziry Eco-Villages Siwa - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1565099824688-e93eb20fe622?auto=format&fit=crop&w=1200&q=85&sig=348",
+              "caption": "Taziry Eco-Villages Siwa - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Executive Studio with City View"
+              "url": "https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=1200&q=85&sig=349",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Rooftop Plunge Pool & Sunset Bar"
+              "url": "https://images.unsplash.com/photo-1592488832109-1d473228f00a?auto=format&fit=crop&w=1200&q=85&sig=350",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Private Marble Bathroom & Jacuzzi"
+              "url": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1200&q=85&sig=351",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1200&q=85&sig=352",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -4259,8 +4014,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=600&q=85&sig=349"
               ],
               "id": "rev-siwa-taziry-1",
               "verified": true
@@ -4273,8 +4027,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1592488832109-1d473228f00a?auto=format&fit=crop&w=600&q=85&sig=350"
               ],
               "id": "rev-siwa-taziry-2",
               "verified": true
@@ -4287,7 +4040,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=600&q=85&sig=351"
               ],
               "id": "rev-siwa-taziry-3",
               "verified": true
@@ -4304,7 +4057,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 810,
           "lat": 29.2041,
           "lng": 25.5172,
-          "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80&sig=353",
           "description": "Authentic mudbrick heritage lodge nestled in the date palm grove within walking distance of ancient Shali Fortress.",
           "amenities": [
             "Walk to Shali Fortress",
@@ -4315,20 +4068,24 @@ window.WANDERLY_DATA = {
           "address": "Shali Old Town, Siwa",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80",
-              "caption": "Shali Lodge Heritage - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=1200&q=85&sig=354",
+              "caption": "Shali Lodge Heritage - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Comfort Queen Room with Work Desk"
+              "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=85&sig=355",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Terrace Café & Lounge Area"
+              "url": "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1200&q=85&sig=356",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Wellness & Fitness Suite"
+              "url": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85&sig=357",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=1200&q=85&sig=358",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -4340,8 +4097,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=600&q=85&sig=355"
               ],
               "id": "rev-siwa-shali-lodge-1",
               "verified": true
@@ -4354,7 +4110,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=600&q=85&sig=356"
               ],
               "id": "rev-siwa-shali-lodge-2",
               "verified": true
@@ -4367,7 +4123,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=85&sig=357"
               ],
               "id": "rev-siwa-shali-lodge-3",
               "verified": true
@@ -4382,7 +4138,7 @@ window.WANDERLY_DATA = {
       "name": "Marsa Alam",
       "country": "Egypt",
       "tagline": "Pristine reef ecosystems, sea turtles, dolphin houses, and secluded bays.",
-      "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=80",
+      "image": "../images/photo-1533105079780-92b9be482077.jpg",
       "lat": 25.0676,
       "lng": 34.879,
       "weather": {
@@ -4398,7 +4154,7 @@ window.WANDERLY_DATA = {
           "category": "Nature",
           "price": 40,
           "rating": 4.9,
-          "image": "../images/photo-1682687221038-404670f09ef1.jpg",
+          "image": "../images/marsa-abu-dabbab-turtles-user.jpg",
           "lat": 25.3371,
           "lng": 34.7412,
           "description": "Snorkel alongside giant green sea turtles and rare dugong sea cows.",
@@ -4411,7 +4167,7 @@ window.WANDERLY_DATA = {
           "category": "Adventure",
           "price": 85,
           "rating": 4.9,
-          "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/marsa-sataya-dolphin-cruise-user.jpg",
           "lat": 24.1689,
           "lng": 35.6891,
           "description": "Full-day boat excursion to swim with pods of wild spinner dolphins.",
@@ -4424,7 +4180,7 @@ window.WANDERLY_DATA = {
           "category": "Dining",
           "price": 35,
           "rating": 4.5,
-          "image": "../images/photo-1559339352-11d035aa65de.jpg",
+          "image": "../images/marsa-port-ghalib-marina-user.jpg",
           "lat": 25.5342,
           "lng": 34.6339,
           "description": "Luxury waterfront promenade with upscale dining, lounges, and yachts.",
@@ -4437,7 +4193,7 @@ window.WANDERLY_DATA = {
           "category": "Nature",
           "price": 20,
           "rating": 4.8,
-          "image": "../images/photo-1507525428034-b723cf961d3e.jpg",
+          "image": "../images/marsa-el-qulaan-mangroves-user.jpg",
           "lat": 24.3621,
           "lng": 35.3142,
           "description": "Serene lagoon of isolated mangrove trees rising from shallow crystal water.",
@@ -4450,7 +4206,7 @@ window.WANDERLY_DATA = {
           "category": "Nature",
           "price": 30,
           "rating": 4.7,
-          "image": "../images/photo-1509316975850-ff9c5deb0cd9.jpg",
+          "image": "../images/marsa-wadi-el-gemal-user.jpg",
           "lat": 24.6643,
           "lng": 35.0911,
           "description": "Protected coastal wilderness blending desert wildlife and untouched coral reefs.",
@@ -4463,7 +4219,7 @@ window.WANDERLY_DATA = {
           "category": "Nature",
           "price": 25,
           "rating": 4.8,
-          "image": "../images/photo-1507525428034-b723cf961d3e.jpg",
+          "image": "../images/marsa-sharm-el-luli-user.jpg",
           "lat": 24.6212,
           "lng": 35.1235,
           "description": "Often ranked among the world's most pristine white sand beaches.",
@@ -4481,7 +4237,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 1980,
           "lat": 25.5971,
           "lng": 34.6084,
-          "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80&sig=359",
           "description": "Ultra-luxury 5-star adults-only sanctuary in Madinat Coraya with private cabanas, 5 pools, and pristine house reefs.",
           "amenities": [
             "Adults Only (16+)",
@@ -4493,24 +4249,24 @@ window.WANDERLY_DATA = {
           "address": "Coraya Bay, Madinat Coraya, Marsa Alam",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
-              "caption": "Steigenberger Resort Alaya - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=1200&q=85&sig=360",
+              "caption": "Steigenberger Resort Alaya - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Presidential Suite with Panoramic Terrace"
+              "url": "https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=1200&q=85&sig=361",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Heated Infinity Swimming Pool"
+              "url": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=85&sig=362",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Fine Dining Restaurant & Lounge"
+              "url": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=85&sig=363",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Luxury Spa & Wellness Sanctuary"
+              "url": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=85&sig=364",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -4522,8 +4278,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=600&q=85&sig=361"
               ],
               "id": "rev-marsa-steigenberger-alaya-1",
               "verified": true
@@ -4536,7 +4291,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=600&q=85&sig=362"
               ],
               "id": "rev-marsa-steigenberger-alaya-2",
               "verified": true
@@ -4549,7 +4304,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=85&sig=363"
               ],
               "id": "rev-marsa-steigenberger-alaya-3",
               "verified": true
@@ -4566,7 +4321,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 1650,
           "lat": 25.6012,
           "lng": 34.6052,
-          "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80&sig=365",
           "description": "Modern luxury family resort overlooking Coraya Bay with complimentary access to Aqua Coraya waterpark and private pier.",
           "amenities": [
             "Coraya Bay",
@@ -4578,24 +4333,24 @@ window.WANDERLY_DATA = {
           "address": "Madinat Coraya, Marsa Alam",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",
-              "caption": "Jaz Maraya Resort - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1200&q=85&sig=366",
+              "caption": "Jaz Maraya Resort - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Deluxe King Bed & Living Quarters"
+              "url": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=1200&q=85&sig=367",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Sunbed Deck & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1587985064135-0366536eab42?auto=format&fit=crop&w=1200&q=85&sig=368",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Breakfast Buffet & Artisan Bakery"
+              "url": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=85&sig=369",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Evening Illumination & Courtyard"
+              "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85&sig=370",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -4607,7 +4362,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=600&q=85&sig=367"
               ],
               "id": "rev-marsa-jaz-maraya-1",
               "verified": true
@@ -4620,7 +4375,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1587985064135-0366536eab42?auto=format&fit=crop&w=600&q=85&sig=368"
               ],
               "id": "rev-marsa-jaz-maraya-2",
               "verified": true
@@ -4633,8 +4388,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=85&sig=369"
               ],
               "id": "rev-marsa-jaz-maraya-3",
               "verified": true
@@ -4651,7 +4405,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 2200,
           "lat": 25.3402,
           "lng": 34.7435,
-          "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80&sig=371",
           "description": "Directly on Abu Dabbab Beach, world-famous for swimming alongside giant sea turtles and rare dugong sea cows.",
           "amenities": [
             "Abu Dabbab Turtles Bay",
@@ -4662,20 +4416,24 @@ window.WANDERLY_DATA = {
           "address": "Abu Dabbab Bay, Marsa Alam",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
-              "caption": "Malikia Resort Abu Dabbab - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85&sig=372",
+              "caption": "Malikia Resort Abu Dabbab - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Executive Studio with City View"
+              "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85&sig=373",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Rooftop Plunge Pool & Sunset Bar"
+              "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85&sig=374",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Private Marble Bathroom & Jacuzzi"
+              "url": "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=1200&q=85&sig=375",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1200&q=85&sig=376",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -4687,7 +4445,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=85&sig=373"
               ],
               "id": "rev-marsa-malikia-dabbab-1",
               "verified": true
@@ -4700,8 +4458,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=85&sig=374"
               ],
               "id": "rev-marsa-malikia-dabbab-2",
               "verified": true
@@ -4714,8 +4471,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=600&q=85&sig=375"
               ],
               "id": "rev-marsa-malikia-dabbab-3",
               "verified": true
@@ -4732,7 +4488,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 1900,
           "lat": 25.5482,
           "lng": 34.6291,
-          "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1572331165267-854da2b10ccc?auto=format&fit=crop&w=800&q=80&sig=377",
           "description": "Upscale beachfront resort near Port Ghalib with an 800m private jetty stretching over deep coral reefs.",
           "amenities": [
             "800m Coral Pier",
@@ -4743,20 +4499,24 @@ window.WANDERLY_DATA = {
           "address": "Port Ghalib Area, Marsa Alam",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80",
-              "caption": "The Three Corners Fayrouz Plaza - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1525610553991-2bede1a236e2?auto=format&fit=crop&w=1200&q=85&sig=378",
+              "caption": "The Three Corners Fayrouz Plaza - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Comfort Queen Room with Work Desk"
+              "url": "https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=1200&q=85&sig=379",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Terrace Café & Lounge Area"
+              "url": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=85&sig=380",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Wellness & Fitness Suite"
+              "url": "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=85&sig=381",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=85&sig=382",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -4768,8 +4528,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=600&q=85&sig=379"
               ],
               "id": "rev-marsa-three-corners-1",
               "verified": true
@@ -4782,8 +4541,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=600&q=85&sig=380"
               ],
               "id": "rev-marsa-three-corners-2",
               "verified": true
@@ -4796,7 +4554,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=600&q=85&sig=381"
               ],
               "id": "rev-marsa-three-corners-3",
               "verified": true
@@ -4813,7 +4571,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 520,
           "lat": 24.1956,
           "lng": 35.4218,
-          "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80&sig=383",
           "description": "Wild eco-camp in the deep south near Sataya Dolphin Reef and mangrove bays, paradise for divers and kitesurfers.",
           "amenities": [
             "Sataya Dolphin Trips",
@@ -4824,24 +4582,24 @@ window.WANDERLY_DATA = {
           "address": "Wadi Lahami, Hamata, Deep South",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80",
-              "caption": "Wadi Lahami Eco Village - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=85&sig=384",
+              "caption": "Wadi Lahami Eco Village - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Presidential Suite with Panoramic Terrace"
+              "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=85&sig=385",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Heated Infinity Swimming Pool"
+              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=85&sig=386",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Fine Dining Restaurant & Lounge"
+              "url": "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=1200&q=85&sig=387",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Luxury Spa & Wellness Sanctuary"
+              "url": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1200&q=85&sig=388",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -4853,8 +4611,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=85&sig=385"
               ],
               "id": "rev-marsa-wadi-lahami-1",
               "verified": true
@@ -4867,7 +4624,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=85&sig=386"
               ],
               "id": "rev-marsa-wadi-lahami-2",
               "verified": true
@@ -4880,7 +4637,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=600&q=85&sig=387"
               ],
               "id": "rev-marsa-wadi-lahami-3",
               "verified": true
@@ -4895,7 +4652,7 @@ window.WANDERLY_DATA = {
       "name": "Fayoum",
       "country": "Egypt",
       "tagline": "Natural waterfalls, desert lakes, pottery villages, and prehistoric whale fossils.",
-      "image": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80",
+      "image": "../images/photo-1500530855697-b586d89ba3ee.jpg",
       "lat": 29.3084,
       "lng": 30.8428,
       "weather": {
@@ -4911,7 +4668,7 @@ window.WANDERLY_DATA = {
           "category": "Nature",
           "price": 15,
           "rating": 4.7,
-          "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/fayoum-rayan-waterfalls-user.jpg",
           "lat": 29.1558,
           "lng": 30.4358,
           "description": "Egypt's only natural waterfalls connecting upper and lower desert lakes.",
@@ -4924,7 +4681,7 @@ window.WANDERLY_DATA = {
           "category": "Adventure",
           "price": 40,
           "rating": 4.8,
-          "image": "../images/photo-1509316975850-ff9c5deb0cd9.jpg",
+          "image": "../images/fayoum-magic-lake-sandboarding-user.jpg",
           "lat": 29.1822,
           "lng": 30.3951,
           "description": "Mystical lake enclosed by high dunes where water color shifts through the day.",
@@ -4937,7 +4694,7 @@ window.WANDERLY_DATA = {
           "category": "Culture",
           "price": 20,
           "rating": 4.8,
-          "image": "../images/photo-1545987796-200677ee1011.jpg",
+          "image": "../images/fayoum-tunis-village-user.jpg",
           "lat": 29.4125,
           "lng": 30.4856,
           "description": "Charming artistic hamlet of mudbrick studios, handmade ceramics, and cafes.",
@@ -4950,7 +4707,7 @@ window.WANDERLY_DATA = {
           "category": "History",
           "price": 25,
           "rating": 4.9,
-          "image": "../images/photo-1469854523086-cc02fe5d8800.jpg",
+          "image": "../images/fayoum-wadi-al-hitan-user.jpg",
           "lat": 29.2711,
           "lng": 30.0438,
           "description": "UNESCO World Heritage site with 40-million-year-old fossilized prehistoric whales.",
@@ -4963,7 +4720,7 @@ window.WANDERLY_DATA = {
           "category": "Nature",
           "price": 15,
           "rating": 4.5,
-          "image": "../images/photo-1604537466158-719b1972feb8.jpg",
+          "image": "../images/fayoum-lake-qarun-birds-user.jpg",
           "lat": 29.4753,
           "lng": 30.6489,
           "description": "Ancient natural lake hosting flocks of seasonal flamingos and waterfowl.",
@@ -4976,7 +4733,7 @@ window.WANDERLY_DATA = {
           "category": "Dining",
           "price": 35,
           "rating": 4.7,
-          "image": "../images/photo-1533105079780-92b9be482077.jpg",
+          "image": "../images/fayoum-bedouin-camp-dinner-user.jpg",
           "lat": 29.2134,
           "lng": 30.3456,
           "description": "Traditional zarb dinner cooked under the desert sand with campfire music.",
@@ -4994,7 +4751,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 1450,
           "lat": 29.4142,
           "lng": 30.4868,
-          "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1549294413-26f195200c16?auto=format&fit=crop&w=800&q=80&sig=389",
           "description": "Fairy-tale pink boutique palace in Tunis Village with 2 infinity pools overlooking Lake Qarun and desert dunes.",
           "amenities": [
             "Tunis Village",
@@ -5006,24 +4763,24 @@ window.WANDERLY_DATA = {
           "address": "Tunis Village, Fayoum Oasis",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
-              "caption": "Lazib Inn Resort & Spa - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1200&q=85&sig=390",
+              "caption": "Lazib Inn Resort & Spa - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Deluxe King Bed & Living Quarters"
+              "url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=85&sig=391",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Sunbed Deck & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=85&sig=392",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Breakfast Buffet & Artisan Bakery"
+              "url": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=85&sig=393",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Evening Illumination & Courtyard"
+              "url": "https://images.unsplash.com/photo-1586500036706-41963de24d8b?auto=format&fit=crop&w=1200&q=85&sig=394",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -5035,8 +4792,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=85&sig=391"
               ],
               "id": "rev-fayoum-lazib-inn-1",
               "verified": true
@@ -5049,7 +4805,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=85&sig=392"
               ],
               "id": "rev-fayoum-lazib-inn-2",
               "verified": true
@@ -5062,7 +4818,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=85&sig=393"
               ],
               "id": "rev-fayoum-lazib-inn-3",
               "verified": true
@@ -5079,7 +4835,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 1820,
           "lat": 29.4589,
           "lng": 30.6842,
-          "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=800&q=80&sig=395",
           "description": "Historic hunting lodge from 1937 built by King Farouk right on the shore of Lake Qarun with clay tennis courts.",
           "amenities": [
             "Royal History",
@@ -5090,20 +4846,24 @@ window.WANDERLY_DATA = {
           "address": "Lake Qarun Coast, Fayoum",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",
-              "caption": "Helnan Auberge Hotel Fayoum - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=85&sig=396",
+              "caption": "Helnan Auberge Hotel Fayoum - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Executive Studio with City View"
+              "url": "https://images.unsplash.com/photo-1587975844610-40f1ad10d07a?auto=format&fit=crop&w=1200&q=85&sig=397",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Rooftop Plunge Pool & Sunset Bar"
+              "url": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=85&sig=398",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Private Marble Bathroom & Jacuzzi"
+              "url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=85&sig=399",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1563911302283-d2bc129e7570?auto=format&fit=crop&w=1200&q=85&sig=400",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -5115,7 +4875,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1587975844610-40f1ad10d07a?auto=format&fit=crop&w=600&q=85&sig=397"
               ],
               "id": "rev-fayoum-helnan-auberge-1",
               "verified": true
@@ -5128,7 +4888,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=600&q=85&sig=398"
               ],
               "id": "rev-fayoum-helnan-auberge-2",
               "verified": true
@@ -5141,8 +4901,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=600&q=85&sig=399"
               ],
               "id": "rev-fayoum-helnan-auberge-3",
               "verified": true
@@ -5159,7 +4918,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 1100,
           "lat": 29.4478,
           "lng": 30.6215,
-          "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=800&q=80&sig=401",
           "description": "Modern tranquil lakefront hotel in Byoum City with large swimming pool, lake excursions, and desert safaris.",
           "amenities": [
             "Lakefront Promenade",
@@ -5170,20 +4929,24 @@ window.WANDERLY_DATA = {
           "address": "Byoum City, Lake Qarun, Fayoum",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
-              "caption": "Byoum Lakeside Hotel - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?auto=format&fit=crop&w=1200&q=85&sig=402",
+              "caption": "Byoum Lakeside Hotel - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Comfort Queen Room with Work Desk"
+              "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85&sig=403",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Terrace Café & Lounge Area"
+              "url": "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1200&q=85&sig=404",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Wellness & Fitness Suite"
+              "url": "https://images.unsplash.com/photo-1568495248636-6432b97bd949?auto=format&fit=crop&w=1200&q=85&sig=405",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=1200&q=85&sig=406",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -5195,7 +4958,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=85&sig=403"
               ],
               "id": "rev-fayoum-byoum-lakeside-1",
               "verified": true
@@ -5208,8 +4971,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=600&q=85&sig=404"
               ],
               "id": "rev-fayoum-byoum-lakeside-2",
               "verified": true
@@ -5222,8 +4984,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1568495248636-6432b97bd949?auto=format&fit=crop&w=600&q=85&sig=405"
               ],
               "id": "rev-fayoum-byoum-lakeside-3",
               "verified": true
@@ -5240,7 +5001,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 680,
           "lat": 29.4112,
           "lng": 30.4891,
-          "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80&sig=407",
           "description": "Charming agritourism lodge surrounded by olive orchards in Tunis Village offering handmade pottery and organic food.",
           "amenities": [
             "Organic Farm",
@@ -5251,24 +5012,24 @@ window.WANDERLY_DATA = {
           "address": "Tunis Village, Fayoum",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80",
-              "caption": "Kom El Dikka Agri Lodge - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85&sig=408",
+              "caption": "Kom El Dikka Agri Lodge - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Presidential Suite with Panoramic Terrace"
+              "url": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=85&sig=409",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Heated Infinity Swimming Pool"
+              "url": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=85&sig=410",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Fine Dining Restaurant & Lounge"
+              "url": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=1200&q=85&sig=411",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Luxury Spa & Wellness Sanctuary"
+              "url": "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1200&q=85&sig=412",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -5280,8 +5041,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=85&sig=409"
               ],
               "id": "rev-fayoum-kom-el-dikka-1",
               "verified": true
@@ -5294,8 +5054,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600&q=85&sig=410"
               ],
               "id": "rev-fayoum-kom-el-dikka-2",
               "verified": true
@@ -5308,7 +5067,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=600&q=85&sig=411"
               ],
               "id": "rev-fayoum-kom-el-dikka-3",
               "verified": true
@@ -5325,7 +5084,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 520,
           "lat": 29.1798,
           "lng": 30.3982,
-          "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=800&q=80&sig=413",
           "description": "Bedouin eco camp beside Magic Lake in Wadi El Rayan with dune sandboarding and campfire stargazing.",
           "amenities": [
             "Magic Lake Beach",
@@ -5336,24 +5095,24 @@ window.WANDERLY_DATA = {
           "address": "Wadi El Rayan Protected Area, Fayoum",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80",
-              "caption": "Camp Magic Lake Eco Camp - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85&sig=414",
+              "caption": "Camp Magic Lake Eco Camp - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Deluxe King Bed & Living Quarters"
+              "url": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1200&q=85&sig=415",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Sunbed Deck & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1200&q=85&sig=416",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Breakfast Buffet & Artisan Bakery"
+              "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=85&sig=417",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Evening Illumination & Courtyard"
+              "url": "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1200&q=85&sig=418",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -5365,8 +5124,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=85&sig=415"
               ],
               "id": "rev-fayoum-magic-camp-1",
               "verified": true
@@ -5379,7 +5137,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=600&q=85&sig=416"
               ],
               "id": "rev-fayoum-magic-camp-2",
               "verified": true
@@ -5392,7 +5150,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=85&sig=417"
               ],
               "id": "rev-fayoum-magic-camp-3",
               "verified": true
@@ -5423,7 +5181,7 @@ window.WANDERLY_DATA = {
           "category": "Culture",
           "price": 55,
           "rating": 4.9,
-          "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&w=800&q=80",
           "lat": 25.1972,
           "lng": 55.2744,
           "description": "Tower above the clouds at the world's tallest building with 360° views.",
@@ -5449,7 +5207,7 @@ window.WANDERLY_DATA = {
           "category": "Culture",
           "price": 40,
           "rating": 4.9,
-          "image": "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=800&q=80",
           "lat": 25.2253,
           "lng": 55.2818,
           "description": "Architectural wonder showcasing futuristic technologies and innovation.",
@@ -5506,7 +5264,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 3800,
           "lat": 25.1382,
           "lng": 55.1205,
-          "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1527838832700-5059252407fa?auto=format&fit=crop&w=800&q=80&sig=419",
           "description": "The world's most ultra-luxury experiential resort with Cloud 22 rooftop infinity sky pool and celebrity chef dining.",
           "amenities": [
             "Cloud 22 Sky Pool",
@@ -5518,20 +5276,24 @@ window.WANDERLY_DATA = {
           "address": "Crescent Road, Palm Jumeirah, Dubai",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
-              "caption": "Atlantis The Royal - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&w=1200&q=85&sig=420",
+              "caption": "Atlantis The Royal - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Executive Studio with City View"
+              "url": "https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&w=1200&q=85&sig=421",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Rooftop Plunge Pool & Sunset Bar"
+              "url": "https://images.unsplash.com/photo-1566127444979-b3d2b654e3d7?auto=format&fit=crop&w=1200&q=85&sig=422",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Private Marble Bathroom & Jacuzzi"
+              "url": "https://images.unsplash.com/photo-1553913861-c0fddf2619ee?auto=format&fit=crop&w=1200&q=85&sig=423",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1578922746465-3a80a228f223?auto=format&fit=crop&w=1200&q=85&sig=424",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -5543,8 +5305,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&w=600&q=85&sig=421"
               ],
               "id": "rev-dxb-atlantis-royal-1",
               "verified": true
@@ -5557,7 +5318,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1566127444979-b3d2b654e3d7?auto=format&fit=crop&w=600&q=85&sig=422"
               ],
               "id": "rev-dxb-atlantis-royal-2",
               "verified": true
@@ -5570,7 +5331,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1553913861-c0fddf2619ee?auto=format&fit=crop&w=600&q=85&sig=423"
               ],
               "id": "rev-dxb-atlantis-royal-3",
               "verified": true
@@ -5587,7 +5348,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 4200,
           "lat": 25.1412,
           "lng": 55.1852,
-          "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80&sig=425",
           "description": "The legendary sail-shaped 7-star icon of luxury with duplex suites, private butler service, and infinity terrace pool.",
           "amenities": [
             "Duplex Suites",
@@ -5599,20 +5360,24 @@ window.WANDERLY_DATA = {
           "address": "Jumeirah Beach Road, Dubai",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",
-              "caption": "Burj Al Arab Jumeirah - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1200&q=85&sig=426",
+              "caption": "Burj Al Arab Jumeirah - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Comfort Queen Room with Work Desk"
+              "url": "https://images.unsplash.com/photo-1598940603846-a1edd0ef2574?auto=format&fit=crop&w=1200&q=85&sig=427",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Terrace Café & Lounge Area"
+              "url": "https://images.unsplash.com/photo-1574359411659-15573a27fd0c?auto=format&fit=crop&w=1200&q=85&sig=428",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Wellness & Fitness Suite"
+              "url": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=85&sig=429",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1200&q=85&sig=430",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -5624,7 +5389,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1598940603846-a1edd0ef2574?auto=format&fit=crop&w=600&q=85&sig=427"
               ],
               "id": "rev-dxb-burj-al-arab-1",
               "verified": true
@@ -5637,7 +5402,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1574359411659-15573a27fd0c?auto=format&fit=crop&w=600&q=85&sig=428"
               ],
               "id": "rev-dxb-burj-al-arab-2",
               "verified": true
@@ -5650,8 +5415,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=600&q=85&sig=429"
               ],
               "id": "rev-dxb-burj-al-arab-3",
               "verified": true
@@ -5668,7 +5432,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 2900,
           "lat": 25.1952,
           "lng": 55.2785,
-          "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80&sig=431",
           "description": "Prime luxury hotel directly facing Burj Khalifa and The Dubai Fountain, connected to Dubai Mall.",
           "amenities": [
             "Burj Khalifa View",
@@ -5680,24 +5444,24 @@ window.WANDERLY_DATA = {
           "address": "Sheikh Mohammed bin Rashid Blvd, Downtown Dubai",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
-              "caption": "Address Downtown - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&w=1200&q=85&sig=432",
+              "caption": "Address Downtown - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Presidential Suite with Panoramic Terrace"
+              "url": "https://images.unsplash.com/photo-1451337516015-6b6e9a44a8a3?auto=format&fit=crop&w=1200&q=85&sig=433",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Heated Infinity Swimming Pool"
+              "url": "https://images.unsplash.com/photo-1580674285054-bed31e145f59?auto=format&fit=crop&w=1200&q=85&sig=434",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Fine Dining Restaurant & Lounge"
+              "url": "https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1200&q=85&sig=435",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Luxury Spa & Wellness Sanctuary"
+              "url": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=85&sig=436",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -5709,7 +5473,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1451337516015-6b6e9a44a8a3?auto=format&fit=crop&w=600&q=85&sig=433"
               ],
               "id": "rev-dxb-address-downtown-1",
               "verified": true
@@ -5722,8 +5486,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1580674285054-bed31e145f59?auto=format&fit=crop&w=600&q=85&sig=434"
               ],
               "id": "rev-dxb-address-downtown-2",
               "verified": true
@@ -5736,8 +5499,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=600&q=85&sig=435"
               ],
               "id": "rev-dxb-address-downtown-3",
               "verified": true
@@ -5754,7 +5516,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 3500,
           "lat": 25.2012,
           "lng": 55.2815,
-          "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=800&q=80&sig=437",
           "description": "Trendsetting modern hotel with outdoor pool overlooking Burj Khalifa, cinema room, and quick walk to Dubai Mall.",
           "amenities": [
             "Burj Khalifa View Pool",
@@ -5765,24 +5527,24 @@ window.WANDERLY_DATA = {
           "address": "312 Happiness Street, Downtown Dubai",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80",
-              "caption": "Rove Downtown - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1522093007474-d86e9bf7ba6f?auto=format&fit=crop&w=1200&q=85&sig=438",
+              "caption": "Rove Downtown - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Deluxe King Bed & Living Quarters"
+              "url": "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?auto=format&fit=crop&w=1200&q=85&sig=439",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Sunbed Deck & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1543349689-9a4d426bee8e?auto=format&fit=crop&w=1200&q=85&sig=440",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Breakfast Buffet & Artisan Bakery"
+              "url": "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?auto=format&fit=crop&w=1200&q=85&sig=441",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Evening Illumination & Courtyard"
+              "url": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1200&q=85&sig=442",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -5794,8 +5556,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?auto=format&fit=crop&w=600&q=85&sig=439"
               ],
               "id": "rev-dxb-rove-downtown-1",
               "verified": true
@@ -5808,8 +5569,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1543349689-9a4d426bee8e?auto=format&fit=crop&w=600&q=85&sig=440"
               ],
               "id": "rev-dxb-rove-downtown-2",
               "verified": true
@@ -5822,7 +5582,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?auto=format&fit=crop&w=600&q=85&sig=441"
               ],
               "id": "rev-dxb-rove-downtown-3",
               "verified": true
@@ -5837,7 +5597,7 @@ window.WANDERLY_DATA = {
       "name": "Istanbul",
       "country": "Turkey",
       "tagline": "Two continents, Byzantine & Ottoman history, bustling bazaars, and endless tea.",
-      "image": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1200&q=80",
+      "image": "../images/photo-1524231757912-21f4fe3a7200.jpg",
       "lat": 41.0082,
       "lng": 28.9784,
       "weather": {
@@ -5936,7 +5696,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 3100,
           "lat": 41.0434,
           "lng": 29.0165,
-          "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1545987796-200677ee1011?auto=format&fit=crop&w=800&q=80&sig=443",
           "description": "19th-century Ottoman imperial palace directly on the shores of the Bosphorus with infinity pool overlooking the strait.",
           "amenities": [
             "Bosphorus Waterfront",
@@ -5948,20 +5708,24 @@ window.WANDERLY_DATA = {
           "address": "Çırağan Caddesi 32, Beşiktaş, Istanbul",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
-              "caption": "Çırağan Palace Kempinski Istanbul - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1565099824688-e93eb20fe622?auto=format&fit=crop&w=1200&q=85&sig=444",
+              "caption": "Çırağan Palace Kempinski Istanbul - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Comfort Queen Room with Work Desk"
+              "url": "https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=1200&q=85&sig=445",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Terrace Café & Lounge Area"
+              "url": "https://images.unsplash.com/photo-1592488832109-1d473228f00a?auto=format&fit=crop&w=1200&q=85&sig=446",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Wellness & Fitness Suite"
+              "url": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1200&q=85&sig=447",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1200&q=85&sig=448",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -5973,8 +5737,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=600&q=85&sig=445"
               ],
               "id": "rev-ist-ciragan-palace-1",
               "verified": true
@@ -5987,7 +5750,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1592488832109-1d473228f00a?auto=format&fit=crop&w=600&q=85&sig=446"
               ],
               "id": "rev-ist-ciragan-palace-2",
               "verified": true
@@ -6000,7 +5763,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=600&q=85&sig=447"
               ],
               "id": "rev-ist-ciragan-palace-3",
               "verified": true
@@ -6017,7 +5780,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 2400,
           "lat": 41.0069,
           "lng": 28.9808,
-          "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80&sig=449",
           "description": "Historic neoclassical sanctuary steps away from Hagia Sophia and the Blue Mosque, with rooftop terrace views of the minarets.",
           "amenities": [
             "Hagia Sophia View",
@@ -6029,24 +5792,24 @@ window.WANDERLY_DATA = {
           "address": "Tevkifhane Sokak No. 1, Sultanahmet, Istanbul",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",
-              "caption": "Four Seasons Hotel Istanbul at Sultanahmet - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=1200&q=85&sig=450",
+              "caption": "Four Seasons Hotel Istanbul at Sultanahmet - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Presidential Suite with Panoramic Terrace"
+              "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=85&sig=451",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Heated Infinity Swimming Pool"
+              "url": "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1200&q=85&sig=452",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Fine Dining Restaurant & Lounge"
+              "url": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85&sig=453",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Luxury Spa & Wellness Sanctuary"
+              "url": "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=1200&q=85&sig=454",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -6058,7 +5821,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=600&q=85&sig=451"
               ],
               "id": "rev-ist-four-seasons-sultanahmet-1",
               "verified": true
@@ -6071,7 +5834,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=600&q=85&sig=452"
               ],
               "id": "rev-ist-four-seasons-sultanahmet-2",
               "verified": true
@@ -6084,8 +5847,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=85&sig=453"
               ],
               "id": "rev-ist-four-seasons-sultanahmet-3",
               "verified": true
@@ -6102,7 +5864,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 2800,
           "lat": 41.0368,
           "lng": 28.9892,
-          "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80&sig=455",
           "description": "Grand luxury hotel near Taksim Square with an 8,500 sqm spa center and Izaka Terrace restaurant overlooking the Bosphorus.",
           "amenities": [
             "Bosphorus Views",
@@ -6114,24 +5876,24 @@ window.WANDERLY_DATA = {
           "address": "Gümüşsuyu Mah. İnönü Cad. No: 8, Taksim, Istanbul",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
-              "caption": "CVK Park Bosphorus Hotel - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=1200&q=85&sig=456",
+              "caption": "CVK Park Bosphorus Hotel - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Deluxe King Bed & Living Quarters"
+              "url": "https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=1200&q=85&sig=457",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Sunbed Deck & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=85&sig=458",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Breakfast Buffet & Artisan Bakery"
+              "url": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=85&sig=459",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Evening Illumination & Courtyard"
+              "url": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=85&sig=460",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -6143,7 +5905,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=600&q=85&sig=457"
               ],
               "id": "rev-ist-cvk-park-1",
               "verified": true
@@ -6156,8 +5918,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=600&q=85&sig=458"
               ],
               "id": "rev-ist-cvk-park-2",
               "verified": true
@@ -6170,8 +5931,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=85&sig=459"
               ],
               "id": "rev-ist-cvk-park-3",
               "verified": true
@@ -6188,7 +5948,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 1950,
           "lat": 41.0038,
           "lng": 28.9721,
-          "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80&sig=461",
           "description": "Boutique hotel in Sultanahmet with warm Turkish hospitality, sea-view rooftop terrace, and handmade organic breakfast.",
           "amenities": [
             "Rooftop Sea View",
@@ -6199,20 +5959,24 @@ window.WANDERLY_DATA = {
           "address": "Kucuk Ayasofya Mah. Mustafa Pasa Sok. No:43, Sultanahmet",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80",
-              "caption": "Hotel Amira Istanbul - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1200&q=85&sig=462",
+              "caption": "Hotel Amira Istanbul - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Executive Studio with City View"
+              "url": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=1200&q=85&sig=463",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Rooftop Plunge Pool & Sunset Bar"
+              "url": "https://images.unsplash.com/photo-1587985064135-0366536eab42?auto=format&fit=crop&w=1200&q=85&sig=464",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Private Marble Bathroom & Jacuzzi"
+              "url": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=85&sig=465",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85&sig=466",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -6224,8 +5988,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=600&q=85&sig=463"
               ],
               "id": "rev-ist-amira-1",
               "verified": true
@@ -6238,8 +6001,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1587985064135-0366536eab42?auto=format&fit=crop&w=600&q=85&sig=464"
               ],
               "id": "rev-ist-amira-2",
               "verified": true
@@ -6252,7 +6014,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=85&sig=465"
               ],
               "id": "rev-ist-amira-3",
               "verified": true
@@ -6267,7 +6029,7 @@ window.WANDERLY_DATA = {
       "name": "Paris",
       "country": "France",
       "tagline": "World-class art, culinary heritage, romantic river banks, and timeless elegance.",
-      "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=80",
+      "image": "../images/photo-1502602898657-3e91760cbb34.jpg",
       "lat": 48.8566,
       "lng": 2.3522,
       "weather": {
@@ -6283,7 +6045,7 @@ window.WANDERLY_DATA = {
           "category": "Culture",
           "price": 35,
           "rating": 4.8,
-          "image": "../images/photo-1543349689-9a4d426bee8e.jpg",
+          "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80",
           "lat": 48.8584,
           "lng": 2.2945,
           "description": "The definitive symbol of Paris with sparkling light shows every evening.",
@@ -6309,7 +6071,7 @@ window.WANDERLY_DATA = {
           "category": "History",
           "price": 15,
           "rating": 4.7,
-          "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?auto=format&fit=crop&w=800&q=80",
           "lat": 48.8867,
           "lng": 2.3431,
           "description": "Bohemian hilltop village with artists, vineyards, and white basilica views.",
@@ -6322,7 +6084,7 @@ window.WANDERLY_DATA = {
           "category": "Nature",
           "price": 30,
           "rating": 4.7,
-          "image": "../images/photo-1509356843151-3e7d96241e11.jpg",
+          "image": "https://images.unsplash.com/photo-1522093007474-d86e9bf7ba6f?auto=format&fit=crop&w=800&q=80",
           "lat": 48.8635,
           "lng": 2.3134,
           "description": "Effortless boat tour gliding under historic bridges and past Notre-Dame.",
@@ -6366,7 +6128,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 3100,
           "lat": 48.8682,
           "lng": 2.3292,
-          "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80&sig=467",
           "description": "The pinnacle of French high luxury on Place Vendôme with Chanel spa, Grand Jardin, and historic Hemingway Bar.",
           "amenities": [
             "Place Vendôme",
@@ -6378,24 +6140,24 @@ window.WANDERLY_DATA = {
           "address": "15 Place Vendôme, 1st arr., Paris",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
-              "caption": "Ritz Paris - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85&sig=468",
+              "caption": "Ritz Paris - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Presidential Suite with Panoramic Terrace"
+              "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85&sig=469",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Heated Infinity Swimming Pool"
+              "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85&sig=470",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Fine Dining Restaurant & Lounge"
+              "url": "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=1200&q=85&sig=471",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Luxury Spa & Wellness Sanctuary"
+              "url": "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1200&q=85&sig=472",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -6407,8 +6169,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=85&sig=469"
               ],
               "id": "rev-paris-ritz-1",
               "verified": true
@@ -6421,7 +6182,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=85&sig=470"
               ],
               "id": "rev-paris-ritz-2",
               "verified": true
@@ -6434,7 +6195,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=600&q=85&sig=471"
               ],
               "id": "rev-paris-ritz-3",
               "verified": true
@@ -6451,7 +6212,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 2200,
           "lat": 48.8634,
           "lng": 2.2934,
-          "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1572331165267-854da2b10ccc?auto=format&fit=crop&w=800&q=80&sig=473",
           "description": "Former residence of Prince Roland Bonaparte offering direct, unobstructed views of the Eiffel Tower across the Seine.",
           "amenities": [
             "Direct Eiffel Tower View",
@@ -6463,24 +6224,24 @@ window.WANDERLY_DATA = {
           "address": "10 Avenue d'Iéna, 16th arr., Paris",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",
-              "caption": "Shangri-La Paris - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1525610553991-2bede1a236e2?auto=format&fit=crop&w=1200&q=85&sig=474",
+              "caption": "Shangri-La Paris - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Deluxe King Bed & Living Quarters"
+              "url": "https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=1200&q=85&sig=475",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Sunbed Deck & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=85&sig=476",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Breakfast Buffet & Artisan Bakery"
+              "url": "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=85&sig=477",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Evening Illumination & Courtyard"
+              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=85&sig=478",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -6492,7 +6253,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=600&q=85&sig=475"
               ],
               "id": "rev-paris-shangrila-1",
               "verified": true
@@ -6505,7 +6266,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=600&q=85&sig=476"
               ],
               "id": "rev-paris-shangrila-2",
               "verified": true
@@ -6518,8 +6279,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=600&q=85&sig=477"
               ],
               "id": "rev-paris-shangrila-3",
               "verified": true
@@ -6536,7 +6296,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 3900,
           "lat": 48.8552,
           "lng": 2.2931,
-          "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=800&q=80&sig=479",
           "description": "Modern hotel situated right at the foot of the Eiffel Tower with bright balcony rooms and Frame restaurant.",
           "amenities": [
             "Foot of Eiffel Tower",
@@ -6547,20 +6307,24 @@ window.WANDERLY_DATA = {
           "address": "18 Avenue De Suffren, 15th arr., Paris",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
-              "caption": "Pullman Paris Tour Eiffel - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1563911302283-d2bc129e7570?auto=format&fit=crop&w=1200&q=85&sig=480",
+              "caption": "Pullman Paris Tour Eiffel - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Executive Studio with City View"
+              "url": "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1200&q=85&sig=481",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Rooftop Plunge Pool & Sunset Bar"
+              "url": "https://images.unsplash.com/photo-1586500036706-41963de24d8b?auto=format&fit=crop&w=1200&q=85&sig=482",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Private Marble Bathroom & Jacuzzi"
+              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=85&sig=483",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=85&sig=484",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -6572,7 +6336,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=600&q=85&sig=481"
               ],
               "id": "rev-paris-pullman-eiffel-1",
               "verified": true
@@ -6585,8 +6349,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1586500036706-41963de24d8b?auto=format&fit=crop&w=600&q=85&sig=482"
               ],
               "id": "rev-paris-pullman-eiffel-2",
               "verified": true
@@ -6599,8 +6362,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=85&sig=483"
               ],
               "id": "rev-paris-pullman-eiffel-3",
               "verified": true
@@ -6617,7 +6379,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 2900,
           "lat": 48.8442,
           "lng": 2.3712,
-          "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80&sig=485",
           "description": "Chic design hotel with XL king beds, mood lighting, rooftop cloudM bar with panoramic city skyline views.",
           "amenities": [
             "cloudM Rooftop Bar",
@@ -6628,20 +6390,24 @@ window.WANDERLY_DATA = {
           "address": "8 Rue Van Gogh, 12th arr., Paris",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80",
-              "caption": "citizenM Paris Gare de Lyon - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1549294413-26f195200c16?auto=format&fit=crop&w=1200&q=85&sig=486",
+              "caption": "citizenM Paris Gare de Lyon - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Comfort Queen Room with Work Desk"
+              "url": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1200&q=85&sig=487",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Terrace Café & Lounge Area"
+              "url": "https://images.unsplash.com/photo-1568495248636-6432b97bd949?auto=format&fit=crop&w=1200&q=85&sig=488",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Wellness & Fitness Suite"
+              "url": "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1200&q=85&sig=489",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1200&q=85&sig=490",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -6653,8 +6419,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=600&q=85&sig=487"
               ],
               "id": "rev-paris-citizenm-gare-1",
               "verified": true
@@ -6667,8 +6432,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1568495248636-6432b97bd949?auto=format&fit=crop&w=600&q=85&sig=488"
               ],
               "id": "rev-paris-citizenm-gare-2",
               "verified": true
@@ -6681,7 +6445,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=600&q=85&sig=489"
               ],
               "id": "rev-paris-citizenm-gare-3",
               "verified": true
@@ -6712,7 +6476,7 @@ window.WANDERLY_DATA = {
           "category": "History",
           "price": 38,
           "rating": 4.9,
-          "image": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=800&q=80",
           "lat": 41.8902,
           "lng": 12.4922,
           "description": "Ancient amphitheater where gladiators clashed and emperor history unfolded.",
@@ -6725,7 +6489,7 @@ window.WANDERLY_DATA = {
           "category": "Culture",
           "price": 0,
           "rating": 4.8,
-          "image": "https://images.unsplash.com/photo-1525874684015-58379d421a52?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
           "lat": 41.9009,
           "lng": 12.4833,
           "description": "Grand baroque masterpiece fountain, bathed in golden lights after dark.",
@@ -6738,7 +6502,7 @@ window.WANDERLY_DATA = {
           "category": "Culture",
           "price": 42,
           "rating": 4.9,
-          "image": "https://images.unsplash.com/photo-1565099824688-e93eb20fe622?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=800&q=80",
           "lat": 41.9067,
           "lng": 12.4547,
           "description": "Michelangelo's legendary frescoes and world-scale Papal art treasures.",
@@ -6751,7 +6515,7 @@ window.WANDERLY_DATA = {
           "category": "History",
           "price": 10,
           "rating": 4.8,
-          "image": "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
           "lat": 41.8986,
           "lng": 12.4769,
           "description": "Incredible 2000-year-old preserved Roman temple with open oculus dome.",
@@ -6795,7 +6559,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 2200,
           "lat": 41.9095,
           "lng": 12.4772,
-          "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=800&q=80&sig=491",
           "description": "Prestigious 5-star hotel near Piazza del Popolo with secret terraced gardens, Le Jardin de Russie, and luxury wellness.",
           "amenities": [
             "Secret Tiered Gardens",
@@ -6806,24 +6570,24 @@ window.WANDERLY_DATA = {
           "address": "Via del Babuino 9, Spagna, Rome",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
-              "caption": "Hotel de Russie, Rocco Forte - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=85&sig=492",
+              "caption": "Hotel de Russie, Rocco Forte - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Deluxe King Bed & Living Quarters"
+              "url": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=85&sig=493",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Sunbed Deck & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85&sig=494",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Breakfast Buffet & Artisan Bakery"
+              "url": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1200&q=85&sig=495",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Evening Illumination & Courtyard"
+              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=85&sig=496",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -6835,8 +6599,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=600&q=85&sig=493"
               ],
               "id": "rev-rome-hotel-de-russie-1",
               "verified": true
@@ -6849,7 +6612,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=85&sig=494"
               ],
               "id": "rev-rome-hotel-de-russie-2",
               "verified": true
@@ -6862,7 +6625,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=85&sig=495"
               ],
               "id": "rev-rome-hotel-de-russie-3",
               "verified": true
@@ -6879,7 +6642,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 1900,
           "lat": 41.9061,
           "lng": 12.4839,
-          "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80&sig=497",
           "description": "Iconic luxury hotel perched right atop the Spanish Steps with sweeping panoramic views of Rome's ancient domes.",
           "amenities": [
             "Top of Spanish Steps",
@@ -6890,20 +6653,24 @@ window.WANDERLY_DATA = {
           "address": "Piazza Trinità dei Monti 6, Rome",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",
-              "caption": "Hassler Roma - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=85&sig=498",
+              "caption": "Hassler Roma - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Executive Studio with City View"
+              "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=85&sig=499",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Rooftop Plunge Pool & Sunset Bar"
+              "url": "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=1200&q=85&sig=500",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Private Marble Bathroom & Jacuzzi"
+              "url": "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1200&q=85&sig=501",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=85&sig=502",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -6915,7 +6682,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=85&sig=499"
               ],
               "id": "rev-rome-hassler-1",
               "verified": true
@@ -6928,7 +6695,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=600&q=85&sig=500"
               ],
               "id": "rev-rome-hassler-2",
               "verified": true
@@ -6941,8 +6708,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=600&q=85&sig=501"
               ],
               "id": "rev-rome-hassler-3",
               "verified": true
@@ -6959,7 +6725,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 3800,
           "lat": 41.9018,
           "lng": 12.4935,
-          "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80&sig=503",
           "description": "Top-rated 4-star hotel on Via Nazionale with Artemis Spa, Turkish bath, and celebrated Ambrosia rooftop restaurant.",
           "amenities": [
             "Ambrosia Rooftop Bar",
@@ -6970,20 +6736,24 @@ window.WANDERLY_DATA = {
           "address": "Via Nazionale 22, Central Rome",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
-              "caption": "Hotel Artemide - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1587975844610-40f1ad10d07a?auto=format&fit=crop&w=1200&q=85&sig=504",
+              "caption": "Hotel Artemide - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Comfort Queen Room with Work Desk"
+              "url": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=85&sig=505",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Terrace Café & Lounge Area"
+              "url": "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?auto=format&fit=crop&w=1200&q=85&sig=506",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Wellness & Fitness Suite"
+              "url": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=85&sig=507",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=1200&q=85&sig=508",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -6995,7 +6765,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=600&q=85&sig=505"
               ],
               "id": "rev-rome-artemide-1",
               "verified": true
@@ -7008,8 +6778,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?auto=format&fit=crop&w=600&q=85&sig=506"
               ],
               "id": "rev-rome-artemide-2",
               "verified": true
@@ -7022,8 +6791,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600&q=85&sig=507"
               ],
               "id": "rev-rome-artemide-3",
               "verified": true
@@ -7054,7 +6822,7 @@ window.WANDERLY_DATA = {
           "category": "Culture",
           "price": 22,
           "rating": 4.9,
-          "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=800&q=80",
           "lat": 35.6595,
           "lng": 139.7005,
           "description": "The famous pulsing scramble intersection and 360° open-air rooftop observatory.",
@@ -7067,7 +6835,7 @@ window.WANDERLY_DATA = {
           "category": "History",
           "price": 15,
           "rating": 4.8,
-          "image": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
           "lat": 35.7148,
           "lng": 139.7967,
           "description": "Tokyo's oldest Buddhist temple fronted by vibrant Nakamise souvenir street.",
@@ -7093,7 +6861,7 @@ window.WANDERLY_DATA = {
           "category": "Shopping",
           "price": 20,
           "rating": 4.7,
-          "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
           "lat": 35.6983,
           "lng": 139.7731,
           "description": "Global epicenter of gaming, anime culture, manga, and cutting-edge electronics.",
@@ -7119,7 +6887,7 @@ window.WANDERLY_DATA = {
           "category": "Nature",
           "price": 10,
           "rating": 4.8,
-          "image": "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1563911302283-d2bc129e7570?auto=format&fit=crop&w=800&q=80",
           "lat": 35.6852,
           "lng": 139.71,
           "description": "Tranquil oasis blending traditional Japanese, English landscape, and French gardens.",
@@ -7137,7 +6905,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 1800,
           "lat": 35.6872,
           "lng": 139.7645,
-          "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80&sig=509",
           "description": "Urban sanctuary high above Otemachi with soaring 30-meter washi paper lobby ceiling, 33-meter sky pool, and Mount Fuji views.",
           "amenities": [
             "Mount Fuji Views",
@@ -7149,20 +6917,24 @@ window.WANDERLY_DATA = {
           "address": "The Otemachi Tower, 1-5-6 Otemachi, Chiyoda-ku, Tokyo",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
-              "caption": "Aman Tokyo - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85&sig=510",
+              "caption": "Aman Tokyo - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Executive Studio with City View"
+              "url": "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1200&q=85&sig=511",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Rooftop Plunge Pool & Sunset Bar"
+              "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=85&sig=512",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Private Marble Bathroom & Jacuzzi"
+              "url": "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1200&q=85&sig=513",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1527838832700-5059252407fa?auto=format&fit=crop&w=1200&q=85&sig=514",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -7174,8 +6946,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=600&q=85&sig=511"
               ],
               "id": "rev-tokyo-aman-1",
               "verified": true
@@ -7188,7 +6959,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=85&sig=512"
               ],
               "id": "rev-tokyo-aman-2",
               "verified": true
@@ -7201,7 +6972,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=600&q=85&sig=513"
               ],
               "id": "rev-tokyo-aman-3",
               "verified": true
@@ -7218,7 +6989,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 3400,
           "lat": 35.6591,
           "lng": 139.6998,
-          "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&w=800&q=80&sig=515",
           "description": "Directly overlooking the world-famous Shibuya Scramble Crossing, connected to Shibuya train station.",
           "amenities": [
             "Direct Shibuya Crossing View",
@@ -7229,20 +7000,24 @@ window.WANDERLY_DATA = {
           "address": "1-12-2 Dogenzaka, Shibuya-ku, Tokyo",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
-              "caption": "Shibuya Excel Hotel Tokyu - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&w=1200&q=85&sig=516",
+              "caption": "Shibuya Excel Hotel Tokyu - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Comfort Queen Room with Work Desk"
+              "url": "https://images.unsplash.com/photo-1566127444979-b3d2b654e3d7?auto=format&fit=crop&w=1200&q=85&sig=517",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Terrace Café & Lounge Area"
+              "url": "https://images.unsplash.com/photo-1553913861-c0fddf2619ee?auto=format&fit=crop&w=1200&q=85&sig=518",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Wellness & Fitness Suite"
+              "url": "https://images.unsplash.com/photo-1578922746465-3a80a228f223?auto=format&fit=crop&w=1200&q=85&sig=519",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=85&sig=520",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -7254,7 +7029,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1566127444979-b3d2b654e3d7?auto=format&fit=crop&w=600&q=85&sig=517"
               ],
               "id": "rev-tokyo-shibuya-excel-1",
               "verified": true
@@ -7267,7 +7042,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1553913861-c0fddf2619ee?auto=format&fit=crop&w=600&q=85&sig=518"
               ],
               "id": "rev-tokyo-shibuya-excel-2",
               "verified": true
@@ -7280,8 +7055,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1578922746465-3a80a228f223?auto=format&fit=crop&w=600&q=85&sig=519"
               ],
               "id": "rev-tokyo-shibuya-excel-3",
               "verified": true
@@ -7298,7 +7072,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 4200,
           "lat": 35.6953,
           "lng": 139.7021,
-          "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=800&q=80&sig=521",
           "description": "Famous Godzilla hotel in the heart of bustling Kabukicho Shinjuku with life-size Godzilla head terrace and cinema complex.",
           "amenities": [
             "Godzilla Head Terrace",
@@ -7309,24 +7083,24 @@ window.WANDERLY_DATA = {
           "address": "1-19-1 Kabukicho, Shinjuku-ku, Tokyo",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80",
-              "caption": "Hotel Gracery Shinjuku - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1598940603846-a1edd0ef2574?auto=format&fit=crop&w=1200&q=85&sig=522",
+              "caption": "Hotel Gracery Shinjuku - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Presidential Suite with Panoramic Terrace"
+              "url": "https://images.unsplash.com/photo-1574359411659-15573a27fd0c?auto=format&fit=crop&w=1200&q=85&sig=523",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Heated Infinity Swimming Pool"
+              "url": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=85&sig=524",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Fine Dining Restaurant & Lounge"
+              "url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1200&q=85&sig=525",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Luxury Spa & Wellness Sanctuary"
+              "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=85&sig=526",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -7338,7 +7112,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1574359411659-15573a27fd0c?auto=format&fit=crop&w=600&q=85&sig=523"
               ],
               "id": "rev-tokyo-gracery-shinjuku-1",
               "verified": true
@@ -7351,8 +7125,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=600&q=85&sig=524"
               ],
               "id": "rev-tokyo-gracery-shinjuku-2",
               "verified": true
@@ -7365,8 +7138,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=85&sig=525"
               ],
               "id": "rev-tokyo-gracery-shinjuku-3",
               "verified": true
@@ -7397,7 +7169,7 @@ window.WANDERLY_DATA = {
           "category": "History",
           "price": 28,
           "rating": 4.9,
-          "image": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1563911302283-d2bc129e7570?auto=format&fit=crop&w=800&q=80",
           "lat": 51.5007,
           "lng": -0.1246,
           "description": "The iconic clock tower and historic royal coronation church by the river.",
@@ -7410,7 +7182,7 @@ window.WANDERLY_DATA = {
           "category": "Culture",
           "price": 36,
           "rating": 4.7,
-          "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&w=800&q=80",
           "lat": 51.5033,
           "lng": -0.1195,
           "description": "Giant observation wheel offering sweeping city views across Greater London.",
@@ -7462,7 +7234,7 @@ window.WANDERLY_DATA = {
           "category": "Nature",
           "price": 20,
           "rating": 4.6,
-          "image": "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=800&q=80",
           "lat": 51.5073,
           "lng": -0.1657,
           "description": "Serpentine boating lake, royal rose gardens, and leafy park trails.",
@@ -7480,7 +7252,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 3600,
           "lat": 51.5101,
           "lng": -0.1205,
-          "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&w=800&q=80&sig=527",
           "description": "London's most famous luxury hotel on the Strand overlooking the River Thames, home to Gordon Ramsay's Savoy Grill and American Bar.",
           "amenities": [
             "River Thames Views",
@@ -7492,20 +7264,24 @@ window.WANDERLY_DATA = {
           "address": "Strand, Covent Garden, London",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
-              "caption": "The Savoy - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1451337516015-6b6e9a44a8a3?auto=format&fit=crop&w=1200&q=85&sig=528",
+              "caption": "The Savoy - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Comfort Queen Room with Work Desk"
+              "url": "https://images.unsplash.com/photo-1580674285054-bed31e145f59?auto=format&fit=crop&w=1200&q=85&sig=529",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Terrace Café & Lounge Area"
+              "url": "https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1200&q=85&sig=530",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Wellness & Fitness Suite"
+              "url": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=85&sig=531",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=1200&q=85&sig=532",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -7517,8 +7293,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1580674285054-bed31e145f59?auto=format&fit=crop&w=600&q=85&sig=529"
               ],
               "id": "rev-lon-the-savoy-1",
               "verified": true
@@ -7531,7 +7306,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=600&q=85&sig=530"
               ],
               "id": "rev-lon-the-savoy-2",
               "verified": true
@@ -7544,7 +7319,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=600&q=85&sig=531"
               ],
               "id": "rev-lon-the-savoy-3",
               "verified": true
@@ -7561,7 +7336,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 5200,
           "lat": 51.5011,
           "lng": -0.1172,
-          "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1522093007474-d86e9bf7ba6f?auto=format&fit=crop&w=800&q=80&sig=533",
           "description": "Iconic South Bank hotel directly facing Big Ben and the Houses of Parliament with 15m indoor pool and Mandara Spa.",
           "amenities": [
             "Big Ben & Parliament View",
@@ -7572,24 +7347,24 @@ window.WANDERLY_DATA = {
           "address": "200 Westminster Bridge Rd, London",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
-              "caption": "Park Plaza Westminster Bridge - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?auto=format&fit=crop&w=1200&q=85&sig=534",
+              "caption": "Park Plaza Westminster Bridge - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Presidential Suite with Panoramic Terrace"
+              "url": "https://images.unsplash.com/photo-1543349689-9a4d426bee8e?auto=format&fit=crop&w=1200&q=85&sig=535",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Heated Infinity Swimming Pool"
+              "url": "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?auto=format&fit=crop&w=1200&q=85&sig=536",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Fine Dining Restaurant & Lounge"
+              "url": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1200&q=85&sig=537",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Luxury Spa & Wellness Sanctuary"
+              "url": "https://images.unsplash.com/photo-1545987796-200677ee1011?auto=format&fit=crop&w=1200&q=85&sig=538",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -7601,7 +7376,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1543349689-9a4d426bee8e?auto=format&fit=crop&w=600&q=85&sig=535"
               ],
               "id": "rev-lon-park-plaza-westminster-1",
               "verified": true
@@ -7614,7 +7389,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?auto=format&fit=crop&w=600&q=85&sig=536"
               ],
               "id": "rev-lon-park-plaza-westminster-2",
               "verified": true
@@ -7627,8 +7402,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=600&q=85&sig=537"
               ],
               "id": "rev-lon-park-plaza-westminster-3",
               "verified": true
@@ -7645,7 +7419,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 3900,
           "lat": 51.5098,
           "lng": -0.0762,
-          "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1565099824688-e93eb20fe622?auto=format&fit=crop&w=800&q=80&sig=539",
           "description": "Stylish design hotel built directly above Tower Hill Underground Station, overlooking the Tower of London and Tower Bridge.",
           "amenities": [
             "Tower of London View",
@@ -7656,24 +7430,24 @@ window.WANDERLY_DATA = {
           "address": "40 Trinity Square, City of London",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80",
-              "caption": "citizenM Tower of London - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=1200&q=85&sig=540",
+              "caption": "citizenM Tower of London - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Deluxe King Bed & Living Quarters"
+              "url": "https://images.unsplash.com/photo-1592488832109-1d473228f00a?auto=format&fit=crop&w=1200&q=85&sig=541",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Sunbed Deck & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1200&q=85&sig=542",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Breakfast Buffet & Artisan Bakery"
+              "url": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1200&q=85&sig=543",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Evening Illumination & Courtyard"
+              "url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1200&q=85&sig=544",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -7685,7 +7459,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1592488832109-1d473228f00a?auto=format&fit=crop&w=600&q=85&sig=541"
               ],
               "id": "rev-lon-citizenm-tower-1",
               "verified": true
@@ -7698,8 +7472,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=600&q=85&sig=542"
               ],
               "id": "rev-lon-citizenm-tower-2",
               "verified": true
@@ -7712,8 +7485,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=600&q=85&sig=543"
               ],
               "id": "rev-lon-citizenm-tower-3",
               "verified": true
@@ -7744,7 +7516,7 @@ window.WANDERLY_DATA = {
           "category": "Culture",
           "price": 32,
           "rating": 4.9,
-          "image": "https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=800&q=80",
           "lat": 41.4036,
           "lng": 2.1744,
           "description": "Gaudí's unfinished architectural masterpiece with rainbow stained glass.",
@@ -7757,7 +7529,7 @@ window.WANDERLY_DATA = {
           "category": "Nature",
           "price": 18,
           "rating": 4.8,
-          "image": "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
           "lat": 41.4145,
           "lng": 2.1527,
           "description": "Mosaic salamanders, stone viaducts, and panoramic city-to-sea terraces.",
@@ -7809,7 +7581,7 @@ window.WANDERLY_DATA = {
           "category": "Culture",
           "price": 35,
           "rating": 4.8,
-          "image": "https://images.unsplash.com/photo-1543349689-9a4d426bee8e?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
           "lat": 41.3916,
           "lng": 2.1648,
           "description": "Whimsical dragon-roofed modernist mansion designed by Antoni Gaudí.",
@@ -7827,7 +7599,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 4100,
           "lat": 41.3685,
           "lng": 2.1901,
-          "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=800&q=80&sig=545",
           "description": "Iconic sail-shaped beachfront hotel designed by Ricardo Bofill with rooftop infinity pool WET Deck, Eclipse bar, and sea views.",
           "amenities": [
             "Direct Beachfront",
@@ -7839,24 +7611,24 @@ window.WANDERLY_DATA = {
           "address": "Plaça Rosa Del Vents 1, Final Passeig de Joan de Borbó, Barcelona",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
-              "caption": "W Barcelona (Hotel Vela) - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=85&sig=546",
+              "caption": "W Barcelona (Hotel Vela) - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Presidential Suite with Panoramic Terrace"
+              "url": "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1200&q=85&sig=547",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Heated Infinity Swimming Pool"
+              "url": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85&sig=548",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Fine Dining Restaurant & Lounge"
+              "url": "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=1200&q=85&sig=549",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Luxury Spa & Wellness Sanctuary"
+              "url": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=1200&q=85&sig=550",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -7868,8 +7640,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=600&q=85&sig=547"
               ],
               "id": "rev-bcn-w-barcelona-1",
               "verified": true
@@ -7882,7 +7653,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=85&sig=548"
               ],
               "id": "rev-bcn-w-barcelona-2",
               "verified": true
@@ -7895,7 +7666,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=600&q=85&sig=549"
               ],
               "id": "rev-bcn-w-barcelona-3",
               "verified": true
@@ -7912,7 +7683,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 2600,
           "lat": 41.3929,
           "lng": 2.1637,
-          "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=800&q=80&sig=551",
           "description": "Neoclassical 5-star palace on prestigious Passeig de Gràcia, steps away from Gaudí's Casa Batlló with La Dolce Vitae rooftop pool.",
           "amenities": [
             "Passeig de Gràcia",
@@ -7923,24 +7694,24 @@ window.WANDERLY_DATA = {
           "address": "Passeig de Gràcia 68, Eixample, Barcelona",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",
-              "caption": "Majestic Hotel & Spa Barcelona - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=1200&q=85&sig=552",
+              "caption": "Majestic Hotel & Spa Barcelona - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Deluxe King Bed & Living Quarters"
+              "url": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=85&sig=553",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Sunbed Deck & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=85&sig=554",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Breakfast Buffet & Artisan Bakery"
+              "url": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=85&sig=555",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Evening Illumination & Courtyard"
+              "url": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=1200&q=85&sig=556",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -7952,7 +7723,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=600&q=85&sig=553"
               ],
               "id": "rev-bcn-majestic-1",
               "verified": true
@@ -7965,7 +7736,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=85&sig=554"
               ],
               "id": "rev-bcn-majestic-2",
               "verified": true
@@ -7978,8 +7749,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=85&sig=555"
               ],
               "id": "rev-bcn-majestic-3",
               "verified": true
@@ -7996,7 +7766,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 2100,
           "lat": 41.3878,
           "lng": 2.1729,
-          "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=800&q=80&sig=557",
           "description": "Modern design 4-star superior hotel next to Cathedral and Gothic Quarter with Atik rooftop plunge pool and terrace lounge.",
           "amenities": [
             "Atik Rooftop Pool",
@@ -8007,20 +7777,24 @@ window.WANDERLY_DATA = {
           "address": "Via Laietana 69, Ciutat Vella, Barcelona",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
-              "caption": "H10 Cubik - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=1200&q=85&sig=558",
+              "caption": "H10 Cubik - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Executive Studio with City View"
+              "url": "https://images.unsplash.com/photo-1587985064135-0366536eab42?auto=format&fit=crop&w=1200&q=85&sig=559",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Rooftop Plunge Pool & Sunset Bar"
+              "url": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=85&sig=560",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Private Marble Bathroom & Jacuzzi"
+              "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85&sig=561",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=85&sig=562",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -8032,7 +7806,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1587985064135-0366536eab42?auto=format&fit=crop&w=600&q=85&sig=559"
               ],
               "id": "rev-bcn-h10-cubik-1",
               "verified": true
@@ -8045,8 +7819,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=85&sig=560"
               ],
               "id": "rev-bcn-h10-cubik-2",
               "verified": true
@@ -8059,8 +7832,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=85&sig=561"
               ],
               "id": "rev-bcn-h10-cubik-3",
               "verified": true
@@ -8091,7 +7863,7 @@ window.WANDERLY_DATA = {
           "category": "Nature",
           "price": 25,
           "rating": 4.9,
-          "image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1563911302283-d2bc129e7570?auto=format&fit=crop&w=800&q=80",
           "lat": -8.4332,
           "lng": 115.2789,
           "description": "Layered emerald green valleys with traditional subak irrigation systems.",
@@ -8104,7 +7876,7 @@ window.WANDERLY_DATA = {
           "category": "History",
           "price": 20,
           "rating": 4.8,
-          "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=800&q=80",
           "lat": -8.6212,
           "lng": 115.0868,
           "description": "Ancient Hindu sanctuary perched atop a dramatic offshore ocean rock.",
@@ -8130,7 +7902,7 @@ window.WANDERLY_DATA = {
           "category": "Nature",
           "price": 15,
           "rating": 4.7,
-          "image": "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=800&q=80",
           "lat": -8.5188,
           "lng": 115.2582,
           "description": "Lush mossy jungle sanctuary inhabited by hundreds of playful macaques.",
@@ -8174,7 +7946,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 2400,
           "lat": -8.5028,
           "lng": 115.2415,
-          "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80&sig=563",
           "description": "Architectural wonder entered via a dramatic suspension bridge leading to a lotus pond suspended above the Ayung River valley in Ubud.",
           "amenities": [
             "Ayung River Valley",
@@ -8186,24 +7958,24 @@ window.WANDERLY_DATA = {
           "address": "Jl. Raya Sayan, Sayan, Ubud, Bali",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
-              "caption": "Four Seasons Resort Bali at Sayan - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85&sig=564",
+              "caption": "Four Seasons Resort Bali at Sayan - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Deluxe King Bed & Living Quarters"
+              "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85&sig=565",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Sunbed Deck & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=1200&q=85&sig=566",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Breakfast Buffet & Artisan Bakery"
+              "url": "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1200&q=85&sig=567",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Evening Illumination & Courtyard"
+              "url": "https://images.unsplash.com/photo-1572331165267-854da2b10ccc?auto=format&fit=crop&w=1200&q=85&sig=568",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -8215,8 +7987,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=85&sig=565"
               ],
               "id": "rev-bali-four-seasons-sayan-1",
               "verified": true
@@ -8229,7 +8000,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=600&q=85&sig=566"
               ],
               "id": "rev-bali-four-seasons-sayan-2",
               "verified": true
@@ -8242,7 +8013,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=600&q=85&sig=567"
               ],
               "id": "rev-bali-four-seasons-sayan-3",
               "verified": true
@@ -8259,7 +8030,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 1600,
           "lat": -8.8465,
           "lng": 115.1448,
-          "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1525610553991-2bede1a236e2?auto=format&fit=crop&w=800&q=80&sig=569",
           "description": "Ultra-luxury cliffside retreat 150m above the Indian Ocean in Uluwatu with private funicular down to secluded pristine beach.",
           "amenities": [
             "150m Ocean Cliff",
@@ -8270,20 +8041,24 @@ window.WANDERLY_DATA = {
           "address": "Jl. Goa Lempeh, Banjar Dinas Kangin, Uluwatu, Bali",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80",
-              "caption": "Bulgari Resort Bali - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=1200&q=85&sig=570",
+              "caption": "Bulgari Resort Bali - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Executive Studio with City View"
+              "url": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=85&sig=571",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Rooftop Plunge Pool & Sunset Bar"
+              "url": "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=85&sig=572",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Private Marble Bathroom & Jacuzzi"
+              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=85&sig=573",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=85&sig=574",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -8295,7 +8070,7 @@ window.WANDERLY_DATA = {
               "title": "100% Authentic & Worth Every Penny",
               "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
               "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=600&q=85&sig=571"
               ],
               "id": "rev-bali-bulgari-1",
               "verified": true
@@ -8308,7 +8083,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=600&q=85&sig=572"
               ],
               "id": "rev-bali-bulgari-2",
               "verified": true
@@ -8321,8 +8096,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=85&sig=573"
               ],
               "id": "rev-bali-bulgari-3",
               "verified": true
@@ -8339,7 +8113,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 2900,
           "lat": -8.5132,
           "lng": 115.2764,
-          "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80&sig=575",
           "description": "Tranquil hillside resort spanning 10 hectares of tropical gardens between Petanu River Valley and Peliatan rice terraces.",
           "amenities": [
             "Dual Infinity River Pools",
@@ -8350,20 +8124,24 @@ window.WANDERLY_DATA = {
           "address": "Jl. Gunung Sari, Peliatan, Ubud, Bali",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80",
-              "caption": "Maya Ubud Resort & Spa - Exterior Overview"
+              "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=85&sig=576",
+              "caption": "Maya Ubud Resort & Spa - Architectural Overview & Grand Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Comfort Queen Room with Work Desk"
+              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=85&sig=577",
+              "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Terrace Café & Lounge Area"
+              "url": "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=1200&q=85&sig=578",
+              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=80",
-              "caption": "Wellness & Fitness Suite"
+              "url": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1200&q=85&sig=579",
+              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1549294413-26f195200c16?auto=format&fit=crop&w=1200&q=85&sig=580",
+              "caption": "Wellness Sanctuary & Marble Spa Suite"
             }
           ],
           "verifiedReviews": [
@@ -8375,7 +8153,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=85&sig=577"
               ],
               "id": "rev-bali-maya-ubud-1",
               "verified": true
@@ -8388,8 +8166,7 @@ window.WANDERLY_DATA = {
               "title": "A Dream Stay! Will Definitely Return",
               "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=600&q=85&sig=578"
               ],
               "id": "rev-bali-maya-ubud-2",
               "verified": true
@@ -8402,8 +8179,7 @@ window.WANDERLY_DATA = {
               "title": "Exceptional Hospitality & Impeccable Views",
               "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
               "photos": [
-                "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80",
-                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80"
+                "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=600&q=85&sig=579"
               ],
               "id": "rev-bali-maya-ubud-3",
               "verified": true
