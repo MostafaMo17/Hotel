@@ -22,7 +22,7 @@ window.WANDERLY_DATA = {
       "name": "Cairo",
       "country": "Egypt",
       "tagline": "Ancient wonders, historic mosques, bustling bazaars, and vibrant Nile life.",
-      "image": "https://images.unsplash.com/photo-1572252009286-268acec5ca0a?auto=format&fit=crop&w=1200&q=80",
+      "image": "https://images.unsplash.com/photo-1572252009286-268acec5ca0a?auto=format&fit=crop&w=1400&q=85",
       "lat": 30.0444,
       "lng": 31.2357,
       "weather": {
@@ -534,7 +534,7 @@ window.WANDERLY_DATA = {
           "category": "Culture",
           "price": 12,
           "rating": 4.8,
-          "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=800&q=80",
+          "image": "../images/alexandria-library.jpg",
           "lat": 31.2089,
           "lng": 29.9092,
           "description": "Modern architectural marvel and cultural library facing the Mediterranean.",
@@ -857,7 +857,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 1320,
           "lat": 31.2003,
           "lng": 29.8992,
-          "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1200&q=85",
           "description": "1906 classical heritage hotel featuring high antique ceilings and the famous Blue Harbor rooftop terrace overlooking Eastern Harbor.",
           "amenities": [
             "Rooftop Sea Terrace",
@@ -868,24 +868,24 @@ window.WANDERLY_DATA = {
           "address": "17 El Shohada Street, Raml Station, Alexandria",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=85",
-              "caption": "Paradise Inn Windsor Palace - Belle Époque Heritage"
+              "url": "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Paradise Inn Windsor Palace - Belle Époque Corniche Landmark"
             },
             {
               "url": "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?auto=format&fit=crop&w=1200&q=85",
-              "caption": "Antique Handcrafted Queen Room"
+              "caption": "Antique Handcrafted Royal Guest Bedroom"
             },
             {
               "url": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=85",
-              "caption": "Blue Harbor Famous Open-Air Rooftop Cafe"
+              "caption": "Blue Harbor Famous Open-Air Rooftop Lounge"
             },
             {
               "url": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=1200&q=85",
-              "caption": "Queen Elizabeth Hall Breakfast Buffet"
+              "caption": "Queen Elizabeth Hall Mediterranean Breakfast Terrace"
             },
             {
               "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=85",
-              "caption": "Vintage 1906 Gilded Elevator & Marble Lobby"
+              "caption": "Vintage 1906 Gilded Elevator & Grand Marble Lobby"
             }
           ],
           "verifiedReviews": [
@@ -916,7 +916,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 870,
           "lat": 31.1965,
           "lng": 29.8942,
-          "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=85",
           "description": "Comfortable central stay in downtown Alexandria with rooftop swimming pool, restaurant, and easy access to shopping.",
           "amenities": [
             "Rooftop Pool",
@@ -927,12 +927,12 @@ window.WANDERLY_DATA = {
           "address": "9 Borsa Kadima Street, Mansheya, Alexandria",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=85",
-              "caption": "Cherry Maryski Hotel - Central Alexandria Downtown"
+              "url": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Cherry Maryski Hotel - Central Alexandria Downtown Facade"
             },
             {
               "url": "https://images.unsplash.com/photo-1568495248636-6432b97bd949?auto=format&fit=crop&w=1200&q=85",
-              "caption": "Comfort Standard Twin Room"
+              "caption": "Comfort Twin Bedroom with Downtown City Views"
             },
             {
               "url": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=1200&q=85",
@@ -940,11 +940,11 @@ window.WANDERLY_DATA = {
             },
             {
               "url": "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1200&q=85",
-              "caption": "Mansheya International Restaurant"
+              "caption": "Mansheya International Restaurant & Buffet"
             },
             {
               "url": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1200&q=85",
-              "caption": "Relaxation Sauna & Wellness Corner"
+              "caption": "Relaxation Sauna & Swedish Wellness Facility"
             }
           ],
           "verifiedReviews": [
@@ -1436,7 +1436,7 @@ window.WANDERLY_DATA = {
               "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=85&sig=200",
+              "url": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1200&q=85",
               "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
@@ -2296,7 +2296,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 1120,
           "lat": 24.0205,
           "lng": 32.8812,
-          "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80&sig=245",
+          "image": "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=1200&q=85",
           "description": "Eco-chic luxury boutique hotel on Heisa Island facing Philae Temple, with private hot tubs on the rocks and Nubian vibes.",
           "amenities": [
             "Private Jacuzzis",
@@ -2308,24 +2308,24 @@ window.WANDERLY_DATA = {
           "address": "Heisa Island, Philae, Aswan",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=1200&q=85&sig=246",
-              "caption": "Benben by Sand - Adults Only - Architectural Overview & Grand Entrance"
+              "url": "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Benben by Sand - Heissa Island Eco-Luxury Granite Architecture"
             },
             {
-              "url": "https://images.unsplash.com/photo-1522093007474-d86e9bf7ba6f?auto=format&fit=crop&w=1200&q=85&sig=247",
-              "caption": "Deluxe Suite & Modern Living Quarters"
+              "url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Granite Boulder Deluxe Suite with Direct Nile Panorama"
             },
             {
-              "url": "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?auto=format&fit=crop&w=1200&q=85&sig=248",
-              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
+              "url": "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Outdoor Stone Jacuzzi Terrace Overlooking Philae Waters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1543349689-9a4d426bee8e?auto=format&fit=crop&w=1200&q=85&sig=249",
-              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+              "url": "../images/aswan-nubian-village-user.jpg",
+              "caption": "Authentic Nubian Cultural Design & Local Hospitality"
             },
             {
-              "url": "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?auto=format&fit=crop&w=1200&q=85&sig=250",
-              "caption": "Wellness Sanctuary & Marble Spa Suite"
+              "url": "../images/aswan-philae-user.jpg",
+              "caption": "Sunset Views of the Historic Nile Cataracts"
             }
           ],
           "verifiedReviews": [
@@ -2382,7 +2382,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 2190,
           "lat": 24.0921,
           "lng": 32.8894,
-          "image": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=800&q=80&sig=251",
+          "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=85",
           "description": "Located on Elephantine Island, offering 360-degree Nile views, panoramic tower restaurant, and complimentary boat shuttles.",
           "amenities": [
             "Elephantine Island",
@@ -2394,24 +2394,24 @@ window.WANDERLY_DATA = {
           "address": "Elephantine Island, Aswan",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1545987796-200677ee1011?auto=format&fit=crop&w=1200&q=85&sig=252",
-              "caption": "Mövenpick Resort Aswan - Architectural Overview & Grand Entrance"
+              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Mövenpick Resort Aswan - Elephantine Island Botanical Sanctuary"
             },
             {
-              "url": "https://images.unsplash.com/photo-1565099824688-e93eb20fe622?auto=format&fit=crop&w=1200&q=85&sig=253",
-              "caption": "Deluxe Suite & Modern Living Quarters"
+              "url": "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Panoramic Nile View Suite with Private Balcony"
             },
             {
-              "url": "https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=1200&q=85&sig=254",
-              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
+              "url": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Large Lagoon Pool Surrounded by Tropical Island Palms"
             },
             {
-              "url": "https://images.unsplash.com/photo-1592488832109-1d473228f00a?auto=format&fit=crop&w=1200&q=85&sig=255",
-              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+              "url": "../images/aswan-elephantine-user.jpg",
+              "caption": "Private Felucca Marina Dock & Island Walkways"
             },
             {
-              "url": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1200&q=85&sig=256",
-              "caption": "Wellness Sanctuary & Marble Spa Suite"
+              "url": "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Orangerie International Dining with Nile River Terrace"
             }
           ],
           "verifiedReviews": [
@@ -2468,7 +2468,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 1450,
           "lat": 24.0768,
           "lng": 32.8899,
-          "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80&sig=257",
+          "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=85",
           "description": "Hilltop hotel opposite the Nubian Museum offering high panoramic views over the Nile Valley and central Aswan.",
           "amenities": [
             "Hilltop Nile Panorama",
@@ -2479,24 +2479,24 @@ window.WANDERLY_DATA = {
           "address": "Top of the Hill, Nubian Museum Heights, Aswan, Egypt",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1200&q=85&sig=258",
-              "caption": "Basma Hotel Aswan - Architectural Overview & Grand Entrance"
+              "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Basma Hotel Aswan - Highest Hilltop Panorama of Granite Cliffs"
             },
             {
-              "url": "https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=1200&q=85&sig=259",
-              "caption": "Deluxe Suite & Modern Living Quarters"
+              "url": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Cliffside Classic Room Overlooking Aswan City & River"
             },
             {
-              "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=85&sig=260",
-              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
+              "url": "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Hilltop Swimming Pool with 360-Degree Sunset Views"
             },
             {
-              "url": "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1200&q=85&sig=261",
-              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=85",
+              "caption": "The Lotus Restaurant - Open Air Dining Under the Stars"
             },
             {
-              "url": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85&sig=262",
-              "caption": "Wellness Sanctuary & Marble Spa Suite"
+              "url": "../images/aswan-abu-simbel-user.jpg",
+              "caption": "Desert Mountain Gardens & Natural Stone Terraces"
             }
           ],
           "verifiedReviews": [
@@ -3432,7 +3432,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 1620,
           "lat": 28.4881,
           "lng": 34.5138,
-          "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80&sig=311",
+          "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=85",
           "description": "Relaxed beachfront resort on golden sandy bay offering world-renowned windsurfing station, pool, and family activities.",
           "amenities": [
             "Sandy Beach",
@@ -3444,24 +3444,24 @@ window.WANDERLY_DATA = {
           "address": "Dahab Lagoon Beach",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=85&sig=312",
-              "caption": "Swiss Inn Resort Dahab - Architectural Overview & Grand Entrance"
+              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Swiss Inn Resort Dahab - Sandy Laguna Bay Beachfront"
             },
             {
-              "url": "https://images.unsplash.com/photo-1587975844610-40f1ad10d07a?auto=format&fit=crop&w=1200&q=85&sig=313",
-              "caption": "Deluxe Suite & Modern Living Quarters"
+              "url": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Garden & Pool View Air-Conditioned Deluxe Suite"
             },
             {
-              "url": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=85&sig=314",
-              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
+              "url": "../images/dahab-laguna-user.jpg",
+              "caption": "Laguna Shallow Sandy Bay for Windsurfing & Kitesurfing"
             },
             {
-              "url": "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?auto=format&fit=crop&w=1200&q=85&sig=315",
-              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Resort Swimming Pool with Sinai Mountain Backdrop"
             },
             {
-              "url": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=85&sig=316",
-              "caption": "Wellness Sanctuary & Marble Spa Suite"
+              "url": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Zeytouna Mediterranean Restaurant & Beach Bar"
             }
           ],
           "verifiedReviews": [
@@ -3871,7 +3871,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 760,
           "lat": 29.2155,
           "lng": 25.5342,
-          "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80&sig=335",
+          "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=85",
           "description": "Serene wellness retreat set amidst olive groves and date palms with natural salt water mineral pools and sauna.",
           "amenities": [
             "Salt Mineral Pools",
@@ -3882,24 +3882,24 @@ window.WANDERLY_DATA = {
           "address": "Dakrour Road, Siwa Oasis",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&w=1200&q=85&sig=336",
-              "caption": "Siwa Relax Retreat - Architectural Overview & Grand Entrance"
+              "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Siwa Relax Retreat - Desert Palm Grove & Sulfur Mineral Pools"
             },
             {
-              "url": "https://images.unsplash.com/photo-1451337516015-6b6e9a44a8a3?auto=format&fit=crop&w=1200&q=85&sig=337",
-              "caption": "Deluxe Suite & Modern Living Quarters"
+              "url": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Organic Clay Bungalow with Handwoven Siwan Fabrics"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=85&sig=338",
-              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
+              "url": "../images/siwa-fatnas-sunset-tea-user.jpg",
+              "caption": "Natural Healing Spring Pool Under the Palm Canopy"
             },
             {
-              "url": "https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1200&q=85&sig=339",
-              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+              "url": "../images/siwa-salt-lakes-user.jpg",
+              "caption": "Crystal Turquoise Salt Lake Therapy Excursions"
             },
             {
-              "url": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=85&sig=340",
-              "caption": "Wellness Sanctuary & Marble Spa Suite"
+              "url": "../images/siwa-oracle-temple-user.jpg",
+              "caption": "Peaceful Oasis Courtyard with Open Air Star Lounges"
             }
           ],
           "verifiedReviews": [
@@ -3956,7 +3956,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 620,
           "lat": 29.2062,
           "lng": 25.5498,
-          "image": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=800&q=80&sig=341",
+          "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=85",
           "description": "Artistic eco-lodge built around date palm trees right next to the historic Temple of the Oracle (Amun).",
           "amenities": [
             "Near Oracle Temple",
@@ -3967,24 +3967,24 @@ window.WANDERLY_DATA = {
           "address": "Temple of Amun Area, Aghurmi, Siwa",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1522093007474-d86e9bf7ba6f?auto=format&fit=crop&w=1200&q=85&sig=342",
-              "caption": "Ghaliet Ecolodge & Spa - Architectural Overview & Grand Entrance"
+              "url": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Ghaliet Ecolodge & Spa - Mudbrick Architecture by Amun Temple"
             },
             {
-              "url": "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?auto=format&fit=crop&w=1200&q=85&sig=343",
-              "caption": "Deluxe Suite & Modern Living Quarters"
+              "url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Sculpted Organic Clay Suite with Tree Trunk Beams"
             },
             {
-              "url": "https://images.unsplash.com/photo-1543349689-9a4d426bee8e?auto=format&fit=crop&w=1200&q=85&sig=344",
-              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
+              "url": "../images/siwa-oracle-temple-user.jpg",
+              "caption": "Direct Views of the Historic Temple of the Oracle Palms"
             },
             {
-              "url": "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?auto=format&fit=crop&w=1200&q=85&sig=345",
-              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+              "url": "../images/siwa-shali-fortress-user.jpg",
+              "caption": "Ancient Shali Heritage Mudbrick Terraces"
             },
             {
-              "url": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1200&q=85&sig=346",
-              "caption": "Wellness Sanctuary & Marble Spa Suite"
+              "url": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Sunset Sand Sea Dunes & Stargazing Bedouin Fireplace"
             }
           ],
           "verifiedReviews": [
@@ -4041,7 +4041,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 540,
           "lat": 29.2189,
           "lng": 25.4215,
-          "image": "https://images.unsplash.com/photo-1545987796-200677ee1011?auto=format&fit=crop&w=800&q=80&sig=347",
+          "image": "https://images.unsplash.com/photo-1545987796-200677ee1011?auto=format&fit=crop&w=1200&q=85",
           "description": "Traditional Berber village nestled beside the Great Sand Sea with Arabian horses, spring pool, and astronomy stargazing.",
           "amenities": [
             "Great Sand Sea View",
@@ -4052,24 +4052,24 @@ window.WANDERLY_DATA = {
           "address": "South of Lake Siwa",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1565099824688-e93eb20fe622?auto=format&fit=crop&w=1200&q=85&sig=348",
-              "caption": "Taziry Eco-Villages Siwa - Architectural Overview & Grand Entrance"
+              "url": "https://images.unsplash.com/photo-1545987796-200677ee1011?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Taziry Eco-Villages - Sustainable Berber Citadel in the Desert"
             },
             {
-              "url": "https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=1200&q=85&sig=349",
-              "caption": "Deluxe Suite & Modern Living Quarters"
+              "url": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Handmade Kershef Salt Rock Bedroom with Olive Wood Furnishings"
             },
             {
-              "url": "https://images.unsplash.com/photo-1592488832109-1d473228f00a?auto=format&fit=crop&w=1200&q=85&sig=350",
-              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
+              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Fresh Spring Water Swimming Pool in the Shadow of the Red Mountain"
             },
             {
-              "url": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1200&q=85&sig=351",
-              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+              "url": "../images/siwa-great-sand-sea-safari-user.jpg",
+              "caption": "Arabian Horse Riding & Great Sand Sea Dune Adventures"
             },
             {
-              "url": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1200&q=85&sig=352",
-              "caption": "Wellness Sanctuary & Marble Spa Suite"
+              "url": "../images/siwa-salt-lakes-user.jpg",
+              "caption": "Zero Chemical Organic Farm & Sunset Mountain Dining"
             }
           ],
           "verifiedReviews": [
@@ -4126,7 +4126,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 810,
           "lat": 29.2041,
           "lng": 25.5172,
-          "image": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80&sig=353",
+          "image": "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=1200&q=85",
           "description": "Authentic mudbrick heritage lodge nestled in the date palm grove within walking distance of ancient Shali Fortress.",
           "amenities": [
             "Walk to Shali Fortress",
@@ -4137,24 +4137,24 @@ window.WANDERLY_DATA = {
           "address": "Shali Old Town, Siwa",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=1200&q=85&sig=354",
-              "caption": "Shali Lodge Heritage - Architectural Overview & Grand Entrance"
+              "url": "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Shali Lodge Heritage - Authentic Mudbrick Inn Near Old Shali"
             },
             {
-              "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=85&sig=355",
-              "caption": "Deluxe Suite & Modern Living Quarters"
+              "url": "https://images.unsplash.com/photo-1568495248636-6432b97bd949?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Traditional Palm-Trunk Thatched Room with Local Pottery"
             },
             {
-              "url": "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1200&q=85&sig=356",
-              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
+              "url": "../images/siwa-shali-fortress-user.jpg",
+              "caption": "Walking Distance to the 13th-Century Fortress of Shali"
             },
             {
-              "url": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85&sig=357",
-              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+              "url": "../images/siwa-cleopatra-spring-user.jpg",
+              "caption": "Cleopatra Natural Mineral Spring Excursion"
             },
             {
-              "url": "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=1200&q=85&sig=358",
-              "caption": "Wellness Sanctuary & Marble Spa Suite"
+              "url": "../images/siwa-fatnas-sunset-tea-user.jpg",
+              "caption": "Fatnas Island Date Palm Groves & Herbal Tea Lounge"
             }
           ],
           "verifiedReviews": [
@@ -4480,7 +4480,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 2200,
           "lat": 25.3402,
           "lng": 34.7435,
-          "image": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80&sig=371",
+          "image": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=85",
           "description": "Directly on Abu Dabbab Beach, world-famous for swimming alongside giant sea turtles and rare dugong sea cows.",
           "amenities": [
             "Abu Dabbab Turtles Bay",
@@ -4491,24 +4491,24 @@ window.WANDERLY_DATA = {
           "address": "Abu Dabbab Bay, Marsa Alam",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85&sig=372",
-              "caption": "Malikia Resort Abu Dabbab - Architectural Overview & Grand Entrance"
+              "url": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Malikia Resort Abu Dabbab - Direct Beach Access to Sea Turtle Bay"
             },
             {
-              "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85&sig=373",
-              "caption": "Deluxe Suite & Modern Living Quarters"
+              "url": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Bright Sea View Room with Private Balcony"
             },
             {
-              "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85&sig=374",
-              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
+              "url": "../images/marsa-abu-dabbab-turtles-user.jpg",
+              "caption": "World-Renowned Protected Sea Turtle & Dugong Reef"
             },
             {
-              "url": "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=1200&q=85&sig=375",
-              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Extensive Sandy Beach Frontage & Water Sports Center"
             },
             {
-              "url": "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1200&q=85&sig=376",
-              "caption": "Wellness Sanctuary & Marble Spa Suite"
+              "url": "../images/marsa-el-qulaan-mangroves-user.jpg",
+              "caption": "El Qulaan Mangrove Pristine Coastline Excursion"
             }
           ],
           "verifiedReviews": [
@@ -4832,7 +4832,7 @@ window.WANDERLY_DATA = {
           "reviewsCount": 1450,
           "lat": 29.4142,
           "lng": 30.4868,
-          "image": "https://images.unsplash.com/photo-1549294413-26f195200c16?auto=format&fit=crop&w=800&q=80&sig=389",
+          "image": "https://images.unsplash.com/photo-1549294413-26f195200c16?auto=format&fit=crop&w=1200&q=85",
           "description": "Fairy-tale pink boutique palace in Tunis Village with 2 infinity pools overlooking Lake Qarun and desert dunes.",
           "amenities": [
             "Tunis Village",
@@ -4844,24 +4844,24 @@ window.WANDERLY_DATA = {
           "address": "Tunis Village, Fayoum Oasis",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1200&q=85&sig=390",
-              "caption": "Lazib Inn Resort & Spa - Architectural Overview & Grand Entrance"
+              "url": "https://images.unsplash.com/photo-1549294413-26f195200c16?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Lazib Inn Resort & Spa - Tunis Village Boutique Fairy Tale"
             },
             {
-              "url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=85&sig=391",
-              "caption": "Deluxe Suite & Modern Living Quarters"
+              "url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Handmade Oriental Carpets & Private Jacuzzi Bedroom Suite"
             },
             {
-              "url": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=85&sig=392",
-              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
+              "url": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Dual Heated Pools Overlooking Lake Qarun Greenery"
             },
             {
-              "url": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=85&sig=393",
-              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+              "url": "../images/fayoum-tunis-village-user.jpg",
+              "caption": "Historic Pottery Workshop Streets of Tunis Village"
             },
             {
-              "url": "https://images.unsplash.com/photo-1586500036706-41963de24d8b?auto=format&fit=crop&w=1200&q=85&sig=394",
-              "caption": "Wellness Sanctuary & Marble Spa Suite"
+              "url": "../images/fayoum-magic-lake-sandboarding-user.jpg",
+              "caption": "Magic Lake Dune Safari & Sunset Bonfire Excursion"
             }
           ],
           "verifiedReviews": [
@@ -5256,7 +5256,7 @@ window.WANDERLY_DATA = {
       "name": "Dubai",
       "country": "UAE",
       "tagline": "Futuristic skyscrapers, luxury resorts, desert adventures, and mega malls.",
-      "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80",
+      "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1400&q=85",
       "lat": 25.2048,
       "lng": 55.2708,
       "weather": {
@@ -5272,7 +5272,7 @@ window.WANDERLY_DATA = {
           "category": "Culture",
           "price": 55,
           "rating": 4.9,
-          "image": "https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=85",
           "lat": 25.1972,
           "lng": 55.2744,
           "description": "Tower above the clouds at the world's tallest building with 360° views.",
@@ -5285,7 +5285,7 @@ window.WANDERLY_DATA = {
           "category": "Shopping",
           "price": 20,
           "rating": 4.8,
-          "image": "../images/photo-1519677100203-a0e668c92439.jpg",
+          "image": "https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&w=900&q=85",
           "lat": 25.1985,
           "lng": 55.2796,
           "description": "World's largest shopping center and choreographed music fountain shows.",
@@ -5298,7 +5298,7 @@ window.WANDERLY_DATA = {
           "category": "Culture",
           "price": 40,
           "rating": 4.9,
-          "image": "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1580674285054-bed31e145f59?auto=format&fit=crop&w=900&q=85",
           "lat": 25.2253,
           "lng": 55.2818,
           "description": "Architectural wonder showcasing futuristic technologies and innovation.",
@@ -5311,7 +5311,7 @@ window.WANDERLY_DATA = {
           "category": "Adventure",
           "price": 65,
           "rating": 4.8,
-          "image": "../images/photo-1509316975850-ff9c5deb0cd9.jpg",
+          "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=85",
           "lat": 24.8953,
           "lng": 55.6124,
           "description": "Thrilling dune bashing, camel rides, falconry, and traditional Arabian BBQ.",
@@ -5324,7 +5324,7 @@ window.WANDERLY_DATA = {
           "category": "Nature",
           "price": 45,
           "rating": 4.7,
-          "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=900&q=85",
           "lat": 25.1304,
           "lng": 55.1171,
           "description": "Famous man-made palm-shaped island with luxury beaches and waterparks.",
@@ -5337,7 +5337,7 @@ window.WANDERLY_DATA = {
           "category": "Dining",
           "price": 75,
           "rating": 4.8,
-          "image": "../images/photo-1578922746465-3a80a228f223.jpg",
+          "image": "https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=900&q=85",
           "lat": 25.0777,
           "lng": 55.1402,
           "description": "Evening luxury yacht dinner cruising past dazzling illuminated towers.",
@@ -5845,7 +5845,7 @@ window.WANDERLY_DATA = {
           "category": "Culture",
           "price": 35,
           "rating": 4.8,
-          "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=85",
           "lat": 48.8584,
           "lng": 2.2945,
           "description": "The definitive symbol of Paris with sparkling light shows every evening.",
@@ -5858,7 +5858,7 @@ window.WANDERLY_DATA = {
           "category": "Culture",
           "price": 24,
           "rating": 4.9,
-          "image": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=900&q=85",
           "lat": 48.8606,
           "lng": 2.3376,
           "description": "The world's largest art museum, home to the Mona Lisa and Venus de Milo.",
@@ -5871,7 +5871,7 @@ window.WANDERLY_DATA = {
           "category": "History",
           "price": 15,
           "rating": 4.7,
-          "image": "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?auto=format&fit=crop&w=900&q=85",
           "lat": 48.8867,
           "lng": 2.3431,
           "description": "Bohemian hilltop village with artists, vineyards, and white basilica views.",
@@ -5884,7 +5884,7 @@ window.WANDERLY_DATA = {
           "category": "Nature",
           "price": 30,
           "rating": 4.7,
-          "image": "https://images.unsplash.com/photo-1522093007474-d86e9bf7ba6f?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1522093007474-d86e9bf7ba6f?auto=format&fit=crop&w=900&q=85",
           "lat": 48.8635,
           "lng": 2.3134,
           "description": "Effortless boat tour gliding under historic bridges and past Notre-Dame.",
@@ -5897,7 +5897,7 @@ window.WANDERLY_DATA = {
           "category": "Dining",
           "price": 55,
           "rating": 4.7,
-          "image": "../images/photo-1414235077428-338989a2e8c0.jpg",
+          "image": "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=900&q=85",
           "lat": 48.8512,
           "lng": 2.3364,
           "description": "Classic culinary haven serving steak frites, duck confit, and pastries.",
@@ -5910,7 +5910,7 @@ window.WANDERLY_DATA = {
           "category": "Shopping",
           "price": 25,
           "rating": 4.6,
-          "image": "../images/photo-1522093007474-d86e9bf7ba6f.jpg",
+          "image": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?auto=format&fit=crop&w=900&q=85",
           "lat": 48.8575,
           "lng": 2.3623,
           "description": "Chic neighborhood of 17th-century mansions, art galleries, and fashion.",
@@ -6109,7 +6109,7 @@ window.WANDERLY_DATA = {
       "name": "Rome",
       "country": "Italy",
       "tagline": "The Eternal City: gladiators, baroque fountains, cobblestone piazzas, and pasta.",
-      "image": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1200&q=80",
+      "image": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1400&q=85",
       "lat": 41.9028,
       "lng": 12.4964,
       "weather": {
@@ -6125,7 +6125,7 @@ window.WANDERLY_DATA = {
           "category": "History",
           "price": 38,
           "rating": 4.9,
-          "image": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=900&q=85",
           "lat": 41.8902,
           "lng": 12.4922,
           "description": "Ancient amphitheater where gladiators clashed and emperor history unfolded.",
@@ -6138,7 +6138,7 @@ window.WANDERLY_DATA = {
           "category": "Culture",
           "price": 0,
           "rating": 4.8,
-          "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1525874684015-58379d421a52?auto=format&fit=crop&w=900&q=85",
           "lat": 41.9009,
           "lng": 12.4833,
           "description": "Grand baroque masterpiece fountain, bathed in golden lights after dark.",
@@ -6151,7 +6151,7 @@ window.WANDERLY_DATA = {
           "category": "Culture",
           "price": 42,
           "rating": 4.9,
-          "image": "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1531572753322-ad063cecc140?auto=format&fit=crop&w=900&q=85",
           "lat": 41.9067,
           "lng": 12.4547,
           "description": "Michelangelo's legendary frescoes and world-scale Papal art treasures.",
@@ -6164,7 +6164,7 @@ window.WANDERLY_DATA = {
           "category": "History",
           "price": 10,
           "rating": 4.8,
-          "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1543429776-2782fc8e1acd?auto=format&fit=crop&w=900&q=85",
           "lat": 41.8986,
           "lng": 12.4769,
           "description": "Incredible 2000-year-old preserved Roman temple with open oculus dome.",
@@ -6177,7 +6177,7 @@ window.WANDERLY_DATA = {
           "category": "Dining",
           "price": 45,
           "rating": 4.8,
-          "image": "../images/photo-1414235077428-338989a2e8c0.jpg",
+          "image": "https://images.unsplash.com/photo-1529260830199-42c24126f198?auto=format&fit=crop&w=900&q=85",
           "lat": 41.8895,
           "lng": 12.4704,
           "description": "Ivy-clad alleys filled with traditional carbonara, cacio e pepe, and gelato.",
@@ -6190,7 +6190,7 @@ window.WANDERLY_DATA = {
           "category": "Culture",
           "price": 12,
           "rating": 4.7,
-          "image": "../images/photo-1519677100203-a0e668c92439.jpg",
+          "image": "https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?auto=format&fit=crop&w=900&q=85",
           "lat": 41.8992,
           "lng": 12.4731,
           "description": "Lively square with Bernini's Fountain of the Four Rivers and street painters.",
@@ -6389,7 +6389,7 @@ window.WANDERLY_DATA = {
       "name": "Tokyo",
       "country": "Japan",
       "tagline": "Neon-lit metropolis, ancient Shinto shrines, culinary perfection, and high tech.",
-      "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1200&q=80",
+      "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1400&q=85",
       "lat": 35.6762,
       "lng": 139.6503,
       "weather": {
@@ -6405,7 +6405,7 @@ window.WANDERLY_DATA = {
           "category": "Culture",
           "price": 22,
           "rating": 4.9,
-          "image": "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=900&q=85",
           "lat": 35.6595,
           "lng": 139.7005,
           "description": "The famous pulsing scramble intersection and 360° open-air rooftop observatory.",
@@ -6418,7 +6418,7 @@ window.WANDERLY_DATA = {
           "category": "History",
           "price": 15,
           "rating": 4.8,
-          "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&q=85",
           "lat": 35.7148,
           "lng": 139.7967,
           "description": "Tokyo's oldest Buddhist temple fronted by vibrant Nakamise souvenir street.",
@@ -6431,7 +6431,7 @@ window.WANDERLY_DATA = {
           "category": "Nature",
           "price": 85,
           "rating": 4.9,
-          "image": "../images/photo-1500534314209-a25ddb2bd429.jpg",
+          "image": "https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?auto=format&fit=crop&w=900&q=85",
           "lat": 35.3606,
           "lng": 138.7274,
           "description": "Iconic snow-capped sacred volcano and pagoda views across Lake Kawaguchi.",
@@ -6444,7 +6444,7 @@ window.WANDERLY_DATA = {
           "category": "Shopping",
           "price": 20,
           "rating": 4.7,
-          "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?auto=format&fit=crop&w=900&q=85",
           "lat": 35.6983,
           "lng": 139.7731,
           "description": "Global epicenter of gaming, anime culture, manga, and cutting-edge electronics.",
@@ -6457,7 +6457,7 @@ window.WANDERLY_DATA = {
           "category": "Dining",
           "price": 35,
           "rating": 4.8,
-          "image": "../images/photo-1559339352-11d035aa65de.jpg",
+          "image": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=900&q=85",
           "lat": 35.6655,
           "lng": 139.7708,
           "description": "Savor fresh sushi, grilled wagyu skewers, tamagoyaki, and matcha desserts.",
@@ -6470,7 +6470,7 @@ window.WANDERLY_DATA = {
           "category": "Nature",
           "price": 10,
           "rating": 4.8,
-          "image": "https://images.unsplash.com/photo-1563911302283-d2bc129e7570?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=900&q=85",
           "lat": 35.6852,
           "lng": 139.71,
           "description": "Tranquil oasis blending traditional Japanese, English landscape, and French gardens.",
@@ -6669,7 +6669,7 @@ window.WANDERLY_DATA = {
       "name": "London",
       "country": "UK",
       "tagline": "Royal palaces, world-class West End shows, Thames views, and historic pubs.",
-      "image": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1200&q=80",
+      "image": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1400&q=85",
       "lat": 51.5074,
       "lng": -0.1278,
       "weather": {
@@ -6685,7 +6685,7 @@ window.WANDERLY_DATA = {
           "category": "History",
           "price": 28,
           "rating": 4.9,
-          "image": "https://images.unsplash.com/photo-1563911302283-d2bc129e7570?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=900&q=85",
           "lat": 51.5007,
           "lng": -0.1246,
           "description": "The iconic clock tower and historic royal coronation church by the river.",
@@ -6698,7 +6698,7 @@ window.WANDERLY_DATA = {
           "category": "Culture",
           "price": 36,
           "rating": 4.7,
-          "image": "https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=900&q=85",
           "lat": 51.5033,
           "lng": -0.1195,
           "description": "Giant observation wheel offering sweeping city views across Greater London.",
@@ -6711,7 +6711,7 @@ window.WANDERLY_DATA = {
           "category": "History",
           "price": 34,
           "rating": 4.8,
-          "image": "../images/photo-1527838832700-5059252407fa.jpg",
+          "image": "https://images.unsplash.com/photo-1526129318478-62ed807ebdf9?auto=format&fit=crop&w=900&q=85",
           "lat": 51.5081,
           "lng": -0.0759,
           "description": "Historic 1000-year-old castle guarding the dazzling Crown Jewels.",
@@ -6724,7 +6724,7 @@ window.WANDERLY_DATA = {
           "category": "Culture",
           "price": 15,
           "rating": 4.9,
-          "image": "../images/photo-1568322445389-f64ac2515020.jpg",
+          "image": "https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&w=900&q=85",
           "lat": 51.5194,
           "lng": -0.127,
           "description": "World-renowned treasure house featuring the Rosetta Stone and Parthenon sculptures.",
@@ -6737,7 +6737,7 @@ window.WANDERLY_DATA = {
           "category": "Dining",
           "price": 45,
           "rating": 4.7,
-          "image": "../images/photo-1414235077428-338989a2e8c0.jpg",
+          "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=85",
           "lat": 51.5117,
           "lng": -0.1232,
           "description": "Historic piazza filled with street performers, tea rooms, and theaters.",
@@ -6750,7 +6750,7 @@ window.WANDERLY_DATA = {
           "category": "Nature",
           "price": 20,
           "rating": 4.6,
-          "image": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1517732306149-e8f829eb588a?auto=format&fit=crop&w=900&q=85",
           "lat": 51.5073,
           "lng": -0.1657,
           "description": "Serpentine boating lake, royal rose gardens, and leafy park trails.",
@@ -6949,7 +6949,7 @@ window.WANDERLY_DATA = {
       "name": "Barcelona",
       "country": "Spain",
       "tagline": "Gaudí architecture, Mediterranean beaches, tapas culture, and lively boulevards.",
-      "image": "https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=1200&q=80",
+      "image": "https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=1400&q=85",
       "lat": 41.3879,
       "lng": 2.1699,
       "weather": {
@@ -6965,7 +6965,7 @@ window.WANDERLY_DATA = {
           "category": "Culture",
           "price": 32,
           "rating": 4.9,
-          "image": "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=900&q=85",
           "lat": 41.4036,
           "lng": 2.1744,
           "description": "Gaudí's unfinished architectural masterpiece with rainbow stained glass.",
@@ -6978,7 +6978,7 @@ window.WANDERLY_DATA = {
           "category": "Nature",
           "price": 18,
           "rating": 4.8,
-          "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=900&q=85",
           "lat": 41.4145,
           "lng": 2.1527,
           "description": "Mosaic salamanders, stone viaducts, and panoramic city-to-sea terraces.",
@@ -6991,7 +6991,7 @@ window.WANDERLY_DATA = {
           "category": "History",
           "price": 12,
           "rating": 4.7,
-          "image": "../images/photo-1522093007474-d86e9bf7ba6f.jpg",
+          "image": "https://images.unsplash.com/photo-1511527661048-7fe73d85e9a4?auto=format&fit=crop&w=900&q=85",
           "lat": 41.3825,
           "lng": 2.1769,
           "description": "Atmospheric medieval cobblestone alleys, cathedral squares, and cafes.",
@@ -7004,7 +7004,7 @@ window.WANDERLY_DATA = {
           "category": "Dining",
           "price": 28,
           "rating": 4.8,
-          "image": "../images/photo-1559339352-11d035aa65de.jpg",
+          "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=85",
           "lat": 41.3817,
           "lng": 2.1715,
           "description": "Famous food market with fresh jamón ibérico, seafood tapas, and fruit juices.",
@@ -7017,7 +7017,7 @@ window.WANDERLY_DATA = {
           "category": "Nature",
           "price": 0,
           "rating": 4.6,
-          "image": "../images/photo-1507525428034-b723cf961d3e.jpg",
+          "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=85",
           "lat": 41.3784,
           "lng": 2.1897,
           "description": "Golden city beach lined with chiringuito beach bars and palm trees.",
@@ -7030,7 +7030,7 @@ window.WANDERLY_DATA = {
           "category": "Culture",
           "price": 35,
           "rating": 4.8,
-          "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1561501900-3701fa6a0864?auto=format&fit=crop&w=900&q=85",
           "lat": 41.3916,
           "lng": 2.1648,
           "description": "Whimsical dragon-roofed modernist mansion designed by Antoni Gaudí.",
@@ -7229,7 +7229,7 @@ window.WANDERLY_DATA = {
       "name": "Bali",
       "country": "Indonesia",
       "tagline": "Tropical emerald rice terraces, cliffside ocean temples, waterfalls, and calm spas.",
-      "image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80",
+      "image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1400&q=85",
       "lat": -8.4095,
       "lng": 115.1889,
       "weather": {
@@ -7245,7 +7245,7 @@ window.WANDERLY_DATA = {
           "category": "Nature",
           "price": 25,
           "rating": 4.9,
-          "image": "https://images.unsplash.com/photo-1563911302283-d2bc129e7570?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=85",
           "lat": -8.4332,
           "lng": 115.2789,
           "description": "Layered emerald green valleys with traditional subak irrigation systems.",
@@ -7258,7 +7258,7 @@ window.WANDERLY_DATA = {
           "category": "History",
           "price": 20,
           "rating": 4.8,
-          "image": "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=900&q=85",
           "lat": -8.6212,
           "lng": 115.0868,
           "description": "Ancient Hindu sanctuary perched atop a dramatic offshore ocean rock.",
@@ -7271,7 +7271,7 @@ window.WANDERLY_DATA = {
           "category": "Adventure",
           "price": 60,
           "rating": 4.9,
-          "image": "../images/photo-1469854523086-cc02fe5d8800.jpg",
+          "image": "https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&fit=crop&w=900&q=85",
           "lat": -8.7508,
           "lng": 115.4744,
           "description": "Breathtaking T-Rex shaped cliff overlooking turquoise tropical waters.",
@@ -7284,7 +7284,7 @@ window.WANDERLY_DATA = {
           "category": "Nature",
           "price": 15,
           "rating": 4.7,
-          "image": "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=800&q=80",
+          "image": "https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=900&q=85",
           "lat": -8.5188,
           "lng": 115.2582,
           "description": "Lush mossy jungle sanctuary inhabited by hundreds of playful macaques.",
@@ -7297,7 +7297,7 @@ window.WANDERLY_DATA = {
           "category": "Adventure",
           "price": 55,
           "rating": 4.8,
-          "image": "../images/photo-1500534314209-a25ddb2bd429.jpg",
+          "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=85",
           "lat": -8.2421,
           "lng": 115.3753,
           "description": "Pre-dawn hike to watch the sun rise over the volcanic caldera and crater lake.",
@@ -7310,7 +7310,7 @@ window.WANDERLY_DATA = {
           "category": "Dining",
           "price": 40,
           "rating": 4.7,
-          "image": "../images/photo-1533105079780-92b9be482077.jpg",
+          "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=900&q=85",
           "lat": -8.6913,
           "lng": 115.1558,
           "description": "Infinity pool loungers, chilled beats, fresh coconut drinks, and ocean sunsets.",
