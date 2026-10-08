@@ -100,7 +100,8 @@ const App = {
   },
   
   get currency() {
-    return Store.get("currency", "USD");
+    const saved = Store.get("currency", "USD");
+    return (App.data.currencies && App.data.currencies[saved]) ? saved : "USD";
   },
   set currency(value) {
     Store.set("currency", value);
@@ -938,9 +939,10 @@ function openBookingModal(hotelId) {
                 <span class="verified-badge"><i class="fa-solid fa-shield-check"></i> 100% Verified</span>
               </div>
               <h2 class="mt-2 text-2xl md:text-3xl font-black text-slate-950 dark:text-white">${hotel.name}</h2>
-              <p class="text-xs text-slate-400 mt-0.5 flex items-center gap-1">
-                <i class="fa-solid fa-location-dot text-teal-600"></i> ${hotel.address || hotel.destinationName}
-              </p>
+              <div class="mt-1 flex flex-wrap items-center gap-2.5 text-xs font-bold text-slate-400">
+                <span class="flex items-center gap-1"><i class="fa-solid fa-location-dot text-teal-600"></i> ${hotel.address || hotel.destinationName}</span>
+                ${hotel.airportDistance ? `<span class="flex items-center gap-1 text-sky-600 dark:text-sky-400 font-black"><i class="fa-solid fa-plane-departure"></i> ${hotel.airportDistance}</span>` : ""}
+              </div>
             </div>
             <button type="button" data-booking-close class="icon-btn shrink-0" aria-label="Close">
               <i class="fa-solid fa-xmark"></i>
@@ -1873,11 +1875,15 @@ function hotelCard(hotel, actions = true, referencePlace = null, allDestinationH
             <i class="fa-solid fa-location-dot text-teal-600"></i> ${hotel.address || hotel.destinationName}
           </p>
           
-          <!-- Proximity Badge -->
-          <div class="mt-2.5 flex items-center">
+          <!-- Proximity & Airport Badges -->
+          <div class="mt-2.5 flex flex-wrap items-center gap-1.5">
             <span class="proximity-badge">
               <i class="fa-solid fa-route"></i> ${proximity.label}
             </span>
+            ${hotel.airportDistance ? `
+            <span class="rounded-lg bg-sky-50 dark:bg-sky-950/70 border border-sky-200 dark:border-sky-800/80 px-2 py-0.5 text-[11px] font-black text-sky-700 dark:text-sky-300 flex items-center gap-1.5 shadow-sm">
+              <i class="fa-solid fa-plane-departure text-sky-500"></i> ${hotel.airportDistance}
+            </span>` : ""}
           </div>
 
           <p class="mt-2.5 text-xs leading-5 text-slate-600 dark:text-slate-300 line-clamp-2">${hotel.description}</p>
@@ -2103,9 +2109,6 @@ function renderNavbar(activePage = (document.body?.dataset?.page || "home")) {
                 <option value="USD" ${currentCurr === "USD" ? "selected" : ""}>USD ($)</option>
                 <option value="EGP" ${currentCurr === "EGP" ? "selected" : ""}>EGP (E£)</option>
                 <option value="EUR" ${currentCurr === "EUR" ? "selected" : ""}>EUR (€)</option>
-                <option value="SAR" ${currentCurr === "SAR" ? "selected" : ""}>SAR (ر.س)</option>
-                <option value="AED" ${currentCurr === "AED" ? "selected" : ""}>AED (د.إ)</option>
-                <option value="GBP" ${currentCurr === "GBP" ? "selected" : ""}>GBP (£)</option>
               </select>
             </div>
           </div>` : ""}

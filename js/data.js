@@ -14,21 +14,6 @@ window.WANDERLY_DATA = {
       "symbol": "€",
       "name": "Euro (€)",
       "rate": 0.92
-    },
-    "SAR": {
-      "symbol": "SAR",
-      "name": "Saudi Riyal (ر.س)",
-      "rate": 3.75
-    },
-    "AED": {
-      "symbol": "AED",
-      "name": "UAE Dirham (د.إ)",
-      "rate": 3.67
-    },
-    "GBP": {
-      "symbol": "£",
-      "name": "British Pound (£)",
-      "rate": 0.79
     }
   },
   "destinations": [
@@ -145,7 +130,7 @@ window.WANDERLY_DATA = {
             "Fine Dining",
             "Free High-Speed WiFi"
           ],
-          "address": "6 Pyramids Road, Giza Plateau",
+          "address": "6 Pyramids Road, Giza, Cairo, Egypt",
           "gallery": [
             {
               "url": "../images/mena-house-1.jpg",
@@ -209,7 +194,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Top Rated"
+          "recommendationBadge": "Top Rated",
+          "airportDistance": "42 km to Cairo Int'l Airport (CAI)",
+          "airportDistanceKm": 42
         },
         {
           "id": "cairo-four-seasons-nile",
@@ -229,7 +216,7 @@ window.WANDERLY_DATA = {
             "8 Restaurants",
             "Fitness Center"
           ],
-          "address": "1089 Corniche El Nile, Garden City, Cairo",
+          "address": "1089 Corniche El Nil, Garden City, Cairo, Egypt",
           "gallery": [
             {
               "url": "../images/four-seasons-nile-1.jpg",
@@ -280,7 +267,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Top Rated"
+          "recommendationBadge": "Top Rated",
+          "airportDistance": "21 km to Cairo Int'l Airport (CAI)",
+          "airportDistanceKm": 21
         },
         {
           "id": "cairo-sofitel-gezirah",
@@ -300,7 +289,7 @@ window.WANDERLY_DATA = {
             "Riverfront Terrace",
             "Free WiFi"
           ],
-          "address": "3 El Thawra Council St, Zamalek, Cairo",
+          "address": "3 El Thawra Council St, Zamalek, Cairo, Egypt",
           "gallery": [
             {
               "url": "../images/sofitel-gezirah-1.jpg",
@@ -338,7 +327,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Top Rated"
+          "recommendationBadge": "Top Rated",
+          "airportDistance": "22 km to Cairo Int'l Airport (CAI)",
+          "airportDistanceKm": 22
         },
         {
           "id": "cairo-kempinski-nile",
@@ -358,7 +349,7 @@ window.WANDERLY_DATA = {
             "Butler Service",
             "Turkish Bath"
           ],
-          "address": "12 Ahmed Ragheb St, Garden City, Cairo",
+          "address": "12 Ahmed Ragheb St, Garden City, Cairo, Egypt",
           "gallery": [
             {
               "url": "../images/kempinski-nile-1.jpg",
@@ -396,7 +387,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Top Rated"
+          "recommendationBadge": "Top Rated",
+          "airportDistance": "21 km to Cairo Int'l Airport (CAI)",
+          "airportDistanceKm": 21
         },
         {
           "id": "cairo-steigenberger-tahrir",
@@ -416,7 +409,7 @@ window.WANDERLY_DATA = {
             "Breakfast Included",
             "Free WiFi"
           ],
-          "address": "Kasr El Nil St, Downtown Cairo",
+          "address": "Kasr El Nil St, Downtown Tahrir Square, Cairo, Egypt",
           "gallery": [
             {
               "url": "../images/steigenberger-tahrir-1.jpg",
@@ -454,7 +447,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Strategic Location"
+          "recommendationBadge": "Strategic Location",
+          "airportDistance": "19 km to Cairo Int'l Airport (CAI)",
+          "airportDistanceKm": 19
         },
         {
           "id": "cairo-pyramids-valley",
@@ -474,7 +469,7 @@ window.WANDERLY_DATA = {
             "Airport Shuttle",
             "Terrace Cafe"
           ],
-          "address": "Sphinx Street, Nazlet El-Semman, Giza",
+          "address": "Abu Al Hol Al Seyahi, Nazlet El-Semman, Giza, Egypt",
           "gallery": [
             {
               "url": "../images/pyramids-valley-1.jpg",
@@ -512,7 +507,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Budget Friendly"
+          "recommendationBadge": "Budget Friendly",
+          "airportDistance": "43 km to Cairo Int'l Airport (CAI)",
+          "airportDistanceKm": 43
         }
       ]
     },
@@ -629,7 +626,7 @@ window.WANDERLY_DATA = {
             "Luxury Spa",
             "Fine Dining"
           ],
-          "address": "399 El Geish Road, San Stefano, Alexandria",
+          "address": "399 El Geish Road, San Stefano, Alexandria, Egypt",
           "gallery": [
             {
               "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=85",
@@ -667,7 +664,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Top Rated"
+          "recommendationBadge": "Top Rated",
+          "airportDistance": "58 km to Borg El Arab Airport (HBE)",
+          "airportDistanceKm": 58
         },
         {
           "id": "alex-helnan-palestine",
@@ -687,7 +686,7 @@ window.WANDERLY_DATA = {
             "Free WiFi",
             "Royal History"
           ],
-          "address": "Montaza Palace Grounds, Alexandria",
+          "address": "Montaza Palace Royal Park, Montaza, Alexandria, Egypt",
           "gallery": [
             {
               "url": "https://images.unsplash.com/photo-1549294413-26f195200c16?auto=format&fit=crop&w=1200&q=85",
@@ -725,7 +724,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Strategic Location"
+          "recommendationBadge": "Strategic Location",
+          "airportDistance": "66 km to Borg El Arab Airport (HBE)",
+          "airportDistanceKm": 66
         },
         {
           "id": "alex-sunrise-avenue",
@@ -783,7 +784,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Strategic Location"
+          "recommendationBadge": "Strategic Location",
+          "airportDistance": "18 km to International Airport",
+          "airportDistanceKm": 20
         },
         {
           "id": "alex-steigenberger-cecil",
@@ -841,7 +844,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Strategic Location"
+          "recommendationBadge": "Strategic Location",
+          "airportDistance": "36 km to International Airport",
+          "airportDistanceKm": 20
         },
         {
           "id": "alex-windsor-palace",
@@ -898,7 +903,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Strategic Location"
+          "recommendationBadge": "Strategic Location",
+          "airportDistance": "17 km to International Airport",
+          "airportDistanceKm": 20
         },
         {
           "id": "alex-cherry-maryski",
@@ -955,7 +962,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Budget Friendly"
+          "recommendationBadge": "Budget Friendly",
+          "airportDistance": "23 km to International Airport",
+          "airportDistanceKm": 20
         }
       ]
     },
@@ -1072,7 +1081,7 @@ window.WANDERLY_DATA = {
             "Luxury Spa",
             "Gourmet Dining"
           ],
-          "address": "1 Four Seasons Boulevard, Sharks Bay, Sharm El Sheikh",
+          "address": "1 Four Seasons Boulevard, Sharks Bay, Sharm El Sheikh, Egypt",
           "gallery": [
             {
               "url": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=1200&q=85&sig=174",
@@ -1136,7 +1145,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Top Rated"
+          "recommendationBadge": "Top Rated",
+          "airportDistance": "7 km to Sharm El Sheikh Airport (SSH)",
+          "airportDistanceKm": 7
         },
         {
           "id": "sharm-rixos-seagate",
@@ -1156,7 +1167,7 @@ window.WANDERLY_DATA = {
             "Private Pier",
             "Kids Club"
           ],
-          "address": "Nabq Bay, Sharm El Sheikh",
+          "address": "Nabq Bay Coastal Highway, Sharm El Sheikh, Egypt",
           "gallery": [
             {
               "url": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=85&sig=180",
@@ -1220,7 +1231,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Top Rated"
+          "recommendationBadge": "Top Rated",
+          "airportDistance": "9 km to Sharm El Sheikh Airport (SSH)",
+          "airportDistanceKm": 9
         },
         {
           "id": "sharm-steigenberger-alcazar",
@@ -1304,7 +1317,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Top Rated"
+          "recommendationBadge": "Top Rated",
+          "airportDistance": "29 km to International Airport",
+          "airportDistanceKm": 20
         },
         {
           "id": "sharm-stella-di-mare",
@@ -1324,7 +1339,7 @@ window.WANDERLY_DATA = {
             "Spa & Thalasso",
             "Sea View"
           ],
-          "address": "Naama Bay, Sharm El Sheikh",
+          "address": "Naama Bay Marine Promenade, Sharm El Sheikh, Egypt",
           "gallery": [
             {
               "url": "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1200&q=85",
@@ -1388,7 +1403,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Strategic Location"
+          "recommendationBadge": "Strategic Location",
+          "airportDistance": "16 km to Sharm El Sheikh Airport (SSH)",
+          "airportDistanceKm": 16
         },
         {
           "id": "sharm-jaz-fanara",
@@ -1472,7 +1489,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Strategic Location"
+          "recommendationBadge": "Strategic Location",
+          "airportDistance": "12 km to International Airport",
+          "airportDistanceKm": 20
         },
         {
           "id": "sharm-falcon-hills",
@@ -1555,7 +1574,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Budget Friendly"
+          "recommendationBadge": "Budget Friendly",
+          "airportDistance": "15 km to International Airport",
+          "airportDistanceKm": 20
         }
       ]
     },
@@ -1672,7 +1693,7 @@ window.WANDERLY_DATA = {
             "Heated Pool",
             "French Cuisine"
           ],
-          "address": "Corniche El Nile, Luxor",
+          "address": "Corniche El Nil Street, East Bank, Luxor, Egypt",
           "gallery": [
             {
               "url": "https://images.unsplash.com/photo-1587975844610-40f1ad10d07a?auto=format&fit=crop&w=1200&q=85",
@@ -1736,7 +1757,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Top Rated"
+          "recommendationBadge": "Top Rated",
+          "airportDistance": "10 km to Luxor Int'l Airport (LXR)",
+          "airportDistanceKm": 10
         },
         {
           "id": "luxor-hilton-resort",
@@ -1756,7 +1779,7 @@ window.WANDERLY_DATA = {
             "Karnak Proximity",
             "Free WiFi"
           ],
-          "address": "Karnak, Luxor",
+          "address": "New Karnak, East Bank, Luxor, Egypt",
           "gallery": [
             {
               "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=85",
@@ -1820,7 +1843,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Top Rated"
+          "recommendationBadge": "Top Rated",
+          "airportDistance": "12 km to Luxor Int'l Airport (LXR)",
+          "airportDistanceKm": 12
         },
         {
           "id": "luxor-steigenberger-nile",
@@ -1904,7 +1929,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Strategic Location"
+          "recommendationBadge": "Strategic Location",
+          "airportDistance": "19 km to International Airport",
+          "airportDistanceKm": 20
         },
         {
           "id": "luxor-jolie-ville",
@@ -1988,7 +2015,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Strategic Location"
+          "recommendationBadge": "Strategic Location",
+          "airportDistance": "13 km to International Airport",
+          "airportDistanceKm": 20
         },
         {
           "id": "luxor-dolfin",
@@ -2071,7 +2100,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Budget Friendly"
+          "recommendationBadge": "Budget Friendly",
+          "airportDistance": "17 km to International Airport",
+          "airportDistanceKm": 20
         }
       ]
     },
@@ -2188,7 +2219,7 @@ window.WANDERLY_DATA = {
             "So Spa",
             "Agatha Christie Suite"
           ],
-          "address": "Abtal El Tahrir Street, Aswan",
+          "address": "Abtal El Tahrir Street, Waterfront, Aswan, Egypt",
           "gallery": [
             {
               "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=85",
@@ -2252,7 +2283,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Top Rated"
+          "recommendationBadge": "Top Rated",
+          "airportDistance": "18 km to Aswan Airport (ASW)",
+          "airportDistanceKm": 18
         },
         {
           "id": "aswan-benben",
@@ -2336,7 +2369,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Top Rated"
+          "recommendationBadge": "Top Rated",
+          "airportDistance": "22 km to International Airport",
+          "airportDistanceKm": 20
         },
         {
           "id": "aswan-movenpick",
@@ -2420,7 +2455,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Top Rated"
+          "recommendationBadge": "Top Rated",
+          "airportDistance": "23 km to International Airport",
+          "airportDistanceKm": 20
         },
         {
           "id": "aswan-basma",
@@ -2439,7 +2476,7 @@ window.WANDERLY_DATA = {
             "Near Nubian Museum",
             "Free WiFi"
           ],
-          "address": "Basma Hill, Aswan",
+          "address": "Top of the Hill, Nubian Museum Heights, Aswan, Egypt",
           "gallery": [
             {
               "url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1200&q=85&sig=258",
@@ -2503,7 +2540,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Strategic Location"
+          "recommendationBadge": "Strategic Location",
+          "airportDistance": "17 km to Aswan Airport (ASW)",
+          "airportDistanceKm": 17
         },
         {
           "id": "aswan-kato-dool",
@@ -2522,7 +2561,7 @@ window.WANDERLY_DATA = {
             "Authentic Food",
             "Terrace Lounges"
           ],
-          "address": "Gharb Soheil Nubian Village, Aswan",
+          "address": "Nag Ahmed Koror, West Bank Nubian Village, Aswan, Egypt",
           "gallery": [
             {
               "url": "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=1200&q=85",
@@ -2586,7 +2625,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Budget Friendly"
+          "recommendationBadge": "Budget Friendly",
+          "airportDistance": "22 km to Aswan Airport (ASW)",
+          "airportDistanceKm": 22
         }
       ]
     },
@@ -2767,7 +2808,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Top Rated"
+          "recommendationBadge": "Top Rated",
+          "airportDistance": "33 km to International Airport",
+          "airportDistanceKm": 20
         },
         {
           "id": "hur-sunrise-tucana",
@@ -2851,7 +2894,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Top Rated"
+          "recommendationBadge": "Top Rated",
+          "airportDistance": "12 km to International Airport",
+          "airportDistanceKm": 20
         },
         {
           "id": "hur-steigenberger-aldau",
@@ -2935,7 +2980,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Top Rated"
+          "recommendationBadge": "Top Rated",
+          "airportDistance": "26 km to International Airport",
+          "airportDistanceKm": 20
         },
         {
           "id": "hur-desert-rose",
@@ -3019,7 +3066,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Strategic Location"
+          "recommendationBadge": "Strategic Location",
+          "airportDistance": "27 km to International Airport",
+          "airportDistanceKm": 20
         },
         {
           "id": "hur-bella-vista",
@@ -3102,7 +3151,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Strategic Location"
+          "recommendationBadge": "Strategic Location",
+          "airportDistance": "36 km to International Airport",
+          "airportDistanceKm": 20
         }
       ]
     },
@@ -3283,7 +3334,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Top Rated"
+          "recommendationBadge": "Top Rated",
+          "airportDistance": "22 km to International Airport",
+          "airportDistanceKm": 20
         },
         {
           "id": "dahab-jaz-dahabeya",
@@ -3366,7 +3419,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Strategic Location"
+          "recommendationBadge": "Strategic Location",
+          "airportDistance": "34 km to International Airport",
+          "airportDistanceKm": 20
         },
         {
           "id": "dahab-swiss-inn",
@@ -3450,7 +3505,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Strategic Location"
+          "recommendationBadge": "Strategic Location",
+          "airportDistance": "31 km to International Airport",
+          "airportDistanceKm": 20
         },
         {
           "id": "dahab-bedouin-moon",
@@ -3533,7 +3590,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Budget Friendly"
+          "recommendationBadge": "Budget Friendly",
+          "airportDistance": "19 km to International Airport",
+          "airportDistanceKm": 20
         },
         {
           "id": "dahab-canyon-estate",
@@ -3616,7 +3675,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Budget Friendly"
+          "recommendationBadge": "Budget Friendly",
+          "airportDistance": "18 km to International Airport",
+          "airportDistanceKm": 20
         }
       ]
     },
@@ -3797,7 +3858,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Top Rated"
+          "recommendationBadge": "Top Rated",
+          "airportDistance": "23 km to International Airport",
+          "airportDistanceKm": 20
         },
         {
           "id": "siwa-relax",
@@ -3827,7 +3890,7 @@ window.WANDERLY_DATA = {
               "caption": "Deluxe Suite & Modern Living Quarters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1580674285054-bed31e145f59?auto=format&fit=crop&w=1200&q=85&sig=338",
+              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=85&sig=338",
               "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
             },
             {
@@ -3861,7 +3924,7 @@ window.WANDERLY_DATA = {
               "title": "Great Strategic Location & Friendly Concierge",
               "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
               "photos": [
-                "https://images.unsplash.com/photo-1580674285054-bed31e145f59?auto=format&fit=crop&w=600&q=85&sig=338"
+                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=85&sig=338"
               ],
               "id": "rev-siwa-relax-2",
               "verified": true
@@ -3880,7 +3943,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Strategic Location"
+          "recommendationBadge": "Strategic Location",
+          "airportDistance": "35 km to International Airport",
+          "airportDistanceKm": 20
         },
         {
           "id": "siwa-ghaliet",
@@ -3963,7 +4028,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Strategic Location"
+          "recommendationBadge": "Strategic Location",
+          "airportDistance": "35 km to International Airport",
+          "airportDistanceKm": 20
         },
         {
           "id": "siwa-taziry",
@@ -4046,7 +4113,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Budget Friendly"
+          "recommendationBadge": "Budget Friendly",
+          "airportDistance": "20 km to International Airport",
+          "airportDistanceKm": 20
         },
         {
           "id": "siwa-shali-lodge",
@@ -4129,7 +4198,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Budget Friendly"
+          "recommendationBadge": "Budget Friendly",
+          "airportDistance": "22 km to International Airport",
+          "airportDistanceKm": 20
         }
       ]
     },
@@ -4310,7 +4381,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Top Rated"
+          "recommendationBadge": "Top Rated",
+          "airportDistance": "13 km to International Airport",
+          "airportDistanceKm": 20
         },
         {
           "id": "marsa-jaz-maraya",
@@ -4394,7 +4467,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Top Rated"
+          "recommendationBadge": "Top Rated",
+          "airportDistance": "18 km to International Airport",
+          "airportDistanceKm": 20
         },
         {
           "id": "marsa-malikia-dabbab",
@@ -4477,7 +4552,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Strategic Location"
+          "recommendationBadge": "Strategic Location",
+          "airportDistance": "18 km to International Airport",
+          "airportDistanceKm": 20
         },
         {
           "id": "marsa-three-corners",
@@ -4560,7 +4637,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Strategic Location"
+          "recommendationBadge": "Strategic Location",
+          "airportDistance": "29 km to International Airport",
+          "airportDistanceKm": 20
         },
         {
           "id": "marsa-wadi-lahami",
@@ -4643,7 +4722,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Budget Friendly"
+          "recommendationBadge": "Budget Friendly",
+          "airportDistance": "36 km to International Airport",
+          "airportDistanceKm": 20
         }
       ]
     },
@@ -4824,7 +4905,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Top Rated"
+          "recommendationBadge": "Top Rated",
+          "airportDistance": "23 km to International Airport",
+          "airportDistanceKm": 20
         },
         {
           "id": "fayoum-helnan-auberge",
@@ -4907,7 +4990,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Strategic Location"
+          "recommendationBadge": "Strategic Location",
+          "airportDistance": "15 km to International Airport",
+          "airportDistanceKm": 20
         },
         {
           "id": "fayoum-byoum-lakeside",
@@ -4990,7 +5075,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Strategic Location"
+          "recommendationBadge": "Strategic Location",
+          "airportDistance": "29 km to International Airport",
+          "airportDistanceKm": 20
         },
         {
           "id": "fayoum-kom-el-dikka",
@@ -5073,7 +5160,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Budget Friendly"
+          "recommendationBadge": "Budget Friendly",
+          "airportDistance": "18 km to International Airport",
+          "airportDistanceKm": 20
         },
         {
           "id": "fayoum-magic-camp",
@@ -5156,7 +5245,9 @@ window.WANDERLY_DATA = {
               "verified": true
             }
           ],
-          "recommendationBadge": "Budget Friendly"
+          "recommendationBadge": "Budget Friendly",
+          "airportDistance": "12 km to International Airport",
+          "airportDistanceKm": 20
         }
       ]
     },
@@ -5256,339 +5347,200 @@ window.WANDERLY_DATA = {
       ],
       "hotels": [
         {
-          "id": "dxb-atlantis-royal",
-          "name": "Atlantis The Royal",
-          "stars": 5,
-          "pricePerNight": 580,
-          "rating": 5,
-          "reviewsCount": 3800,
-          "lat": 25.1382,
-          "lng": 55.1205,
-          "image": "https://images.unsplash.com/photo-1527838832700-5059252407fa?auto=format&fit=crop&w=800&q=80&sig=419",
-          "description": "The world's most ultra-luxury experiential resort with Cloud 22 rooftop infinity sky pool and celebrity chef dining.",
-          "amenities": [
-            "Cloud 22 Sky Pool",
-            "Private Beach",
-            "Aquaventure Access",
-            "Michelin Dining",
-            "Awaken Spa"
-          ],
-          "address": "Crescent Road, Palm Jumeirah, Dubai",
-          "gallery": [
-            {
-              "url": "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&w=1200&q=85&sig=420",
-              "caption": "Atlantis The Royal - Architectural Overview & Grand Entrance"
-            },
-            {
-              "url": "https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&w=1200&q=85&sig=421",
-              "caption": "Deluxe Suite & Modern Living Quarters"
-            },
-            {
-              "url": "https://images.unsplash.com/photo-1566127444979-b3d2b654e3d7?auto=format&fit=crop&w=1200&q=85&sig=422",
-              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
-            },
-            {
-              "url": "https://images.unsplash.com/photo-1553913861-c0fddf2619ee?auto=format&fit=crop&w=1200&q=85&sig=423",
-              "caption": "Fine Dining Restaurant & Cocktail Lounge"
-            },
-            {
-              "url": "https://images.unsplash.com/photo-1578922746465-3a80a228f223?auto=format&fit=crop&w=1200&q=85&sig=424",
-              "caption": "Wellness Sanctuary & Marble Spa Suite"
-            }
-          ],
-          "verifiedReviews": [
-            {
-              "name": "Dr. Ahmed El-Sayed",
-              "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80",
-              "date": "July 2026",
-              "rating": 5,
-              "title": "Exceptional Hospitality & Impeccable Views",
-              "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
-              "photos": [
-                "https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&w=600&q=85&sig=421"
-              ],
-              "id": "rev-dxb-atlantis-royal-1",
-              "verified": true
-            },
-            {
-              "name": "Sarah Jenkins",
-              "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80",
-              "date": "August 2026",
-              "rating": 5,
-              "title": "100% Authentic & Worth Every Penny",
-              "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
-              "photos": [
-                "https://images.unsplash.com/photo-1566127444979-b3d2b654e3d7?auto=format&fit=crop&w=600&q=85&sig=422"
-              ],
-              "id": "rev-dxb-atlantis-royal-2",
-              "verified": true
-            },
-            {
-              "name": "Mohamed Tariq",
-              "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80",
-              "date": "June 2026",
-              "rating": 4.8,
-              "title": "Great Strategic Location & Friendly Concierge",
-              "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
-              "photos": [
-                "https://images.unsplash.com/photo-1553913861-c0fddf2619ee?auto=format&fit=crop&w=600&q=85&sig=423"
-              ],
-              "id": "rev-dxb-atlantis-royal-3",
-              "verified": true
-            }
-          ],
-          "recommendationBadge": "Top Rated"
-        },
-        {
           "id": "dxb-burj-al-arab",
           "name": "Burj Al Arab Jumeirah",
           "stars": 5,
           "pricePerNight": 950,
-          "rating": 4.9,
+          "rating": 5,
           "reviewsCount": 4200,
           "lat": 25.1412,
           "lng": 55.1852,
-          "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80&sig=425",
-          "description": "The legendary sail-shaped 7-star icon of luxury with duplex suites, private butler service, and infinity terrace pool.",
+          "image": "../images/dubai-burj-al-arab.jpg",
+          "description": "The world's most iconic sail-shaped 7-star ultra-luxury hotel standing on its own private island, featuring private beach, duplex suites, chauffeur Rolls-Royces, and Talise Spa.",
+          "address": "Jumeirah Beach Road, Umm Suqeim 3, Dubai, UAE",
+          "airportName": "Dubai International Airport (DXB)",
+          "airportDistanceKm": 26,
+          "airportDistance": "26 km to Dubai Airport (DXB)",
           "amenities": [
-            "Duplex Suites",
-            "Rolls Royce Chauffeur",
+            "Private Island Beach",
+            "Duplex Royal Suites",
             "Talise Spa",
-            "Private Island",
-            "Infinity Terrace"
+            "Al Mahara Seafood",
+            "Helipad & Butler"
           ],
-          "address": "Jumeirah Beach Road, Dubai",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1200&q=85&sig=426",
-              "caption": "Burj Al Arab Jumeirah - Architectural Overview & Grand Entrance"
+              "url": "../images/dubai-burj-al-arab.jpg",
+              "caption": "Burj Al Arab Jumeirah - Iconic Sail Architecture on the Arabian Gulf"
             },
             {
-              "url": "https://images.unsplash.com/photo-1598940603846-a1edd0ef2574?auto=format&fit=crop&w=1200&q=85&sig=427",
-              "caption": "Deluxe Suite & Modern Living Quarters"
+              "url": "https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Sail Facade Gleaming in Desert Sunlight"
             },
             {
-              "url": "https://images.unsplash.com/photo-1574359411659-15573a27fd0c?auto=format&fit=crop&w=1200&q=85&sig=428",
-              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
+              "url": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Royal Duplex Panoramic Sea View Suite"
             },
             {
-              "url": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=85&sig=429",
-              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=85",
+              "caption": "The Terrace - Luxury Infinity Pool Over the Gulf"
             },
             {
-              "url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1200&q=85&sig=430",
-              "caption": "Wellness Sanctuary & Marble Spa Suite"
+              "url": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Al Mahara Aquarium Fine Dining Restaurant"
             }
           ],
           "verifiedReviews": [
             {
-              "name": "Sarah Jenkins",
+              "id": "rev-dxb-baa-1",
+              "name": "Mansour Al-Otaibi",
+              "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80",
+              "date": "September 2026",
+              "rating": 5,
+              "title": "Unrivaled Global Luxury & Impeccable Service",
+              "comment": "Staying on its private island is a dream. Personal butler service 24/7, exquisite dining at Sal and Al Mahara, and only 25 minutes from DXB airport.",
+              "photos": [
+                "../images/dubai-burj-al-arab.jpg"
+              ],
+              "verified": true
+            },
+            {
+              "id": "rev-dxb-baa-2",
+              "name": "Elena Rostova",
               "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80",
               "date": "August 2026",
               "rating": 5,
-              "title": "100% Authentic & Worth Every Penny",
-              "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
+              "title": "Iconic Duplex Suites and Golden Sunsets",
+              "comment": "The duplex suite design with full Gulf panorama is magnificent. The infinity terrace pool over the sea is breathtaking.",
               "photos": [
-                "https://images.unsplash.com/photo-1598940603846-a1edd0ef2574?auto=format&fit=crop&w=600&q=85&sig=427"
+                "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=600&q=85"
               ],
-              "id": "rev-dxb-burj-al-arab-1",
-              "verified": true
-            },
-            {
-              "name": "Mohamed Tariq",
-              "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80",
-              "date": "June 2026",
-              "rating": 4.8,
-              "title": "Great Strategic Location & Friendly Concierge",
-              "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
-              "photos": [
-                "https://images.unsplash.com/photo-1574359411659-15573a27fd0c?auto=format&fit=crop&w=600&q=85&sig=428"
-              ],
-              "id": "rev-dxb-burj-al-arab-2",
-              "verified": true
-            },
-            {
-              "name": "Elena Rostova",
-              "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
-              "date": "May 2026",
-              "rating": 4.9,
-              "title": "A Dream Stay! Will Definitely Return",
-              "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
-              "photos": [
-                "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=600&q=85&sig=429"
-              ],
-              "id": "rev-dxb-burj-al-arab-3",
               "verified": true
             }
           ],
           "recommendationBadge": "Top Rated"
         },
         {
-          "id": "dxb-address-downtown",
-          "name": "Address Downtown",
+          "id": "dxb-atlantis-royal",
+          "name": "Atlantis The Royal",
           "stars": 5,
-          "pricePerNight": 350,
-          "rating": 4.8,
-          "reviewsCount": 2900,
-          "lat": 25.1952,
-          "lng": 55.2785,
-          "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80&sig=431",
-          "description": "Prime luxury hotel directly facing Burj Khalifa and The Dubai Fountain, connected to Dubai Mall.",
+          "pricePerNight": 580,
+          "rating": 4.9,
+          "reviewsCount": 3800,
+          "lat": 25.1382,
+          "lng": 55.1205,
+          "image": "../images/dubai-atlantis-royal.jpg",
+          "description": "The world's most ultra-luxury experiential resort on the outer crescent of Palm Jumeirah, boasting Cloud 22 rooftop sky pool, Michelin dining, and private beach.",
+          "address": "Crescent Road, Palm Jumeirah, Dubai, UAE",
+          "airportName": "Dubai International Airport (DXB)",
+          "airportDistanceKm": 36,
+          "airportDistance": "36 km to Dubai Airport (DXB)",
           "amenities": [
-            "Burj Khalifa View",
-            "Direct Mall Access",
-            "Multi-Tiered Pool",
-            "The Spa",
-            "Fine Dining"
+            "Cloud 22 Sky Pool",
+            "Private White Beach",
+            "Aquaventure Waterpark",
+            "Michelin Dining",
+            "Awaken Spa"
           ],
-          "address": "Sheikh Mohammed bin Rashid Blvd, Downtown Dubai",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&w=1200&q=85&sig=432",
-              "caption": "Address Downtown - Architectural Overview & Grand Entrance"
+              "url": "../images/dubai-atlantis-royal.jpg",
+              "caption": "Atlantis The Royal - Cantilevered Architectural Masterpiece"
             },
             {
-              "url": "https://images.unsplash.com/photo-1451337516015-6b6e9a44a8a3?auto=format&fit=crop&w=1200&q=85&sig=433",
-              "caption": "Deluxe Suite & Modern Living Quarters"
+              "url": "https://images.unsplash.com/photo-1527838832700-5059252407fa?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Geometric Cantilevered Outer Tower Blocks"
             },
             {
-              "url": "https://images.unsplash.com/photo-1580674285054-bed31e145f59?auto=format&fit=crop&w=1200&q=85&sig=434",
-              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
+              "url": "https://images.unsplash.com/photo-1563911302283-d2bc129e7570?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Cloud 22 Rooftop Infinity Sky Pool Lounge"
             },
             {
-              "url": "https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1200&q=85&sig=435",
-              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Sky Pool Villa with Private Glass Infinity Plunge Pool"
             },
             {
-              "url": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=85&sig=436",
-              "caption": "Wellness Sanctuary & Marble Spa Suite"
+              "url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Nobu by the Beach & Celebrity Gastronomy"
             }
           ],
           "verifiedReviews": [
             {
-              "name": "Mohamed Tariq",
-              "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80",
-              "date": "June 2026",
-              "rating": 4.8,
-              "title": "Great Strategic Location & Friendly Concierge",
-              "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
-              "photos": [
-                "https://images.unsplash.com/photo-1451337516015-6b6e9a44a8a3?auto=format&fit=crop&w=600&q=85&sig=433"
-              ],
-              "id": "rev-dxb-address-downtown-1",
-              "verified": true
-            },
-            {
-              "name": "Elena Rostova",
-              "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
-              "date": "May 2026",
-              "rating": 4.9,
-              "title": "A Dream Stay! Will Definitely Return",
-              "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
-              "photos": [
-                "https://images.unsplash.com/photo-1580674285054-bed31e145f59?auto=format&fit=crop&w=600&q=85&sig=434"
-              ],
-              "id": "rev-dxb-address-downtown-2",
-              "verified": true
-            },
-            {
+              "id": "rev-dxb-atr-1",
               "name": "Dr. Ahmed El-Sayed",
               "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80",
               "date": "July 2026",
               "rating": 5,
-              "title": "Exceptional Hospitality & Impeccable Views",
-              "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
+              "title": "Astonishing Resort & Cloud 22 Experience",
+              "comment": "The architecture alone is mindblowing. Cloud 22 pool overlooking the Palm is unlike anything in the world.",
               "photos": [
-                "https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=600&q=85&sig=435"
+                "../images/dubai-atlantis-royal.jpg"
               ],
-              "id": "rev-dxb-address-downtown-3",
               "verified": true
             }
           ],
-          "recommendationBadge": "Top Rated"
+          "recommendationBadge": "Popular"
         },
         {
-          "id": "dxb-rove-downtown",
-          "name": "Rove Downtown",
-          "stars": 3,
-          "pricePerNight": 95,
-          "rating": 4.7,
-          "reviewsCount": 3500,
-          "lat": 25.2012,
-          "lng": 55.2815,
-          "image": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=800&q=80&sig=437",
-          "description": "Trendsetting modern hotel with outdoor pool overlooking Burj Khalifa, cinema room, and quick walk to Dubai Mall.",
+          "id": "dxb-armani-hotel",
+          "name": "Armani Hotel Dubai",
+          "stars": 5,
+          "pricePerNight": 480,
+          "rating": 4.9,
+          "reviewsCount": 3100,
+          "lat": 25.1972,
+          "lng": 55.2744,
+          "image": "../images/dubai-armani-hotel.jpg",
+          "description": "Conceived by Giorgio Armani and nestled exclusively inside the world-famous Burj Khalifa, offering direct private access to Dubai Mall and panoramic views of the Dubai Fountain.",
+          "address": "Burj Khalifa, 1 Sheikh Mohammed bin Rashid Blvd, Downtown Dubai, UAE",
+          "airportName": "Dubai International Airport (DXB)",
+          "airportDistanceKm": 14,
+          "airportDistance": "14 km to Dubai Airport (DXB)",
           "amenities": [
-            "Burj Khalifa View Pool",
-            "Reel Boutique Cinema",
-            "24/7 Gym",
-            "Free WiFi"
+            "Inside Burj Khalifa",
+            "Direct Dubai Mall Access",
+            "Dubai Fountain Views",
+            "Armani/SPA",
+            "Armani/Ristorante"
           ],
-          "address": "312 Happiness Street, Downtown Dubai",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1522093007474-d86e9bf7ba6f?auto=format&fit=crop&w=1200&q=85&sig=438",
-              "caption": "Rove Downtown - Architectural Overview & Grand Entrance"
+              "url": "../images/dubai-armani-hotel.jpg",
+              "caption": "Armani Hotel Dubai - Prime Tower Location Inside Burj Khalifa"
             },
             {
-              "url": "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?auto=format&fit=crop&w=1200&q=85&sig=439",
-              "caption": "Deluxe Suite & Modern Living Quarters"
+              "url": "https://images.unsplash.com/photo-1526495124232-a04e1849168c?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Private Porte Cochère & Grand Minimalist Lobby"
             },
             {
-              "url": "https://images.unsplash.com/photo-1543349689-9a4d426bee8e?auto=format&fit=crop&w=1200&q=85&sig=440",
-              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
+              "url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Armani Signature Suite with Minimalist Italian Design"
             },
             {
-              "url": "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?auto=format&fit=crop&w=1200&q=85&sig=441",
-              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Private Outdoor Terrace Facing the Dubai Fountain Show"
             },
             {
-              "url": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1200&q=85&sig=442",
-              "caption": "Wellness Sanctuary & Marble Spa Suite"
+              "url": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Armani/Ristorante Michelin Recommended Italian Dining"
             }
           ],
           "verifiedReviews": [
             {
-              "name": "Elena Rostova",
+              "id": "rev-dxb-arm-1",
+              "name": "Claire Dupont",
               "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
-              "date": "May 2026",
-              "rating": 4.9,
-              "title": "A Dream Stay! Will Definitely Return",
-              "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
-              "photos": [
-                "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?auto=format&fit=crop&w=600&q=85&sig=439"
-              ],
-              "id": "rev-dxb-rove-downtown-1",
-              "verified": true
-            },
-            {
-              "name": "Dr. Ahmed El-Sayed",
-              "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80",
-              "date": "July 2026",
+              "date": "September 2026",
               "rating": 5,
-              "title": "Exceptional Hospitality & Impeccable Views",
-              "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
+              "title": "Living inside the tallest building on earth",
+              "comment": "Only 15 minutes drive from DXB airport! Private entrance directly connecting to Dubai Mall and front row seats to the fountain music show every night.",
               "photos": [
-                "https://images.unsplash.com/photo-1543349689-9a4d426bee8e?auto=format&fit=crop&w=600&q=85&sig=440"
+                "../images/dubai-armani-hotel.jpg"
               ],
-              "id": "rev-dxb-rove-downtown-2",
-              "verified": true
-            },
-            {
-              "name": "Sarah Jenkins",
-              "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80",
-              "date": "August 2026",
-              "rating": 5,
-              "title": "100% Authentic & Worth Every Penny",
-              "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
-              "photos": [
-                "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?auto=format&fit=crop&w=600&q=85&sig=441"
-              ],
-              "id": "rev-dxb-rove-downtown-3",
               "verified": true
             }
           ],
-          "recommendationBadge": "Budget Friendly"
+          "recommendationBadge": "Best Value"
         }
       ]
     },
@@ -5691,81 +5643,58 @@ window.WANDERLY_DATA = {
           "id": "ist-ciragan-palace",
           "name": "Çırağan Palace Kempinski Istanbul",
           "stars": 5,
-          "pricePerNight": 490,
+          "pricePerNight": 540,
           "rating": 4.9,
-          "reviewsCount": 3100,
-          "lat": 41.0434,
-          "lng": 29.0165,
-          "image": "https://images.unsplash.com/photo-1545987796-200677ee1011?auto=format&fit=crop&w=800&q=80&sig=443",
-          "description": "19th-century Ottoman imperial palace directly on the shores of the Bosphorus with infinity pool overlooking the strait.",
+          "reviewsCount": 3600,
+          "lat": 41.0435,
+          "lng": 29.0163,
+          "image": "../images/istanbul-ciragan-palace.jpg",
+          "description": "An authentic 19th-century imperial Ottoman sultan palace situated directly on the European shoreline of the Bosphorus, featuring an infinity pool facing Asia and royal suites.",
+          "address": "Çırağan Caddesi 32, Beşiktaş, 34349 Istanbul, Turkey",
+          "airportName": "Istanbul Airport (IST)",
+          "airportDistanceKm": 41,
+          "airportDistance": "41 km to Istanbul Airport (IST)",
           "amenities": [
-            "Bosphorus Waterfront",
-            "Ottoman Palace",
-            "Infinity Pool",
-            "Sanitas Spa",
-            "Fine Dining"
+            "Bosphorus Infinity Pool",
+            "Imperial Ottoman Palace",
+            "Tuğra Fine Dining",
+            "Royal Turkish Hammam",
+            "Helipad & Pier"
           ],
-          "address": "Çırağan Caddesi 32, Beşiktaş, Istanbul",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1565099824688-e93eb20fe622?auto=format&fit=crop&w=1200&q=85&sig=444",
-              "caption": "Çırağan Palace Kempinski Istanbul - Architectural Overview & Grand Entrance"
+              "url": "../images/istanbul-ciragan-palace.jpg",
+              "caption": "Çırağan Palace Kempinski - Grand Imperial Bosphorus Waterfront"
             },
             {
-              "url": "https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=1200&q=85&sig=445",
-              "caption": "Deluxe Suite & Modern Living Quarters"
+              "url": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Historic Imperial Palace Gates Along the Bosphorus"
             },
             {
-              "url": "https://images.unsplash.com/photo-1592488832109-1d473228f00a?auto=format&fit=crop&w=1200&q=85&sig=446",
-              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
+              "url": "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Sultan Palace Suite with High Ceilings & Bosphorus Strait Vista"
             },
             {
-              "url": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1200&q=85&sig=447",
-              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Heated Outdoor Infinity Pool Merging with the Bosphorus"
             },
             {
-              "url": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1200&q=85&sig=448",
-              "caption": "Wellness Sanctuary & Marble Spa Suite"
+              "url": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Tuğra Restaurant Ottoman Royal Feast on the Waterfront Terrace"
             }
           ],
           "verifiedReviews": [
             {
-              "name": "Dr. Ahmed El-Sayed",
-              "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80",
-              "date": "July 2026",
-              "rating": 5,
-              "title": "Exceptional Hospitality & Impeccable Views",
-              "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
-              "photos": [
-                "https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=600&q=85&sig=445"
-              ],
-              "id": "rev-ist-ciragan-palace-1",
-              "verified": true
-            },
-            {
-              "name": "Sarah Jenkins",
-              "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80",
+              "id": "rev-ist-cpk-1",
+              "name": "Mehmet Demir",
+              "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80",
               "date": "August 2026",
               "rating": 5,
-              "title": "100% Authentic & Worth Every Penny",
-              "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
+              "title": "A Genuine Imperial Palace Experience",
+              "comment": "Watching the cruise ships and ferries cross the Bosphorus while floating in the heated infinity pool is pure magic. About 40 minutes from Istanbul Airport.",
               "photos": [
-                "https://images.unsplash.com/photo-1592488832109-1d473228f00a?auto=format&fit=crop&w=600&q=85&sig=446"
+                "../images/istanbul-ciragan-palace.jpg"
               ],
-              "id": "rev-ist-ciragan-palace-2",
-              "verified": true
-            },
-            {
-              "name": "Mohamed Tariq",
-              "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80",
-              "date": "June 2026",
-              "rating": 4.8,
-              "title": "Great Strategic Location & Friendly Concierge",
-              "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
-              "photos": [
-                "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=600&q=85&sig=447"
-              ],
-              "id": "rev-ist-ciragan-palace-3",
               "verified": true
             }
           ],
@@ -5775,252 +5704,123 @@ window.WANDERLY_DATA = {
           "id": "ist-four-seasons-sultanahmet",
           "name": "Four Seasons Hotel Istanbul at Sultanahmet",
           "stars": 5,
-          "pricePerNight": 420,
-          "rating": 4.9,
-          "reviewsCount": 2400,
-          "lat": 41.0069,
-          "lng": 28.9808,
-          "image": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80&sig=449",
-          "description": "Historic neoclassical sanctuary steps away from Hagia Sophia and the Blue Mosque, with rooftop terrace views of the minarets.",
+          "pricePerNight": 460,
+          "rating": 5,
+          "reviewsCount": 2900,
+          "lat": 41.0068,
+          "lng": 28.9803,
+          "image": "../images/istanbul-four-seasons.jpg",
+          "description": "An exquisitely restored neoclassical century-old palace in the historic heart of Istanbul, steps from Hagia Sophia, Topkapi Palace, and Blue Mosque, with rooftop lounge.",
+          "address": "Tevkifhane Sokak No. 1, Sultanahmet, Fatih, 34122 Istanbul, Turkey",
+          "airportName": "Istanbul Airport (IST)",
+          "airportDistanceKm": 44,
+          "airportDistance": "44 km to Istanbul Airport (IST)",
           "amenities": [
-            "Hagia Sophia View",
-            "Courtyard Garden",
-            "Rooftop Lounge",
-            "Spa",
-            "Historic Center"
+            "Steps to Hagia Sophia",
+            "Landscaped Courtyard",
+            "A'YA Rooftop Lounge",
+            "Luxury Spa & Hammam",
+            "Concierge Guided Walks"
           ],
-          "address": "Tevkifhane Sokak No. 1, Sultanahmet, Istanbul",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=1200&q=85&sig=450",
-              "caption": "Four Seasons Hotel Istanbul at Sultanahmet - Architectural Overview & Grand Entrance"
+              "url": "../images/istanbul-four-seasons.jpg",
+              "caption": "Four Seasons Hotel Istanbul at Sultanahmet - Restored Neoclassical Facade"
             },
             {
-              "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=85&sig=451",
-              "caption": "Deluxe Suite & Modern Living Quarters"
+              "url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Historic Canary-Yellow Palace Landmark & Gardens"
             },
             {
-              "url": "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1200&q=85&sig=452",
-              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
+              "url": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Deluxe Sultanahmet Suite with Ottoman Kilims & High Windows"
             },
             {
-              "url": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85&sig=453",
-              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1565099824688-e93eb20fe622?auto=format&fit=crop&w=1200&q=85",
+              "caption": "A'YA Rooftop Terrace Directly Gaze at Hagia Sophia Domes"
             },
             {
-              "url": "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=1200&q=85&sig=454",
-              "caption": "Wellness Sanctuary & Marble Spa Suite"
+              "url": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Avlu Landscaped Garden Courtyard Dining"
             }
           ],
           "verifiedReviews": [
             {
-              "name": "Sarah Jenkins",
-              "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80",
-              "date": "August 2026",
+              "id": "rev-ist-fss-1",
+              "name": "Sophie Laurent",
+              "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80",
+              "date": "September 2026",
               "rating": 5,
-              "title": "100% Authentic & Worth Every Penny",
-              "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
+              "title": "Unmatched Location for Istanbul History",
+              "comment": "You can walk to Hagia Sophia in 3 minutes. The rooftop terrace views of the minarets at sunset gave us chills. Outstanding staff hospitality.",
               "photos": [
-                "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=600&q=85&sig=451"
+                "../images/istanbul-four-seasons.jpg"
               ],
-              "id": "rev-ist-four-seasons-sultanahmet-1",
-              "verified": true
-            },
-            {
-              "name": "Mohamed Tariq",
-              "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80",
-              "date": "June 2026",
-              "rating": 4.8,
-              "title": "Great Strategic Location & Friendly Concierge",
-              "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
-              "photos": [
-                "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=600&q=85&sig=452"
-              ],
-              "id": "rev-ist-four-seasons-sultanahmet-2",
-              "verified": true
-            },
-            {
-              "name": "Elena Rostova",
-              "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
-              "date": "May 2026",
-              "rating": 4.9,
-              "title": "A Dream Stay! Will Definitely Return",
-              "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
-              "photos": [
-                "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=85&sig=453"
-              ],
-              "id": "rev-ist-four-seasons-sultanahmet-3",
               "verified": true
             }
           ],
-          "recommendationBadge": "Top Rated"
+          "recommendationBadge": "Popular"
         },
         {
           "id": "ist-cvk-park",
           "name": "CVK Park Bosphorus Hotel",
           "stars": 5,
-          "pricePerNight": 210,
+          "pricePerNight": 230,
           "rating": 4.8,
-          "reviewsCount": 2800,
-          "lat": 41.0368,
+          "reviewsCount": 3200,
+          "lat": 41.0361,
           "lng": 28.9892,
-          "image": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80&sig=455",
-          "description": "Grand luxury hotel near Taksim Square with an 8,500 sqm spa center and Izaka Terrace restaurant overlooking the Bosphorus.",
+          "image": "../images/istanbul-cvk-park.jpg",
+          "description": "Grand luxury 5-star hotel in Taksim boasting Europe's largest panoramic Bosphorus terrace, the expansive 8,500 sqm Safira Spa, and exquisite fine dining.",
+          "address": "Gümüşsuyu Mah. İnönü Cad. No: 8, Taksim, Beyoğlu, 34437 Istanbul, Turkey",
+          "airportName": "Istanbul Airport (IST)",
+          "airportDistanceKm": 39,
+          "airportDistance": "39 km to Istanbul Airport (IST)",
           "amenities": [
-            "Bosphorus Views",
-            "Taksim Vicinity",
-            "8500 sqm Spa",
-            "Indoor Pool",
-            "Izaka Terrace"
+            "Bosphorus Panorama Terrace",
+            "Safira 8,500 sqm Spa",
+            "Glass-Domed Indoor Pool",
+            "Taksim Square Proximity",
+            "Seafood & Japanese Dining"
           ],
-          "address": "Gümüşsuyu Mah. İnönü Cad. No: 8, Taksim, Istanbul",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=1200&q=85&sig=456",
-              "caption": "CVK Park Bosphorus Hotel - Architectural Overview & Grand Entrance"
+              "url": "../images/istanbul-cvk-park.jpg",
+              "caption": "CVK Park Bosphorus - Europe's Largest Bosphorus Panoramic Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=1200&q=85&sig=457",
-              "caption": "Deluxe Suite & Modern Living Quarters"
+              "url": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Modern Taksim Hotel Tower & Illuminated Glass Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=85&sig=458",
-              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
+              "url": "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Bosphorus View Luxury Corner Suite"
             },
             {
-              "url": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=85&sig=459",
-              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1568495248636-6432b97bd949?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Retractable Glass Roof Swimming Pool"
             },
             {
-              "url": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=85&sig=460",
-              "caption": "Wellness Sanctuary & Marble Spa Suite"
+              "url": "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Stella Panoramic Terrace Lounge & Seafood"
             }
           ],
           "verifiedReviews": [
             {
-              "name": "Mohamed Tariq",
-              "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80",
-              "date": "June 2026",
+              "id": "rev-ist-cvk-1",
+              "name": "Karim Zaki",
+              "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80",
+              "date": "July 2026",
               "rating": 4.8,
-              "title": "Great Strategic Location & Friendly Concierge",
-              "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
+              "title": "Incredible Bosphorus Vista & Taksim Location",
+              "comment": "Steps from Taksim Square and Istiklal Street. The terrace view is unbelievable and the airport is a direct 35-40 min highway drive.",
               "photos": [
-                "https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=600&q=85&sig=457"
+                "../images/istanbul-cvk-park.jpg"
               ],
-              "id": "rev-ist-cvk-park-1",
-              "verified": true
-            },
-            {
-              "name": "Elena Rostova",
-              "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
-              "date": "May 2026",
-              "rating": 4.9,
-              "title": "A Dream Stay! Will Definitely Return",
-              "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
-              "photos": [
-                "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=600&q=85&sig=458"
-              ],
-              "id": "rev-ist-cvk-park-2",
-              "verified": true
-            },
-            {
-              "name": "Dr. Ahmed El-Sayed",
-              "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80",
-              "date": "July 2026",
-              "rating": 5,
-              "title": "Exceptional Hospitality & Impeccable Views",
-              "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
-              "photos": [
-                "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=85&sig=459"
-              ],
-              "id": "rev-ist-cvk-park-3",
               "verified": true
             }
           ],
-          "recommendationBadge": "Top Rated"
-        },
-        {
-          "id": "ist-amira",
-          "name": "Hotel Amira Istanbul",
-          "stars": 4,
-          "pricePerNight": 110,
-          "rating": 4.8,
-          "reviewsCount": 1950,
-          "lat": 41.0038,
-          "lng": 28.9721,
-          "image": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80&sig=461",
-          "description": "Boutique hotel in Sultanahmet with warm Turkish hospitality, sea-view rooftop terrace, and handmade organic breakfast.",
-          "amenities": [
-            "Rooftop Sea View",
-            "Organic Breakfast",
-            "Wellness & Sauna",
-            "Walk to Blue Mosque"
-          ],
-          "address": "Kucuk Ayasofya Mah. Mustafa Pasa Sok. No:43, Sultanahmet",
-          "gallery": [
-            {
-              "url": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1200&q=85&sig=462",
-              "caption": "Hotel Amira Istanbul - Architectural Overview & Grand Entrance"
-            },
-            {
-              "url": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=1200&q=85&sig=463",
-              "caption": "Deluxe Suite & Modern Living Quarters"
-            },
-            {
-              "url": "https://images.unsplash.com/photo-1587985064135-0366536eab42?auto=format&fit=crop&w=1200&q=85&sig=464",
-              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
-            },
-            {
-              "url": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=85&sig=465",
-              "caption": "Fine Dining Restaurant & Cocktail Lounge"
-            },
-            {
-              "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85&sig=466",
-              "caption": "Wellness Sanctuary & Marble Spa Suite"
-            }
-          ],
-          "verifiedReviews": [
-            {
-              "name": "Elena Rostova",
-              "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
-              "date": "May 2026",
-              "rating": 4.9,
-              "title": "A Dream Stay! Will Definitely Return",
-              "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
-              "photos": [
-                "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=600&q=85&sig=463"
-              ],
-              "id": "rev-ist-amira-1",
-              "verified": true
-            },
-            {
-              "name": "Dr. Ahmed El-Sayed",
-              "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80",
-              "date": "July 2026",
-              "rating": 5,
-              "title": "Exceptional Hospitality & Impeccable Views",
-              "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
-              "photos": [
-                "https://images.unsplash.com/photo-1587985064135-0366536eab42?auto=format&fit=crop&w=600&q=85&sig=464"
-              ],
-              "id": "rev-ist-amira-2",
-              "verified": true
-            },
-            {
-              "name": "Sarah Jenkins",
-              "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80",
-              "date": "August 2026",
-              "rating": 5,
-              "title": "100% Authentic & Worth Every Penny",
-              "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
-              "photos": [
-                "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=85&sig=465"
-              ],
-              "id": "rev-ist-amira-3",
-              "verified": true
-            }
-          ],
-          "recommendationBadge": "Strategic Location"
+          "recommendationBadge": "Best Value"
         }
       ]
     },
@@ -6123,81 +5923,58 @@ window.WANDERLY_DATA = {
           "id": "paris-ritz",
           "name": "Ritz Paris",
           "stars": 5,
-          "pricePerNight": 980,
-          "rating": 4.9,
-          "reviewsCount": 3100,
-          "lat": 48.8682,
+          "pricePerNight": 1100,
+          "rating": 5,
+          "reviewsCount": 3950,
+          "lat": 48.8681,
           "lng": 2.3292,
-          "image": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80&sig=467",
-          "description": "The pinnacle of French high luxury on Place Vendôme with Chanel spa, Grand Jardin, and historic Hemingway Bar.",
+          "image": "https://images.unsplash.com/photo-1549294413-26f195200c16?auto=format&fit=crop&w=1200&q=85",
+          "description": "The grand dame of Place Vendôme, legendary home of Coco Chanel and Ernest Hemingway, offering imperial French suites, Bar Hemingway, and an indoor subterranean Roman pool.",
+          "address": "15 Place Vendôme, 75001 Paris, France",
+          "airportName": "Paris Charles de Gaulle Airport (CDG)",
+          "airportDistanceKm": 31,
+          "airportDistance": "31 km to Charles de Gaulle Airport (CDG)",
           "amenities": [
-            "Place Vendôme",
-            "Chanel Spa",
-            "Indoor Pool",
-            "Hemingway Bar",
-            "French Haute Cuisine"
+            "Place Vendôme Landmark",
+            "Bar Hemingway",
+            "Subterranean Roman Pool",
+            "Chanel au Ritz Spa",
+            "Private Butler Service"
           ],
-          "address": "15 Place Vendôme, 1st arr., Paris",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85&sig=468",
-              "caption": "Ritz Paris - Architectural Overview & Grand Entrance"
+              "url": "https://images.unsplash.com/photo-1549294413-26f195200c16?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Ritz Paris - Historic Neoclassical Place Vendôme Facade"
             },
             {
-              "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85&sig=469",
-              "caption": "Deluxe Suite & Modern Living Quarters"
+              "url": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Parisian Cityscape & Grand Boulevards"
             },
             {
-              "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85&sig=470",
-              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
+              "url": "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Coco Chanel Prestige Suite with Antique French Marquetry"
             },
             {
-              "url": "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=1200&q=85&sig=471",
-              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Subterranean Roman Mosaic Heated Swimming Pool"
             },
             {
-              "url": "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1200&q=85&sig=472",
-              "caption": "Wellness Sanctuary & Marble Spa Suite"
+              "url": "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Salon Proust Afternoon Tea & French Gastronomy"
             }
           ],
           "verifiedReviews": [
             {
-              "name": "Dr. Ahmed El-Sayed",
-              "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80",
-              "date": "July 2026",
+              "id": "rev-par-rtz-1",
+              "name": "Jean-Philippe Moreau",
+              "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80",
+              "date": "September 2026",
               "rating": 5,
-              "title": "Exceptional Hospitality & Impeccable Views",
-              "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
+              "title": "Peerless Grand Luxe on Place Vendôme",
+              "comment": "No other hotel in Paris matches the Ritz. 35 minutes from CDG airport by chauffeur. The Roman pool and Bar Hemingway are unmatched.",
               "photos": [
-                "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=85&sig=469"
+                "https://images.unsplash.com/photo-1549294413-26f195200c16?auto=format&fit=crop&w=600&q=85"
               ],
-              "id": "rev-paris-ritz-1",
-              "verified": true
-            },
-            {
-              "name": "Sarah Jenkins",
-              "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80",
-              "date": "August 2026",
-              "rating": 5,
-              "title": "100% Authentic & Worth Every Penny",
-              "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
-              "photos": [
-                "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=85&sig=470"
-              ],
-              "id": "rev-paris-ritz-2",
-              "verified": true
-            },
-            {
-              "name": "Mohamed Tariq",
-              "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80",
-              "date": "June 2026",
-              "rating": 4.8,
-              "title": "Great Strategic Location & Friendly Concierge",
-              "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
-              "photos": [
-                "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=600&q=85&sig=471"
-              ],
-              "id": "rev-paris-ritz-3",
               "verified": true
             }
           ],
@@ -6207,251 +5984,123 @@ window.WANDERLY_DATA = {
           "id": "paris-shangrila",
           "name": "Shangri-La Paris",
           "stars": 5,
-          "pricePerNight": 750,
+          "pricePerNight": 890,
           "rating": 4.9,
-          "reviewsCount": 2200,
-          "lat": 48.8634,
-          "lng": 2.2934,
-          "image": "https://images.unsplash.com/photo-1572331165267-854da2b10ccc?auto=format&fit=crop&w=800&q=80&sig=473",
-          "description": "Former residence of Prince Roland Bonaparte offering direct, unobstructed views of the Eiffel Tower across the Seine.",
+          "reviewsCount": 3200,
+          "lat": 48.8637,
+          "lng": 2.2933,
+          "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=85",
+          "description": "The former palace of Prince Roland Bonaparte overlooking the Seine with direct private balcony views of the Eiffel Tower, Michelin-starred Shang Palace, and historic salons.",
+          "address": "10 Avenue d'Iéna, 75116 Paris, France",
+          "airportName": "Paris Charles de Gaulle Airport (CDG)",
+          "airportDistanceKm": 34,
+          "airportDistance": "34 km to Charles de Gaulle Airport (CDG)",
           "amenities": [
-            "Direct Eiffel Tower View",
-            "Michelin Dining",
-            "CHI Spa",
-            "Indoor Pool",
-            "Historic Palace"
+            "Direct Eiffel Tower Views",
+            "Historic Bonaparte Palace",
+            "Michelin-Starred Shang Palace",
+            "Indoor Pool with Natural Light",
+            "Private Eiffel Terraces"
           ],
-          "address": "10 Avenue d'Iéna, 16th arr., Paris",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1525610553991-2bede1a236e2?auto=format&fit=crop&w=1200&q=85&sig=474",
-              "caption": "Shangri-La Paris - Architectural Overview & Grand Entrance"
+              "url": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Shangri-La Paris - Unobstructed Eiffel Tower View Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=1200&q=85&sig=475",
-              "caption": "Deluxe Suite & Modern Living Quarters"
+              "url": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Prince Bonaparte Imperial Architecture & Grand Staircase"
             },
             {
-              "url": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=85&sig=476",
-              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
+              "url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Duplex Eiffel View Suite with Private Balcony"
             },
             {
-              "url": "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=85&sig=477",
-              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Private Sunset Champagne on Eiffel View Terrace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=85&sig=478",
-              "caption": "Wellness Sanctuary & Marble Spa Suite"
+              "url": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Shang Palace Michelin Cantonese Fine Dining"
             }
           ],
           "verifiedReviews": [
             {
-              "name": "Sarah Jenkins",
-              "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80",
+              "id": "rev-par-shg-1",
+              "name": "Camille Dubois",
+              "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
               "date": "August 2026",
               "rating": 5,
-              "title": "100% Authentic & Worth Every Penny",
-              "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
+              "title": "Watching Eiffel Tower Sparkle from Bed",
+              "comment": "The balcony view of the Eiffel Tower is breathtaking. Direct taxi from CDG took around 40 minutes. Breakfast on the private terrace is unforgettable.",
               "photos": [
-                "https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=600&q=85&sig=475"
+                "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=600&q=85"
               ],
-              "id": "rev-paris-shangrila-1",
-              "verified": true
-            },
-            {
-              "name": "Mohamed Tariq",
-              "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80",
-              "date": "June 2026",
-              "rating": 4.8,
-              "title": "Great Strategic Location & Friendly Concierge",
-              "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
-              "photos": [
-                "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=600&q=85&sig=476"
-              ],
-              "id": "rev-paris-shangrila-2",
-              "verified": true
-            },
-            {
-              "name": "Elena Rostova",
-              "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
-              "date": "May 2026",
-              "rating": 4.9,
-              "title": "A Dream Stay! Will Definitely Return",
-              "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
-              "photos": [
-                "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=600&q=85&sig=477"
-              ],
-              "id": "rev-paris-shangrila-3",
               "verified": true
             }
           ],
-          "recommendationBadge": "Top Rated"
+          "recommendationBadge": "Popular"
         },
         {
-          "id": "paris-pullman-eiffel",
-          "name": "Pullman Paris Tour Eiffel",
-          "stars": 4,
-          "pricePerNight": 280,
-          "rating": 4.7,
-          "reviewsCount": 3900,
-          "lat": 48.8552,
-          "lng": 2.2931,
-          "image": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=800&q=80&sig=479",
-          "description": "Modern hotel situated right at the foot of the Eiffel Tower with bright balcony rooms and Frame restaurant.",
+          "id": "paris-four-seasons-george-v",
+          "name": "Four Seasons Hotel George V, Paris",
+          "stars": 5,
+          "pricePerNight": 950,
+          "rating": 4.9,
+          "reviewsCount": 3450,
+          "lat": 48.8689,
+          "lng": 2.3011,
+          "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=85",
+          "description": "An art deco landmark off the Champs-Élysées renowned worldwide for its sensational floral displays by Jeff Leatham, three Michelin-starred restaurants totaling 5 stars, and royal spa.",
+          "address": "31 Avenue George V, 75008 Paris, France",
+          "airportName": "Paris Charles de Gaulle Airport (CDG)",
+          "airportDistanceKm": 32,
+          "airportDistance": "32 km to Charles de Gaulle Airport (CDG)",
           "amenities": [
-            "Foot of Eiffel Tower",
-            "Balcony Views",
-            "Fitness Lounge",
-            "Free WiFi"
+            "Steps to Champs-Élysées",
+            "5 Michelin Stars Onsite",
+            "World-Famous Floral Art",
+            "Marble Courtyard Dining",
+            "Haute Couture Spa"
           ],
-          "address": "18 Avenue De Suffren, 15th arr., Paris",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1563911302283-d2bc129e7570?auto=format&fit=crop&w=1200&q=85&sig=480",
-              "caption": "Pullman Paris Tour Eiffel - Architectural Overview & Grand Entrance"
+              "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Four Seasons George V - Iconic Grand Parisian Palace"
             },
             {
-              "url": "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1200&q=85&sig=481",
-              "caption": "Deluxe Suite & Modern Living Quarters"
+              "url": "https://images.unsplash.com/photo-1526495124232-a04e1849168c?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Jeff Leatham Haute Couture Floral Masterpieces in Lobby"
             },
             {
-              "url": "https://images.unsplash.com/photo-1586500036706-41963de24d8b?auto=format&fit=crop&w=1200&q=85&sig=482",
-              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
+              "url": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Parisian Penthouse Suite with Golden Triangle Cityscape"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=85&sig=483",
-              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1563911302283-d2bc129e7570?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Mosaic Swimming Pool & Hydrotherapy Spa"
             },
             {
-              "url": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=85&sig=484",
-              "caption": "Wellness Sanctuary & Marble Spa Suite"
+              "url": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Le Cinq 3-Michelin-Star Gastronomic Dining"
             }
           ],
           "verifiedReviews": [
             {
-              "name": "Mohamed Tariq",
-              "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80",
-              "date": "June 2026",
-              "rating": 4.8,
-              "title": "Great Strategic Location & Friendly Concierge",
-              "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
-              "photos": [
-                "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=600&q=85&sig=481"
-              ],
-              "id": "rev-paris-pullman-eiffel-1",
-              "verified": true
-            },
-            {
-              "name": "Elena Rostova",
-              "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
-              "date": "May 2026",
-              "rating": 4.9,
-              "title": "A Dream Stay! Will Definitely Return",
-              "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
-              "photos": [
-                "https://images.unsplash.com/photo-1586500036706-41963de24d8b?auto=format&fit=crop&w=600&q=85&sig=482"
-              ],
-              "id": "rev-paris-pullman-eiffel-2",
-              "verified": true
-            },
-            {
-              "name": "Dr. Ahmed El-Sayed",
-              "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80",
-              "date": "July 2026",
+              "id": "rev-par-gv-1",
+              "name": "Alexandre Bernard",
+              "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80",
+              "date": "September 2026",
               "rating": 5,
-              "title": "Exceptional Hospitality & Impeccable Views",
-              "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
+              "title": "The Pinnacle of Parisian Hospitality",
+              "comment": "The floral arrangements alone are a museum exhibition. Located 30 km from CDG, minutes from Avenue Montaigne boutiques.",
               "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=85&sig=483"
+                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=85"
               ],
-              "id": "rev-paris-pullman-eiffel-3",
               "verified": true
             }
           ],
-          "recommendationBadge": "Top Rated"
-        },
-        {
-          "id": "paris-citizenm-gare",
-          "name": "citizenM Paris Gare de Lyon",
-          "stars": 4,
-          "pricePerNight": 160,
-          "rating": 4.6,
-          "reviewsCount": 2900,
-          "lat": 48.8442,
-          "lng": 2.3712,
-          "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80&sig=485",
-          "description": "Chic design hotel with XL king beds, mood lighting, rooftop cloudM bar with panoramic city skyline views.",
-          "amenities": [
-            "cloudM Rooftop Bar",
-            "Modern Tech Rooms",
-            "Seine River Vicinity",
-            "24/7 Dining"
-          ],
-          "address": "8 Rue Van Gogh, 12th arr., Paris",
-          "gallery": [
-            {
-              "url": "https://images.unsplash.com/photo-1549294413-26f195200c16?auto=format&fit=crop&w=1200&q=85&sig=486",
-              "caption": "citizenM Paris Gare de Lyon - Architectural Overview & Grand Entrance"
-            },
-            {
-              "url": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1200&q=85&sig=487",
-              "caption": "Deluxe Suite & Modern Living Quarters"
-            },
-            {
-              "url": "https://images.unsplash.com/photo-1568495248636-6432b97bd949?auto=format&fit=crop&w=1200&q=85&sig=488",
-              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
-            },
-            {
-              "url": "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1200&q=85&sig=489",
-              "caption": "Fine Dining Restaurant & Cocktail Lounge"
-            },
-            {
-              "url": "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1200&q=85&sig=490",
-              "caption": "Wellness Sanctuary & Marble Spa Suite"
-            }
-          ],
-          "verifiedReviews": [
-            {
-              "name": "Elena Rostova",
-              "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
-              "date": "May 2026",
-              "rating": 4.9,
-              "title": "A Dream Stay! Will Definitely Return",
-              "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
-              "photos": [
-                "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=600&q=85&sig=487"
-              ],
-              "id": "rev-paris-citizenm-gare-1",
-              "verified": true
-            },
-            {
-              "name": "Dr. Ahmed El-Sayed",
-              "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80",
-              "date": "July 2026",
-              "rating": 5,
-              "title": "Exceptional Hospitality & Impeccable Views",
-              "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
-              "photos": [
-                "https://images.unsplash.com/photo-1568495248636-6432b97bd949?auto=format&fit=crop&w=600&q=85&sig=488"
-              ],
-              "id": "rev-paris-citizenm-gare-2",
-              "verified": true
-            },
-            {
-              "name": "Sarah Jenkins",
-              "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80",
-              "date": "August 2026",
-              "rating": 5,
-              "title": "100% Authentic & Worth Every Penny",
-              "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
-              "photos": [
-                "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=600&q=85&sig=489"
-              ],
-              "id": "rev-paris-citizenm-gare-3",
-              "verified": true
-            }
-          ],
-          "recommendationBadge": "Strategic Location"
+          "recommendationBadge": "Best Value"
         }
       ]
     },
@@ -6551,253 +6200,187 @@ window.WANDERLY_DATA = {
       ],
       "hotels": [
         {
-          "id": "rome-hotel-de-russie",
-          "name": "Hotel de Russie, Rocco Forte",
+          "id": "rome-hassler",
+          "name": "Hotel Hassler Roma",
           "stars": 5,
           "pricePerNight": 620,
           "rating": 4.9,
-          "reviewsCount": 2200,
-          "lat": 41.9095,
-          "lng": 12.4772,
-          "image": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=800&q=80&sig=491",
-          "description": "Prestigious 5-star hotel near Piazza del Popolo with secret terraced gardens, Le Jardin de Russie, and luxury wellness.",
-          "amenities": [
-            "Secret Tiered Gardens",
-            "De Russie Spa",
-            "Piazza del Popolo",
-            "Fine Italian Dining"
-          ],
-          "address": "Via del Babuino 9, Spagna, Rome",
-          "gallery": [
-            {
-              "url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=85&sig=492",
-              "caption": "Hotel de Russie, Rocco Forte - Architectural Overview & Grand Entrance"
-            },
-            {
-              "url": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=85&sig=493",
-              "caption": "Deluxe Suite & Modern Living Quarters"
-            },
-            {
-              "url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85&sig=494",
-              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
-            },
-            {
-              "url": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1200&q=85&sig=495",
-              "caption": "Fine Dining Restaurant & Cocktail Lounge"
-            },
-            {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=85&sig=496",
-              "caption": "Wellness Sanctuary & Marble Spa Suite"
-            }
-          ],
-          "verifiedReviews": [
-            {
-              "name": "Dr. Ahmed El-Sayed",
-              "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80",
-              "date": "July 2026",
-              "rating": 5,
-              "title": "Exceptional Hospitality & Impeccable Views",
-              "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
-              "photos": [
-                "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=600&q=85&sig=493"
-              ],
-              "id": "rev-rome-hotel-de-russie-1",
-              "verified": true
-            },
-            {
-              "name": "Sarah Jenkins",
-              "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80",
-              "date": "August 2026",
-              "rating": 5,
-              "title": "100% Authentic & Worth Every Penny",
-              "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
-              "photos": [
-                "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=85&sig=494"
-              ],
-              "id": "rev-rome-hotel-de-russie-2",
-              "verified": true
-            },
-            {
-              "name": "Mohamed Tariq",
-              "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80",
-              "date": "June 2026",
-              "rating": 4.8,
-              "title": "Great Strategic Location & Friendly Concierge",
-              "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
-              "photos": [
-                "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=85&sig=495"
-              ],
-              "id": "rev-rome-hotel-de-russie-3",
-              "verified": true
-            }
-          ],
-          "recommendationBadge": "Top Rated"
-        },
-        {
-          "id": "rome-hassler",
-          "name": "Hassler Roma",
-          "stars": 5,
-          "pricePerNight": 540,
-          "rating": 4.9,
-          "reviewsCount": 1900,
-          "lat": 41.9061,
-          "lng": 12.4839,
-          "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80&sig=497",
-          "description": "Iconic luxury hotel perched right atop the Spanish Steps with sweeping panoramic views of Rome's ancient domes.",
+          "reviewsCount": 3100,
+          "lat": 41.9058,
+          "lng": 12.4842,
+          "image": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1200&q=85",
+          "description": "Perched gracefully at the top of the Spanish Steps, Hotel Hassler is Rome's premier historic residence of royalty and cinema legends, offering panoramic Roman skyline views.",
+          "address": "Piazza Trinità dei Monti 6, 00187 Rome, Italy",
+          "airportName": "Leonardo da Vinci–Fiumicino Airport (FCO)",
+          "airportDistanceKm": 31,
+          "airportDistance": "31 km to Rome Fiumicino Airport (FCO)",
           "amenities": [
             "Top of Spanish Steps",
-            "Panoramic Terraces",
-            "Imàgo Michelin Dining",
-            "Amorvero Spa"
+            "Panoramic Rooftop Imàgo",
+            "Hassler Secret Garden",
+            "Private Chauffeur Fleet",
+            "Historic Royal Landmark"
           ],
-          "address": "Piazza Trinità dei Monti 6, Rome",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=85&sig=498",
-              "caption": "Hassler Roma - Architectural Overview & Grand Entrance"
+              "url": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Hotel Hassler Roma - Crown of the Spanish Steps"
             },
             {
-              "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=85&sig=499",
-              "caption": "Deluxe Suite & Modern Living Quarters"
+              "url": "https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Historic Trinità dei Monti & Roman Domes Vista"
             },
             {
-              "url": "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=1200&q=85&sig=500",
-              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
+              "url": "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Penthouse Suite with Terrace Gaze Over St. Peter's Dome"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1200&q=85&sig=501",
-              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Palm Court & Garden Terrace Dining"
             },
             {
-              "url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=85&sig=502",
-              "caption": "Wellness Sanctuary & Marble Spa Suite"
+              "url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Imàgo Michelin Panoramic Rooftop Restaurant"
             }
           ],
           "verifiedReviews": [
             {
-              "name": "Sarah Jenkins",
-              "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80",
+              "id": "rev-rom-has-1",
+              "name": "Marco Rossi",
+              "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80",
               "date": "August 2026",
               "rating": 5,
-              "title": "100% Authentic & Worth Every Penny",
-              "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
+              "title": "Finest View of the Eternal City",
+              "comment": "Stepping out directly to the top of the Spanish Steps is majestic. FCO Airport was a straightforward 35-minute drive.",
               "photos": [
-                "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=85&sig=499"
+                "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=600&q=85"
               ],
-              "id": "rev-rome-hassler-1",
-              "verified": true
-            },
-            {
-              "name": "Mohamed Tariq",
-              "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80",
-              "date": "June 2026",
-              "rating": 4.8,
-              "title": "Great Strategic Location & Friendly Concierge",
-              "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
-              "photos": [
-                "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=600&q=85&sig=500"
-              ],
-              "id": "rev-rome-hassler-2",
-              "verified": true
-            },
-            {
-              "name": "Elena Rostova",
-              "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
-              "date": "May 2026",
-              "rating": 4.9,
-              "title": "A Dream Stay! Will Definitely Return",
-              "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
-              "photos": [
-                "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=600&q=85&sig=501"
-              ],
-              "id": "rev-rome-hassler-3",
               "verified": true
             }
           ],
           "recommendationBadge": "Top Rated"
         },
         {
-          "id": "rome-artemide",
-          "name": "Hotel Artemide",
-          "stars": 4,
-          "pricePerNight": 195,
+          "id": "rome-hotel-de-russie",
+          "name": "Hotel de Russie, Rocco Forte",
+          "stars": 5,
+          "pricePerNight": 580,
           "rating": 4.8,
-          "reviewsCount": 3800,
-          "lat": 41.9018,
-          "lng": 12.4935,
-          "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80&sig=503",
-          "description": "Top-rated 4-star hotel on Via Nazionale with Artemis Spa, Turkish bath, and celebrated Ambrosia rooftop restaurant.",
+          "reviewsCount": 2950,
+          "lat": 41.9103,
+          "lng": 12.4777,
+          "image": "https://images.unsplash.com/photo-1529260830199-42c24126f198?auto=format&fit=crop&w=1200&q=85",
+          "description": "Located between the Spanish Steps and Piazza del Popolo, Hotel de Russie features the famous terraced Secret Garden designed by Giuseppe Valadier and Stravinskij Bar.",
+          "address": "Via del Babuino 9, 00187 Rome, Italy",
+          "airportName": "Leonardo da Vinci–Fiumicino Airport (FCO)",
+          "airportDistanceKm": 30,
+          "airportDistance": "30 km to Rome Fiumicino Airport (FCO)",
           "amenities": [
-            "Ambrosia Rooftop Bar",
-            "Artemis Spa",
-            "Complimentary Minibar",
-            "Central Location"
+            "Valadier Secret Garden",
+            "Stravinskij Garden Bar",
+            "De Russie Wellness Spa",
+            "Near Piazza del Popolo",
+            "Italian Design Suites"
           ],
-          "address": "Via Nazionale 22, Central Rome",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1587975844610-40f1ad10d07a?auto=format&fit=crop&w=1200&q=85&sig=504",
-              "caption": "Hotel Artemide - Architectural Overview & Grand Entrance"
+              "url": "https://images.unsplash.com/photo-1529260830199-42c24126f198?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Hotel de Russie - Historic Roman Architecture & Courtyard"
             },
             {
-              "url": "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=85&sig=505",
-              "caption": "Deluxe Suite & Modern Living Quarters"
+              "url": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Valadier Terraced Monumental Garden"
             },
             {
-              "url": "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?auto=format&fit=crop&w=1200&q=85&sig=506",
-              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
+              "url": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Popolo Luxury Suite Overlooking Pincio Hill"
             },
             {
-              "url": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=85&sig=507",
-              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Saltwater Hydropool & Rocco Forte Spa"
             },
             {
-              "url": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=1200&q=85&sig=508",
-              "caption": "Wellness Sanctuary & Marble Spa Suite"
+              "url": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Le Jardin de Russie Al Fresco Dining"
             }
           ],
           "verifiedReviews": [
             {
-              "name": "Mohamed Tariq",
-              "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80",
-              "date": "June 2026",
-              "rating": 4.8,
-              "title": "Great Strategic Location & Friendly Concierge",
-              "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
-              "photos": [
-                "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=600&q=85&sig=505"
-              ],
-              "id": "rev-rome-artemide-1",
-              "verified": true
-            },
-            {
-              "name": "Elena Rostova",
-              "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
-              "date": "May 2026",
-              "rating": 4.9,
-              "title": "A Dream Stay! Will Definitely Return",
-              "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
-              "photos": [
-                "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?auto=format&fit=crop&w=600&q=85&sig=506"
-              ],
-              "id": "rev-rome-artemide-2",
-              "verified": true
-            },
-            {
-              "name": "Dr. Ahmed El-Sayed",
-              "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80",
-              "date": "July 2026",
+              "id": "rev-rom-hdr-1",
+              "name": "Giulia Bianchi",
+              "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80",
+              "date": "September 2026",
               "rating": 5,
-              "title": "Exceptional Hospitality & Impeccable Views",
-              "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
+              "title": "An Oasis of Green in the Heart of Rome",
+              "comment": "The secret terraced garden is a peaceful sanctuary after walking Rome all day. Only 30 km to Fiumicino.",
               "photos": [
-                "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600&q=85&sig=507"
+                "https://images.unsplash.com/photo-1529260830199-42c24126f198?auto=format&fit=crop&w=600&q=85"
               ],
-              "id": "rev-rome-artemide-3",
               "verified": true
             }
           ],
-          "recommendationBadge": "Top Rated"
+          "recommendationBadge": "Popular"
+        },
+        {
+          "id": "rome-cavalieri-waldorf",
+          "name": "Rome Cavalieri, A Waldorf Astoria Hotel",
+          "stars": 5,
+          "pricePerNight": 450,
+          "rating": 4.8,
+          "reviewsCount": 3400,
+          "lat": 41.9189,
+          "lng": 12.4475,
+          "image": "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1200&q=85",
+          "description": "Set atop Monte Mario on 15 acres of Mediterranean parkland with 3-Michelin-starred La Pergola by Heinz Beck, museum art collections, and 4 swimming pools.",
+          "address": "Via Alberto Cadlolo 101, 00136 Rome, Italy",
+          "airportName": "Leonardo da Vinci–Fiumicino Airport (FCO)",
+          "airportDistanceKm": 33,
+          "airportDistance": "33 km to Rome Fiumicino Airport (FCO)",
+          "amenities": [
+            "La Pergola 3-Michelin Stars",
+            "15-Acre Mediterranean Park",
+            "4 Outdoor & Indoor Pools",
+            "Grand Spa & Roman Baths",
+            "Tiepolo Museum Artworks"
+          ],
+          "gallery": [
+            {
+              "url": "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Rome Cavalieri - Panoramic Hilltop Resort Gaze Across Rome"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1568495248636-6432b97bd949?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Olympic Heated Pool in Private Pine Parkland"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Imperial Club Room with Private Sunset Balcony"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1563911302283-d2bc129e7570?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Grand Spa Roman Bath Hydrotherapy Jacuzzis"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=85",
+              "caption": "La Pergola Heinz Beck 3-Michelin Star Dining"
+            }
+          ],
+          "verifiedReviews": [
+            {
+              "id": "rev-rom-cav-1",
+              "name": "Matteo Fontana",
+              "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80",
+              "date": "July 2026",
+              "rating": 5,
+              "title": "Resort Feel with Whole Rome Panorama",
+              "comment": "Swimming among pines overlooking St. Peter's is extraordinary. Easy highway connection to FCO Airport in 30 minutes.",
+              "photos": [
+                "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=600&q=85"
+              ],
+              "verified": true
+            }
+          ],
+          "recommendationBadge": "Best Value"
         }
       ]
     },
@@ -6902,249 +6485,182 @@ window.WANDERLY_DATA = {
           "stars": 5,
           "pricePerNight": 850,
           "rating": 5,
-          "reviewsCount": 1800,
-          "lat": 35.6872,
-          "lng": 139.7645,
-          "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80&sig=509",
-          "description": "Urban sanctuary high above Otemachi with soaring 30-meter washi paper lobby ceiling, 33-meter sky pool, and Mount Fuji views.",
+          "reviewsCount": 2800,
+          "lat": 35.6868,
+          "lng": 139.7654,
+          "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1200&q=85",
+          "description": "An urban sanctuary perched atop the Otemachi Tower, blending traditional Japanese washi paper architecture, stone furo baths, and panoramic vistas of the Imperial Palace Gardens and Mount Fuji.",
+          "address": "The Otemachi Tower, 1-5-6 Otemachi, Chiyoda-ku, Tokyo 100-0004, Japan",
+          "airportName": "Tokyo Haneda Airport (HND)",
+          "airportDistanceKm": 19,
+          "airportDistance": "19 km to Tokyo Haneda Airport (HND)",
           "amenities": [
-            "Mount Fuji Views",
-            "33m Sky Pool",
-            "Aman Spa",
-            "Traditional Onsen Baths",
-            "Michelin Dining"
+            "Imperial Palace Garden Views",
+            "Traditional Stone Onsen Spa",
+            "30-Meter Sky Swimming Pool",
+            "The Lounge by Aman",
+            "Musashi Chef Sushi Omakase"
           ],
-          "address": "The Otemachi Tower, 1-5-6 Otemachi, Chiyoda-ku, Tokyo",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85&sig=510",
-              "caption": "Aman Tokyo - Architectural Overview & Grand Entrance"
+              "url": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Aman Tokyo - Soaring 30-Meter High Washi Paper Sky Lobby"
             },
             {
-              "url": "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1200&q=85&sig=511",
-              "caption": "Deluxe Suite & Modern Living Quarters"
+              "url": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Serene Imperial Palace Gardens Panorama"
             },
             {
-              "url": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=85&sig=512",
-              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
+              "url": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Premier Room with Deep Soaking Basalt Stone Furo Tub"
             },
             {
-              "url": "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1200&q=85&sig=513",
-              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Black Granite 30m Sky Pool Overlooking Mount Fuji"
             },
             {
-              "url": "https://images.unsplash.com/photo-1527838832700-5059252407fa?auto=format&fit=crop&w=1200&q=85&sig=514",
-              "caption": "Wellness Sanctuary & Marble Spa Suite"
+              "url": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Musashi by Aman Master Sushi Counter"
             }
           ],
           "verifiedReviews": [
             {
-              "name": "Dr. Ahmed El-Sayed",
-              "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80",
-              "date": "July 2026",
+              "id": "rev-tyo-amn-1",
+              "name": "Kenji Sato",
+              "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80",
+              "date": "September 2026",
               "rating": 5,
-              "title": "Exceptional Hospitality & Impeccable Views",
-              "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
+              "title": "Perfection in Minimalist Japanese Luxury",
+              "comment": "The quietude in the sky lobby after Tokyo's bustling streets is transcendental. Haneda airport was only 25 minutes by taxi.",
               "photos": [
-                "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=600&q=85&sig=511"
+                "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=600&q=85"
               ],
-              "id": "rev-tokyo-aman-1",
-              "verified": true
-            },
-            {
-              "name": "Sarah Jenkins",
-              "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80",
-              "date": "August 2026",
-              "rating": 5,
-              "title": "100% Authentic & Worth Every Penny",
-              "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
-              "photos": [
-                "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=85&sig=512"
-              ],
-              "id": "rev-tokyo-aman-2",
-              "verified": true
-            },
-            {
-              "name": "Mohamed Tariq",
-              "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80",
-              "date": "June 2026",
-              "rating": 4.8,
-              "title": "Great Strategic Location & Friendly Concierge",
-              "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
-              "photos": [
-                "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=600&q=85&sig=513"
-              ],
-              "id": "rev-tokyo-aman-3",
               "verified": true
             }
           ],
           "recommendationBadge": "Top Rated"
         },
         {
-          "id": "tokyo-shibuya-excel",
-          "name": "Shibuya Excel Hotel Tokyu",
-          "stars": 4,
-          "pricePerNight": 210,
-          "rating": 4.7,
-          "reviewsCount": 3400,
-          "lat": 35.6591,
-          "lng": 139.6998,
-          "image": "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&w=800&q=80&sig=515",
-          "description": "Directly overlooking the world-famous Shibuya Scramble Crossing, connected to Shibuya train station.",
+          "id": "tokyo-park-hyatt",
+          "name": "Park Hyatt Tokyo",
+          "stars": 5,
+          "pricePerNight": 560,
+          "rating": 4.9,
+          "reviewsCount": 3600,
+          "lat": 35.6854,
+          "lng": 139.6912,
+          "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1200&q=85",
+          "description": "Towering above vibrant Shinjuku, famously featured in cinema history, boasting the glass-roofed Club on the Park pool, New York Grill jazz bar on the 52nd floor, and sweeping Tokyo vistas.",
+          "address": "3-7-1-2 Nishi-Shinjuku, Shinjuku-ku, Tokyo 163-1055, Japan",
+          "airportName": "Tokyo Haneda Airport (HND)",
+          "airportDistanceKm": 23,
+          "airportDistance": "23 km to Tokyo Haneda Airport (HND)",
           "amenities": [
-            "Direct Shibuya Crossing View",
-            "Station Connected",
-            "Shunsai Japanese Dining",
-            "Free WiFi"
+            "New York Grill 52nd Floor",
+            "Glass Atrium Sky Pool",
+            "Club on the Park Spa",
+            "Shinjuku Skyline Panorama",
+            "24-Hour Dedicated Concierge"
           ],
-          "address": "1-12-2 Dogenzaka, Shibuya-ku, Tokyo",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&w=1200&q=85&sig=516",
-              "caption": "Shibuya Excel Hotel Tokyu - Architectural Overview & Grand Entrance"
+              "url": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Park Hyatt Tokyo - Shinjuku High-Rise Architecture"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566127444979-b3d2b654e3d7?auto=format&fit=crop&w=1200&q=85&sig=517",
-              "caption": "Deluxe Suite & Modern Living Quarters"
+              "url": "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Tokyo Shinjuku Neon Nightscape"
             },
             {
-              "url": "https://images.unsplash.com/photo-1553913861-c0fddf2619ee?auto=format&fit=crop&w=1200&q=85&sig=518",
-              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
+              "url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Diplomat Suite with Deep Hokkaido Green Marble Bath"
             },
             {
-              "url": "https://images.unsplash.com/photo-1578922746465-3a80a228f223?auto=format&fit=crop&w=1200&q=85&sig=519",
-              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1563911302283-d2bc129e7570?auto=format&fit=crop&w=1200&q=85",
+              "caption": "47th Floor Sky Atrium Sunlight Swimming Pool"
             },
             {
-              "url": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=85&sig=520",
-              "caption": "Wellness Sanctuary & Marble Spa Suite"
+              "url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85",
+              "caption": "New York Bar Live Jazz & City Lights"
             }
           ],
           "verifiedReviews": [
             {
-              "name": "Sarah Jenkins",
-              "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80",
+              "id": "rev-tyo-pkh-1",
+              "name": "Yuki Takahashi",
+              "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
               "date": "August 2026",
               "rating": 5,
-              "title": "100% Authentic & Worth Every Penny",
-              "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
+              "title": "Iconic Shinjuku Nights and Jazz",
+              "comment": "Listening to live jazz at New York Grill with the entire neon Tokyo grid below is timeless. 30 minutes from Haneda.",
               "photos": [
-                "https://images.unsplash.com/photo-1566127444979-b3d2b654e3d7?auto=format&fit=crop&w=600&q=85&sig=517"
+                "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=600&q=85"
               ],
-              "id": "rev-tokyo-shibuya-excel-1",
-              "verified": true
-            },
-            {
-              "name": "Mohamed Tariq",
-              "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80",
-              "date": "June 2026",
-              "rating": 4.8,
-              "title": "Great Strategic Location & Friendly Concierge",
-              "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
-              "photos": [
-                "https://images.unsplash.com/photo-1553913861-c0fddf2619ee?auto=format&fit=crop&w=600&q=85&sig=518"
-              ],
-              "id": "rev-tokyo-shibuya-excel-2",
-              "verified": true
-            },
-            {
-              "name": "Elena Rostova",
-              "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
-              "date": "May 2026",
-              "rating": 4.9,
-              "title": "A Dream Stay! Will Definitely Return",
-              "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
-              "photos": [
-                "https://images.unsplash.com/photo-1578922746465-3a80a228f223?auto=format&fit=crop&w=600&q=85&sig=519"
-              ],
-              "id": "rev-tokyo-shibuya-excel-3",
               "verified": true
             }
           ],
-          "recommendationBadge": "Strategic Location"
+          "recommendationBadge": "Popular"
         },
         {
-          "id": "tokyo-gracery-shinjuku",
-          "name": "Hotel Gracery Shinjuku",
-          "stars": 4,
-          "pricePerNight": 140,
-          "rating": 4.6,
-          "reviewsCount": 4200,
-          "lat": 35.6953,
-          "lng": 139.7021,
-          "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=800&q=80&sig=521",
-          "description": "Famous Godzilla hotel in the heart of bustling Kabukicho Shinjuku with life-size Godzilla head terrace and cinema complex.",
+          "id": "tokyo-prince-park-tower",
+          "name": "The Prince Park Tower Tokyo",
+          "stars": 5,
+          "pricePerNight": 320,
+          "rating": 4.8,
+          "reviewsCount": 4100,
+          "lat": 35.6548,
+          "lng": 139.7494,
+          "image": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=1200&q=85",
+          "description": "Surrounded by the green tranquility of Shiba Park right next to Tokyo Tower, offering private balconies directly facing the illuminated red landmark, natural onsen spa, and sky bowling.",
+          "address": "4-8-1 Shibakoen, Minato-ku, Tokyo 105-8563, Japan",
+          "airportName": "Tokyo Haneda Airport (HND)",
+          "airportDistanceKm": 15,
+          "airportDistance": "15 km to Tokyo Haneda Airport (HND)",
           "amenities": [
-            "Godzilla Head Terrace",
-            "Heart of Kabukicho",
-            "Cafe Terrace Bonjour",
-            "Free WiFi"
+            "Front-Row Tokyo Tower Views",
+            "Shiba Park Greenery",
+            "Natural Hot Spring Onsen",
+            "Sky Lounge Stellar Garden",
+            "Spa & Fitness Center"
           ],
-          "address": "1-19-1 Kabukicho, Shinjuku-ku, Tokyo",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1598940603846-a1edd0ef2574?auto=format&fit=crop&w=1200&q=85&sig=522",
-              "caption": "Hotel Gracery Shinjuku - Architectural Overview & Grand Entrance"
+              "url": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=1200&q=85",
+              "caption": "The Prince Park Tower - Front-Row Illuminated Tokyo Tower"
             },
             {
-              "url": "https://images.unsplash.com/photo-1574359411659-15573a27fd0c?auto=format&fit=crop&w=1200&q=85&sig=523",
-              "caption": "Deluxe Suite & Modern Living Quarters"
+              "url": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Historic Shiba Park & Zojoji Temple Grounds"
             },
             {
-              "url": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=85&sig=524",
-              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
+              "url": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Panoramic Corner King Room Facing the Tower"
             },
             {
-              "url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1200&q=85&sig=525",
-              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1568495248636-6432b97bd949?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Natural Hot Spring Mineral Bath & Spa Pool"
             },
             {
-              "url": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=85&sig=526",
-              "caption": "Wellness Sanctuary & Marble Spa Suite"
+              "url": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Sky Lounge Stellar Garden Night View Cocktails"
             }
           ],
           "verifiedReviews": [
             {
-              "name": "Mohamed Tariq",
-              "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80",
-              "date": "June 2026",
-              "rating": 4.8,
-              "title": "Great Strategic Location & Friendly Concierge",
-              "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
-              "photos": [
-                "https://images.unsplash.com/photo-1574359411659-15573a27fd0c?auto=format&fit=crop&w=600&q=85&sig=523"
-              ],
-              "id": "rev-tokyo-gracery-shinjuku-1",
-              "verified": true
-            },
-            {
-              "name": "Elena Rostova",
-              "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
-              "date": "May 2026",
-              "rating": 4.9,
-              "title": "A Dream Stay! Will Definitely Return",
-              "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
-              "photos": [
-                "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=600&q=85&sig=524"
-              ],
-              "id": "rev-tokyo-gracery-shinjuku-2",
-              "verified": true
-            },
-            {
-              "name": "Dr. Ahmed El-Sayed",
-              "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80",
-              "date": "July 2026",
+              "id": "rev-tyo-ppt-1",
+              "name": "Hiroshi Nakamura",
+              "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80",
+              "date": "September 2026",
               "rating": 5,
-              "title": "Exceptional Hospitality & Impeccable Views",
-              "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
+              "title": "Spectacular Tokyo Tower from your Bed",
+              "comment": "Only 15 km from Haneda Airport, 20 min highway drive. You can touch Tokyo Tower from your private balcony!",
               "photos": [
-                "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=85&sig=525"
+                "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=600&q=85"
               ],
-              "id": "rev-tokyo-gracery-shinjuku-3",
               "verified": true
             }
           ],
-          "recommendationBadge": "Strategic Location"
+          "recommendationBadge": "Best Value"
         }
       ]
     },
@@ -7247,251 +6763,184 @@ window.WANDERLY_DATA = {
           "id": "lon-the-savoy",
           "name": "The Savoy",
           "stars": 5,
-          "pricePerNight": 720,
+          "pricePerNight": 780,
           "rating": 4.9,
-          "reviewsCount": 3600,
+          "reviewsCount": 4200,
           "lat": 51.5101,
           "lng": -0.1205,
-          "image": "https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&w=800&q=80&sig=527",
-          "description": "London's most famous luxury hotel on the Strand overlooking the River Thames, home to Gordon Ramsay's Savoy Grill and American Bar.",
+          "image": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1200&q=85",
+          "description": "London's most historic luxury landmark on the River Thames, home of the legendary American Bar, Gordon Ramsay's Savoy Grill, and Edwardian & Art Deco riverside suites.",
+          "address": "Strand, London WC2R 0EZ, United Kingdom",
+          "airportName": "London Heathrow Airport (LHR)",
+          "airportDistanceKm": 27,
+          "airportDistance": "27 km to Heathrow Airport (LHR)",
           "amenities": [
-            "River Thames Views",
-            "Savoy Grill",
-            "American Bar",
-            "Beauty & Fitness Spa",
-            "Butler Service"
+            "River Thames Frontage",
+            "Legendary American Bar",
+            "Savoy Grill by Gordon Ramsay",
+            "Butler Service in Suites",
+            "Historic Edwardian Ballroom"
           ],
-          "address": "Strand, Covent Garden, London",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1451337516015-6b6e9a44a8a3?auto=format&fit=crop&w=1200&q=85&sig=528",
-              "caption": "The Savoy - Architectural Overview & Grand Entrance"
+              "url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1200&q=85",
+              "caption": "The Savoy - Grand Strand Courtyard Entrance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1580674285054-bed31e145f59?auto=format&fit=crop&w=1200&q=85&sig=529",
-              "caption": "Deluxe Suite & Modern Living Quarters"
+              "url": "https://images.unsplash.com/photo-1520986606214-8b456906c813?auto=format&fit=crop&w=1200&q=85",
+              "caption": "River Thames Panorama Overlooking London Eye"
             },
             {
-              "url": "https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1200&q=85&sig=530",
-              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
+              "url": "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Personality Suite in Pristine British Art Deco"
             },
             {
-              "url": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=85&sig=531",
-              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Private Atrium Pool & Health Club"
             },
             {
-              "url": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=1200&q=85&sig=532",
-              "caption": "Wellness Sanctuary & Marble Spa Suite"
+              "url": "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Thames Foyer Traditional British Afternoon Tea"
             }
           ],
           "verifiedReviews": [
             {
-              "name": "Dr. Ahmed El-Sayed",
-              "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80",
-              "date": "July 2026",
+              "id": "rev-lon-svy-1",
+              "name": "William Hastings",
+              "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80",
+              "date": "September 2026",
               "rating": 5,
-              "title": "Exceptional Hospitality & Impeccable Views",
-              "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
+              "title": "Quintessential British Grandeur",
+              "comment": "Direct taxi from Heathrow in 45 minutes. Afternoon tea in the Thames Foyer with live piano is unrivaled.",
               "photos": [
-                "https://images.unsplash.com/photo-1580674285054-bed31e145f59?auto=format&fit=crop&w=600&q=85&sig=529"
+                "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=600&q=85"
               ],
-              "id": "rev-lon-the-savoy-1",
-              "verified": true
-            },
-            {
-              "name": "Sarah Jenkins",
-              "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80",
-              "date": "August 2026",
-              "rating": 5,
-              "title": "100% Authentic & Worth Every Penny",
-              "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
-              "photos": [
-                "https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=600&q=85&sig=530"
-              ],
-              "id": "rev-lon-the-savoy-2",
-              "verified": true
-            },
-            {
-              "name": "Mohamed Tariq",
-              "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80",
-              "date": "June 2026",
-              "rating": 4.8,
-              "title": "Great Strategic Location & Friendly Concierge",
-              "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
-              "photos": [
-                "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=600&q=85&sig=531"
-              ],
-              "id": "rev-lon-the-savoy-3",
               "verified": true
             }
           ],
           "recommendationBadge": "Top Rated"
         },
         {
-          "id": "lon-park-plaza-westminster",
-          "name": "Park Plaza Westminster Bridge",
-          "stars": 4,
-          "pricePerNight": 230,
-          "rating": 4.7,
-          "reviewsCount": 5200,
-          "lat": 51.5011,
-          "lng": -0.1172,
-          "image": "https://images.unsplash.com/photo-1522093007474-d86e9bf7ba6f?auto=format&fit=crop&w=800&q=80&sig=533",
-          "description": "Iconic South Bank hotel directly facing Big Ben and the Houses of Parliament with 15m indoor pool and Mandara Spa.",
+          "id": "lon-shangrila-shard",
+          "name": "Shangri-La The Shard, London",
+          "stars": 5,
+          "pricePerNight": 690,
+          "rating": 4.9,
+          "reviewsCount": 3700,
+          "lat": 51.5045,
+          "lng": -0.0865,
+          "image": "https://images.unsplash.com/photo-1574359411659-15573a27fd0c?auto=format&fit=crop&w=1200&q=85",
+          "description": "Occupying levels 34 to 52 of Western Europe's tallest skyscraper, featuring floor-to-ceiling panoramic views of Tower Bridge and St. Paul's, and the highest sky pool in Western Europe.",
+          "address": "31 St Thomas Street, London SE1 9QU, United Kingdom",
+          "airportName": "London Heathrow Airport (LHR)",
+          "airportDistanceKm": 30,
+          "airportDistance": "30 km to Heathrow Airport (LHR)",
           "amenities": [
-            "Big Ben & Parliament View",
-            "Mandara Spa",
-            "15m Indoor Pool",
-            "Brasserie Joël"
+            "Western Europe's Highest Pool",
+            "GÖNG Sky Lounge Level 52",
+            "Floor-to-Ceiling London Vistas",
+            "Marble Bathtubs with Views",
+            "Steps to Borough Market"
           ],
-          "address": "200 Westminster Bridge Rd, London",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?auto=format&fit=crop&w=1200&q=85&sig=534",
-              "caption": "Park Plaza Westminster Bridge - Architectural Overview & Grand Entrance"
+              "url": "https://images.unsplash.com/photo-1574359411659-15573a27fd0c?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Shangri-La The Shard - Soaring Modern Architectural Masterpiece"
             },
             {
-              "url": "https://images.unsplash.com/photo-1543349689-9a4d426bee8e?auto=format&fit=crop&w=1200&q=85&sig=535",
-              "caption": "Deluxe Suite & Modern Living Quarters"
+              "url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1200&q=85",
+              "caption": "London Bridge & Tower of London Aerial View"
             },
             {
-              "url": "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?auto=format&fit=crop&w=1200&q=85&sig=536",
-              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
+              "url": "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Iconic Suite with Freestanding Tub Facing Tower Bridge"
             },
             {
-              "url": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1200&q=85&sig=537",
-              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Level 52 Skypool Infinity Edge Heated Waters"
             },
             {
-              "url": "https://images.unsplash.com/photo-1545987796-200677ee1011?auto=format&fit=crop&w=1200&q=85&sig=538",
-              "caption": "Wellness Sanctuary & Marble Spa Suite"
+              "url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85",
+              "caption": "GÖNG Cocktail Lounge Above the London Clouds"
             }
           ],
           "verifiedReviews": [
             {
-              "name": "Sarah Jenkins",
-              "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80",
+              "id": "rev-lon-shd-1",
+              "name": "Charlotte Evans",
+              "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
               "date": "August 2026",
               "rating": 5,
-              "title": "100% Authentic & Worth Every Penny",
-              "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
+              "title": "Swimming on the 52nd Floor Above London",
+              "comment": "Bathing in the sky with Tower Bridge illuminated below is unforgettable. 30 km from Heathrow, convenient via train or black cab.",
               "photos": [
-                "https://images.unsplash.com/photo-1543349689-9a4d426bee8e?auto=format&fit=crop&w=600&q=85&sig=535"
+                "https://images.unsplash.com/photo-1574359411659-15573a27fd0c?auto=format&fit=crop&w=600&q=85"
               ],
-              "id": "rev-lon-park-plaza-westminster-1",
-              "verified": true
-            },
-            {
-              "name": "Mohamed Tariq",
-              "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80",
-              "date": "June 2026",
-              "rating": 4.8,
-              "title": "Great Strategic Location & Friendly Concierge",
-              "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
-              "photos": [
-                "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?auto=format&fit=crop&w=600&q=85&sig=536"
-              ],
-              "id": "rev-lon-park-plaza-westminster-2",
-              "verified": true
-            },
-            {
-              "name": "Elena Rostova",
-              "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
-              "date": "May 2026",
-              "rating": 4.9,
-              "title": "A Dream Stay! Will Definitely Return",
-              "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
-              "photos": [
-                "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=600&q=85&sig=537"
-              ],
-              "id": "rev-lon-park-plaza-westminster-3",
               "verified": true
             }
           ],
-          "recommendationBadge": "Strategic Location"
+          "recommendationBadge": "Popular"
         },
         {
-          "id": "lon-citizenm-tower",
-          "name": "citizenM Tower of London",
-          "stars": 4,
-          "pricePerNight": 155,
-          "rating": 4.7,
-          "reviewsCount": 3900,
-          "lat": 51.5098,
-          "lng": -0.0762,
-          "image": "https://images.unsplash.com/photo-1565099824688-e93eb20fe622?auto=format&fit=crop&w=800&q=80&sig=539",
-          "description": "Stylish design hotel built directly above Tower Hill Underground Station, overlooking the Tower of London and Tower Bridge.",
+          "id": "lon-claridges",
+          "name": "Claridge's",
+          "stars": 5,
+          "pricePerNight": 820,
+          "rating": 5,
+          "reviewsCount": 3100,
+          "lat": 51.5126,
+          "lng": -0.1492,
+          "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=85",
+          "description": "The crown jewel of Mayfair since 1856, synonymous with British royal discretion, Art Deco glamour, The Fumoir bar, and world-class British hospitality.",
+          "address": "Brook Street, Mayfair, London W1K 4HR, United Kingdom",
+          "airportName": "London Heathrow Airport (LHR)",
+          "airportDistanceKm": 26,
+          "airportDistance": "26 km to Heathrow Airport (LHR)",
           "amenities": [
-            "Tower of London View",
-            "cloudM Rooftop Lounge",
-            "Subway Station Directly Below",
-            "Free WiFi"
+            "Heart of Mayfair",
+            "Art Deco Foyer & Fumoir",
+            "Claridge's Royal Spa",
+            "Bespoke Butler Service",
+            "Designer Heritage Suites"
           ],
-          "address": "40 Trinity Square, City of London",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=1200&q=85&sig=540",
-              "caption": "citizenM Tower of London - Architectural Overview & Grand Entrance"
+              "url": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Claridge's Mayfair - Historic Red Brick Victorian Elegance"
             },
             {
-              "url": "https://images.unsplash.com/photo-1592488832109-1d473228f00a?auto=format&fit=crop&w=1200&q=85&sig=541",
-              "caption": "Deluxe Suite & Modern Living Quarters"
+              "url": "https://images.unsplash.com/photo-1526495124232-a04e1849168c?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Lobby Black-and-White Marble Dale Chihuly Chandelier"
             },
             {
-              "url": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1200&q=85&sig=542",
-              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
+              "url": "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Linley Signature Art Deco Royal Suite"
             },
             {
-              "url": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1200&q=85&sig=543",
-              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1568495248636-6432b97bd949?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Subterranean Roman Bath Luxury Mayfair Spa"
             },
             {
-              "url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1200&q=85&sig=544",
-              "caption": "Wellness Sanctuary & Marble Spa Suite"
+              "url": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Claridge's Restaurant & The Fumoir Cocktails"
             }
           ],
           "verifiedReviews": [
             {
-              "name": "Mohamed Tariq",
-              "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80",
-              "date": "June 2026",
-              "rating": 4.8,
-              "title": "Great Strategic Location & Friendly Concierge",
-              "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
-              "photos": [
-                "https://images.unsplash.com/photo-1592488832109-1d473228f00a?auto=format&fit=crop&w=600&q=85&sig=541"
-              ],
-              "id": "rev-lon-citizenm-tower-1",
-              "verified": true
-            },
-            {
-              "name": "Elena Rostova",
-              "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
-              "date": "May 2026",
-              "rating": 4.9,
-              "title": "A Dream Stay! Will Definitely Return",
-              "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
-              "photos": [
-                "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=600&q=85&sig=542"
-              ],
-              "id": "rev-lon-citizenm-tower-2",
-              "verified": true
-            },
-            {
-              "name": "Dr. Ahmed El-Sayed",
-              "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80",
-              "date": "July 2026",
+              "id": "rev-lon-cld-1",
+              "name": "Lord Richard Campbell",
+              "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80",
+              "date": "September 2026",
               "rating": 5,
-              "title": "Exceptional Hospitality & Impeccable Views",
-              "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
+              "title": "Mayfair Perfection for Generations",
+              "comment": "Impeccable in every detail. 40 minutes from Heathrow Terminal 5. Staff anticipate your every preference.",
               "photos": [
-                "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=600&q=85&sig=543"
+                "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=85"
               ],
-              "id": "rev-lon-citizenm-tower-3",
               "verified": true
             }
           ],
-          "recommendationBadge": "Strategic Location"
+          "recommendationBadge": "Best Value"
         }
       ]
     },
@@ -7594,251 +7043,184 @@ window.WANDERLY_DATA = {
           "id": "bcn-w-barcelona",
           "name": "W Barcelona (Hotel Vela)",
           "stars": 5,
-          "pricePerNight": 390,
+          "pricePerNight": 410,
           "rating": 4.8,
-          "reviewsCount": 4100,
+          "reviewsCount": 4800,
           "lat": 41.3685,
           "lng": 2.1901,
-          "image": "https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=800&q=80&sig=545",
-          "description": "Iconic sail-shaped beachfront hotel designed by Ricardo Bofill with rooftop infinity pool WET Deck, Eclipse bar, and sea views.",
+          "image": "https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=1200&q=85",
+          "description": "Designed by world-renowned architect Ricardo Bofill, rising like a sail directly from Barceloneta Beach with panoramic Mediterranean views, WET deck infinity pool, and ECLIPSE rooftop bar.",
+          "address": "Plaça Rosa dels Vents 1, 08039 Barcelona, Spain",
+          "airportName": "Josep Tarradellas Barcelona–El Prat Airport (BCN)",
+          "airportDistanceKm": 16,
+          "airportDistance": "16 km to Barcelona-El Prat Airport (BCN)",
           "amenities": [
-            "Direct Beachfront",
+            "Barceloneta Beachfront",
             "WET Deck Infinity Pool",
-            "Eclipse Rooftop Bar",
-            "Spa",
-            "Sea Views"
+            "ECLIPSE Rooftop Bar",
+            "Spa by Sisley Paris",
+            "FIRE Grill Gastronomy"
           ],
-          "address": "Plaça Rosa Del Vents 1, Final Passeig de Joan de Borbó, Barcelona",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=85&sig=546",
-              "caption": "W Barcelona (Hotel Vela) - Architectural Overview & Grand Entrance"
+              "url": "https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=1200&q=85",
+              "caption": "W Barcelona - Iconic Sail Architecture on the Mediterranean"
             },
             {
-              "url": "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1200&q=85&sig=547",
-              "caption": "Deluxe Suite & Modern Living Quarters"
+              "url": "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Golden Sands of Barceloneta Boardwalk"
             },
             {
-              "url": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85&sig=548",
-              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
+              "url": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Wow Suite Floor-to-Ceiling Mediterranean Sea Panorama"
             },
             {
-              "url": "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=1200&q=85&sig=549",
-              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=85",
+              "caption": "WET Deck Beachside Infinity Pool & Cabanas"
             },
             {
-              "url": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=1200&q=85&sig=550",
-              "caption": "Wellness Sanctuary & Marble Spa Suite"
+              "url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85",
+              "caption": "26th Floor Sunset Cocktails Overlooking Barcelona Harbor"
             }
           ],
           "verifiedReviews": [
             {
-              "name": "Dr. Ahmed El-Sayed",
-              "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80",
-              "date": "July 2026",
+              "id": "rev-bcn-w-1",
+              "name": "Carlos Gomez",
+              "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80",
+              "date": "September 2026",
               "rating": 5,
-              "title": "Exceptional Hospitality & Impeccable Views",
-              "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
+              "title": "Unbeatable Beachfront Living in Barcelona",
+              "comment": "Directly on the beach and only 15 minutes by taxi from El Prat Airport (BCN). The infinity pool scene is unmatched.",
               "photos": [
-                "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=600&q=85&sig=547"
+                "https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&w=600&q=85"
               ],
-              "id": "rev-bcn-w-barcelona-1",
-              "verified": true
-            },
-            {
-              "name": "Sarah Jenkins",
-              "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80",
-              "date": "August 2026",
-              "rating": 5,
-              "title": "100% Authentic & Worth Every Penny",
-              "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
-              "photos": [
-                "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=85&sig=548"
-              ],
-              "id": "rev-bcn-w-barcelona-2",
-              "verified": true
-            },
-            {
-              "name": "Mohamed Tariq",
-              "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80",
-              "date": "June 2026",
-              "rating": 4.8,
-              "title": "Great Strategic Location & Friendly Concierge",
-              "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
-              "photos": [
-                "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=600&q=85&sig=549"
-              ],
-              "id": "rev-bcn-w-barcelona-3",
               "verified": true
             }
           ],
           "recommendationBadge": "Top Rated"
         },
         {
-          "id": "bcn-majestic",
-          "name": "Majestic Hotel & Spa Barcelona",
+          "id": "bcn-hotel-arts",
+          "name": "Hotel Arts Barcelona",
           "stars": 5,
-          "pricePerNight": 310,
+          "pricePerNight": 390,
           "rating": 4.8,
-          "reviewsCount": 2600,
-          "lat": 41.3929,
-          "lng": 2.1637,
-          "image": "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=800&q=80&sig=551",
-          "description": "Neoclassical 5-star palace on prestigious Passeig de Gràcia, steps away from Gaudí's Casa Batlló with La Dolce Vitae rooftop pool.",
+          "reviewsCount": 3900,
+          "lat": 41.3879,
+          "lng": 2.1966,
+          "image": "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=1200&q=85",
+          "description": "A landmark blue-glass tower overlooking Port Olímpic, featuring Frank Gehry's iconic golden fish sculpture, 2-Michelin-starred Enoteca by Paco Pérez, and 43 The Spa on the top floors.",
+          "address": "Carrer de la Marina 19-21, 08005 Barcelona, Spain",
+          "airportName": "Josep Tarradellas Barcelona–El Prat Airport (BCN)",
+          "airportDistanceKm": 15,
+          "airportDistance": "15 km to Barcelona-El Prat Airport (BCN)",
           "amenities": [
-            "Passeig de Gràcia",
-            "La Dolce Vitae Rooftop",
-            "MajesticSpa",
-            "Gaudí Monuments Walk"
+            "Frank Gehry Golden Fish Landmark",
+            "2-Michelin Star Enoteca",
+            "Port Olímpic Waterfront",
+            "43 The Spa Duplex",
+            "Outdoor Heated Sea Pools"
           ],
-          "address": "Passeig de Gràcia 68, Eixample, Barcelona",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=1200&q=85&sig=552",
-              "caption": "Majestic Hotel & Spa Barcelona - Architectural Overview & Grand Entrance"
+              "url": "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Hotel Arts Barcelona - Striking Modern Waterfront Tower"
             },
             {
-              "url": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=85&sig=553",
-              "caption": "Deluxe Suite & Modern Living Quarters"
+              "url": "https://images.unsplash.com/photo-1511527661048-7fe73d85e9a4?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Frank Gehry's Golden Peix Sculpture & Gardens"
             },
             {
-              "url": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=85&sig=554",
-              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
+              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Club Level Sea View Suite Overlooking Port Olímpic"
             },
             {
-              "url": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=85&sig=555",
-              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1563911302283-d2bc129e7570?auto=format&fit=crop&w=1200&q=85",
+              "caption": "43 The Spa Panoramic Hydrotherapy Bathrooms"
             },
             {
-              "url": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=1200&q=85&sig=556",
-              "caption": "Wellness Sanctuary & Marble Spa Suite"
+              "url": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Enoteca Paco Pérez 2-Michelin-Starred Seafood"
             }
           ],
           "verifiedReviews": [
             {
-              "name": "Sarah Jenkins",
-              "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80",
+              "id": "rev-bcn-art-1",
+              "name": "Montserrat Vidal",
+              "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80",
               "date": "August 2026",
               "rating": 5,
-              "title": "100% Authentic & Worth Every Penny",
-              "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
+              "title": "Art, Gastronomy, and Ocean Views",
+              "comment": "Enoteca was one of the finest meals in Spain. 15 km to BCN airport, very quick transfer through the coastal ring road.",
               "photos": [
-                "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=600&q=85&sig=553"
+                "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=600&q=85"
               ],
-              "id": "rev-bcn-majestic-1",
-              "verified": true
-            },
-            {
-              "name": "Mohamed Tariq",
-              "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80",
-              "date": "June 2026",
-              "rating": 4.8,
-              "title": "Great Strategic Location & Friendly Concierge",
-              "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
-              "photos": [
-                "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=85&sig=554"
-              ],
-              "id": "rev-bcn-majestic-2",
-              "verified": true
-            },
-            {
-              "name": "Elena Rostova",
-              "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
-              "date": "May 2026",
-              "rating": 4.9,
-              "title": "A Dream Stay! Will Definitely Return",
-              "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
-              "photos": [
-                "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=85&sig=555"
-              ],
-              "id": "rev-bcn-majestic-3",
               "verified": true
             }
           ],
-          "recommendationBadge": "Top Rated"
+          "recommendationBadge": "Popular"
         },
         {
-          "id": "bcn-h10-cubik",
-          "name": "H10 Cubik",
-          "stars": 4,
-          "pricePerNight": 175,
-          "rating": 4.7,
-          "reviewsCount": 2100,
-          "lat": 41.3878,
-          "lng": 2.1729,
-          "image": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=800&q=80&sig=557",
-          "description": "Modern design 4-star superior hotel next to Cathedral and Gothic Quarter with Atik rooftop plunge pool and terrace lounge.",
+          "id": "bcn-mandarin-oriental",
+          "name": "Mandarin Oriental, Barcelona",
+          "stars": 5,
+          "pricePerNight": 550,
+          "rating": 4.9,
+          "reviewsCount": 3100,
+          "lat": 41.3916,
+          "lng": 2.1678,
+          "image": "https://images.unsplash.com/photo-1561501900-3701fa6a0864?auto=format&fit=crop&w=1200&q=85",
+          "description": "Located on prestigious Passeig de Gràcia in an avant-garde Patricia Urquiola interior, moments from Gaudí's Casa Batlló and Casa Milà, featuring Terrat rooftop dipping pool and Moments restaurant.",
+          "address": "Passeig de Gràcia 38-40, 08007 Barcelona, Spain",
+          "airportName": "Josep Tarradellas Barcelona–El Prat Airport (BCN)",
+          "airportDistanceKm": 17,
+          "airportDistance": "17 km to Barcelona-El Prat Airport (BCN)",
           "amenities": [
-            "Atik Rooftop Pool",
-            "Gothic Quarter Vicinity",
-            "Robot Bartender",
-            "Free WiFi"
+            "Passeig de Gràcia Location",
+            "Steps to Gaudí Landmarks",
+            "Terrat Rooftop Pool & Bar",
+            "Moments 2-Michelin Stars",
+            "Patricia Urquiola Design"
           ],
-          "address": "Via Laietana 69, Ciutat Vella, Barcelona",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=1200&q=85&sig=558",
-              "caption": "H10 Cubik - Architectural Overview & Grand Entrance"
+              "url": "https://images.unsplash.com/photo-1561501900-3701fa6a0864?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Mandarin Oriental Barcelona - Historic Passeig de Gràcia Facade"
             },
             {
-              "url": "https://images.unsplash.com/photo-1587985064135-0366536eab42?auto=format&fit=crop&w=1200&q=85&sig=559",
-              "caption": "Deluxe Suite & Modern Living Quarters"
+              "url": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Gaudí's Passeig de Gràcia Promenade & Boutiques"
             },
             {
-              "url": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=85&sig=560",
-              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
+              "url": "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Boulevard Suite Designed by Patricia Urquiola"
             },
             {
-              "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85&sig=561",
-              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Terrat 360-Degree Rooftop Pool Over Sagrada Família"
             },
             {
-              "url": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=85&sig=562",
-              "caption": "Wellness Sanctuary & Marble Spa Suite"
+              "url": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Moments Restaurant by Carme Ruscalleda"
             }
           ],
           "verifiedReviews": [
             {
-              "name": "Mohamed Tariq",
-              "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80",
-              "date": "June 2026",
-              "rating": 4.8,
-              "title": "Great Strategic Location & Friendly Concierge",
-              "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
-              "photos": [
-                "https://images.unsplash.com/photo-1587985064135-0366536eab42?auto=format&fit=crop&w=600&q=85&sig=559"
-              ],
-              "id": "rev-bcn-h10-cubik-1",
-              "verified": true
-            },
-            {
-              "name": "Elena Rostova",
-              "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
-              "date": "May 2026",
-              "rating": 4.9,
-              "title": "A Dream Stay! Will Definitely Return",
-              "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
-              "photos": [
-                "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=85&sig=560"
-              ],
-              "id": "rev-bcn-h10-cubik-2",
-              "verified": true
-            },
-            {
-              "name": "Dr. Ahmed El-Sayed",
-              "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80",
-              "date": "July 2026",
+              "id": "rev-bcn-mo-1",
+              "name": "David Fernandez",
+              "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80",
+              "date": "September 2026",
               "rating": 5,
-              "title": "Exceptional Hospitality & Impeccable Views",
-              "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
+              "title": "Best Address in Barcelona",
+              "comment": "Casa Batlló is literally 2 minutes away. Rooftop cocktail at sunset watching the Sagrada Família spires is unbeatable.",
               "photos": [
-                "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=85&sig=561"
+                "https://images.unsplash.com/photo-1561501900-3701fa6a0864?auto=format&fit=crop&w=600&q=85"
               ],
-              "id": "rev-bcn-h10-cubik-3",
               "verified": true
             }
           ],
-          "recommendationBadge": "Strategic Location"
+          "recommendationBadge": "Best Value"
         }
       ]
     },
@@ -7941,251 +7323,184 @@ window.WANDERLY_DATA = {
           "id": "bali-four-seasons-sayan",
           "name": "Four Seasons Resort Bali at Sayan",
           "stars": 5,
-          "pricePerNight": 680,
+          "pricePerNight": 720,
           "rating": 5,
-          "reviewsCount": 2400,
-          "lat": -8.5028,
-          "lng": 115.2415,
-          "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80&sig=563",
-          "description": "Architectural wonder entered via a dramatic suspension bridge leading to a lotus pond suspended above the Ayung River valley in Ubud.",
+          "reviewsCount": 3600,
+          "lat": -8.5069,
+          "lng": 115.2458,
+          "image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=85",
+          "description": "Suspended above the sacred Ayung River valley in Ubud, entered via an iconic suspension bridge leading to a lotus pond in the sky, featuring river villas with private plunge pools and holistic wellness.",
+          "address": "Jl. Raya Sayan, Sayan, Ubud, Gianyar, Bali 80571, Indonesia",
+          "airportName": "Ngurah Rai International Airport (DPS)",
+          "airportDistanceKm": 37,
+          "airportDistance": "37 km to Ngurah Rai Airport (DPS)",
           "amenities": [
-            "Ayung River Valley",
-            "Private Pool Villas",
-            "Sacred River Spa",
-            "Ayurvedic Wellness",
-            "Forest Yoga"
+            "Ayung Riverfront Suspension Bridge",
+            "Lotus Pond Rooftop Pavilion",
+            "Private Plunge Pool Villas",
+            "Sacred River Spa & Yoga",
+            "Ayung Terrace Balinese Dining"
           ],
-          "address": "Jl. Raya Sayan, Sayan, Ubud, Bali",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85&sig=564",
-              "caption": "Four Seasons Resort Bali at Sayan - Architectural Overview & Grand Entrance"
+              "url": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Four Seasons Sayan - Iconic Rooftop Lotus Pond in Ubud Valley"
             },
             {
-              "url": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85&sig=565",
-              "caption": "Deluxe Suite & Modern Living Quarters"
+              "url": "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Lush Ayung River Jungle & Terraced Rice Fields"
             },
             {
-              "url": "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=1200&q=85&sig=566",
-              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
+              "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Riverfront Villa with Private Outdoor Plunge Pool"
             },
             {
-              "url": "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1200&q=85&sig=567",
-              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Two-Tiered Valley Swimming Pool by the Ayung River"
             },
             {
-              "url": "https://images.unsplash.com/photo-1572331165267-854da2b10ccc?auto=format&fit=crop&w=1200&q=85&sig=568",
-              "caption": "Wellness Sanctuary & Marble Spa Suite"
+              "url": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Ayung Terrace Traditional Balinese Feast"
             }
           ],
           "verifiedReviews": [
             {
-              "name": "Dr. Ahmed El-Sayed",
+              "id": "rev-bli-fss-1",
+              "name": "Wayan Artawan",
               "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80",
-              "date": "July 2026",
+              "date": "September 2026",
               "rating": 5,
-              "title": "Exceptional Hospitality & Impeccable Views",
-              "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
+              "title": "Pure Spiritual Sanctuary in the Jungle",
+              "comment": "Walking across the suspension bridge into the lotus pond is a transcendental moment. 60-70 mins scenic drive from DPS airport.",
               "photos": [
-                "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=85&sig=565"
+                "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=600&q=85"
               ],
-              "id": "rev-bali-four-seasons-sayan-1",
-              "verified": true
-            },
-            {
-              "name": "Sarah Jenkins",
-              "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80",
-              "date": "August 2026",
-              "rating": 5,
-              "title": "100% Authentic & Worth Every Penny",
-              "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
-              "photos": [
-                "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=600&q=85&sig=566"
-              ],
-              "id": "rev-bali-four-seasons-sayan-2",
-              "verified": true
-            },
-            {
-              "name": "Mohamed Tariq",
-              "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80",
-              "date": "June 2026",
-              "rating": 4.8,
-              "title": "Great Strategic Location & Friendly Concierge",
-              "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
-              "photos": [
-                "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=600&q=85&sig=567"
-              ],
-              "id": "rev-bali-four-seasons-sayan-3",
               "verified": true
             }
           ],
           "recommendationBadge": "Top Rated"
         },
         {
-          "id": "bali-bulgari",
+          "id": "bali-bulgari-resort",
           "name": "Bulgari Resort Bali",
           "stars": 5,
-          "pricePerNight": 850,
+          "pricePerNight": 890,
           "rating": 4.9,
-          "reviewsCount": 1600,
-          "lat": -8.8465,
-          "lng": 115.1448,
-          "image": "https://images.unsplash.com/photo-1525610553991-2bede1a236e2?auto=format&fit=crop&w=800&q=80&sig=569",
-          "description": "Ultra-luxury cliffside retreat 150m above the Indian Ocean in Uluwatu with private funicular down to secluded pristine beach.",
+          "reviewsCount": 2900,
+          "lat": -8.8471,
+          "lng": 115.1432,
+          "image": "https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1200&q=85",
+          "description": "Perched 150 meters above the Indian Ocean on the dramatic sea cliffs of Uluwatu, combining traditional Balinese craftsmanship with Italian design, private funicular beach access, and Il Ristorante.",
+          "address": "Jl. Goa Lempeh, Banjar Dinas Kangin, Uluwatu, Bali 80364, Indonesia",
+          "airportName": "Ngurah Rai International Airport (DPS)",
+          "airportDistanceKm": 20,
+          "airportDistance": "20 km to Ngurah Rai Airport (DPS)",
           "amenities": [
-            "150m Ocean Cliff",
-            "Private Funicular & Beach",
-            "Infinity Ocean Pool",
-            "Bulgari Spa"
+            "150m Ocean Cliffside Setting",
+            "Private Funicular to Beach",
+            "All-Villa Resort with Pools",
+            "Il Ristorante Luca Fantin",
+            "Bulgari Spa by the Sea"
           ],
-          "address": "Jl. Goa Lempeh, Banjar Dinas Kangin, Uluwatu, Bali",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=1200&q=85&sig=570",
-              "caption": "Bulgari Resort Bali - Architectural Overview & Grand Entrance"
+              "url": "https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Bulgari Resort Bali - Dramatic Uluwatu 150-Meter Ocean Cliff"
             },
             {
-              "url": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=85&sig=571",
-              "caption": "Deluxe Suite & Modern Living Quarters"
+              "url": "https://images.unsplash.com/photo-1525610553991-2bede1a236e2?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Private White Sand Shoreline Under the Cliffs"
             },
             {
-              "url": "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=85&sig=572",
-              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
+              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Ocean View Villa with Bangkirai Wood & Hand-Carved Volcanic Stone"
             },
             {
-              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=85&sig=573",
-              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1563911302283-d2bc129e7570?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Infinity Edge Clifftop Pool Merging with the Horizon"
             },
             {
-              "url": "https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=85&sig=574",
-              "caption": "Wellness Sanctuary & Marble Spa Suite"
+              "url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85",
+              "caption": "The Bulgari Bar Spectacular Uluwatu Cliff Sunset"
             }
           ],
           "verifiedReviews": [
             {
-              "name": "Sarah Jenkins",
+              "id": "rev-bli-blg-1",
+              "name": "Jessica Miller",
               "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80",
               "date": "August 2026",
               "rating": 5,
-              "title": "100% Authentic & Worth Every Penny",
-              "comment": "Everything looks exactly like the photos or even better. Super clean rooms, high speed Wi-Fi, and very peaceful at night. We walked to the nearby attractions in under 10 minutes.",
+              "title": "Drama of the Cliffs and Italian Elegance",
+              "comment": "Taking the private cliff funicular down to the isolated beach was incredible. Only 35 minutes drive from Denpasar DPS Airport.",
               "photos": [
-                "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=600&q=85&sig=571"
+                "https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=600&q=85"
               ],
-              "id": "rev-bali-bulgari-1",
-              "verified": true
-            },
-            {
-              "name": "Mohamed Tariq",
-              "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80",
-              "date": "June 2026",
-              "rating": 4.8,
-              "title": "Great Strategic Location & Friendly Concierge",
-              "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
-              "photos": [
-                "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=600&q=85&sig=572"
-              ],
-              "id": "rev-bali-bulgari-2",
-              "verified": true
-            },
-            {
-              "name": "Elena Rostova",
-              "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
-              "date": "May 2026",
-              "rating": 4.9,
-              "title": "A Dream Stay! Will Definitely Return",
-              "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
-              "photos": [
-                "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=85&sig=573"
-              ],
-              "id": "rev-bali-bulgari-3",
               "verified": true
             }
           ],
-          "recommendationBadge": "Top Rated"
+          "recommendationBadge": "Popular"
         },
         {
-          "id": "bali-maya-ubud",
-          "name": "Maya Ubud Resort & Spa",
+          "id": "bali-alila-uluwatu",
+          "name": "Alila Villas Uluwatu",
           "stars": 5,
-          "pricePerNight": 195,
-          "rating": 4.8,
-          "reviewsCount": 2900,
-          "lat": -8.5132,
-          "lng": 115.2764,
-          "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80&sig=575",
-          "description": "Tranquil hillside resort spanning 10 hectares of tropical gardens between Petanu River Valley and Peliatan rice terraces.",
+          "pricePerNight": 650,
+          "rating": 4.9,
+          "reviewsCount": 3300,
+          "lat": -8.8475,
+          "lng": 115.1328,
+          "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=85",
+          "description": "An eco-luxury architectural icon perched on elevated limestone cliffs, famous for its cantilevered sunset cabana hanging over the ocean, 50-meter cliff-edge infinity pool, and open-plan pool villas.",
+          "address": "Jl. Belimbing Sari, Tambiyak, Pecatu, Uluwatu, Bali 80364, Indonesia",
+          "airportName": "Ngurah Rai International Airport (DPS)",
+          "airportDistanceKm": 18,
+          "airportDistance": "18 km to Ngurah Rai Airport (DPS)",
           "amenities": [
-            "Dual Infinity River Pools",
-            "Spa at Maya",
-            "River Valley Balconies",
-            "Tennis & Yoga"
+            "Overhanging Sunset Cabana",
+            "50-Meter Cliff Infinity Pool",
+            "All-Pool Private Eco Villas",
+            "Warung Authentic Indonesian",
+            "Clifftop Aerial Yoga"
           ],
-          "address": "Jl. Gunung Sari, Peliatan, Ubud, Bali",
           "gallery": [
             {
-              "url": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=85&sig=576",
-              "caption": "Maya Ubud Resort & Spa - Architectural Overview & Grand Entrance"
+              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Alila Villas Uluwatu - World-Famous Cantilevered Sunset Cabana"
             },
             {
-              "url": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=85&sig=577",
-              "caption": "Deluxe Suite & Modern Living Quarters"
+              "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85",
+              "caption": "Limestone Cliffs of Southern Bali Coast"
             },
             {
-              "url": "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=1200&q=85&sig=578",
-              "caption": "Heated Swimming Pool & Relaxing Sun Terrace"
+              "url": "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?auto=format&fit=crop&w=1200&q=85",
+              "caption": "One-Bedroom Pool Villa with Open Living Cabana"
             },
             {
-              "url": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1200&q=85&sig=579",
-              "caption": "Fine Dining Restaurant & Cocktail Lounge"
+              "url": "https://images.unsplash.com/photo-1568495248636-6432b97bd949?auto=format&fit=crop&w=1200&q=85",
+              "caption": "50m Infinity Pool Stretching into the Indian Ocean"
             },
             {
-              "url": "https://images.unsplash.com/photo-1549294413-26f195200c16?auto=format&fit=crop&w=1200&q=85&sig=580",
-              "caption": "Wellness Sanctuary & Marble Spa Suite"
+              "url": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=85",
+              "caption": "The Warung Traditional Indonesian Gourmet Tasting"
             }
           ],
           "verifiedReviews": [
             {
-              "name": "Mohamed Tariq",
-              "avatar": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80",
-              "date": "June 2026",
-              "rating": 4.8,
-              "title": "Great Strategic Location & Friendly Concierge",
-              "comment": "The concierge team helped us organize all our day trips and restaurant bookings without any hassle. The pool area is pristine with great music and refreshing drinks.",
-              "photos": [
-                "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=85&sig=577"
-              ],
-              "id": "rev-bali-maya-ubud-1",
-              "verified": true
-            },
-            {
-              "name": "Elena Rostova",
-              "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
-              "date": "May 2026",
-              "rating": 4.9,
-              "title": "A Dream Stay! Will Definitely Return",
-              "comment": "The bed was the most comfortable I have ever slept in at a hotel. Room service was fast and tasty. The verified guest check-in was seamless and we got a free room upgrade upon arrival!",
-              "photos": [
-                "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=600&q=85&sig=578"
-              ],
-              "id": "rev-bali-maya-ubud-2",
-              "verified": true
-            },
-            {
-              "name": "Dr. Ahmed El-Sayed",
-              "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80",
-              "date": "July 2026",
+              "id": "rev-bli-alu-1",
+              "name": "Kadek Surya",
+              "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80",
+              "date": "September 2026",
               "rating": 5,
-              "title": "Exceptional Hospitality & Impeccable Views",
-              "comment": "The location is unbeatable! From the moment we checked in, the staff anticipated every need. Breakfast on the terrace while watching the morning sun was the highlight of our vacation. Highly recommend booking a suite with a balcony.",
+              "title": "Architectural Wonder on the Uluwatu Cliffs",
+              "comment": "Watching sunset from the cliff cabana is unforgettable. Under 30 minutes from DPS Airport via the bypass.",
               "photos": [
-                "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=600&q=85&sig=579"
+                "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=85"
               ],
-              "id": "rev-bali-maya-ubud-3",
               "verified": true
             }
           ],
-          "recommendationBadge": "Top Rated"
+          "recommendationBadge": "Best Value"
         }
       ]
     }
